@@ -21,15 +21,12 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 总播放次数 | 82,411 |
-| 🎤 听过艺术家 | 19,043 位 |
-| 💿 听过专辑 | 19,938 张 |
-| 🎶 听过歌曲 | 61,033 首 |
+| 🎧 播放总次数 | 82,411 次 |
+| 🎤 歌手总计 | 19,043 位 |
+| 💿 专辑总计 | 19,938 张 |
+| 🎶 歌曲总计 | 61,033 首 |
 
-**🎧 正在播放**  
-🎧 **正在播放：** ASMR 30min+ Soft Spoken Whispering 💕 ear to ear whisper, binaural, ramble, close to mic, stutter — Cindy asmr
-
-**🎵 最近在听**  
+🎧 **正在播放：** ASMR 30min+ Soft Spoken Whispering 💕 ear to ear whisper, binaural, ramble, close to mic, stutter — Cindy asmr**🎵 最近在听**  
 - 🎵 ASMR 30min+ Soft Spoken Whispering 💕 ear to ear whisper, binaural, ramble, close to mic, stutter — Cindy asmr
 - 🎵 ASMR | Your Bestie Does Your Makeup For a Date — Judy asmr
 - 🎵 水音世界观--6月9日--平壤街头出现四川火锅店，反映了朝鲜服务业的发展和消费能力的提升，以及对中国经济合作的准备。 — 水音世界观
@@ -110,5 +107,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/6/10 11:59:46*
+*更新时间: 2026/6/10 12:23:02*
 <!-- LASTFM_END -->

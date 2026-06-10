@@ -159,7 +159,9 @@ ${weeklyStats}
 | 💿 专辑总计 | ${albumCount.toLocaleString()} 张 |
 | 🎶 歌曲总计 | ${trackCount.toLocaleString()} 首 |
 
-${nowPlayingSection}**🎵 最近在听**  
+${nowPlayingSection}
+
+**🎵 最近在听**  
 ${recentTracksList}
 
 ${weeklyStatsSection}---
