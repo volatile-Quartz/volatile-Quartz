@@ -25,8 +25,12 @@ async function fetchAndUpdate() {
     const playCount = parseInt(user.playcount) || 0;
     
     // 2. 获取最近播放记录
-    const recentTracksData = await fetchData(`?method=user.getrecenttracks&user=${USERNAME}&limit=5`);
-    const recentTracks = recentTracksData.recenttracks.track;
+    const recentTracksData = await fetchData(`?method=user.getrecenttracks&user=${USERNAME}&limit=10`);
+    const allRecentTracks = recentTracksData.recenttracks.track;
+    
+    // 分离正在播放和最近播放
+    const nowPlaying = allRecentTracks.find(track => track['@attr'] && track['@attr'].nowplaying === 'true');
+    const recentTracks = allRecentTracks.filter(track => !(track['@attr'] && track['@attr'].nowplaying === 'true')).slice(0, 5);
     
     // 3. 获取最常听的艺术家（最近7天）
     const topArtistsData = await fetchData(`?method=user.gettopartists&user=${USERNAME}&period=7day&limit=5`);
@@ -40,11 +44,14 @@ async function fetchAndUpdate() {
     const topAlbumsData = await fetchData(`?method=user.gettopalbums&user=${USERNAME}&period=7day&limit=3`);
     const topAlbums = topAlbumsData.topalbums.album;
 
+    // 生成正在播放内容
+    const nowPlayingSection = nowPlaying 
+      ? `🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}`
+      : `🎵 暂无正在播放的歌曲`;
+
     // 生成最近在听内容
     const recentTracksList = recentTracks.map(track => {
-      const isNowPlaying = track['@attr'] && track['@attr'].nowplaying === 'true';
-      const prefix = isNowPlaying ? '🎧 **正在播放：**' : '🎵';
-      return `${prefix} ${track.name} — ${track.artist['#text']}`;
+      return `🎵 ${track.name} — ${track.artist['#text']}`;
     }).join('\n');
 
     // 生成热门艺术家内容
@@ -72,8 +79,13 @@ async function fetchAndUpdate() {
 | 项目 | 数量 |
 |------|------|
 | 🎧 总播放次数 | ${playCount.toLocaleString()} |
+| 🎤 本周活跃艺术家 | ${topArtists.length} 位 |
+| 🎶 本周播放歌曲 | ${topTracks.reduce((sum, t) => sum + parseInt(t.playcount), 0)} 次 |
 
-**🎧 正在播放 / 最近在听**  
+**🎧 正在播放**  
+${nowPlayingSection}
+
+**🎵 最近在听**  
 ${recentTracksList}
 
 **🌟 本周热门艺术家**  
