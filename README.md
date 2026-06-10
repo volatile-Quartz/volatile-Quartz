@@ -46,13 +46,13 @@ Here are some ideas to get you started:
 🥇 Feelings for you — Fahrenheit, 田馥甄 (7次)
 🥈 江南 — 林俊傑 (5次)
 🥉 Only have feelings for you — Fahrenheit (2次)
-4️⃣ You Raise Me Up — Josh Groban (2次)
-5️⃣ 【EmojiASMR】99.9%眠くなる謎の絵文字ASMR — Kaerukun ASMR (2次)
+4️⃣ 【EmojiASMR】99.9%眠くなる謎の絵文字ASMR — Kaerukun ASMR (2次)
+5️⃣ 鐵花飛 — Mili&塞壬唱片-MSR (2次)
 
 **💿 本周热门专辑**  
 🥇 **江南** — 林俊傑
 🥈 **许嵩精选合辑** — 许嵩
 🥉 **AD:Nearly 180** — Diverse System
 
-*📈 数据更新时间: 2026/6/10 06:55:15*
+*📈 数据更新时间: 2026/6/10 07:00:48*
 <!-- LASTFM_END -->
