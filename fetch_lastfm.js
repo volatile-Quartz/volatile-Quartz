@@ -92,10 +92,7 @@ ${weeklyStats}
 `
       : '';
     const nowPlayingSection = nowPlaying
-      ? `**🎧 正在播放**  
-🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}
-
-`
+      ? `🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}`
       : '';
 
     // 生成最近在听内容（列表形式）
@@ -157,10 +154,10 @@ ${weeklyStats}
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 总播放次数 | ${playCount.toLocaleString()} |
-| 🎤 听过艺术家 | ${artistCount.toLocaleString()} 位 |
-| 💿 听过专辑 | ${albumCount.toLocaleString()} 张 |
-| 🎶 听过歌曲 | ${trackCount.toLocaleString()} 首 |
+| 🎧 播放总次数 | ${playCount.toLocaleString()} 次 |
+| 🎤 歌手总计 | ${artistCount.toLocaleString()} 位 |
+| 💿 专辑总计 | ${albumCount.toLocaleString()} 张 |
+| 🎶 歌曲总计 | ${trackCount.toLocaleString()} 首 |
 
 ${nowPlayingSection}**🎵 最近在听**  
 ${recentTracksList}

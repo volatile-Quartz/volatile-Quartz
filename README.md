@@ -21,23 +21,25 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 总播放次数 | 82,408 |
-| 🎤 听过艺术家 | 19,042 位 |
+| 🎧 总播放次数 | 82,411 |
+| 🎤 听过艺术家 | 19,043 位 |
 | 💿 听过专辑 | 19,938 张 |
-| 🎶 听过歌曲 | 61,031 首 |
+| 🎶 听过歌曲 | 61,033 首 |
 
 **🎧 正在播放**  
-🎧 **正在播放：** 我一句话都没说就被她俩盒完了？【魔裁二创/剧透警告】 — 狗狗月_
+🎧 **正在播放：** ASMR 30min+ Soft Spoken Whispering 💕 ear to ear whisper, binaural, ramble, close to mic, stutter — Cindy asmr
 
 **🎵 最近在听**  
+- 🎵 ASMR 30min+ Soft Spoken Whispering 💕 ear to ear whisper, binaural, ramble, close to mic, stutter — Cindy asmr
+- 🎵 ASMR | Your Bestie Does Your Makeup For a Date — Judy asmr
+- 🎵 水音世界观--6月9日--平壤街头出现四川火锅店，反映了朝鲜服务业的发展和消费能力的提升，以及对中国经济合作的准备。 — 水音世界观
 - 🎵 我一句话都没说就被她俩盒完了？【魔裁二创/剧透警告】 — 狗狗月_
 - 🎵 【东方】芙！兰！光！线！【羽衣工船（ういこうせん）】 — 铅笔Ennpitsu
-- 🎵 “德国真是太适合二次元了”！Heäschenlied — 饿了的白熊
-- 🎵 德国儿歌Heäschenlied—Schnuffel — 苏洛离Solakli
-- 🎵 德国儿歌Häschenparty—Schnuffel — 苏洛离Solakli
 
 **📈 播放趋势**  
-
+- 📅 本周: 0 次播放
+- 📆 2/20: 0 次播放
+- 📆 2/27: 0 次播放
 
 ---
 
@@ -48,7 +50,7 @@ Here are some ideas to get you started:
 - 🥈 **许嵩** — 15 次播放
 - 🥉 **Fahrenheit** — 13 次播放
 - 4️⃣ **USAO** — 9 次播放
-- 5️⃣ **Fahrenheit, 田馥甄** — 7 次播放
+- 5️⃣ **水音世界观** — 8 次播放
 
 **🎶 热门歌曲**  
 - 🥇 Feelings for you — Fahrenheit, 田馥甄
@@ -108,5 +110,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/6/10 11:32:51*
+*更新时间: 2026/6/10 11:59:46*
 <!-- LASTFM_END -->
