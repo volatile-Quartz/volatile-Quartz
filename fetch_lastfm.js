@@ -10,6 +10,17 @@ async function fetchData(params) {
   return response.json();
 }
 
+function asArray(value) {
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+}
+
+async function getWeeklyPlayCount(from, to) {
+  const data = await fetchData(`method=user.getweeklytrackchart&user=${USERNAME}&from=${from}&to=${to}`);
+  const tracks = asArray(data.weeklytrackchart?.track);
+  return tracks.reduce((sum, track) => sum + (parseInt(track.playcount) || 0), 0);
+}
+
 async function fetchAndUpdate() {
   if (!API_KEY || !USERNAME) {
     console.error('错误: 请设置环境变量 LASTFM_API_KEY 和 LASTFM_USERNAME');
@@ -63,11 +74,23 @@ async function fetchAndUpdate() {
     const friendsData = await fetchData(`method=user.getfriends&user=${USERNAME}&limit=5`);
     const friends = friendsData.friends ? friendsData.friends.user : [];
     
-    // 8. 获取周统计数据
-    const weeklyChartData = await fetchData(`method=user.getweeklychartlist&user=${USERNAME}&limit=4`);
-    const weeklyCharts = weeklyChartData.chartlist ? weeklyChartData.chartlist.chart : [];
+    // 8. 获取周播放趋势（最近 3 个自然周的总播放次数）
+    const weeklyChartData = await fetchData(`method=user.getweeklychartlist&user=${USERNAME}`);
+    const weeklyCharts = asArray(weeklyChartData.weeklychartlist?.chart).slice(0, 3);
+    const weeklyCounts = await Promise.all(
+      weeklyCharts.map(chart => getWeeklyPlayCount(chart.from, chart.to))
+    );
+    const weeklyStats = weeklyCharts.map((chart, index) => {
+      const date = new Date(parseInt(chart.from, 10) * 1000);
+      const label = index === 0 ? '📅 本周' : `📆 ${date.getMonth() + 1}/${date.getDate()}`;
+      return `- ${label}: ${weeklyCounts[index].toLocaleString()} 次播放`;
+    }).join('\n');
+    const weeklyStatsSection = weeklyStats
+      ? `**📈 播放趋势**  
+${weeklyStats}
 
-    // 生成正在播放内容（无正在播放时不显示该板块）
+`
+      : '';
     const nowPlayingSection = nowPlaying
       ? `**🎧 正在播放**  
 🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}
@@ -128,12 +151,6 @@ async function fetchAndUpdate() {
     // 生成好友列表（列表形式）
     const friendsList = friends.length > 0 ? friends.map(friend => `- 👤 [${friend.name}](https://www.last.fm/user/${friend.name})`).join('\n') : '暂无好友';
 
-    // 生成周统计概览（列表形式）
-    const weeklyStats = weeklyCharts.slice(0, 3).map((chart, index) => {
-      const date = new Date(chart.from * 1000);
-      return `- ${index === 0 ? '📅 本周' : `📆 ${date.getMonth() + 1}/${date.getDate()}`}: ${chart.playcount} 次播放`;
-    }).join('\n');
-
     // 生成完整的可视化内容
     let markdownContent = `### 🎵 音乐世界
 
@@ -148,10 +165,7 @@ async function fetchAndUpdate() {
 ${nowPlayingSection}**🎵 最近在听**  
 ${recentTracksList}
 
-**📈 播放趋势**  
-${weeklyStats}
-
----
+${weeklyStatsSection}---
 
 ### 🌟 本周排行
 
