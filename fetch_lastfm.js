@@ -23,74 +23,173 @@ async function fetchAndUpdate() {
     const userInfo = await fetchData(`?method=user.getinfo&user=${USERNAME}`);
     const user = userInfo.user;
     const playCount = parseInt(user.playcount) || 0;
+    const joinDate = new Date(user.registered.unixtime * 1000);
     
     // 2. 获取最近播放记录
     const recentTracksData = await fetchData(`?method=user.getrecenttracks&user=${USERNAME}&limit=10`);
     const allRecentTracks = recentTracksData.recenttracks.track;
-    
-    // 分离正在播放和最近播放
     const nowPlaying = allRecentTracks.find(track => track['@attr'] && track['@attr'].nowplaying === 'true');
     const recentTracks = allRecentTracks.filter(track => !(track['@attr'] && track['@attr'].nowplaying === 'true')).slice(0, 5);
     
-    // 3. 获取最常听的艺术家（最近7天）
-    const topArtistsData = await fetchData(`?method=user.gettopartists&user=${USERNAME}&period=7day&limit=5`);
-    const topArtists = topArtistsData.topartists.artist;
+    // 3. 获取本周热门艺术家/歌曲/专辑
+    const [topArtistsWeek, topTracksWeek, topAlbumsWeek] = await Promise.all([
+      fetchData(`?method=user.gettopartists&user=${USERNAME}&period=7day&limit=5`),
+      fetchData(`?method=user.gettoptracks&user=${USERNAME}&period=7day&limit=5`),
+      fetchData(`?method=user.gettopalbums&user=${USERNAME}&period=7day&limit=3`)
+    ]);
     
-    // 4. 获取最常听的歌曲（最近7天）
-    const topTracksData = await fetchData(`?method=user.gettoptracks&user=${USERNAME}&period=7day&limit=5`);
-    const topTracks = topTracksData.toptracks.track;
+    // 4. 获取全部时间热门艺术家/歌曲/专辑
+    const [topArtistsAll, topTracksAll, topAlbumsAll] = await Promise.all([
+      fetchData(`?method=user.gettopartists&user=${USERNAME}&period=overall&limit=5`),
+      fetchData(`?method=user.gettoptracks&user=${USERNAME}&period=overall&limit=5`),
+      fetchData(`?method=user.gettopalbums&user=${USERNAME}&period=overall&limit=3`)
+    ]);
     
-    // 5. 获取最常听的专辑（最近7天）
-    const topAlbumsData = await fetchData(`?method=user.gettopalbums&user=${USERNAME}&period=7day&limit=3`);
-    const topAlbums = topAlbumsData.topalbums.album;
+    // 5. 获取月度热门艺术家/歌曲
+    const [topArtistsMonth, topTracksMonth] = await Promise.all([
+      fetchData(`?method=user.gettopartists&user=${USERNAME}&period=1month&limit=3`),
+      fetchData(`?method=user.gettoptracks&user=${USERNAME}&period=1month&limit=3`)
+    ]);
+    
+    // 6. 获取用户标签
+    const tagsData = await fetchData(`?method=user.gettags&user=${USERNAME}&limit=10`);
+    const tags = tagsData.tags ? tagsData.tags.tag : [];
+    
+    // 7. 获取好友列表
+    const friendsData = await fetchData(`?method=user.getfriends&user=${USERNAME}&limit=5`);
+    const friends = friendsData.friends ? friendsData.friends.user : [];
+    
+    // 8. 获取周统计数据
+    const weeklyChartData = await fetchData(`?method=user.getweeklychartlist&user=${USERNAME}&limit=4`);
+    const weeklyCharts = weeklyChartData.chartlist ? weeklyChartData.chartlist.chart : [];
 
     // 生成正在播放内容
     const nowPlayingSection = nowPlaying 
-      ? `🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}\n`
-      : `🎵 暂无正在播放的歌曲\n`;
+      ? `🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}`
+      : `🎵 暂无正在播放的歌曲`;
 
     // 生成最近在听内容
     const recentTracksList = recentTracks.map(track => {
       return `🎵 ${track.name} — ${track.artist['#text']}`;
-    }).join('\n') + '\n';
+    }).join('\n');
 
-    // 生成热门艺术家内容
-    const topArtistsList = topArtists.map((artist, index) => {
+    // 生成本周热门艺术家内容
+    const topArtistsWeekList = topArtistsWeek.topartists.artist.map((artist, index) => {
       const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
       return `${rankEmoji} **${artist.name}** — ${parseInt(artist.playcount).toLocaleString()} 次播放`;
-    }).join('\n') + '\n';
+    }).join('\n');
 
-    // 生成热门歌曲内容
-    const topTracksList = topTracks.map((track, index) => {
+    // 生成本周热门歌曲内容
+    const topTracksWeekList = topTracksWeek.toptracks.track.map((track, index) => {
       const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
-      return `${rankEmoji} ${track.name} — ${track.artist.name} (${parseInt(track.playcount).toLocaleString()}次)`;
-    }).join('\n') + '\n';
+      return `${rankEmoji} ${track.name} — ${track.artist.name}`;
+    }).join('\n');
 
-    // 生成热门专辑内容
-    const topAlbumsList = topAlbums.map((album, index) => {
+    // 生成本周热门专辑内容
+    const topAlbumsWeekList = topAlbumsWeek.topalbums.album.map((album, index) => {
       const rankEmoji = ['🥇', '🥈', '🥉'][index];
       return `${rankEmoji} **${album.name}** — ${album.artist.name}`;
-    }).join('\n') + '\n';
+    }).join('\n');
 
-    // 生成可视化内容
-    let markdownContent = `### 🎵 音乐世界\n\n` +
-                         `**📊 统计概览**  \n` +
-                         `| 项目 | 数量 |\n` +
-                         `|------|------|\n` +
-                         `| 🎧 总播放次数 | ${playCount.toLocaleString()} |\n` +
-                         `| 🎤 本周活跃艺术家 | ${topArtists.length} 位 |\n` +
-                         `| 🎶 本周播放歌曲 | ${topTracks.reduce((sum, t) => sum + parseInt(t.playcount), 0)} 次 |\n\n` +
-                         `**🎧 正在播放**  \n` +
-                         `${nowPlayingSection}\n` +
-                         `**🎵 最近在听**  \n` +
-                         `${recentTracksList}\n` +
-                         `**🌟 本周热门艺术家**  \n` +
-                         `${topArtistsList}\n` +
-                         `**🎶 本周热门歌曲**  \n` +
-                         `${topTracksList}\n` +
-                         `**💿 本周热门专辑**  \n` +
-                         `${topAlbumsList}\n` +
-                         `*📈 数据更新时间: ${new Date().toLocaleString('zh-CN')}*`;
+    // 生成全部时间热门艺术家内容
+    const topArtistsAllList = topArtistsAll.topartists.artist.map((artist, index) => {
+      const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
+      return `${rankEmoji} **${artist.name}** — ${parseInt(artist.playcount).toLocaleString()} 次播放`;
+    }).join('\n');
+
+    // 生成全部时间热门歌曲内容
+    const topTracksAllList = topTracksAll.toptracks.track.map((track, index) => {
+      const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
+      return `${rankEmoji} ${track.name} — ${track.artist.name}`;
+    }).join('\n');
+
+    // 生成本月热门内容
+    const topArtistsMonthList = topArtistsMonth.topartists.artist.map((artist, index) => {
+      const rankEmoji = ['🥇', '🥈', '🥉'][index];
+      return `${rankEmoji} **${artist.name}**`;
+    }).join('\n');
+
+    const topTracksMonthList = topTracksMonth.toptracks.track.map((track, index) => {
+      const rankEmoji = ['🥇', '🥈', '🥉'][index];
+      return `${rankEmoji} ${track.name} — ${track.artist.name}`;
+    }).join('\n');
+
+    // 生成标签云
+    const tagsList = tags.slice(0, 8).map(tag => `#${tag.name}`).join(' ');
+
+    // 生成好友列表
+    const friendsList = friends.map(friend => `👤 [${friend.name}](https://www.last.fm/user/${friend.name})`).join('\n');
+
+    // 生成周统计概览
+    const weeklyStats = weeklyCharts.slice(0, 3).map((chart, index) => {
+      const date = new Date(chart.from * 1000);
+      return `${index === 0 ? '📅 本周' : `📆 ${date.getMonth() + 1}/${date.getDate()}`}: ${chart.playcount} 次播放`;
+    }).join('\n');
+
+    // 生成完整的可视化内容
+    let markdownContent = `### 🎵 音乐世界
+
+**📊 统计概览**  
+| 项目 | 数据 |
+|------|------|
+| 🎧 总播放次数 | ${playCount.toLocaleString()} |
+| 📅 加入时间 | ${joinDate.getFullYear()}年${joinDate.getMonth() + 1}月 |
+| 🏷️ 自定义标签 | ${tags.length} 个 |
+| 👥 Last.fm 好友 | ${friends.length} 位 |
+
+**🎧 正在播放**  
+${nowPlayingSection}
+
+**🎵 最近在听**  
+${recentTracksList}
+
+**📈 播放趋势**  
+${weeklyStats}
+
+---
+
+### 🌟 本周排行
+
+**🎤 热门艺术家**  
+${topArtistsWeekList}
+
+**🎶 热门歌曲**  
+${topTracksWeekList}
+
+**💿 热门专辑**  
+${topAlbumsWeekList}
+
+---
+
+### 🏆 历史最佳
+
+**🎤 最爱的艺术家**  
+${topArtistsAllList}
+
+**🎶 最爱的歌曲**  
+${topTracksAllList}
+
+---
+
+### 📆 本月精选
+
+**🎤 本月艺术家**  
+${topArtistsMonthList}
+
+**🎶 本月歌曲**  
+${topTracksMonthList}
+
+---
+
+### 🏷️ 我的音乐标签
+${tags.length > 0 ? tagsList : '暂无标签'}
+
+---
+
+### 👥 Last.fm 好友
+${friends.length > 0 ? friendsList : '暂无好友'}
+
+*更新时间: ${new Date().toLocaleString('zh-CN')}*`;
 
     // 读取 README.md
     const readmePath = './README.md';
