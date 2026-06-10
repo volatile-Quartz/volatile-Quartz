@@ -22,11 +22,7 @@ async function fetchAndUpdate() {
     // 1. 获取用户信息和统计
     const userInfo = await fetchData(`?method=user.getinfo&user=${USERNAME}`);
     const user = userInfo.user;
-    const playCount = parseInt(user.playcount);
-    const artistCount = parseInt(user.artistcount);
-    const trackCount = parseInt(user.trackcount);
-    const albumCount = parseInt(user.albumcount);
-    const registered = new Date(parseInt(user.registered.unixtime) * 1000);
+    const playCount = parseInt(user.playcount) || 0;
     
     // 2. 获取最近播放记录
     const recentTracksData = await fetchData(`?method=user.getrecenttracks&user=${USERNAME}&limit=5`);
@@ -44,6 +40,31 @@ async function fetchAndUpdate() {
     const topAlbumsData = await fetchData(`?method=user.gettopalbums&user=${USERNAME}&period=7day&limit=3`);
     const topAlbums = topAlbumsData.topalbums.album;
 
+    // 生成最近在听内容
+    const recentTracksList = recentTracks.map(track => {
+      const isNowPlaying = track['@attr'] && track['@attr'].nowplaying === 'true';
+      const prefix = isNowPlaying ? '🎧 **正在播放：**' : '🎵';
+      return `${prefix} ${track.name} — ${track.artist['#text']}`;
+    }).join('\n');
+
+    // 生成热门艺术家内容
+    const topArtistsList = topArtists.map((artist, index) => {
+      const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
+      return `${rankEmoji} **${artist.name}** — ${parseInt(artist.playcount).toLocaleString()} 次播放`;
+    }).join('\n');
+
+    // 生成热门歌曲内容
+    const topTracksList = topTracks.map((track, index) => {
+      const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
+      return `${rankEmoji} ${track.name} — ${track.artist.name} (${parseInt(track.playcount).toLocaleString()}次)`;
+    }).join('\n');
+
+    // 生成热门专辑内容
+    const topAlbumsList = topAlbums.map((album, index) => {
+      const rankEmoji = ['🥇', '🥈', '🥉'][index];
+      return `${rankEmoji} **${album.name}** — ${album.artist.name}`;
+    }).join('\n');
+
     // 生成可视化内容
     let markdownContent = `### 🎵 音乐世界
 
@@ -51,35 +72,18 @@ async function fetchAndUpdate() {
 | 项目 | 数量 |
 |------|------|
 | 🎧 总播放次数 | ${playCount.toLocaleString()} |
-| 🎤 听过艺术家 | ${artistCount.toLocaleString()} |
-| 🎶 听过歌曲 | ${trackCount.toLocaleString()} |
-| 💿 听过专辑 | ${albumCount.toLocaleString()} |
-| 📅 加入时间 | ${registered.getFullYear()}年${registered.getMonth() + 1}月 |
 
 **🎧 正在播放 / 最近在听**  
-${recentTracks.map(track => {
-  const isNowPlaying = track['@attr'] && track['@attr'].nowplaying === 'true';
-  const prefix = isNowPlaying ? '🎧 **正在播放：**' : '🎵';
-  return `${prefix} ${track.name} — ${track.artist['#text']}`;
-}).join('\n')}
+${recentTracksList}
 
 **🌟 本周热门艺术家**  
-${topArtists.map((artist, index) => {
-  const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
-  return `${rankEmoji} **${artist.name}** — ${parseInt(artist.playcount).toLocaleString()} 次播放`;
-}).join('\n')}
+${topArtistsList}
 
 **🎶 本周热门歌曲**  
-${topTracks.map((track, index) => {
-  const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
-  return `${rankEmoji} ${track.name} — ${track.artist.name} (${parseInt(track.playcount).toLocaleString()}次)`;
-}).join('\n')}
+${topTracksList}
 
 **💿 本周热门专辑**  
-${topAlbums.map((album, index) => {
-  const rankEmoji = ['🥇', '🥈', '🥉'][index];
-  return `${rankEmoji} **${album.name}** — ${album.artist.name}`;
-}).join('\n')}
+${topAlbumsList}
 
 *📈 数据更新时间: ${new Date().toLocaleString('zh-CN')}*`;
 
