@@ -21,20 +21,20 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 总播放次数 | 82,393 |
-| 🎤 听过艺术家 | 19,037 位 |
+| 🎧 总播放次数 | 82,408 |
+| 🎤 听过艺术家 | 19,042 位 |
 | 💿 听过专辑 | 19,938 张 |
-| 🎶 听过歌曲 | 61,021 首 |
+| 🎶 听过歌曲 | 61,031 首 |
 
 **🎧 正在播放**  
-🎧 **正在播放：** 水音世界观--6月9日--平壤街头出现四川火锅店，反映了朝鲜服务业的发展和消费能力的提升，以及对中国经济合作的准备。 — 水音世界观
+🎧 **正在播放：** 我一句话都没说就被她俩盒完了？【魔裁二创/剧透警告】 — 狗狗月_
 
 **🎵 最近在听**  
-- 🎵 水音世界观--6月9日--平壤街头出现四川火锅店，反映了朝鲜服务业的发展和消费能力的提升，以及对中国经济合作的准备。 — 水音世界观
-- 🎵 ASMR | Friend Does Your Makeup In School RP 🏫💓 — Judy asmr
-- 🎵 当艾希遇到橘远 — 结城昨日奈老公
-- 🎵 水音世界观--6月9日---伊朗足协官员和球员因签证问题无法进入美国参加世界杯 — 水音世界观
-- 🎵 【童年阴影】怀旧舞曲《兔子舞》（企鹅舞） — 魚社長
+- 🎵 我一句话都没说就被她俩盒完了？【魔裁二创/剧透警告】 — 狗狗月_
+- 🎵 【东方】芙！兰！光！线！【羽衣工船（ういこうせん）】 — 铅笔Ennpitsu
+- 🎵 “德国真是太适合二次元了”！Heäschenlied — 饿了的白熊
+- 🎵 德国儿歌Heäschenlied—Schnuffel — 苏洛离Solakli
+- 🎵 德国儿歌Häschenparty—Schnuffel — 苏洛离Solakli
 
 **📈 播放趋势**  
 
@@ -64,6 +64,20 @@ Here are some ideas to get you started:
 
 ---
 
+### 📆 本月精选
+
+**🎤 本月艺术家**  
+- 🥇 **Relaxu**
+- 🥈 **Various Artists**
+- 🥉 **英语听力**
+
+**🎶 本月歌曲**  
+- 🥇 Echoes of the Past — Jason Hayes
+- 🥈 Satie - 3 Gymnopedies No.1 Lent et douloureux — V.A.
+- 🥉 Feelings for you — Fahrenheit, 田馥甄
+
+---
+
 ### 🏆 历史最佳
 
 **🎤 最爱的艺术家**  
@@ -82,20 +96,6 @@ Here are some ideas to get you started:
 
 ---
 
-### 📆 本月精选
-
-**🎤 本月艺术家**  
-- 🥇 **Relaxu**
-- 🥈 **Various Artists**
-- 🥉 **英语听力**
-
-**🎶 本月歌曲**  
-- 🥇 Echoes of the Past — Jason Hayes
-- 🥈 Satie - 3 Gymnopedies No.1 Lent et douloureux — V.A.
-- 🥉 Feelings for you — Fahrenheit, 田馥甄
-
----
-
 ### 🏷️ 我的音乐标签
 暂无标签
 
@@ -108,5 +108,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/6/10 10:41:12*
+*更新时间: 2026/6/10 11:32:51*
 <!-- LASTFM_END -->
