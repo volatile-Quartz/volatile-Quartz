@@ -134,9 +134,9 @@ async function fetchAndUpdate() {
 | 项目 | 数据 |
 |------|------|
 | 🎧 总播放次数 | ${playCount.toLocaleString()} |
-| 🎤 本周艺术家 | ${topArtistsWeek.topartists.artist.length} 位 |
-| � 本周歌曲 | ${topTracksWeek.toptracks.track.length} 首 |
-| � 本周专辑 | ${topAlbumsWeek.topalbums.album.length} 张 |
+| 🎤 听过艺术家 | ${topArtistsAll.topartists.artist.length} 位 |
+| 🎶 听过歌曲 | ${topTracksAll.toptracks.track.length} 首 |
+| 💿 听过专辑 | ${topAlbumsAll.topalbums.album.length} 张 |
 
 **🎧 正在播放**  
 ${nowPlayingSection}
