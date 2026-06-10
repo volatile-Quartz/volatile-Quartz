@@ -67,10 +67,13 @@ async function fetchAndUpdate() {
     const weeklyChartData = await fetchData(`method=user.getweeklychartlist&user=${USERNAME}&limit=4`);
     const weeklyCharts = weeklyChartData.chartlist ? weeklyChartData.chartlist.chart : [];
 
-    // 生成正在播放内容
-    const nowPlayingSection = nowPlaying 
-      ? `🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}`
-      : `🎵 暂无正在播放的歌曲`;
+    // 生成正在播放内容（无正在播放时不显示该板块）
+    const nowPlayingSection = nowPlaying
+      ? `**🎧 正在播放**  
+🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}
+
+`
+      : '';
 
     // 生成最近在听内容（列表形式）
     const recentTracksList = recentTracks.map(track => {
@@ -142,10 +145,7 @@ async function fetchAndUpdate() {
 | 💿 听过专辑 | ${albumCount.toLocaleString()} 张 |
 | 🎶 听过歌曲 | ${trackCount.toLocaleString()} 首 |
 
-**🎧 正在播放**  
-${nowPlayingSection}
-
-**🎵 最近在听**  
+${nowPlayingSection}**🎵 最近在听**  
 ${recentTracksList}
 
 **📈 播放趋势**  
@@ -166,16 +166,6 @@ ${topAlbumsWeekList}
 
 ---
 
-### 🏆 历史最佳
-
-**🎤 最爱的艺术家**  
-${topArtistsAllList}
-
-**🎶 最爱的歌曲**  
-${topTracksAllList}
-
----
-
 ### 📆 本月精选
 
 **🎤 本月艺术家**  
@@ -183,6 +173,16 @@ ${topArtistsMonthList}
 
 **🎶 本月歌曲**  
 ${topTracksMonthList}
+
+---
+
+### 🏆 历史最佳
+
+**🎤 最爱的艺术家**  
+${topArtistsAllList}
+
+**🎶 最爱的歌曲**  
+${topTracksAllList}
 
 ---
 
