@@ -4,8 +4,8 @@ const fs = require('fs');
 const API_KEY = process.env.LASTFM_API_KEY;
 const USERNAME = process.env.LASTFM_USERNAME;
 
-async function fetchData(endpoint) {
-  const url = `https://ws.audioscrobbler.com/2.0/${endpoint}&api_key=${API_KEY}&format=json`;
+async function fetchData(params) {
+  const url = `https://ws.audioscrobbler.com/2.0/?${params}&api_key=${API_KEY}&format=json`;
   const response = await fetch(url);
   return response.json();
 }
@@ -20,47 +20,51 @@ async function fetchAndUpdate() {
     console.log('📡 正在获取 Last.fm 数据...');
     
     // 1. 获取用户信息和统计
-    const userInfo = await fetchData(`?method=user.getinfo&user=${USERNAME}`);
+    const userInfo = await fetchData(`method=user.getinfo&user=${USERNAME}`);
     const user = userInfo.user;
     const playCount = parseInt(user.playcount) || 0;
     const joinDate = new Date(user.registered.unixtime * 1000);
     
     // 2. 获取最近播放记录
-    const recentTracksData = await fetchData(`?method=user.getrecenttracks&user=${USERNAME}&limit=10`);
+    const recentTracksData = await fetchData(`method=user.getrecenttracks&user=${USERNAME}&limit=10`);
     const allRecentTracks = recentTracksData.recenttracks.track;
     const nowPlaying = allRecentTracks.find(track => track['@attr'] && track['@attr'].nowplaying === 'true');
     const recentTracks = allRecentTracks.filter(track => !(track['@attr'] && track['@attr'].nowplaying === 'true')).slice(0, 5);
     
     // 3. 获取本周热门艺术家/歌曲/专辑
     const [topArtistsWeek, topTracksWeek, topAlbumsWeek] = await Promise.all([
-      fetchData(`?method=user.gettopartists&user=${USERNAME}&period=7day&limit=5`),
-      fetchData(`?method=user.gettoptracks&user=${USERNAME}&period=7day&limit=5`),
-      fetchData(`?method=user.gettopalbums&user=${USERNAME}&period=7day&limit=3`)
+      fetchData(`method=user.gettopartists&user=${USERNAME}&period=7day&limit=5`),
+      fetchData(`method=user.gettoptracks&user=${USERNAME}&period=7day&limit=5`),
+      fetchData(`method=user.gettopalbums&user=${USERNAME}&period=7day&limit=3`)
     ]);
     
     // 4. 获取全部时间热门艺术家/歌曲/专辑
-    const [topArtistsAll, topTracksAll, topAlbumsAll] = await Promise.all([
-      fetchData(`?method=user.gettopartists&user=${USERNAME}&period=overall&limit=5`),
-      fetchData(`?method=user.gettoptracks&user=${USERNAME}&period=overall&limit=5`),
-      fetchData(`?method=user.gettopalbums&user=${USERNAME}&period=overall&limit=3`)
+    const [topArtistsAll, topTracksAll, topAlbumsAll, topAlbumsTotal] = await Promise.all([
+      fetchData(`method=user.gettopartists&user=${USERNAME}&period=overall&limit=5`),
+      fetchData(`method=user.gettoptracks&user=${USERNAME}&period=overall&limit=5`),
+      fetchData(`method=user.gettopalbums&user=${USERNAME}&period=overall&limit=3`),
+      fetchData(`method=user.gettopalbums&user=${USERNAME}&period=overall&limit=1`)
     ]);
+    const artistCount = parseInt(topArtistsAll.topartists['@attr'].total) || 0;
+    const trackCount = parseInt(topTracksAll.toptracks['@attr'].total) || 0;
+    const albumCount = parseInt(topAlbumsTotal.topalbums['@attr'].total) || 0;
     
     // 5. 获取月度热门艺术家/歌曲
     const [topArtistsMonth, topTracksMonth] = await Promise.all([
-      fetchData(`?method=user.gettopartists&user=${USERNAME}&period=1month&limit=3`),
-      fetchData(`?method=user.gettoptracks&user=${USERNAME}&period=1month&limit=3`)
+      fetchData(`method=user.gettopartists&user=${USERNAME}&period=1month&limit=3`),
+      fetchData(`method=user.gettoptracks&user=${USERNAME}&period=1month&limit=3`)
     ]);
     
     // 6. 获取用户标签
-    const tagsData = await fetchData(`?method=user.gettags&user=${USERNAME}&limit=10`);
+    const tagsData = await fetchData(`method=user.gettags&user=${USERNAME}&limit=10`);
     const tags = tagsData.tags ? tagsData.tags.tag : [];
     
     // 7. 获取好友列表
-    const friendsData = await fetchData(`?method=user.getfriends&user=${USERNAME}&limit=5`);
+    const friendsData = await fetchData(`method=user.getfriends&user=${USERNAME}&limit=5`);
     const friends = friendsData.friends ? friendsData.friends.user : [];
     
     // 8. 获取周统计数据
-    const weeklyChartData = await fetchData(`?method=user.getweeklychartlist&user=${USERNAME}&limit=4`);
+    const weeklyChartData = await fetchData(`method=user.getweeklychartlist&user=${USERNAME}&limit=4`);
     const weeklyCharts = weeklyChartData.chartlist ? weeklyChartData.chartlist.chart : [];
 
     // 生成正在播放内容
@@ -134,9 +138,9 @@ async function fetchAndUpdate() {
 | 项目 | 数据 |
 |------|------|
 | 🎧 总播放次数 | ${playCount.toLocaleString()} |
-| 🎤 听过艺术家 | ${topArtistsAll.topartists.artist.length} 位 |
-| 🎶 听过歌曲 | ${topTracksAll.toptracks.track.length} 首 |
-| 💿 听过专辑 | ${topAlbumsAll.topalbums.album.length} 张 |
+| 🎤 听过艺术家 | ${artistCount.toLocaleString()} 位 |
+| 💿 听过专辑 | ${albumCount.toLocaleString()} 张 |
+| 🎶 听过歌曲 | ${trackCount.toLocaleString()} 首 |
 
 **🎧 正在播放**  
 ${nowPlayingSection}
