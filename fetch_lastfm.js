@@ -46,58 +46,51 @@ async function fetchAndUpdate() {
 
     // 生成正在播放内容
     const nowPlayingSection = nowPlaying 
-      ? `🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}`
-      : `🎵 暂无正在播放的歌曲`;
+      ? `🎧 **正在播放：** ${nowPlaying.name} — ${nowPlaying.artist['#text']}\n`
+      : `🎵 暂无正在播放的歌曲\n`;
 
     // 生成最近在听内容
     const recentTracksList = recentTracks.map(track => {
       return `🎵 ${track.name} — ${track.artist['#text']}`;
-    }).join('\n');
+    }).join('\n') + '\n';
 
     // 生成热门艺术家内容
     const topArtistsList = topArtists.map((artist, index) => {
       const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
       return `${rankEmoji} **${artist.name}** — ${parseInt(artist.playcount).toLocaleString()} 次播放`;
-    }).join('\n');
+    }).join('\n') + '\n';
 
     // 生成热门歌曲内容
     const topTracksList = topTracks.map((track, index) => {
       const rankEmoji = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'][index];
       return `${rankEmoji} ${track.name} — ${track.artist.name} (${parseInt(track.playcount).toLocaleString()}次)`;
-    }).join('\n');
+    }).join('\n') + '\n';
 
     // 生成热门专辑内容
     const topAlbumsList = topAlbums.map((album, index) => {
       const rankEmoji = ['🥇', '🥈', '🥉'][index];
       return `${rankEmoji} **${album.name}** — ${album.artist.name}`;
-    }).join('\n');
+    }).join('\n') + '\n';
 
     // 生成可视化内容
-    let markdownContent = `### 🎵 音乐世界
-
-**📊 统计概览**  
-| 项目 | 数量 |
-|------|------|
-| 🎧 总播放次数 | ${playCount.toLocaleString()} |
-| 🎤 本周活跃艺术家 | ${topArtists.length} 位 |
-| 🎶 本周播放歌曲 | ${topTracks.reduce((sum, t) => sum + parseInt(t.playcount), 0)} 次 |
-
-**🎧 正在播放**  
-${nowPlayingSection}
-
-**🎵 最近在听**  
-${recentTracksList}
-
-**🌟 本周热门艺术家**  
-${topArtistsList}
-
-**🎶 本周热门歌曲**  
-${topTracksList}
-
-**💿 本周热门专辑**  
-${topAlbumsList}
-
-*📈 数据更新时间: ${new Date().toLocaleString('zh-CN')}*`;
+    let markdownContent = `### 🎵 音乐世界\n\n` +
+                         `**📊 统计概览**  \n` +
+                         `| 项目 | 数量 |\n` +
+                         `|------|------|\n` +
+                         `| 🎧 总播放次数 | ${playCount.toLocaleString()} |\n` +
+                         `| 🎤 本周活跃艺术家 | ${topArtists.length} 位 |\n` +
+                         `| 🎶 本周播放歌曲 | ${topTracks.reduce((sum, t) => sum + parseInt(t.playcount), 0)} 次 |\n\n` +
+                         `**🎧 正在播放**  \n` +
+                         `${nowPlayingSection}\n` +
+                         `**🎵 最近在听**  \n` +
+                         `${recentTracksList}\n` +
+                         `**🌟 本周热门艺术家**  \n` +
+                         `${topArtistsList}\n` +
+                         `**🎶 本周热门歌曲**  \n` +
+                         `${topTracksList}\n` +
+                         `**💿 本周热门专辑**  \n` +
+                         `${topAlbumsList}\n` +
+                         `*📈 数据更新时间: ${new Date().toLocaleString('zh-CN')}*`;
 
     // 读取 README.md
     const readmePath = './README.md';
