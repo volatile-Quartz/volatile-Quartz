@@ -134,9 +134,9 @@ async function fetchAndUpdate() {
 | 项目 | 数据 |
 |------|------|
 | 🎧 总播放次数 | ${playCount.toLocaleString()} |
-| 📅 加入时间 | ${joinDate.getFullYear()}年${joinDate.getMonth() + 1}月 |
-| 🏷️ 自定义标签 | ${tags.length} 个 |
-| 👥 Last.fm 好友 | ${friends.length} 位 |
+| 🎤 本周艺术家 | ${topArtistsWeek.topartists.artist.length} 位 |
+| � 本周歌曲 | ${topTracksWeek.toptracks.track.length} 首 |
+| � 本周专辑 | ${topAlbumsWeek.topalbums.album.length} 张 |
 
 **🎧 正在播放**  
 ${nowPlayingSection}
