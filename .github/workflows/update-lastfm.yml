@@ -1,0 +1,32 @@
+name: Update Last.fm Data
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '*/30 * * * *'   # 每30分钟自动运行
+  workflow_dispatch:          # 允许手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: Install dependencies
+      run: npm install
+    - name: Run update script
+      env:
+        LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+        LASTFM_USERNAME: ${{ secrets.LASTFM_USERNAME }}
+      run: node fetch_lastfm.js
+    - name: Commit and push changes
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add README.md
+        git diff --staged --quiet || git commit -m "chore: update last.fm listening data"
+        git push
