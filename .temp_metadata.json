@@ -35,9 +35,9 @@
     "title": "「Diary」2026",
     "filename": "Diary2026",
     "label": "my-diary",
-    "updated": "2026-06-23T03:16:44+00:00",
-    "word_count": 8042,
-    "image_count": 0
+    "updated": "2026-08-15T06:15:38+00:00",
+    "word_count": 52772,
+    "image_count": 1
   },
   "27": {
     "title": "「Diary」2025",
@@ -134,5 +134,13 @@
     "updated": "2026-06-23T16:33:57+00:00",
     "word_count": 1064,
     "image_count": 1
+  },
+  "30": {
+    "title": "Bump the github-actions group across 1 directory with 2 updates",
+    "filename": "Bump.the.github-actions.group.across.1.directory.with.2.updates",
+    "label": "no-label",
+    "updated": "2026-07-21T16:34:35+00:00",
+    "word_count": 1472,
+    "image_count": 0
   }
 }
