@@ -36,9 +36,9 @@ Here are some ideas to get you started:
 - 🎵 We'll Meet Again — THEFATRAT&LAURA BREHM
 
 **📈 播放趋势**  
-- 📅 本周: 0 次播放
-- 📆 2/20: 0 次播放
-- 📆 2/27: 0 次播放
+- 📅 本周: 294 次播放
+- 📆 8/9: 651 次播放
+- 📆 8/2: 498 次播放
 
 ---
 
@@ -109,5 +109,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/8/27 03:26:49*
+*更新时间: 2026/8/27 05:40:23*
 <!-- LASTFM_END -->

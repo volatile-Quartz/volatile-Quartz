@@ -40,7 +40,13 @@ async function fetchAndUpdate() {
     const recentTracksData = await fetchData(`method=user.getrecenttracks&user=${USERNAME}&limit=10`);
     const allRecentTracks = recentTracksData.recenttracks.track;
     const nowPlaying = allRecentTracks.find(track => track['@attr'] && track['@attr'].nowplaying === 'true');
-    const recentTracks = allRecentTracks.filter(track => !(track['@attr'] && track['@attr'].nowplaying === 'true')).slice(0, 5);
+    const recentHistory = allRecentTracks.filter(track => !(track['@attr'] && track['@attr'].nowplaying === 'true'));
+    // 去除连续重复的相同歌曲（同一首歌连续播放两次只显示一条），再取最近 3 条
+    const recentTracks = recentHistory.filter(
+      (track, index) => index === 0
+        || !(track.name === recentHistory[index - 1].name
+          && track.artist['#text'] === recentHistory[index - 1].artist['#text'])
+    ).slice(0, 3);
     
     // 3. 获取本周热门艺术家/歌曲/专辑
     const [topArtistsWeek, topTracksWeek, topAlbumsWeek] = await Promise.all([
@@ -60,21 +66,15 @@ async function fetchAndUpdate() {
     const trackCount = parseInt(topTracksAll.toptracks['@attr'].total) || 0;
     const albumCount = parseInt(topAlbumsTotal.topalbums['@attr'].total) || 0;
     
-    // 5. 获取月度热门艺术家/歌曲
-    const [topArtistsMonth, topTracksMonth] = await Promise.all([
-      fetchData(`method=user.gettopartists&user=${USERNAME}&period=1month&limit=3`),
-      fetchData(`method=user.gettoptracks&user=${USERNAME}&period=1month&limit=3`)
-    ]);
-    
-    // 6. 获取用户标签
+    // 5. 获取用户标签
     const tagsData = await fetchData(`method=user.gettags&user=${USERNAME}&limit=10`);
     const tags = tagsData.tags ? tagsData.tags.tag : [];
     
-    // 7. 获取好友列表
+    // 6. 获取好友列表
     const friendsData = await fetchData(`method=user.getfriends&user=${USERNAME}&limit=5`);
     const friends = friendsData.friends ? friendsData.friends.user : [];
     
-    // 8. 获取周播放趋势（最近 3 个自然周的总播放次数）
+    // 7. 获取周播放趋势（最近 3 个自然周的总播放次数）
     const weeklyChartData = await fetchData(`method=user.getweeklychartlist&user=${USERNAME}`);
     // getweeklychartlist 返回的 chart 列表按时间升序排列（最旧在前）。
     // 直接 slice(0, 3) 会永远取到账号最早的 3 周（远古数据播放数为 0），
@@ -135,20 +135,15 @@ ${weeklyStats}
       return `- ${rankEmoji} ${track.name} — ${track.artist.name}`;
     }).join('\n');
 
-    // 生成本月热门艺术家内容（列表形式）
-    const topArtistsMonthList = topArtistsMonth.topartists.artist.map((artist, index) => {
-      const rankEmoji = ['🥇', '🥈', '🥉'][index];
-      return `- ${rankEmoji} **${artist.name}**`;
-    }).join('\n');
+    // 生成标签云（无标签时整块隐藏，不显示"暂无标签"占位）
+    const tagsSection = tags.length > 0
+      ? `### 🏷️ 我的音乐标签
+${tags.slice(0, 8).map(tag => `#${tag.name}`).join(' ')}
 
-    // 生成本月热门歌曲内容（列表形式）
-    const topTracksMonthList = topTracksMonth.toptracks.track.map((track, index) => {
-      const rankEmoji = ['🥇', '🥈', '🥉'][index];
-      return `- ${rankEmoji} ${track.name} — ${track.artist.name}`;
-    }).join('\n');
+---
 
-    // 生成标签云
-    const tagsList = tags.length > 0 ? tags.slice(0, 8).map(tag => `#${tag.name}`).join(' ') : '暂无标签';
+`
+      : '';
 
     // 生成好友列表（列表形式）
     const friendsList = friends.length > 0 ? friends.map(friend => `- 👤 [${friend.name}](https://www.last.fm/user/${friend.name})`).join('\n') : '暂无好友';
@@ -184,16 +179,6 @@ ${topAlbumsWeekList}
 
 ---
 
-### 📆 本月精选
-
-**🎤 本月艺术家**  
-${topArtistsMonthList}
-
-**🎶 本月歌曲**  
-${topTracksMonthList}
-
----
-
 ### 🏆 历史最佳
 
 **🎤 最爱的艺术家**  
@@ -204,12 +189,7 @@ ${topTracksAllList}
 
 ---
 
-### 🏷️ 我的音乐标签
-${tagsList}
-
----
-
-### 👥 Last.fm 好友
+${tagsSection}### 👥 Last.fm 好友
 ${friendsList}
 
 *更新时间: ${new Date().toLocaleString('zh-CN')}*`;
