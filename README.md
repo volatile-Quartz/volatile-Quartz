@@ -31,9 +31,7 @@ Here are some ideas to get you started:
 **🎵 最近在听**  
 - 🎵 二次元听力测试 (翻奏: Kyle Xian) — Kyle Xian
 - 🎵 あいしてやまない — しぐれうい
-- 🎵 あいしてやまない — しぐれうい
 - 🎵 遺言 — HimeHina
-- 🎵 We'll Meet Again — THEFATRAT&LAURA BREHM
 
 **📈 播放趋势**  
 - 📅 本周: 294 次播放
@@ -65,20 +63,6 @@ Here are some ideas to get you started:
 
 ---
 
-### 📆 本月精选
-
-**🎤 本月艺术家**  
-- 🥇 **The Pocket Gods**
-- 🥈 **GuluLand ASMR**
-- 🥉 **水音世界观**
-
-**🎶 本月歌曲**  
-- 🥇 Penthesilea:I. Aufbruch der Amazonen nach Troja — Daniel Barenboim/Orchestre de Paris
-- 🥈 The Accomplice — Disasterpeace
-- 🥉 MemoryLocked — Plum
-
----
-
 ### 🏆 历史最佳
 
 **🎤 最爱的艺术家**  
@@ -97,11 +81,6 @@ Here are some ideas to get you started:
 
 ---
 
-### 🏷️ 我的音乐标签
-暂无标签
-
----
-
 ### 👥 Last.fm 好友
 - 👤 [Gishki](https://www.last.fm/user/Gishki)
 - 👤 [Agentj118](https://www.last.fm/user/Agentj118)
@@ -109,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/8/27 05:40:23*
+*更新时间: 2026/8/27 05:48:34*
 <!-- LASTFM_END -->
