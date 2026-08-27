@@ -16,6 +16,8 @@
 - 推荐直接使用一键脚本（自动完成同步 + 提交 + 推送）：
   `GITHUB_TOKEN=<token> ./scripts/push.sh "提交信息" [文件...]`
   脚本不会把 token 写入仓库；token 仅通过环境变量传入。
+- 脚本未指定文件时的默认暂存列表：`fetch_lastfm.js`、`scripts/push.sh`、`AGENTS.md`
+  （脚本会显式 `git add` 这些文件，避免 `git add -A` 误带入无关文件）
 
 ## README.md 不要手改
 
