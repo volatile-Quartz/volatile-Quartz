@@ -1,0 +1,21 @@
+{
+  "name": "bingdu748",
+  "version": "1.0.0",
+  "description": "<!--\r **bingdu748/bingdu748** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bingdu748/bingdu748.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bingdu748/bingdu748/issues"
+  },
+  "homepage": "https://github.com/bingdu748/bingdu748#readme"
+}
