@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 <!--
-**bingdu748/bingdu748** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**volatile-Quartz/volatile-Quartz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -21,45 +21,45 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 85,561 次 |
-| 🎤 歌手总计 | 20,011 位 |
-| 💿 专辑总计 | 20,910 张 |
-| 🎶 歌曲总计 | 63,477 首 |
+| 🎧 播放总次数 | 85,664 次 |
+| 🎤 歌手总计 | 20,054 位 |
+| 💿 专辑总计 | 20,956 张 |
+| 🎶 歌曲总计 | 63,574 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 二次元听力测试 (翻奏: Kyle Xian) — Kyle Xian
-- 🎵 あいしてやまない — しぐれうい
-- 🎵 遺言 — HimeHina
+- 🎵 水音世界观--8月28日--美军航母疲于奔命，特朗普自封“史上最伟大”！俄乌全境轰炸突发大变局！ — 水音世界观
+- 🎵 ASMR 🌍Travel with me on iPad✈️ Show & Tell, Chinese Whispering — LaurasPillow ASMR
+- 🎵 すすめ!ウルトラマンゼロ (前进吧！赛罗奥特曼) — ボイジャー
 
 **📈 播放趋势**  
-- 📅 本周: 294 次播放
+- 📅 本周: 173 次播放
+- 📆 8/16: 294 次播放
 - 📆 8/9: 651 次播放
-- 📆 8/2: 498 次播放
 
 ---
 
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **라임라이트** — 13 次播放
-- 🥈 **에이프릴 피아노** — 5 次播放
-- 🥉 **YING ASMR** — 4 次播放
-- 4️⃣ **しぐれうい** — 4 次播放
-- 5️⃣ **Peaky P-key** — 3 次播放
+- 🥇 **Jam Thieves** — 6 次播放
+- 🥈 **Annix** — 5 次播放
+- 🥉 **LaurasPillow ASMR** — 5 次播放
+- 4️⃣ **Macky Gee** — 4 次播放
+- 5️⃣ **しぐれうい** — 4 次播放
 
 **🎶 热门歌曲**  
-- 🥇 amaoto — a_hisa
-- 🥈 DM — AMPMCM
+- 🥇 World's End, Girl's Rondo (Asterisk DnB Remix) — Asterisk
+- 🥈 COSMOS(Extended) — BlackY's BEATFLOOR
 - 🥉 レム — DOLLCHESTRA
-- 4️⃣ Eee — Elephante
-- 5️⃣ Plactichu — Fei
+- 4️⃣ 虚 — Halv
+- 5️⃣ Zero Gravity — Tatsunoshin&Aira Arere
 
 **💿 热门专辑**  
-- 🥇 **Best Jazz Masterpieces Piano For Healing** — 라임라이트
-- 🥈 **fiction** — しぐれうい
-- 🥉 **D4DJ** — Peaky P-key
+- 🥇 **Jazzing EP** — Annix
+- 🥈 **It's A Gee Thing** — Macky Gee
+- 🥉 **fiction** — しぐれうい
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/8/27 06:14:15*
+*更新时间: 2026/8/31 03:56:18*
 <!-- LASTFM_END -->

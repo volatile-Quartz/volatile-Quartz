@@ -5,7 +5,7 @@
 # 默认暂存 fetch_lastfm.js / scripts/push.sh / AGENTS.md（避免 git add -A 误带入无关文件）
 set -u
 
-REPO_URL="https://x-access-token:${GITHUB_TOKEN:-}@github.com/bingdu748/bingdu748.git"
+REPO_URL="https://x-access-token:${GITHUB_TOKEN:-}@github.com/volatile-Quartz/volatile-Quartz.git"
 if [ -z "${GITHUB_TOKEN:-}" ]; then
   echo "错误: 请设置环境变量 GITHUB_TOKEN（仓库凭证）" >&2
   exit 1
@@ -33,8 +33,8 @@ if git diff --cached --quiet; then
 fi
 
 echo "==> git commit"
-git -c user.name="bingdu748" \
-    -c user.email="50004335+bingdu748@users.noreply.github.com" \
+git -c user.name="volatile-Quartz" \
+    -c user.email="50004335+volatile-Quartz@users.noreply.github.com" \
     commit -m "$MSG" || exit 1
 
 echo "==> git pull --rebase（远程 main 常被机器人自动推进）"

@@ -2,8 +2,10 @@
 
 ## 仓库是什么
 
-`bingdu748/bingdu748` 是 GitHub 个人主页仓库。`README.md` 中的「音乐世界」板块由
+`volatile-Quartz/volatile-Quartz` 是 GitHub 个人主页仓库。`README.md` 中的「音乐世界」板块由
 `.github/workflows/update-lastfm.yml` 每 30 分钟从 Last.fm API 拉取数据自动生成并自动提交到 `main`。
+
+> 注意：主页 README 只有在**仓库名与用户名完全一致**时才展示。若后续再次改名，仓库需同步改名。
 
 ## 极重要：push 前必须先同步
 
@@ -29,4 +31,4 @@
 - Last.fm `user.getweeklychartlist` 返回**升序（最旧在前）**，取最近 3 周要先按 `from` 倒序
   （`getWeeklyPlayCount` 依赖此顺序，参见第 7 步注释）
 - GitHub Actions 使用的 secrets：`LASTFM_API_KEY`、`LASTFM_USERNAME`
-- 提交身份统一用 `-c user.name=bingdu748 -c user.email=50004335+bingdu748@users.noreply.github.com`（不写全局 config）
+- 提交身份统一用 `-c user.name=volatile-Quartz -c user.email=50004335+volatile-Quartz@users.noreply.github.com`（不写全局 config）
