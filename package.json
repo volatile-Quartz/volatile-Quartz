@@ -1,7 +1,7 @@
 {
-  "name": "bingdu748",
+  "name": "volatile-Quartz",
   "version": "1.0.0",
-  "description": "<!--\r **bingdu748/bingdu748** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "description": "<!--\r **volatile-Quartz/volatile-Quartz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,11 +11,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bingdu748/bingdu748.git"
+    "url": "git+https://github.com/volatile-Quartz/volatile-Quartz.git"
   },
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/bingdu748/bingdu748/issues"
+    "url": "https://github.com/volatile-Quartz/volatile-Quartz/issues"
   },
-  "homepage": "https://github.com/bingdu748/bingdu748#readme"
+  "homepage": "https://github.com/volatile-Quartz/volatile-Quartz#readme"
 }
