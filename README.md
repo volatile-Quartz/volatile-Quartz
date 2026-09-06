@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 85,957 次 |
-| 🎤 歌手总计 | 20,111 位 |
-| 💿 专辑总计 | 21,013 张 |
-| 🎶 歌曲总计 | 63,793 首 |
+| 🎧 播放总次数 | 85,976 次 |
+| 🎤 歌手总计 | 20,119 位 |
+| 💿 专辑总计 | 21,017 张 |
+| 🎶 歌曲总计 | 63,807 首 |
 
-
+🎧 **正在播放：** 消えない温度 (不会消失的温度) — Kotoha
 
 **🎵 最近在听**  
-- 🎵 Music To Soothe The Savage Snake Plant — Mort Garson
-- 🎵 A Mellow Mood for Maidenhair — Mort Garson
-- 🎵 You Don't Have To Walk A Begonia — Mort Garson
+- 🎵 消えない温度 (不会消失的温度) — Kotoha
+- 🎵 Feeling The Rain — MoreanP
+- 🎵 Frozen World — 無力P
 
 **📈 播放趋势**  
 - 📅 本周: 173 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/5 23:34:15*
+*更新时间: 2026/9/6 03:09:39*
 <!-- LASTFM_END -->
