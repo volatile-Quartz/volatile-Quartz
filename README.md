@@ -34,9 +34,9 @@ Here are some ideas to get you started:
 - 🎵 【二两解说版】《梦限大》官漫第4话上“昏睡藤都子？线下来相会？”【MyGO、Ave Mujica、薇欧拉、某二两】 — 某二两
 
 **📈 播放趋势**  
-- 📅 本周: 173 次播放
+- 📅 本周: 340 次播放
+- 📆 8/23: 173 次播放
 - 📆 8/16: 294 次播放
-- 📆 8/9: 651 次播放
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/6 08:02:27*
+*更新时间: 2026/9/6 12:14:34*
 <!-- LASTFM_END -->
