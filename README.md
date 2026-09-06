@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 85,976 次 |
-| 🎤 歌手总计 | 20,119 位 |
-| 💿 专辑总计 | 21,017 张 |
-| 🎶 歌曲总计 | 63,807 首 |
+| 🎧 播放总次数 | 86,002 次 |
+| 🎤 歌手总计 | 20,120 位 |
+| 💿 专辑总计 | 21,022 张 |
+| 🎶 歌曲总计 | 63,827 首 |
 
-🎧 **正在播放：** 消えない温度 (不会消失的温度) — Kotoha
+
 
 **🎵 最近在听**  
-- 🎵 消えない温度 (不会消失的温度) — Kotoha
-- 🎵 Feeling The Rain — MoreanP
-- 🎵 Frozen World — 無力P
+- 🎵 对付病娇最好的办法就是^-^假装喜欢她 — 墨墨和柠柠_治愈版
+- 🎵 【补档】【MyGO#129】“为什么要突然伸舌头？”睦祥冲刺！初华破防！【若叶睦、丰川祥子、三角初华】【母鸡卡、MyGO、迷途之子、颂乐人偶】【某二两】 — 某二两
+- 🎵 【二两解说版】《梦限大》官漫第4话上“昏睡藤都子？线下来相会？”【MyGO、Ave Mujica、薇欧拉、某二两】 — 某二两
 
 **📈 播放趋势**  
 - 📅 本周: 173 次播放
@@ -45,9 +45,9 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **White Noise Meditation** — 45 次播放
 - 🥈 **Relaxu** — 34 次播放
-- 🥉 **LaurasPillow ASMR** — 10 次播放
-- 4️⃣ **Mort Garson** — 10 次播放
-- 5️⃣ **張信哲** — 10 次播放
+- 🥉 **万晓利** — 20 次播放
+- 4️⃣ **LaurasPillow ASMR** — 10 次播放
+- 5️⃣ **Mort Garson** — 10 次播放
 
 **🎶 热门歌曲**  
 - 🥇 Fan Noise to Refresh the Mind, Pt.18 — White Noise Meditation
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/6 03:09:39*
+*更新时间: 2026/9/6 08:02:27*
 <!-- LASTFM_END -->
