@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,007 次 |
-| 🎤 歌手总计 | 20,123 位 |
+| 🎧 播放总次数 | 86,013 次 |
+| 🎤 歌手总计 | 20,126 位 |
 | 💿 专辑总计 | 21,025 张 |
-| 🎶 歌曲总计 | 63,830 首 |
+| 🎶 歌曲总计 | 63,835 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 Paranoia — 初音ミク、つなまる
-- 🎵 Fallenera — Plum
-- 🎵 線香花火 — a_hisa
+- 🎵 ASMR Safe & Cozy Affirmations and 🐑 Counting Sheep 1-100 for Deep Sleep💤🌛 — Boboran ASMR
+- 🎵 【爱灯】我只对你有感觉 — AnonTokyo董事长
+- 🎵 ❤️入住楚楚大人家了哦~❤️ — 漆晴弦卷心
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **White Noise Meditation** — 45 次播放
 - 🥈 **Relaxu** — 34 次播放
 - 🥉 **万晓利** — 20 次播放
-- 4️⃣ **LaurasPillow ASMR** — 10 次播放
-- 5️⃣ **Mort Garson** — 10 次播放
+- 4️⃣ **Mort Garson** — 10 次播放
+- 5️⃣ **張信哲** — 10 次播放
 
 **🎶 热门歌曲**  
 - 🥇 Fan Noise to Refresh the Mind, Pt.18 — White Noise Meditation
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/6 15:37:50*
+*更新时间: 2026/9/6 18:02:41*
 <!-- LASTFM_END -->
