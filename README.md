@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,016 次 |
+| 🎧 播放总次数 | 86,024 次 |
 | 🎤 歌手总计 | 20,126 位 |
-| 💿 专辑总计 | 21,025 张 |
-| 🎶 歌曲总计 | 63,838 首 |
+| 💿 专辑总计 | 21,026 张 |
+| 🎶 歌曲总计 | 63,843 首 |
 
-🎧 **正在播放：** Event Horizon — Plum
+🎧 **正在播放：** [ASMR] Reading The Little Prince in Chinese | Soft Spoken | Page Turning Paper Sounds | 小王子 中文助眠 — YING ASMR
 
 **🎵 最近在听**  
-- 🎵 Event Horizon — Plum
-- 🎵 Lacrimosa — 十指流玉
-- 🎵 水音世界观--9月5日 ---美智库公然鼓吹炸毁中国数据中心！拦不住AI崛起要掀桌？东风快递与歼20已拉满戒备！ — 水音世界观
+- 🎵 [ASMR] Reading The Little Prince in Chinese | Soft Spoken | Page Turning Paper Sounds | 小王子 中文助眠 — YING ASMR
+- 🎵 ASMR中文 | Scratching & Tapping on Various Objects — GuluLand ASMR
+- 🎵 妈妈 — 万晓利
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -45,7 +45,7 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **White Noise Meditation** — 45 次播放
 - 🥈 **Relaxu** — 34 次播放
-- 🥉 **万晓利** — 20 次播放
+- 🥉 **万晓利** — 24 次播放
 - 4️⃣ **Mort Garson** — 10 次播放
 - 5️⃣ **張信哲** — 10 次播放
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/7 11:41:36*
+*更新时间: 2026/9/7 17:19:39*
 <!-- LASTFM_END -->
