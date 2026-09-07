@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,025 张 |
 | 🎶 歌曲总计 | 63,837 首 |
 
-🎧 **正在播放：** 水音世界观--9月4日--多国掀起“黄金搬家潮”！荷兰暗中自纽约撤走86吨黄金，40万亿美债引爆信任崩塌！ — 水音世界观
+
 
 **🎵 最近在听**  
 - 🎵 水音世界观--9月4日--多国掀起“黄金搬家潮”！荷兰暗中自纽约撤走86吨黄金，40万亿美债引爆信任崩塌！ — 水音世界观
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/7 00:42:02*
+*更新时间: 2026/9/7 05:42:40*
 <!-- LASTFM_END -->
