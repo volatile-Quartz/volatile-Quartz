@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,024 次 |
-| 🎤 歌手总计 | 20,126 位 |
+| 🎧 播放总次数 | 86,028 次 |
+| 🎤 歌手总计 | 20,128 位 |
 | 💿 专辑总计 | 21,026 张 |
-| 🎶 歌曲总计 | 63,843 首 |
+| 🎶 歌曲总计 | 63,846 首 |
 
-🎧 **正在播放：** [ASMR] Reading The Little Prince in Chinese | Soft Spoken | Page Turning Paper Sounds | 小王子 中文助眠 — YING ASMR
+🎧 **正在播放：** ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
 
 **🎵 最近在听**  
-- 🎵 [ASMR] Reading The Little Prince in Chinese | Soft Spoken | Page Turning Paper Sounds | 小王子 中文助眠 — YING ASMR
-- 🎵 ASMR中文 | Scratching & Tapping on Various Objects — GuluLand ASMR
-- 🎵 妈妈 — 万晓利
+- 🎵 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
+- 🎵 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 2時間コース / Inaudible Whispering 2hours — ねこい
+- 🎵 3 HOURS INAUDIBLE READING ASMR | clicky whispers, word tracing, page turning — Inaudible ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/7 17:19:39*
+*更新时间: 2026/9/7 20:42:15*
 <!-- LASTFM_END -->
