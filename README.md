@@ -21,22 +21,22 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,015 次 |
+| 🎧 播放总次数 | 86,016 次 |
 | 🎤 歌手总计 | 20,126 位 |
 | 💿 专辑总计 | 21,025 张 |
-| 🎶 歌曲总计 | 63,837 首 |
+| 🎶 歌曲总计 | 63,838 首 |
 
-
+🎧 **正在播放：** Event Horizon — Plum
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月4日--多国掀起“黄金搬家潮”！荷兰暗中自纽约撤走86吨黄金，40万亿美债引爆信任崩塌！ — 水音世界观
-- 🎵 水音世界观--9月4日--乌军每月净减上万人填不上窟窿！光纤无人机优势彻底被俄破解，特工争权夺利撕裂战时乌克兰！ — 水音世界观
-- 🎵 ASMR Safe & Cozy Affirmations and 🐑 Counting Sheep 1-100 for Deep Sleep💤🌛 — Boboran ASMR
+- 🎵 Event Horizon — Plum
+- 🎵 Lacrimosa — 十指流玉
+- 🎵 水音世界观--9月5日 ---美智库公然鼓吹炸毁中国数据中心！拦不住AI崛起要掀桌？东风快递与歼20已拉满戒备！ — 水音世界观
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
-- 📆 8/23: 173 次播放
-- 📆 8/16: 294 次播放
+- 📆 8/23: 172 次播放
+- 📆 8/16: 293 次播放
 
 ---
 
@@ -70,7 +70,7 @@ Here are some ideas to get you started:
 - 🥈 **a_hisa** — 1,176 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
-- 5️⃣ **Plum** — 745 次播放
+- 5️⃣ **Plum** — 746 次播放
 
 **🎶 最爱的歌曲**  
 - 🥇 Anhedonia — a_hisa
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/7 05:42:40*
+*更新时间: 2026/9/7 11:41:36*
 <!-- LASTFM_END -->
