@@ -21,17 +21,15 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,028 次 |
+| 🎧 播放总次数 | 86,041 次 |
 | 🎤 歌手总计 | 20,128 位 |
 | 💿 专辑总计 | 21,026 张 |
 | 🎶 歌曲总计 | 63,846 首 |
 
-🎧 **正在播放：** ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
+🎧 **正在播放：** ASMR中文 | Scratching & Tapping on Various Objects — GuluLand ASMR
 
 **🎵 最近在听**  
 - 🎵 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
-- 🎵 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 2時間コース / Inaudible Whispering 2hours — ねこい
-- 🎵 3 HOURS INAUDIBLE READING ASMR | clicky whispers, word tracing, page turning — Inaudible ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -46,15 +44,15 @@ Here are some ideas to get you started:
 - 🥇 **White Noise Meditation** — 45 次播放
 - 🥈 **Relaxu** — 34 次播放
 - 🥉 **万晓利** — 24 次播放
-- 4️⃣ **Mort Garson** — 10 次播放
-- 5️⃣ **張信哲** — 10 次播放
+- 4️⃣ **ねこい** — 16 次播放
+- 5️⃣ **Mort Garson** — 10 次播放
 
 **🎶 热门歌曲**  
-- 🥇 Fan Noise to Refresh the Mind, Pt.18 — White Noise Meditation
-- 🥈 Fan Noise to Refresh the Mind, Pt.19 — White Noise Meditation
-- 🥉 Fan Noise to Refresh the Mind, Pt.20 — White Noise Meditation
-- 4️⃣ ASMR Doing your MakeUp with Crystals 💎💄(Mouth sounds) — LaurasPillow ASMR
-- 5️⃣ ASMR FASTEST UNPROFESSIONAL EYEBROW APPOINTMENT! Doing Your Eyebrows #asmr #shorts — Lyssie ASMR
+- 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
+- 🥈 Fan Noise to Refresh the Mind, Pt.18 — White Noise Meditation
+- 🥉 Fan Noise to Refresh the Mind, Pt.19 — White Noise Meditation
+- 4️⃣ Fan Noise to Refresh the Mind, Pt.20 — White Noise Meditation
+- 5️⃣ ASMR Doing your MakeUp with Crystals 💎💄(Mouth sounds) — LaurasPillow ASMR
 
 **💿 热门专辑**  
 - 🥇 **Mother Earth's Plantasia** — Mort Garson
@@ -88,5 +86,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/7 20:42:15*
+*更新时间: 2026/9/7 23:17:18*
 <!-- LASTFM_END -->
