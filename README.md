@@ -21,16 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,042 次 |
-| 🎤 歌手总计 | 20,128 位 |
+| 🎧 播放总次数 | 86,059 次 |
+| 🎤 歌手总计 | 20,134 位 |
 | 💿 专辑总计 | 21,026 张 |
-| 🎶 歌曲总计 | 63,847 首 |
+| 🎶 歌曲总计 | 63,864 首 |
 
-
+🎧 **正在播放：** 伊朗大勝!無人機凌晨"突襲"伊拉克 胡塞"一日擊落"三架沙特"彩虹.翼龍"!【#前進戰略高地】20260905特別版‪@中天電視 — 中天電視
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月7日 --美特使刚进莫斯科！背后大批军火运抵波兰，爱沙尼亚7000万弹药骗局引爆政坛地震！ — 水音世界观
-- 🎵 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
+- 🎵 国际在线9月8日直播。话说美国已经掌握的穆杰塔巴的位置。 — 全球动态局势
+- 🎵 ハネノネ — Kaoru feat. いずみあや
+- 🎵 宵菊 — Ｂ
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -42,9 +43,9 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **White Noise Meditation** — 45 次播放
-- 🥈 **Relaxu** — 34 次播放
-- 🥉 **万晓利** — 24 次播放
+- 🥇 **Relaxu** — 34 次播放
+- 🥈 **万晓利** — 24 次播放
+- 🥉 **White Noise Meditation** — 17 次播放
 - 4️⃣ **ねこい** — 16 次播放
 - 5️⃣ **Mort Garson** — 10 次播放
 
@@ -52,8 +53,8 @@ Here are some ideas to get you started:
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
 - 🥈 Fan Noise to Refresh the Mind, Pt.18 — White Noise Meditation
 - 🥉 Fan Noise to Refresh the Mind, Pt.19 — White Noise Meditation
-- 4️⃣ Fan Noise to Refresh the Mind, Pt.20 — White Noise Meditation
-- 5️⃣ ASMR Doing your MakeUp with Crystals 💎💄(Mouth sounds) — LaurasPillow ASMR
+- 4️⃣ ASMR Doing your MakeUp with Crystals 💎💄(Mouth sounds) — LaurasPillow ASMR
+- 5️⃣ ASMR FASTEST UNPROFESSIONAL EYEBROW APPOINTMENT! Doing Your Eyebrows #asmr #shorts — Lyssie ASMR
 
 **💿 热门专辑**  
 - 🥇 **Mother Earth's Plantasia** — Mort Garson
@@ -87,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/8 06:16:31*
+*更新时间: 2026/9/8 11:34:37*
 <!-- LASTFM_END -->
