@@ -21,14 +21,15 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,041 次 |
+| 🎧 播放总次数 | 86,042 次 |
 | 🎤 歌手总计 | 20,128 位 |
 | 💿 专辑总计 | 21,026 张 |
-| 🎶 歌曲总计 | 63,846 首 |
+| 🎶 歌曲总计 | 63,847 首 |
 
-🎧 **正在播放：** ASMR中文 | Scratching & Tapping on Various Objects — GuluLand ASMR
+🎧 **正在播放：** 9月游戏速报｜钟馗、影之刃、昭和米国物语、鬼武者剑之道、寂静岭TF、金刚狼、控制共振 Vol.107 — 3T电波
 
 **🎵 最近在听**  
+- 🎵 水音世界观--9月7日 --美特使刚进莫斯科！背后大批军火运抵波兰，爱沙尼亚7000万弹药骗局引爆政坛地震！ — 水音世界观
 - 🎵 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
 
 **📈 播放趋势**  
@@ -86,5 +87,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/7 23:17:18*
+*更新时间: 2026/9/8 01:17:38*
 <!-- LASTFM_END -->
