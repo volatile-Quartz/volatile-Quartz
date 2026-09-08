@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,026 张 |
 | 🎶 歌曲总计 | 63,847 首 |
 
-🎧 **正在播放：** 9月游戏速报｜钟馗、影之刃、昭和米国物语、鬼武者剑之道、寂静岭TF、金刚狼、控制共振 Vol.107 — 3T电波
+
 
 **🎵 最近在听**  
 - 🎵 水音世界观--9月7日 --美特使刚进莫斯科！背后大批军火运抵波兰，爱沙尼亚7000万弹药骗局引爆政坛地震！ — 水音世界观
@@ -87,5 +87,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/8 01:17:38*
+*更新时间: 2026/9/8 06:16:31*
 <!-- LASTFM_END -->
