@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,035 张 |
 | 🎶 歌曲总计 | 63,876 首 |
 
-
+🎧 **正在播放：** ⅩⅥ Reverse — b/qurter
 
 **🎵 最近在听**  
 - 🎵 未言君名（你仍不知道那个夏天我为何没有说出你的名字） — 十指流玉
@@ -58,8 +58,8 @@ Here are some ideas to get you started:
 
 **💿 热门专辑**  
 - 🥇 **Mother Earth's Plantasia** — Mort Garson
-- 🥈 **寬容** — 張信哲
-- 🥉 **Felted Piano Collection, Vol. 4** — AVIAND, Relaxu
+- 🥈 **Felted Piano Collection, Vol. 4** — AVIAND, Relaxu
+- 🥉 **AD:155** — Diverse System
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/9 00:01:18*
+*更新时间: 2026/9/9 04:59:22*
 <!-- LASTFM_END -->
