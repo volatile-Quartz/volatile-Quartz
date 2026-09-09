@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,165 次 |
+| 🎧 播放总次数 | 86,166 次 |
 | 🎤 歌手总计 | 20,150 位 |
 | 💿 专辑总计 | 21,042 张 |
-| 🎶 歌曲总计 | 63,919 首 |
+| 🎶 歌曲总计 | 63,920 首 |
 
-🎧 **正在播放：** Scrambling — Jerico
+
 
 **🎵 最近在听**  
+- 🎵 Critter — cYsmix
 - 🎵 Scrambling — Jerico
 - 🎵 This Is Funk — RABYT
-- 🎵 Montage — ras
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 - 🥈 **ねこい** — 16 次播放
 - 🥉 **Mort Garson** — 10 次播放
 - 4️⃣ **Stamper** — 8 次播放
-- 5️⃣ **时局news** — 8 次播放
+- 5️⃣ **水音世界观** — 8 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/9 14:11:01*
+*更新时间: 2026/9/9 17:54:23*
 <!-- LASTFM_END -->
