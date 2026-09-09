@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 - 🥈 **万晓利** — 24 次播放
 - 🥉 **White Noise Meditation** — 17 次播放
 - 4️⃣ **ねこい** — 16 次播放
-- 5️⃣ **时局news** — 11 次播放
+- 5️⃣ **Mort Garson** — 10 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/8 21:58:54*
+*更新时间: 2026/9/9 00:01:18*
 <!-- LASTFM_END -->
