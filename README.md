@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,120 次 |
-| 🎤 歌手总计 | 20,148 位 |
-| 💿 专辑总计 | 21,039 张 |
-| 🎶 歌曲总计 | 63,899 首 |
+| 🎧 播放总次数 | 86,165 次 |
+| 🎤 歌手总计 | 20,150 位 |
+| 💿 专辑总计 | 21,042 张 |
+| 🎶 歌曲总计 | 63,919 首 |
 
-
+🎧 **正在播放：** Scrambling — Jerico
 
 **🎵 最近在听**  
-- 🎵 春風とアルメリア (feat.花隈千冬) — Shun
-- 🎵 Blooming — Qutabire
-- 🎵 Falling Toward Forever — ity
+- 🎵 Scrambling — Jerico
+- 🎵 This Is Funk — RABYT
+- 🎵 Montage — ras
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **万晓利** — 24 次播放
 - 🥈 **ねこい** — 16 次播放
 - 🥉 **Mort Garson** — 10 次播放
-- 4️⃣ **时局news** — 8 次播放
-- 5️⃣ **水音世界观** — 8 次播放
+- 4️⃣ **Stamper** — 8 次播放
+- 5️⃣ **时局news** — 8 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
@@ -57,9 +57,9 @@ Here are some ideas to get you started:
 - 5️⃣ Force (力量) — Alan Walker
 
 **💿 热门专辑**  
-- 🥇 **Mother Earth's Plantasia** — Mort Garson
-- 🥈 **AD:155** — Diverse System
-- 🥉 **这一切没有想象的那么糟** — 万晓利
+- 🥇 **AD:TECHNO** — Diverse System
+- 🥈 **Mother Earth's Plantasia** — Mort Garson
+- 🥉 **AD:155** — Diverse System
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/9 09:34:58*
+*更新时间: 2026/9/9 14:11:01*
 <!-- LASTFM_END -->
