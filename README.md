@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,177 次 |
-| 🎤 歌手总计 | 20,153 位 |
-| 💿 专辑总计 | 21,049 张 |
-| 🎶 歌曲总计 | 63,928 首 |
+| 🎧 播放总次数 | 86,228 次 |
+| 🎤 歌手总计 | 20,170 位 |
+| 💿 专辑总计 | 21,058 张 |
+| 🎶 歌曲总计 | 63,966 首 |
 
-🎧 **正在播放：** 秋潮 — VuXa
+🎧 **正在播放：** ふたりの異変 — RADWIMPS
 
 **🎵 最近在听**  
-- 🎵 秋潮 — VuXa
-- 🎵 So Beautiful — Sweet Rain
-- 🎵 Gentleman — Adrián Berenguer
+- 🎵 ふたりの異変 — RADWIMPS
+- 🎵 奥寺先輩のテーマ — RADWIMPS
+- 🎵 憧れカフェ — RADWIMPS
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -67,7 +67,7 @@ Here are some ideas to get you started:
 
 **🎤 最爱的艺术家**  
 - 🥇 **上海アリス幻樂団** — 2,462 次播放
-- 🥈 **a_hisa** — 1,176 次播放
+- 🥈 **a_hisa** — 1,177 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
 - 5️⃣ **Plum** — 746 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/10 00:51:48*
+*更新时间: 2026/9/10 05:38:22*
 <!-- LASTFM_END -->
