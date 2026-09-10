@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,310 次 |
-| 🎤 歌手总计 | 20,181 位 |
-| 💿 专辑总计 | 21,067 张 |
-| 🎶 歌曲总计 | 64,030 首 |
+| 🎧 播放总次数 | 86,341 次 |
+| 🎤 歌手总计 | 20,183 位 |
+| 💿 专辑总计 | 21,069 张 |
+| 🎶 歌曲总计 | 64,057 首 |
 
-🎧 **正在播放：** 国际在线9月10日直播。电诈园区内部曝光。 — 全球动态局势
+🎧 **正在播放：** 睡眠の質を高める癒し音楽 — 7 HEALING MUSIC LOUNGE
 
 **🎵 最近在听**  
-- 🎵 国际在线9月10日直播。电诈园区内部曝光。 — 全球动态局势
-- 🎵 Duplicity Shade — Sennzai, HyuN
-- 🎵 Afterlife — Neutral Moon, HyuN
+- 🎵 睡眠の質を高める癒し音楽 — 7 HEALING MUSIC LOUNGE
+- 🎵 ピアノの癒しで極上の睡眠 — 睡眠音楽おすすめTIMES
+- 🎵 睡眠の質向上BGM — 7 HEALING MUSIC LOUNGE
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -45,16 +45,16 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **RADWIMPS** — 27 次播放
 - 🥈 **万晓利** — 24 次播放
-- 🥉 **ねこい** — 16 次播放
-- 4️⃣ **睡眠音楽おすすめTIMES** — 14 次播放
-- 5️⃣ **Mort Garson** — 10 次播放
+- 🥉 **睡眠音楽おすすめTIMES** — 20 次播放
+- 4️⃣ **ねこい** — 16 次播放
+- 5️⃣ **7 HEALING MUSIC LOUNGE** — 12 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
 - 🥈 ASMR FASTEST UNPROFESSIONAL EYEBROW APPOINTMENT! Doing Your Eyebrows #asmr #shorts — Lyssie ASMR
 - 🥉 Checklist (feat. Chromeo) — MAX/Chromeo
-- 4️⃣ Fearless #asmr #calligraphy #calligraphylettering #satisfying #art #fyp: #handwriting — Aaron_jzart
-- 5️⃣ Force (力量) — Alan Walker
+- 4️⃣ 箱庭の世界 — 22/7
+- 5️⃣ Fearless #asmr #calligraphy #calligraphylettering #satisfying #art #fyp: #handwriting — Aaron_jzart
 
 **💿 热门专辑**  
 - 🥇 **君の名は。** — RADWIMPS
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/10 10:43:03*
+*更新时间: 2026/9/10 14:51:12*
 <!-- LASTFM_END -->
