@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,357 次 |
-| 🎤 歌手总计 | 20,183 位 |
+| 🎧 播放总次数 | 86,358 次 |
+| 🎤 歌手总计 | 20,184 位 |
 | 💿 专辑总计 | 21,070 张 |
-| 🎶 歌曲总计 | 64,064 首 |
+| 🎶 歌曲总计 | 64,065 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 画面崩坏？稳中向好！甜到忧伤的萌豚巨著！-《与你相恋到生命尽头》中期吐槽 — 云空云笺
 - 🎵 ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
 - 🎵 癒しのピアノで深い睡眠 — 7 HEALING MUSIC LOUNGE
-- 🎵 睡眠にピッタリの癒し音楽 — 睡眠音楽おすすめTIMES
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/10 21:04:02*
+*更新时间: 2026/9/10 23:19:26*
 <!-- LASTFM_END -->
