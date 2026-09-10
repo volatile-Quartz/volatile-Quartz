@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,166 次 |
-| 🎤 歌手总计 | 20,150 位 |
-| 💿 专辑总计 | 21,042 张 |
-| 🎶 歌曲总计 | 63,920 首 |
+| 🎧 播放总次数 | 86,177 次 |
+| 🎤 歌手总计 | 20,153 位 |
+| 💿 专辑总计 | 21,049 张 |
+| 🎶 歌曲总计 | 63,928 首 |
 
-
+🎧 **正在播放：** 秋潮 — VuXa
 
 **🎵 最近在听**  
-- 🎵 Critter — cYsmix
-- 🎵 Scrambling — Jerico
-- 🎵 This Is Funk — RABYT
+- 🎵 秋潮 — VuXa
+- 🎵 So Beautiful — Sweet Rain
+- 🎵 Gentleman — Adrián Berenguer
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 - 🥈 **ねこい** — 16 次播放
 - 🥉 **Mort Garson** — 10 次播放
 - 4️⃣ **Stamper** — 8 次播放
-- 5️⃣ **水音世界观** — 8 次播放
+- 5️⃣ **Mikael Sandgren/Bill Brown** — 7 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/9 22:42:42*
+*更新时间: 2026/9/10 00:51:48*
 <!-- LASTFM_END -->
