@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,500 次 |
-| 🎤 歌手总计 | 20,216 位 |
-| 💿 专辑总计 | 21,115 张 |
-| 🎶 歌曲总计 | 64,163 首 |
+| 🎧 播放总次数 | 86,544 次 |
+| 🎤 歌手总计 | 20,229 位 |
+| 💿 专辑总计 | 21,142 张 |
+| 🎶 歌曲总计 | 64,190 首 |
 
-🎧 **正在播放：** 雨の思い出 (雨的回忆) — K-Rogey
+🎧 **正在播放：** R2 ~Return To~ — Plum
 
 **🎵 最近在听**  
-- 🎵 雨の思い出 (雨的回忆) — K-Rogey
-- 🎵 きみの て (你的手) — Every Little Thing
-- 🎵 Impossible — Two Steps From Hell、Merethe Soltvedt
+- 🎵 R2 ~Return To~ — Plum
+- 🎵 星の便り (Letter from the Stars) — nyamura
+- 🎵 明日への扉 (通往明日之门) — I Wish
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -70,7 +70,7 @@ Here are some ideas to get you started:
 - 🥈 **a_hisa** — 1,178 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
-- 5️⃣ **Plum** — 748 次播放
+- 5️⃣ **Plum** — 749 次播放
 
 **🎶 最爱的歌曲**  
 - 🥇 Anhedonia — a_hisa
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/11 19:02:47*
+*更新时间: 2026/9/11 21:50:06*
 <!-- LASTFM_END -->
