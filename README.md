@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,544 次 |
-| 🎤 歌手总计 | 20,229 位 |
-| 💿 专辑总计 | 21,142 张 |
-| 🎶 歌曲总计 | 64,190 首 |
+| 🎧 播放总次数 | 86,555 次 |
+| 🎤 歌手总计 | 20,232 位 |
+| 💿 专辑总计 | 21,149 张 |
+| 🎶 歌曲总计 | 64,197 首 |
 
-🎧 **正在播放：** R2 ~Return To~ — Plum
+
 
 **🎵 最近在听**  
-- 🎵 R2 ~Return To~ — Plum
-- 🎵 星の便り (Letter from the Stars) — nyamura
-- 🎵 明日への扉 (通往明日之门) — I Wish
+- 🎵 今、歩き出す君へ (献给此刻迈步前行的你。) — Ceui
+- 🎵 无名客 — 安九
+- 🎵 Island of Spells — Dmitriy Sevostyanov
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -53,8 +53,8 @@ Here are some ideas to get you started:
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
 - 🥈 心身を休ませるリラックスピアノBGM — 7 HEALING MUSIC LOUNGE
 - 🥉 癒しのピアノで深い睡眠 — 7 HEALING MUSIC LOUNGE
-- 4️⃣ ASMR FASTEST UNPROFESSIONAL EYEBROW APPOINTMENT! Doing Your Eyebrows #asmr #shorts — Lyssie ASMR
-- 5️⃣ ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
+- 4️⃣ ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
+- 5️⃣ Checklist (feat. Chromeo) — MAX/Chromeo
 
 **💿 热门专辑**  
 - 🥇 **君の名は。** — RADWIMPS
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/11 21:50:06*
+*更新时间: 2026/9/11 23:53:36*
 <!-- LASTFM_END -->
