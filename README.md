@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,376 次 |
+| 🎧 播放总次数 | 86,421 次 |
 | 🎤 歌手总计 | 20,184 位 |
-| 💿 专辑总计 | 21,070 张 |
-| 🎶 歌曲总计 | 64,072 首 |
+| 💿 专辑总计 | 21,071 张 |
+| 🎶 歌曲总计 | 64,103 首 |
 
-🎧 **正在播放：** Stylish Piano for Rainy Days — 7 HEALING MUSIC LOUNGE
+🎧 **正在播放：** 年产值2500亿美元的外包帝国，为什么成了AI的自杀式教材？ — 肝帝董佳宁
 
 **🎵 最近在听**  
-- 🎵 Stylish Piano for Rainy Days — 7 HEALING MUSIC LOUNGE
-- 🎵 熟睡効果を高めるピアノヒーリング — 7 HEALING MUSIC LOUNGE/睡眠音楽おすすめTIMES
-- 🎵 リラックスピアノと雨のASMR — 7 HEALING MUSIC LOUNGE/睡眠音楽おすすめTIMES
+- 🎵 年产值2500亿美元的外包帝国，为什么成了AI的自杀式教材？ — 肝帝董佳宁
+- 🎵 法国骑士入境中国：这是我从未见过的边境！ — Soleil-JJ
+- 🎵 水音世界观--9月10日--朝鲜5000吨江健号震撼服役！金正恩携女见证核打击战舰入列，美日韩自由之刃演习彻底失灵！ — 水音世界观
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -43,11 +43,11 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **RADWIMPS** — 27 次播放
-- 🥈 **7 HEALING MUSIC LOUNGE** — 24 次播放
-- 🥉 **万晓利** — 24 次播放
-- 4️⃣ **睡眠音楽おすすめTIMES** — 22 次播放
-- 5️⃣ **ねこい** — 16 次播放
+- 🥇 **7 HEALING MUSIC LOUNGE** — 34 次播放
+- 🥈 **DJ Meditation Lab. 禅** — 32 次播放
+- 🥉 **RADWIMPS** — 27 次播放
+- 4️⃣ **睡眠音楽おすすめTIMES** — 27 次播放
+- 5️⃣ **万晓利** — 24 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/11 06:25:05*
+*更新时间: 2026/9/11 11:40:46*
 <!-- LASTFM_END -->
