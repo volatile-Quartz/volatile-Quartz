@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,368 次 |
+| 🎧 播放总次数 | 86,376 次 |
 | 🎤 歌手总计 | 20,184 位 |
 | 💿 专辑总计 | 21,070 张 |
-| 🎶 歌曲总计 | 64,065 首 |
+| 🎶 歌曲总计 | 64,072 首 |
 
-
+🎧 **正在播放：** Stylish Piano for Rainy Days — 7 HEALING MUSIC LOUNGE
 
 **🎵 最近在听**  
-- 🎵 Direct Drive! — Happy Around!
-- 🎵 Dino — Cranky
-- 🎵 Dr. Smith — Atmos
+- 🎵 Stylish Piano for Rainy Days — 7 HEALING MUSIC LOUNGE
+- 🎵 熟睡効果を高めるピアノヒーリング — 7 HEALING MUSIC LOUNGE/睡眠音楽おすすめTIMES
+- 🎵 リラックスピアノと雨のASMR — 7 HEALING MUSIC LOUNGE/睡眠音楽おすすめTIMES
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -44,9 +44,9 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **RADWIMPS** — 27 次播放
-- 🥈 **万晓利** — 24 次播放
-- 🥉 **睡眠音楽おすすめTIMES** — 22 次播放
-- 4️⃣ **7 HEALING MUSIC LOUNGE** — 19 次播放
+- 🥈 **7 HEALING MUSIC LOUNGE** — 24 次播放
+- 🥉 **万晓利** — 24 次播放
+- 4️⃣ **睡眠音楽おすすめTIMES** — 22 次播放
 - 5️⃣ **ねこい** — 16 次播放
 
 **🎶 热门歌曲**  
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/11 01:20:01*
+*更新时间: 2026/9/11 06:25:05*
 <!-- LASTFM_END -->
