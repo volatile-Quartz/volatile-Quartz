@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,627 次 |
+| 🎧 播放总次数 | 86,629 次 |
 | 🎤 歌手总计 | 20,247 位 |
 | 💿 专辑总计 | 21,171 张 |
-| 🎶 歌曲总计 | 64,262 首 |
+| 🎶 歌曲总计 | 64,264 首 |
 
-
+🎧 **正在播放：** 【ASMR】You’ll Fall Asleep to Mic Scratching & Mouth Sounds💤😪 — SevenASMR
 
 **🎵 最近在听**  
+- 🎵 【ASMR】You’ll Fall Asleep to Mic Scratching & Mouth Sounds💤😪 — SevenASMR
+- 🎵 First Time Trying ASMR Mukbang Tomato Egg Buldak Ramen 🍅🔥 — GuluLand ASMR
 - 🎵 Farewell For Life — PYKAMIA
-- 🎵 Turn for Life — PYKAMIA
-- 🎵 Let for Life — PYKAMIA
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/12 15:43:31*
+*更新时间: 2026/9/12 18:07:50*
 <!-- LASTFM_END -->
