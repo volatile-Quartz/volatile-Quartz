@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,603 次 |
+| 🎧 播放总次数 | 86,627 次 |
 | 🎤 歌手总计 | 20,247 位 |
-| 💿 专辑总计 | 21,170 张 |
-| 🎶 歌曲总计 | 64,238 首 |
+| 💿 专辑总计 | 21,171 张 |
+| 🎶 歌曲总计 | 64,262 首 |
 
-🎧 **正在播放：** Fantasia Sonata Botanical Garden — PYKAMIA
+
 
 **🎵 最近在听**  
-- 🎵 Fantasia Sonata Reflection — PYKAMIA
-- 🎵 Fantasia Sonata Sky Syndrome — PYKAMIA
-- 🎵 Fantasia Sonata Arcadia — PYKAMIA
+- 🎵 Farewell For Life — PYKAMIA
+- 🎵 Turn for Life — PYKAMIA
+- 🎵 Let for Life — PYKAMIA
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -43,11 +43,11 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **7 HEALING MUSIC LOUNGE** — 34 次播放
-- 🥈 **DJ Meditation Lab. 禅** — 32 次播放
-- 🥉 **RADWIMPS** — 27 次播放
-- 4️⃣ **睡眠音楽おすすめTIMES** — 27 次播放
-- 5️⃣ **万晓利** — 24 次播放
+- 🥇 **PYKAMIA** — 47 次播放
+- 🥈 **7 HEALING MUSIC LOUNGE** — 34 次播放
+- 🥉 **DJ Meditation Lab. 禅** — 32 次播放
+- 4️⃣ **RADWIMPS** — 27 次播放
+- 5️⃣ **睡眠音楽おすすめTIMES** — 27 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
@@ -59,7 +59,7 @@ Here are some ideas to get you started:
 **💿 热门专辑**  
 - 🥇 **君の名は。** — RADWIMPS
 - 🥈 **AD:TECHNO** — Diverse System
-- 🥉 **Mother Earth's Plantasia** — Mort Garson
+- 🥉 **For Life PIANO, Pt. 1** — PYKAMIA
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/12 12:17:01*
+*更新时间: 2026/9/12 15:43:31*
 <!-- LASTFM_END -->
