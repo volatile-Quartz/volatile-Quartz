@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,171 张 |
 | 🎶 歌曲总计 | 64,264 首 |
 
-🎧 **正在播放：** 【ASMR】You’ll Fall Asleep to Mic Scratching & Mouth Sounds💤😪 — SevenASMR
+
 
 **🎵 最近在听**  
 - 🎵 【ASMR】You’ll Fall Asleep to Mic Scratching & Mouth Sounds💤😪 — SevenASMR
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/12 18:07:50*
+*更新时间: 2026/9/12 20:47:03*
 <!-- LASTFM_END -->
