@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,561 次 |
-| 🎤 歌手总计 | 20,234 位 |
-| 💿 专辑总计 | 21,152 张 |
-| 🎶 歌曲总计 | 64,200 首 |
+| 🎧 播放总次数 | 86,578 次 |
+| 🎤 歌手总计 | 20,246 位 |
+| 💿 专辑总计 | 21,165 张 |
+| 🎶 歌曲总计 | 64,216 首 |
 
-🎧 **正在播放：** だきしめるまで。 (直到拥抱) — Kotoha
+
 
 **🎵 最近在听**  
-- 🎵 だきしめるまで。 (直到拥抱) — Kotoha
-- 🎵 Fantasia Sonata Sky Syndrome — PYKAMIA
-- 🎵 只想说一声 (纯音乐) — win臣
+- 🎵 进口货就是不一样！中国的剁椒鱼头，在国外竟然都算豪车了 — 太阳星sunstar
+- 🎵 ASMR Korean Schoolgirl Teaches You Korean 🇰🇷✨ — Crystal
+- 🎵 ASMR Chinese whispers | What's in my bag & endless rambling until you drift off...🎒👜 — GuluLand ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/12 03:20:22*
+*更新时间: 2026/9/12 08:04:06*
 <!-- LASTFM_END -->
