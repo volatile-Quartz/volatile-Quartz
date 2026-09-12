@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,555 次 |
-| 🎤 歌手总计 | 20,232 位 |
-| 💿 专辑总计 | 21,149 张 |
-| 🎶 歌曲总计 | 64,197 首 |
+| 🎧 播放总次数 | 86,561 次 |
+| 🎤 歌手总计 | 20,234 位 |
+| 💿 专辑总计 | 21,152 张 |
+| 🎶 歌曲总计 | 64,200 首 |
 
-
+🎧 **正在播放：** だきしめるまで。 (直到拥抱) — Kotoha
 
 **🎵 最近在听**  
-- 🎵 今、歩き出す君へ (献给此刻迈步前行的你。) — Ceui
-- 🎵 无名客 — 安九
-- 🎵 Island of Spells — Dmitriy Sevostyanov
+- 🎵 だきしめるまで。 (直到拥抱) — Kotoha
+- 🎵 Fantasia Sonata Sky Syndrome — PYKAMIA
+- 🎵 只想说一声 (纯音乐) — win臣
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -70,7 +70,7 @@ Here are some ideas to get you started:
 - 🥈 **a_hisa** — 1,178 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
-- 5️⃣ **Plum** — 749 次播放
+- 5️⃣ **Plum** — 750 次播放
 
 **🎶 最爱的歌曲**  
 - 🥇 Anhedonia — a_hisa
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/11 23:53:36*
+*更新时间: 2026/9/12 03:20:22*
 <!-- LASTFM_END -->
