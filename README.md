@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,642 次 |
+| 🎧 播放总次数 | 86,643 次 |
 | 🎤 歌手总计 | 20,255 位 |
 | 💿 专辑总计 | 21,171 张 |
-| 🎶 歌曲总计 | 64,276 首 |
+| 🎶 歌曲总计 | 64,277 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 *ASMR*朱鷺戸沙耶使用銃！絶版ダミーカートMGC COLT COMBAT COMMANDER .38 SUPER Sounds*Little Busters!* — ゆまりあ
 - 🎵 ASMR | Watching Valorant Platinum Competitive Play for a Good Night's Sleep | Valorant Platinum, ... — 샤나
 - 🎵 ASMR | Want to sleep while watching a legendary Valorant Silver match with a +41 RR gain? 💤 | Val... — 샤나
-- 🎵 韓国人の日本語ASMR｜桜ティーのお茶会へようこそ🌸🫖｜囁き・タッピング・絵本朗読 — Yoon's Diary
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/13 14:58:45*
+*更新时间: 2026/9/13 18:04:08*
 <!-- LASTFM_END -->
