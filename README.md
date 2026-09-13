@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,629 次 |
-| 🎤 歌手总计 | 20,247 位 |
+| 🎧 播放总次数 | 86,633 次 |
+| 🎤 歌手总计 | 20,250 位 |
 | 💿 专辑总计 | 21,171 张 |
-| 🎶 歌曲总计 | 64,264 首 |
+| 🎶 歌曲总计 | 64,268 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 【ASMR】You’ll Fall Asleep to Mic Scratching & Mouth Sounds💤😪 — SevenASMR
-- 🎵 First Time Trying ASMR Mukbang Tomato Egg Buldak Ramen 🍅🔥 — GuluLand ASMR
-- 🎵 Farewell For Life — PYKAMIA
+- 🎵 为了拯救妻子而选择“孤军奋战”而濒临毁灭的笨拙女人 — 米卡-Official
+- 🎵 ⚡无解的眼神 心像海底针~⚡露露卡💕~ — 糖稀i
+- 🎵 【探Q/来爱×露露卡】露露卡的香味 — 悲剧over君
 
 **📈 播放趋势**  
 - 📅 本周: 340 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/13 00:37:34*
+*更新时间: 2026/9/13 05:41:06*
 <!-- LASTFM_END -->
