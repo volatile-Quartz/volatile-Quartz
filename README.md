@@ -34,9 +34,9 @@ Here are some ideas to get you started:
 - 🎵 韓国人の日本語ASMR｜桜ティーのお茶会へようこそ🌸🫖｜囁き・タッピング・絵本朗読 — Yoon's Diary
 
 **📈 播放趋势**  
-- 📅 本周: 340 次播放
+- 📅 本周: 642 次播放
+- 📆 8/30: 340 次播放
 - 📆 8/23: 172 次播放
-- 📆 8/16: 293 次播放
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/13 11:09:57*
+*更新时间: 2026/9/13 14:58:45*
 <!-- LASTFM_END -->
