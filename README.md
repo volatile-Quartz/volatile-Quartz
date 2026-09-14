@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,643 次 |
+| 🎧 播放总次数 | 86,644 次 |
 | 🎤 歌手总计 | 20,255 位 |
 | 💿 专辑总计 | 21,171 张 |
-| 🎶 歌曲总计 | 64,277 首 |
+| 🎶 歌曲总计 | 64,278 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 水音世界观--9月11日--胡塞正面攻占穆哈港扼死红海咽喉！沙特本土遭导弹洗劫急求救，特朗普当场拒绝出兵！ — 水音世界观
 - 🎵 *ASMR*朱鷺戸沙耶使用銃！絶版ダミーカートMGC COLT COMBAT COMMANDER .38 SUPER Sounds*Little Busters!* — ゆまりあ
 - 🎵 ASMR | Watching Valorant Platinum Competitive Play for a Good Night's Sleep | Valorant Platinum, ... — 샤나
-- 🎵 ASMR | Want to sleep while watching a legendary Valorant Silver match with a +41 RR gain? 💤 | Val... — 샤나
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/13 23:19:10*
+*更新时间: 2026/9/14 01:22:25*
 <!-- LASTFM_END -->
