@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,645 次 |
-| 🎤 歌手总计 | 20,255 位 |
-| 💿 专辑总计 | 21,171 张 |
-| 🎶 歌曲总计 | 64,279 首 |
+| 🎧 播放总次数 | 86,671 次 |
+| 🎤 歌手总计 | 20,262 位 |
+| 💿 专辑总计 | 21,188 张 |
+| 🎶 歌曲总计 | 64,297 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月11日--驻日美军冲绳深夜偷车被捕！一句“去便利店”引爆众怒，不平等协定包庇6000起罪行彻底遮不住！ — 水音世界观
-- 🎵 水音世界观--9月11日--胡塞正面攻占穆哈港扼死红海咽喉！沙特本土遭导弹洗劫急求救，特朗普当场拒绝出兵！ — 水音世界观
-- 🎵 *ASMR*朱鷺戸沙耶使用銃！絶版ダミーカートMGC COLT COMBAT COMMANDER .38 SUPER Sounds*Little Busters!* — ゆまりあ
+- 🎵 ひとひらの恋 (feat. 七夜月奏) — MIMI/七夜月奏
+- 🎵 ASTRAL — Sin Wecokat
+- 🎵 Bloom of Youth (风华正茂) — VISUAL ARTS / Key
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/14 13:40:10*
+*更新时间: 2026/9/14 19:02:29*
 <!-- LASTFM_END -->
