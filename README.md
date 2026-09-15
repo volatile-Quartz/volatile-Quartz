@@ -53,8 +53,8 @@ Here are some ideas to get you started:
 - 🥇 心身を休ませるリラックスピアノBGM — 7 HEALING MUSIC LOUNGE
 - 🥈 癒しのピアノで深い睡眠 — 7 HEALING MUSIC LOUNGE
 - 🥉 ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
-- 4️⃣ Checklist (feat. Chromeo) — MAX/Chromeo
-- 5️⃣ 僕のホロスコープ (我的占星图) — 22/7
+- 4️⃣ 僕のホロスコープ (我的占星图) — 22/7
+- 5️⃣ 箱庭の世界 — 22/7
 
 **💿 热门专辑**  
 - 🥇 **君の名は。** — RADWIMPS
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/15 12:00:11*
+*更新时间: 2026/9/15 17:11:18*
 <!-- LASTFM_END -->
