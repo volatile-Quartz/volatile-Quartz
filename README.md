@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,671 次 |
+| 🎧 播放总次数 | 86,672 次 |
 | 🎤 歌手总计 | 20,262 位 |
 | 💿 专辑总计 | 21,188 张 |
-| 🎶 歌曲总计 | 64,297 首 |
+| 🎶 歌曲总计 | 64,298 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 水音世界观--9月14日--胡塞9天平推5400平方公里！全歼38个旅缴获1400辆战车，坐全新美制防雷车大巡游杀人诛心！ — 水音世界观
 - 🎵 ひとひらの恋 (feat. 七夜月奏) — MIMI/七夜月奏
 - 🎵 ASTRAL — Sin Wecokat
-- 🎵 Bloom of Youth (风华正茂) — VISUAL ARTS / Key
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -50,11 +50,11 @@ Here are some ideas to get you started:
 - 5️⃣ **睡眠音楽おすすめTIMES** — 27 次播放
 
 **🎶 热门歌曲**  
-- 🥇 ［囁き声/ASMR］聞こえない囁きで哲学の本を読む 4時間コース / Inaudible Whispering 4hours — ねこい
-- 🥈 心身を休ませるリラックスピアノBGM — 7 HEALING MUSIC LOUNGE
-- 🥉 癒しのピアノで深い睡眠 — 7 HEALING MUSIC LOUNGE
-- 4️⃣ ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
-- 5️⃣ Checklist (feat. Chromeo) — MAX/Chromeo
+- 🥇 心身を休ませるリラックスピアノBGM — 7 HEALING MUSIC LOUNGE
+- 🥈 癒しのピアノで深い睡眠 — 7 HEALING MUSIC LOUNGE
+- 🥉 ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
+- 4️⃣ Checklist (feat. Chromeo) — MAX/Chromeo
+- 5️⃣ 僕のホロスコープ (我的占星图) — 22/7
 
 **💿 热门专辑**  
 - 🥇 **君の名は。** — RADWIMPS
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/14 22:37:44*
+*更新时间: 2026/9/15 01:10:37*
 <!-- LASTFM_END -->
