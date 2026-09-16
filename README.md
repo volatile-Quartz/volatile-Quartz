@@ -59,7 +59,7 @@ Here are some ideas to get you started:
 **💿 热门专辑**  
 - 🥇 **君の名は。** — RADWIMPS
 - 🥈 **For Life PIANO, Pt. 1** — PYKAMIA
-- 🥉 **AD:TECHNO** — Diverse System
+- 🥉 **Fantasia Sonata Vol.2 Gamers** — PYKAMIA
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/16 12:42:58*
+*更新时间: 2026/9/16 17:28:49*
 <!-- LASTFM_END -->
