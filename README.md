@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,675 次 |
+| 🎧 播放总次数 | 86,676 次 |
 | 🎤 歌手总计 | 20,262 位 |
 | 💿 专辑总计 | 21,188 张 |
 | 🎶 歌曲总计 | 64,300 首 |
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/16 01:32:09*
+*更新时间: 2026/9/16 07:17:19*
 <!-- LASTFM_END -->
