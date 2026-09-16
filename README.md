@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,676 次 |
-| 🎤 歌手总计 | 20,262 位 |
-| 💿 专辑总计 | 21,188 张 |
-| 🎶 歌曲总计 | 64,300 首 |
+| 🎧 播放总次数 | 86,693 次 |
+| 🎤 歌手总计 | 20,266 位 |
+| 💿 专辑总计 | 21,194 张 |
+| 🎶 歌曲总计 | 64,309 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月15日--胡塞导弹夜袭沙特最大空军基地！端掉起飞老巢斩首第七军区司令，前出32公里直逼美军吉布提大本营！ — 水音世界观
-- 🎵 水音世界观--9月14日--金砖支付系统重磅敲定！打通四大本土网络彻底绕开美元，中俄印本币结算突破90%重构全球格局！ — 水音世界观
-- 🎵 水音世界观--9月14日--胡塞9天平推5400平方公里！全歼38个旅缴获1400辆战车，坐全新美制防雷车大巡游杀人诛心！ — 水音世界观
+- 🎵 Fantasia Sonata Colorful — PYKAMIA
+- 🎵 환상충돌 (幻想碰撞) — Plum - Melodic Artist
+- 🎵 Reinvent — Sound Souler
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -43,7 +43,7 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **PYKAMIA** — 47 次播放
+- 🥇 **PYKAMIA** — 48 次播放
 - 🥈 **7 HEALING MUSIC LOUNGE** — 34 次播放
 - 🥉 **DJ Meditation Lab. 禅** — 32 次播放
 - 4️⃣ **RADWIMPS** — 27 次播放
@@ -58,8 +58,8 @@ Here are some ideas to get you started:
 
 **💿 热门专辑**  
 - 🥇 **君の名は。** — RADWIMPS
-- 🥈 **AD:TECHNO** — Diverse System
-- 🥉 **For Life PIANO, Pt. 1** — PYKAMIA
+- 🥈 **For Life PIANO, Pt. 1** — PYKAMIA
+- 🥉 **AD:TECHNO** — Diverse System
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/16 07:17:19*
+*更新时间: 2026/9/16 12:42:58*
 <!-- LASTFM_END -->
