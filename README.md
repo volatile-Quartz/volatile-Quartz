@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,695 次 |
+| 🎧 播放总次数 | 86,700 次 |
 | 🎤 歌手总计 | 20,266 位 |
 | 💿 专辑总计 | 21,194 张 |
-| 🎶 歌曲总计 | 64,310 首 |
+| 🎶 歌曲总计 | 64,313 首 |
 
-
+🎧 **正在播放：** 乌克兰的军统和中统内斗 — 燕三嘤嘤嘤
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月15日--千架天竺葵无人机狂袭乌西！专挑火车头瘫痪北约军援大动脉，乌防空漏洞大到能跑卡车！ — 水音世界观
-- 🎵 水音世界观--9月16日--孙中山百年构想成真！平陆运河通航斩获4项世界第一，西南大动脉彻底打通直奔北部湾！ — 水音世界观
-- 🎵 Fantasia Sonata Colorful — PYKAMIA
+- 🎵 乌克兰的军统和中统内斗 — 燕三嘤嘤嘤
+- 🎵 美国为什么要去工业化？ — 我捞捞捞
+- 🎵 No title (无题) — Reol/Giga
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -44,17 +44,17 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **PYKAMIA** — 48 次播放
-- 🥈 **7 HEALING MUSIC LOUNGE** — 34 次播放
-- 🥉 **DJ Meditation Lab. 禅** — 32 次播放
-- 4️⃣ **睡眠音楽おすすめTIMES** — 24 次播放
-- 5️⃣ **水音世界观** — 11 次播放
+- 🥈 **7 HEALING MUSIC LOUNGE** — 28 次播放
+- 🥉 **DJ Meditation Lab. 禅** — 26 次播放
+- 4️⃣ **睡眠音楽おすすめTIMES** — 13 次播放
+- 5️⃣ **水音世界观** — 12 次播放
 
 **🎶 热门歌曲**  
-- 🥇 心身を休ませるリラックスピアノBGM — 7 HEALING MUSIC LOUNGE
-- 🥈 癒しのピアノで深い睡眠 — 7 HEALING MUSIC LOUNGE
-- 🥉 ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
-- 4️⃣ 僕のホロスコープ (我的占星图) — 22/7
-- 5️⃣ 箱庭の世界 — 22/7
+- 🥇 癒しのピアノで深い睡眠 — 7 HEALING MUSIC LOUNGE
+- 🥈 ASMR Unusual Eye Exam For DEEP Sleep 👁️🔦 — Lyssie ASMR
+- 🥉 僕のホロスコープ (我的占星图) — 22/7
+- 4️⃣ Beautiful Piano Healing and Rain Sound — 7 HEALING MUSIC LOUNGE
+- 5️⃣ Rainy background music perfect for sleep — 7 HEALING MUSIC LOUNGE
 
 **💿 热门专辑**  
 - 🥇 **For Life PIANO, Pt. 1** — PYKAMIA
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/17 07:12:37*
+*更新时间: 2026/9/17 12:42:05*
 <!-- LASTFM_END -->
