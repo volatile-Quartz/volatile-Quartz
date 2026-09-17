@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,693 次 |
+| 🎧 播放总次数 | 86,695 次 |
 | 🎤 歌手总计 | 20,266 位 |
 | 💿 专辑总计 | 21,194 张 |
-| 🎶 歌曲总计 | 64,309 首 |
+| 🎶 歌曲总计 | 64,310 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 水音世界观--9月15日--千架天竺葵无人机狂袭乌西！专挑火车头瘫痪北约军援大动脉，乌防空漏洞大到能跑卡车！ — 水音世界观
+- 🎵 水音世界观--9月16日--孙中山百年构想成真！平陆运河通航斩获4项世界第一，西南大动脉彻底打通直奔北部湾！ — 水音世界观
 - 🎵 Fantasia Sonata Colorful — PYKAMIA
-- 🎵 환상충돌 (幻想碰撞) — Plum - Melodic Artist
-- 🎵 Reinvent — Sound Souler
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/16 23:09:14*
+*更新时间: 2026/9/17 01:36:10*
 <!-- LASTFM_END -->
