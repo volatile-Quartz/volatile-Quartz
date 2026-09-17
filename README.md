@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **PYKAMIA** — 48 次播放
 - 🥈 **7 HEALING MUSIC LOUNGE** — 34 次播放
 - 🥉 **DJ Meditation Lab. 禅** — 32 次播放
-- 4️⃣ **RADWIMPS** — 27 次播放
-- 5️⃣ **睡眠音楽おすすめTIMES** — 27 次播放
+- 4️⃣ **睡眠音楽おすすめTIMES** — 24 次播放
+- 5️⃣ **水音世界观** — 11 次播放
 
 **🎶 热门歌曲**  
 - 🥇 心身を休ませるリラックスピアノBGM — 7 HEALING MUSIC LOUNGE
@@ -57,9 +57,9 @@ Here are some ideas to get you started:
 - 5️⃣ 箱庭の世界 — 22/7
 
 **💿 热门专辑**  
-- 🥇 **君の名は。** — RADWIMPS
-- 🥈 **For Life PIANO, Pt. 1** — PYKAMIA
-- 🥉 **Fantasia Sonata Vol.2 Gamers** — PYKAMIA
+- 🥇 **For Life PIANO, Pt. 1** — PYKAMIA
+- 🥈 **Fantasia Sonata Vol.2 Gamers** — PYKAMIA
+- 🥉 **Fantasia Sonata Vol.3 Vanity** — PYKAMIA
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/17 01:36:10*
+*更新时间: 2026/9/17 07:12:37*
 <!-- LASTFM_END -->
