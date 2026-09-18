@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,763 次 |
+| 🎧 播放总次数 | 86,764 次 |
 | 🎤 歌手总计 | 20,277 位 |
 | 💿 专辑总计 | 21,210 张 |
-| 🎶 歌曲总计 | 64,342 首 |
+| 🎶 歌曲总计 | 64,343 首 |
 
-
+🎧 **正在播放：** 古月说天下--9月18日--沙特开5倍天价抢购F-35当雇佣费！安理会求救却遭美公开否决，盟友反目沦为弃子！ — 时局news
 
 **🎵 最近在听**  
+- 🎵 古月说天下--9月18日--沙特开5倍天价抢购F-35当雇佣费！安理会求救却遭美公开否决，盟友反目沦为弃子！ — 时局news
 - 🎵 ASMR (Sub) 让你感到极度舒适的中文助眠 Chinese ASMR To Relax You Completely — Lin ASMR
 - 🎵 ASMR Whispering Your Names — Lin ASMR
-- 🎵 ASMR (Sub) 中文助眠 背古诗《琵琶行》Close Whispers in Chinese, Poetry Recitation — Lin ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 - 🥈 **水音世界观** — 13 次播放
 - 🥉 **Lin ASMR** — 10 次播放
 - 4️⃣ **Plum** — 5 次播放
-- 5️⃣ **Ceui** — 4 次播放
+- 5️⃣ **Ceui** — 3 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ASMR Whispering Your Names — Lin ASMR
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/18 18:54:02*
+*更新时间: 2026/9/18 21:26:05*
 <!-- LASTFM_END -->
