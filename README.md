@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,713 次 |
+| 🎧 播放总次数 | 86,714 次 |
 | 🎤 歌手总计 | 20,267 位 |
 | 💿 专辑总计 | 21,194 张 |
-| 🎶 歌曲总计 | 64,321 首 |
+| 🎶 歌曲总计 | 64,322 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 水音世界观--9月17日--沙特防空弹见底求援碰壁！美军瞒着盟友与胡塞秘密谈判，百亿保护费彻底打水漂！ — 水音世界观
 - 🎵 ASMR Close Whispers In 3 Different Languages (English, Chinese & French) — Lin ASMR
 - 🎵 ASMR 中文耳语和触发词 / Whispers and Trigger Words in Chinese (Eng SUB) — Lin ASMR
-- 🎵 ASMR (SUB) Chinese Whispers and Trigger Words 中文轻语和触发词助眠 — Lin ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -46,7 +46,7 @@ Here are some ideas to get you started:
 - 🥇 **PYKAMIA** — 48 次播放
 - 🥈 **DJ Meditation Lab. 禅** — 20 次播放
 - 🥉 **7 HEALING MUSIC LOUNGE** — 15 次播放
-- 4️⃣ **水音世界观** — 12 次播放
+- 4️⃣ **水音世界观** — 13 次播放
 - 5️⃣ **Plum** — 7 次播放
 
 **🎶 热门歌曲**  
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/17 23:22:55*
+*更新时间: 2026/9/18 01:22:44*
 <!-- LASTFM_END -->
