@@ -45,8 +45,8 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **PYKAMIA** — 48 次播放
 - 🥈 **DJ Meditation Lab. 禅** — 20 次播放
-- 🥉 **7 HEALING MUSIC LOUNGE** — 15 次播放
-- 4️⃣ **水音世界观** — 13 次播放
+- 🥉 **水音世界观** — 13 次播放
+- 4️⃣ **7 HEALING MUSIC LOUNGE** — 11 次播放
 - 5️⃣ **Plum** — 7 次播放
 
 **🎶 热门歌曲**  
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/18 01:22:44*
+*更新时间: 2026/9/18 06:20:12*
 <!-- LASTFM_END -->
