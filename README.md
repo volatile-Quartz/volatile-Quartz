@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,715 次 |
-| 🎤 歌手总计 | 20,267 位 |
-| 💿 专辑总计 | 21,194 张 |
-| 🎶 歌曲总计 | 64,323 首 |
+| 🎧 播放总次数 | 86,762 次 |
+| 🎤 歌手总计 | 20,277 位 |
+| 💿 专辑总计 | 21,210 张 |
+| 🎶 歌曲总计 | 64,342 首 |
 
-
+🎧 **正在播放：** ASMR (Sub) 让你感到极度舒适的中文助眠 Chinese ASMR To Relax You Completely — Lin ASMR
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月17日--海里九天航母开建！大国水下隐身航母搭载波塞冬，颠覆美军最后王牌退守澳大利亚！ — 水音世界观
-- 🎵 水音世界观--9月17日--沙特防空弹见底求援碰壁！美军瞒着盟友与胡塞秘密谈判，百亿保护费彻底打水漂！ — 水音世界观
-- 🎵 ASMR Close Whispers In 3 Different Languages (English, Chinese & French) — Lin ASMR
+- 🎵 ASMR (Sub) 让你感到极度舒适的中文助眠 Chinese ASMR To Relax You Completely — Lin ASMR
+- 🎵 ASMR Whispering Your Names — Lin ASMR
+- 🎵 ASMR (Sub) 中文助眠 背古诗《琵琶行》Close Whispers in Chinese, Poetry Recitation — Lin ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -45,16 +45,16 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **PYKAMIA** — 48 次播放
 - 🥈 **水音世界观** — 13 次播放
-- 🥉 **Plum** — 7 次播放
-- 4️⃣ **GuluLand ASMR** — 5 次播放
+- 🥉 **Lin ASMR** — 9 次播放
+- 4️⃣ **Plum** — 7 次播放
 - 5️⃣ **Ceui** — 4 次播放
 
 **🎶 热门歌曲**  
-- 🥇 【ASMR】闺蜜化妆师为你化妆💗气声轻语聊天｜粉扑拍打・刷子刷脸｜沉浸式助眠 — YUE_19wASMR
-- 🥈 僕のホロスコープ (我的占星图) — 22/7
-- 🥉 今、歩き出す君へ。 (献给此刻迈步前行的你) — Ceui
-- 4️⃣ きみの て (你的手) — Every Little Thing
-- 5️⃣ ASMR Chinese whispers | What's in my bag & endless rambling until you drift off...🎒👜 — GuluLand ASMR
+- 🥇 ASMR Whispering Your Names — Lin ASMR
+- 🥈 【ASMR】闺蜜化妆师为你化妆💗气声轻语聊天｜粉扑拍打・刷子刷脸｜沉浸式助眠 — YUE_19wASMR
+- 🥉 僕のホロスコープ (我的占星图) — 22/7
+- 4️⃣ Lily — a_hisa
+- 5️⃣ 新世界へ — Albemuth
 
 **💿 热门专辑**  
 - 🥇 **For Life PIANO, Pt. 1** — PYKAMIA
@@ -67,7 +67,7 @@ Here are some ideas to get you started:
 
 **🎤 最爱的艺术家**  
 - 🥇 **上海アリス幻樂団** — 2,463 次播放
-- 🥈 **a_hisa** — 1,178 次播放
+- 🥈 **a_hisa** — 1,180 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
 - 5️⃣ **Plum** — 753 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/18 11:37:42*
+*更新时间: 2026/9/18 15:54:43*
 <!-- LASTFM_END -->
