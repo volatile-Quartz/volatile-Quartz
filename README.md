@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,210 张 |
 | 🎶 歌曲总计 | 64,343 首 |
 
-🎧 **正在播放：** 古月说天下--9月18日--沙特开5倍天价抢购F-35当雇佣费！安理会求救却遭美公开否决，盟友反目沦为弃子！ — 时局news
+
 
 **🎵 最近在听**  
 - 🎵 古月说天下--9月18日--沙特开5倍天价抢购F-35当雇佣费！安理会求救却遭美公开否决，盟友反目沦为弃子！ — 时局news
@@ -34,9 +34,9 @@ Here are some ideas to get you started:
 - 🎵 ASMR Whispering Your Names — Lin ASMR
 
 **📈 播放趋势**  
-- 📅 本周: 642 次播放
+- 📅 本周: 0 次播放
 - 📆 8/30: 340 次播放
-- 📆 8/23: 172 次播放
+- 📆 8/23: 0 次播放
 
 ---
 
@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **PYKAMIA** — 48 次播放
 - 🥈 **水音世界观** — 13 次播放
 - 🥉 **Lin ASMR** — 10 次播放
-- 4️⃣ **Plum** — 5 次播放
-- 5️⃣ **Ceui** — 3 次播放
+- 4️⃣ **Plum** — 4 次播放
+- 5️⃣ **GuluLand ASMR** — 3 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ASMR Whispering Your Names — Lin ASMR
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/18 21:26:05*
+*更新时间: 2026/9/18 23:29:22*
 <!-- LASTFM_END -->
