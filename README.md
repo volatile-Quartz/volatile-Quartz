@@ -21,12 +21,12 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,762 次 |
+| 🎧 播放总次数 | 86,763 次 |
 | 🎤 歌手总计 | 20,277 位 |
 | 💿 专辑总计 | 21,210 张 |
 | 🎶 歌曲总计 | 64,342 首 |
 
-🎧 **正在播放：** ASMR (Sub) 让你感到极度舒适的中文助眠 Chinese ASMR To Relax You Completely — Lin ASMR
+
 
 **🎵 最近在听**  
 - 🎵 ASMR (Sub) 让你感到极度舒适的中文助眠 Chinese ASMR To Relax You Completely — Lin ASMR
@@ -45,16 +45,16 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **PYKAMIA** — 48 次播放
 - 🥈 **水音世界观** — 13 次播放
-- 🥉 **Lin ASMR** — 9 次播放
-- 4️⃣ **Plum** — 7 次播放
+- 🥉 **Lin ASMR** — 10 次播放
+- 4️⃣ **Plum** — 5 次播放
 - 5️⃣ **Ceui** — 4 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ASMR Whispering Your Names — Lin ASMR
 - 🥈 【ASMR】闺蜜化妆师为你化妆💗气声轻语聊天｜粉扑拍打・刷子刷脸｜沉浸式助眠 — YUE_19wASMR
-- 🥉 僕のホロスコープ (我的占星图) — 22/7
-- 4️⃣ Lily — a_hisa
-- 5️⃣ 新世界へ — Albemuth
+- 🥉 Lily — a_hisa
+- 4️⃣ 新世界へ — Albemuth
+- 5️⃣ カルマ — Atols
 
 **💿 热门专辑**  
 - 🥇 **For Life PIANO, Pt. 1** — PYKAMIA
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/18 15:54:43*
+*更新时间: 2026/9/18 18:54:02*
 <!-- LASTFM_END -->
