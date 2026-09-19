@@ -43,11 +43,11 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **PYKAMIA** — 34 次播放
-- 🥈 **水音世界观** — 13 次播放
-- 🥉 **Lin ASMR** — 11 次播放
-- 4️⃣ **时局news** — 4 次播放
-- 5️⃣ **Plum** — 3 次播放
+- 🥇 **水音世界观** — 13 次播放
+- 🥈 **Lin ASMR** — 11 次播放
+- 🥉 **时局news** — 4 次播放
+- 4️⃣ **Plum** — 3 次播放
+- 5️⃣ **YUE_19wASMR** — 3 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ASMR Whispering Your Names — Lin ASMR
@@ -57,9 +57,9 @@ Here are some ideas to get you started:
 - 5️⃣ 新世界へ — Albemuth
 
 **💿 热门专辑**  
-- 🥇 **For Life PIANO, Pt. 1** — PYKAMIA
-- 🥈 **Fantasia Sonata Vol.4 Milthm** — PYKAMIA
-- 🥉 **Fantasia Sonata Vol.3 Vanity** — PYKAMIA
+- 🥇 **colors 4** — a_hisa
+- 🥈 **eve** — Albemuth
+- 🥉 **カルマ** — Atols
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/19 11:47:49*
+*更新时间: 2026/9/19 15:26:17*
 <!-- LASTFM_END -->
