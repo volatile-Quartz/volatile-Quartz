@@ -34,9 +34,9 @@ Here are some ideas to get you started:
 - 🎵 ASMR Whispering Your Names — Lin ASMR
 
 **📈 播放趋势**  
-- 📅 本周: 0 次播放
+- 📅 本周: 642 次播放
 - 📆 8/30: 340 次播放
-- 📆 8/23: 0 次播放
+- 📆 8/23: 172 次播放
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/18 23:29:22*
+*更新时间: 2026/9/19 01:29:25*
 <!-- LASTFM_END -->
