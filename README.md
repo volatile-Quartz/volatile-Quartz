@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,765 次 |
-| 🎤 歌手总计 | 20,277 位 |
+| 🎧 播放总次数 | 86,771 次 |
+| 🎤 歌手总计 | 20,278 位 |
 | 💿 专辑总计 | 21,210 张 |
-| 🎶 歌曲总计 | 64,344 首 |
+| 🎶 歌曲总计 | 64,348 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 古月说天下--9月18日（下）--沙特瞒不住了私下求和！胡塞当场打脸：先还2000亿并撤军，大国航运获最高免死金牌！ — 时局news
-- 🎵 古月说天下--9月18日--沙特开5倍天价抢购F-35当雇佣费！安理会求救却遭美公开否决，盟友反目沦为弃子！ — 时局news
-- 🎵 ASMR (Sub) 让你感到极度舒适的中文助眠 Chinese ASMR To Relax You Completely — Lin ASMR
+- 🎵 古月说天下--9月17日（下）--海里九天航母开建！大国水下隐身航母搭载波塞冬，颠覆美军最后王牌退守澳大利亚！ — 时局news
+- 🎵 古月说天下--9月17日（上）--沙特贵族飞行员被俘愿掏1亿赎金！胡塞自制山毛榉击落F-15SA，5分钟甩视频打烂利雅得嘴硬！ — 时局news
+- 🎵 【フリーBGM】明日にならないで🫧 まったり/かわいい/夜/チル【作業・配信・勉強】1時間耐久 — モナカの音楽室
 
 **📈 播放趋势**  
 - 📅 本周: 642 次播放
@@ -43,22 +43,22 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **PYKAMIA** — 47 次播放
+- 🥇 **PYKAMIA** — 34 次播放
 - 🥈 **水音世界观** — 13 次播放
-- 🥉 **Lin ASMR** — 10 次播放
-- 4️⃣ **Plum** — 3 次播放
-- 5️⃣ **YUE_19wASMR** — 3 次播放
+- 🥉 **Lin ASMR** — 11 次播放
+- 4️⃣ **时局news** — 4 次播放
+- 5️⃣ **Plum** — 3 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ASMR Whispering Your Names — Lin ASMR
 - 🥈 【ASMR】闺蜜化妆师为你化妆💗气声轻语聊天｜粉扑拍打・刷子刷脸｜沉浸式助眠 — YUE_19wASMR
-- 🥉 Lily — a_hisa
-- 4️⃣ 新世界へ — Albemuth
-- 5️⃣ カルマ — Atols
+- 🥉 【フリーBGM】明日にならないで🫧 まったり/かわいい/夜/チル【作業・配信・勉強】1時間耐久 — モナカの音楽室
+- 4️⃣ Lily — a_hisa
+- 5️⃣ 新世界へ — Albemuth
 
 **💿 热门专辑**  
 - 🥇 **For Life PIANO, Pt. 1** — PYKAMIA
-- 🥈 **Fantasia Sonata Vol.2 Gamers** — PYKAMIA
+- 🥈 **Fantasia Sonata Vol.4 Milthm** — PYKAMIA
 - 🥉 **Fantasia Sonata Vol.3 Vanity** — PYKAMIA
 
 ---
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/19 06:30:22*
+*更新时间: 2026/9/19 11:47:49*
 <!-- LASTFM_END -->
