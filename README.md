@@ -34,9 +34,9 @@ Here are some ideas to get you started:
 - 🎵 【フリーBGM】明日にならないで🫧 まったり/かわいい/夜/チル【作業・配信・勉強】1時間耐久 — モナカの音楽室
 
 **📈 播放趋势**  
-- 📅 本周: 642 次播放
+- 📅 本周: 129 次播放
+- 📆 9/6: 642 次播放
 - 📆 8/30: 340 次播放
-- 📆 8/23: 172 次播放
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/20 10:43:24*
+*更新时间: 2026/9/20 14:31:03*
 <!-- LASTFM_END -->
