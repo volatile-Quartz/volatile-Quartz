@@ -43,7 +43,7 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **水音世界观** — 13 次播放
+- 🥇 **水音世界观** — 12 次播放
 - 🥈 **Lin ASMR** — 11 次播放
 - 🥉 **时局news** — 4 次播放
 - 4️⃣ **Plum** — 3 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/20 23:00:33*
+*更新时间: 2026/9/21 01:21:40*
 <!-- LASTFM_END -->
