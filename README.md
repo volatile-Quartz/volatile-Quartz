@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,778 次 |
-| 🎤 歌手总计 | 20,281 位 |
-| 💿 专辑总计 | 21,211 张 |
-| 🎶 歌曲总计 | 64,354 首 |
+| 🎧 播放总次数 | 86,804 次 |
+| 🎤 歌手总计 | 20,294 位 |
+| 💿 专辑总计 | 21,222 张 |
+| 🎶 歌曲总计 | 64,376 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 Mr. Personality — The Sound Rocket
-- 🎵 Cupid Saw Us — TIC/Paperman
-- 🎵 Borealis — Vexento
+- 🎵 In a Persian Market — Die Berliner
+- 🎵 In A Persian Market — Teddy Powell
+- 🎵 あの日あの時 — 藤川千愛
 
 **📈 播放趋势**  
 - 📅 本周: 129 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/22 12:22:32*
+*更新时间: 2026/9/22 17:08:51*
 <!-- LASTFM_END -->
