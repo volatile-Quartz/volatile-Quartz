@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,771 次 |
-| 🎤 歌手总计 | 20,278 位 |
-| 💿 专辑总计 | 21,210 张 |
-| 🎶 歌曲总计 | 64,348 首 |
+| 🎧 播放总次数 | 86,778 次 |
+| 🎤 歌手总计 | 20,281 位 |
+| 💿 专辑总计 | 21,211 张 |
+| 🎶 歌曲总计 | 64,354 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 古月说天下--9月17日（下）--海里九天航母开建！大国水下隐身航母搭载波塞冬，颠覆美军最后王牌退守澳大利亚！ — 时局news
-- 🎵 古月说天下--9月17日（上）--沙特贵族飞行员被俘愿掏1亿赎金！胡塞自制山毛榉击落F-15SA，5分钟甩视频打烂利雅得嘴硬！ — 时局news
-- 🎵 【フリーBGM】明日にならないで🫧 まったり/かわいい/夜/チル【作業・配信・勉強】1時間耐久 — モナカの音楽室
+- 🎵 Mr. Personality — The Sound Rocket
+- 🎵 Cupid Saw Us — TIC/Paperman
+- 🎵 Borealis — Vexento
 
 **📈 播放趋势**  
 - 📅 本周: 129 次播放
@@ -44,7 +44,7 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **Lin ASMR** — 11 次播放
-- 🥈 **水音世界观** — 10 次播放
+- 🥈 **水音世界观** — 8 次播放
 - 🥉 **时局news** — 4 次播放
 - 4️⃣ **Plum** — 3 次播放
 - 5️⃣ **YUE_19wASMR** — 3 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/22 06:39:34*
+*更新时间: 2026/9/22 12:22:32*
 <!-- LASTFM_END -->
