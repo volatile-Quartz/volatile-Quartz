@@ -21,21 +21,21 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,805 次 |
-| 🎤 歌手总计 | 20,294 位 |
-| 💿 专辑总计 | 21,222 张 |
-| 🎶 歌曲总计 | 64,377 首 |
+| 🎧 播放总次数 | 86,828 次 |
+| 🎤 歌手总计 | 20,302 位 |
+| 💿 专辑总计 | 21,226 张 |
+| 🎶 歌曲总计 | 64,394 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月22日--对日稀土禁令直击七寸！美军工供应链突遭连锁断供，白宫着急拉盟友碰瓷却踢到铁板！ — 水音世界观
-- 🎵 In a Persian Market — Die Berliner
-- 🎵 In A Persian Market — Teddy Powell
+- 🎵 DUAL ROZES — 高橋菜々
+- 🎵 Cryogenic (feat. Petra Gurin) — かめりあ/Petra Gurin
+- 🎵 When The Rain — Void
 
 **📈 播放趋势**  
 - 📅 本周: 129 次播放
-- 📆 9/6: 642 次播放
+- 📆 9/6: 0 次播放
 - 📆 8/30: 340 次播放
 
 ---
@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 - 🥈 **水音世界观** — 7 次播放
 - 🥉 **时局news** — 4 次播放
 - 4️⃣ **Plum** — 3 次播放
-- 5️⃣ **YUE_19wASMR** — 3 次播放
+- 5️⃣ **Plum - Melodic Artist** — 3 次播放
 
 **🎶 热门歌曲**  
 - 🥇 ASMR Whispering Your Names — Lin ASMR
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/23 01:38:39*
+*更新时间: 2026/9/23 07:23:58*
 <!-- LASTFM_END -->
