@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,837 次 |
+| 🎧 播放总次数 | 86,838 次 |
 | 🎤 歌手总计 | 20,306 位 |
 | 💿 专辑总计 | 21,231 张 |
-| 🎶 歌曲总计 | 64,402 首 |
+| 🎶 歌曲总计 | 64,403 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 水音世界观--9月21日--上海造出全球首艘潜航母舰！配专属重型液压海上电梯，美智库哀鸣：虎鲸彻底沦为洗澡玩具！ — 水音世界观
 - 🎵 My Answer — 緑黄色社会
 - 🎵 TABOO — 緑黄色社会
-- 🎵 誰かの国 — 緑黄色社会
 
 **📈 播放趋势**  
 - 📅 本周: 129 次播放
@@ -44,7 +44,7 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **Lin ASMR** — 11 次播放
-- 🥈 **水音世界观** — 6 次播放
+- 🥈 **水音世界观** — 7 次播放
 - 🥉 **时局news** — 4 次播放
 - 4️⃣ **Plum** — 3 次播放
 - 5️⃣ **YUE_19wASMR** — 3 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/23 12:54:31*
+*更新时间: 2026/9/23 17:43:29*
 <!-- LASTFM_END -->
