@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,806 次 |
-| 🎤 歌手总计 | 20,321 位 |
+| 🎧 播放总次数 | 86,809 次 |
+| 🎤 歌手总计 | 20,322 位 |
 | 💿 专辑总计 | 21,253 张 |
-| 🎶 歌曲总计 | 64,455 首 |
+| 🎶 歌曲总计 | 64,458 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 Do You Like Dogs? 🐶 #asmr — Keeruhh ASMR
-- 🎵 ASMR "Thank You" In 40 Different Languages — Lin ASMR
-- 🎵 ASMR 🥮 Opening a Traditional Mid-Autumn Festival Gift Set — GuluLand ASMR
+- 🎵 富士康与印度彻底闹掰，1400亿投资直接放弃！莫迪怒怼：我还有两家备选芯片厂！下一秒，全球爆笑：那两家早跑了 — 星球官方号
+- 🎵 无法转让、禁止继承！你的几百个网络账号，没有一个属于你 — 赛雷三分钟
+- 🎵 第十一名 — 东霓塔姆
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -45,8 +45,8 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **オルタンシア** — 11 次播放
-- 🥉 **Lin ASMR** — 9 次播放
-- 4️⃣ **水音世界观** — 6 次播放
+- 🥉 **水音世界观** — 6 次播放
+- 4️⃣ **Lin ASMR** — 5 次播放
 - 5️⃣ **时局news** — 4 次播放
 
 **🎶 热门歌曲**  
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/24 14:02:28*
+*更新时间: 2026/9/24 18:33:02*
 <!-- LASTFM_END -->
