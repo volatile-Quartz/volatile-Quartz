@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,799 次 |
+| 🎧 播放总次数 | 86,806 次 |
 | 🎤 歌手总计 | 20,321 位 |
 | 💿 专辑总计 | 21,253 张 |
-| 🎶 歌曲总计 | 64,449 首 |
+| 🎶 歌曲总计 | 64,455 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 Nimrod (Remastered) — Royal Philharmonic Orchestra/Carl Davis/Edward Elgar
-- 🎵 春风吹 — 方大同
-- 🎵 Pavane — David Parry/London Philharmonic Orchestra
+- 🎵 Do You Like Dogs? 🐶 #asmr — Keeruhh ASMR
+- 🎵 ASMR "Thank You" In 40 Different Languages — Lin ASMR
+- 🎵 ASMR 🥮 Opening a Traditional Mid-Autumn Festival Gift Set — GuluLand ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -45,8 +45,8 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **オルタンシア** — 11 次播放
-- 🥉 **Lin ASMR** — 8 次播放
-- 4️⃣ **水音世界观** — 5 次播放
+- 🥉 **Lin ASMR** — 9 次播放
+- 4️⃣ **水音世界观** — 6 次播放
 - 5️⃣ **时局news** — 4 次播放
 
 **🎶 热门歌曲**  
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/24 08:39:51*
+*更新时间: 2026/9/24 14:02:28*
 <!-- LASTFM_END -->
