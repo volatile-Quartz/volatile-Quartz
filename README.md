@@ -21,45 +21,45 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,839 次 |
-| 🎤 歌手总计 | 20,306 位 |
-| 💿 专辑总计 | 21,232 张 |
-| 🎶 歌曲总计 | 64,404 首 |
+| 🎧 播放总次数 | 86,799 次 |
+| 🎤 歌手总计 | 20,321 位 |
+| 💿 专辑总计 | 21,253 张 |
+| 🎶 歌曲总计 | 64,449 首 |
 
-🎧 **正在播放：** illusion — 緑黄色社会
+
 
 **🎵 最近在听**  
-- 🎵 illusion — 緑黄色社会
-- 🎵 水音世界观--9月21日--上海造出全球首艘潜航母舰！配专属重型液压海上电梯，美智库哀鸣：虎鲸彻底沦为洗澡玩具！ — 水音世界观
-- 🎵 My Answer — 緑黄色社会
+- 🎵 Nimrod (Remastered) — Royal Philharmonic Orchestra/Carl Davis/Edward Elgar
+- 🎵 春风吹 — 方大同
+- 🎵 Pavane — David Parry/London Philharmonic Orchestra
 
 **📈 播放趋势**  
-- 📅 本周: 129 次播放
-- 📆 9/6: 642 次播放
-- 📆 8/30: 340 次播放
+- 📅 本周: 118 次播放
+- 📆 9/6: 588 次播放
+- 📆 8/30: 308 次播放
 
 ---
 
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **Lin ASMR** — 11 次播放
-- 🥈 **水音世界观** — 5 次播放
-- 🥉 **时局news** — 4 次播放
-- 4️⃣ **緑黄色社会** — 4 次播放
-- 5️⃣ **Plum** — 3 次播放
+- 🥇 **緑黄色社会** — 12 次播放
+- 🥈 **オルタンシア** — 11 次播放
+- 🥉 **Lin ASMR** — 8 次播放
+- 4️⃣ **水音世界观** — 5 次播放
+- 5️⃣ **时局news** — 4 次播放
 
 **🎶 热门歌曲**  
-- 🥇 ASMR Whispering Your Names — Lin ASMR
-- 🥈 【ASMR】闺蜜化妆师为你化妆💗气声轻语聊天｜粉扑拍打・刷子刷脸｜沉浸式助眠 — YUE_19wASMR
-- 🥉 【フリーBGM】明日にならないで🫧 まったり/かわいい/夜/チル【作業・配信・勉強】1時間耐久 — モナカの音楽室
-- 4️⃣ Lily — a_hisa
-- 5️⃣ 新世界へ — Albemuth
+- 🥇 Lily — a_hisa
+- 🥈 新世界へ — Albemuth
+- 🥉 カルマ — Atols
+- 4️⃣ Beautiful Nightmare — bludnymph&Alan Walker
+- 5️⃣ sky -crossroads version- — fripSide
 
 **💿 热门专辑**  
-- 🥇 **colors 4** — a_hisa
-- 🥈 **eve** — Albemuth
-- 🥉 **カルマ** — Atols
+- 🥇 **あたまご** — 緑黄色社会
+- 🥈 **Purple Rays** — オルタンシア
+- 🥉 **colors 4** — a_hisa
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/24 03:22:41*
+*更新时间: 2026/9/24 08:39:51*
 <!-- LASTFM_END -->
