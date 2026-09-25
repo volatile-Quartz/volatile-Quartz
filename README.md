@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 - 🥈 **オルタンシア** — 11 次播放
 - 🥉 **萌愈次元** — 5 次播放
 - 4️⃣ **Bad Company UK** — 4 次播放
-- 5️⃣ **时局news** — 4 次播放
+- 5️⃣ **水音世界观** — 4 次播放
 
 **🎶 热门歌曲**  
 - 🥇 The Nine (Remastered) — Bad Company UK
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/25 19:26:10*
+*更新时间: 2026/9/25 22:40:41*
 <!-- LASTFM_END -->
