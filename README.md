@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,831 次 |
+| 🎧 播放总次数 | 86,834 次 |
 | 🎤 歌手总计 | 20,334 位 |
 | 💿 专辑总计 | 21,267 张 |
-| 🎶 歌曲总计 | 64,476 首 |
+| 🎶 歌曲总计 | 64,478 首 |
 
-🎧 **正在播放：** Choke — Project-G
+
 
 **🎵 最近在听**  
-- 🎵 Choke — Project-G
-- 🎵 Lanza — Aniel
-- 🎵 Shimmer — Sinister Souls/Badlokk
+- 🎵 Chain Walk — Current Value
+- 🎵 Frontier — Current Value
+- 🎵 New Arrival — Current Value
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **オルタンシア** — 11 次播放
 - 🥉 **Lin ASMR** — 5 次播放
-- 4️⃣ **水音世界观** — 5 次播放
-- 5️⃣ **Bad Company UK** — 4 次播放
+- 4️⃣ **Bad Company UK** — 4 次播放
+- 5️⃣ **时局news** — 4 次播放
 
 **🎶 热门歌曲**  
 - 🥇 Lily — a_hisa
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/25 05:15:22*
+*更新时间: 2026/9/25 10:24:57*
 <!-- LASTFM_END -->
