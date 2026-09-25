@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,839 次 |
+| 🎧 播放总次数 | 86,840 次 |
 | 🎤 歌手总计 | 20,335 位 |
 | 💿 专辑总计 | 21,267 张 |
-| 🎶 歌曲总计 | 64,482 首 |
+| 🎶 歌曲总计 | 64,483 首 |
 
-🎧 **正在播放：** 戴上耳机！黑丝足尖触发音，助你一夜好梦 — freesia
+
 
 **🎵 最近在听**  
+- 🎵 ASMR Trigger Words in Different Languages (Spanish, Portuguese, Japanese, Russian, Tagalog, Italian) — Lin ASMR
 - 🎵 戴上耳机！黑丝足尖触发音，助你一夜好梦 — freesia
 - 🎵 【足控向ASMR】袜套白丝的蹭蹭、轻踩、捂耳朵、掏耳朵助眠 by 【眠姬与眠机】- 4K Hi-Res — 萌愈次元
-- 🎵 【足控向ASMR】黑白巧的蹭蹭、轻踩、捂耳朵、掏耳朵助眠 by 【眠姬与眠机】- 4K Hi-Res — 萌愈次元
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/25 15:25:53*
+*更新时间: 2026/9/25 19:26:10*
 <!-- LASTFM_END -->
