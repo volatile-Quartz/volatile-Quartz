@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,834 次 |
-| 🎤 歌手总计 | 20,334 位 |
+| 🎧 播放总次数 | 86,839 次 |
+| 🎤 歌手总计 | 20,335 位 |
 | 💿 专辑总计 | 21,267 张 |
-| 🎶 歌曲总计 | 64,478 首 |
+| 🎶 歌曲总计 | 64,482 首 |
 
-
+🎧 **正在播放：** 戴上耳机！黑丝足尖触发音，助你一夜好梦 — freesia
 
 **🎵 最近在听**  
-- 🎵 Chain Walk — Current Value
-- 🎵 Frontier — Current Value
-- 🎵 New Arrival — Current Value
+- 🎵 戴上耳机！黑丝足尖触发音，助你一夜好梦 — freesia
+- 🎵 【足控向ASMR】袜套白丝的蹭蹭、轻踩、捂耳朵、掏耳朵助眠 by 【眠姬与眠机】- 4K Hi-Res — 萌愈次元
+- 🎵 【足控向ASMR】黑白巧的蹭蹭、轻踩、捂耳朵、掏耳朵助眠 by 【眠姬与眠机】- 4K Hi-Res — 萌愈次元
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -45,16 +45,16 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **オルタンシア** — 11 次播放
-- 🥉 **Lin ASMR** — 5 次播放
+- 🥉 **萌愈次元** — 5 次播放
 - 4️⃣ **Bad Company UK** — 4 次播放
 - 5️⃣ **时局news** — 4 次播放
 
 **🎶 热门歌曲**  
-- 🥇 Lily — a_hisa
-- 🥈 新世界へ — Albemuth
-- 🥉 カルマ — Atols
-- 4️⃣ The Nine (Remastered) — Bad Company UK
-- 5️⃣ Beautiful Nightmare — bludnymph&Alan Walker
+- 🥇 The Nine (Remastered) — Bad Company UK
+- 🥈 LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
+- 🥉 Xterfusion — Redalice, T+pazolite
+- 4️⃣ Nimrod (Remastered) — Royal Philharmonic Orchestra/Carl Davis/Edward Elgar
+- 5️⃣ FlowerS ～となりで咲く花のように～ — オルタンシア
 
 **💿 热门专辑**  
 - 🥇 **あたまご** — 緑黄色社会
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/25 10:24:57*
+*更新时间: 2026/9/25 15:25:53*
 <!-- LASTFM_END -->
