@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,812 次 |
-| 🎤 歌手总计 | 20,324 位 |
-| 💿 专辑总计 | 21,253 张 |
-| 🎶 歌曲总计 | 64,461 首 |
+| 🎧 播放总次数 | 86,831 次 |
+| 🎤 歌手总计 | 20,334 位 |
+| 💿 专辑总计 | 21,267 张 |
+| 🎶 歌曲总计 | 64,476 首 |
 
-
+🎧 **正在播放：** Choke — Project-G
 
 **🎵 最近在听**  
-- 🎵 【足控向ASMR】裸足袜套的蹭蹭、轻踩、捂耳朵、掏耳朵助眠 by 【眠姬与眠机】- 4K Hi-Res — 萌愈次元
-- 🎵 胡塞史诗胜利！也门战局为何急转直下？ — TomCat团座
-- 🎵 “生活挖坑我种树” — 深渊薯片
+- 🎵 Choke — Project-G
+- 🎵 Lanza — Aniel
+- 🎵 Shimmer — Sinister Souls/Badlokk
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -47,19 +47,19 @@ Here are some ideas to get you started:
 - 🥈 **オルタンシア** — 11 次播放
 - 🥉 **Lin ASMR** — 5 次播放
 - 4️⃣ **水音世界观** — 5 次播放
-- 5️⃣ **时局news** — 4 次播放
+- 5️⃣ **Bad Company UK** — 4 次播放
 
 **🎶 热门歌曲**  
 - 🥇 Lily — a_hisa
 - 🥈 新世界へ — Albemuth
 - 🥉 カルマ — Atols
-- 4️⃣ Beautiful Nightmare — bludnymph&Alan Walker
-- 5️⃣ sky -crossroads version- — fripSide
+- 4️⃣ The Nine (Remastered) — Bad Company UK
+- 5️⃣ Beautiful Nightmare — bludnymph&Alan Walker
 
 **💿 热门专辑**  
 - 🥇 **あたまご** — 緑黄色社会
-- 🥈 **Purple Rays** — オルタンシア
-- 🥉 **colors 4** — a_hisa
+- 🥈 **The Nine (Remastered)** — Bad Company UK
+- 🥉 **Purple Rays** — オルタンシア
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/25 00:27:32*
+*更新时间: 2026/9/25 05:15:22*
 <!-- LASTFM_END -->
