@@ -45,8 +45,8 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **オルタンシア** — 11 次播放
-- 🥉 **水音世界观** — 6 次播放
-- 4️⃣ **Lin ASMR** — 5 次播放
+- 🥉 **Lin ASMR** — 5 次播放
+- 4️⃣ **水音世界观** — 5 次播放
 - 5️⃣ **时局news** — 4 次播放
 
 **🎶 热门歌曲**  
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/24 21:59:41*
+*更新时间: 2026/9/25 00:27:32*
 <!-- LASTFM_END -->
