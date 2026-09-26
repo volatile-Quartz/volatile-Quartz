@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,931 次 |
+| 🎧 播放总次数 | 86,935 次 |
 | 🎤 歌手总计 | 20,356 位 |
-| 💿 专辑总计 | 21,318 张 |
-| 🎶 歌曲总计 | 64,540 首 |
+| 💿 专辑总计 | 21,319 张 |
+| 🎶 歌曲总计 | 64,544 首 |
 
-🎧 **正在播放：** Mysterium Vinyl (Mysterium Vinyl) — Rolling Contact
+
 
 **🎵 最近在听**  
-- 🎵 Mysterium Vinyl (Mysterium Vinyl) — Rolling Contact
-- 🎵 Myriad Border (Sharp Key Edit) (Myriad Border (Sharp Key Edit)) — Rolling Contact
-- 🎵 Ultra Funkular (128 Flat Extended) (Ultra Funkular (128 Flat Extended)) — Rolling Contact
+- 🎵 Return into the Sakura Phantasmagoria (Return into the Sakura Phantasmagoria) — Rolling Contact
+- 🎵 Frenzy Eyes (Frenzy Eyes) — Rolling Contact
+- 🎵 Winning Hands (Instrumental Extended) (Winning Hands (Instrumental Extended)) — Rolling Contact
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -44,8 +44,8 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **緑黄色社会** — 12 次播放
-- 🥈 **オルタンシア** — 11 次播放
-- 🥉 **Rolling Contact** — 7 次播放
+- 🥈 **Rolling Contact** — 11 次播放
+- 🥉 **オルタンシア** — 11 次播放
 - 4️⃣ **时局news** — 5 次播放
 - 5️⃣ **萌愈次元** — 5 次播放
 
@@ -57,9 +57,9 @@ Here are some ideas to get you started:
 - 5️⃣ Imaginary Arcadia — nayuta/ARForest
 
 **💿 热门专辑**  
-- 🥇 **あたまご** — 緑黄色社会
-- 🥈 **The Nine (Remastered)** — Bad Company UK
-- 🥉 **ELECTRO CUTE 3** — Rolling Contact
+- 🥇 **ELECTRO CUTE 4** — Rolling Contact
+- 🥈 **あたまご** — 緑黄色社会
+- 🥉 **The Nine (Remastered)** — Bad Company UK
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/26 15:53:24*
+*更新时间: 2026/9/26 19:02:24*
 <!-- LASTFM_END -->
