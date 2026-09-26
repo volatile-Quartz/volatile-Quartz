@@ -21,22 +21,22 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,888 次 |
-| 🎤 歌手总计 | 20,343 位 |
-| 💿 专辑总计 | 21,296 张 |
-| 🎶 歌曲总计 | 64,513 首 |
+| 🎧 播放总次数 | 86,916 次 |
+| 🎤 歌手总计 | 20,352 位 |
+| 💿 专辑总计 | 21,312 张 |
+| 🎶 歌曲总计 | 64,530 首 |
 
-🎧 **正在播放：** 夜明けを乞う。 (feat. むト) (祈求黎明) — 酔シグレ/むﾄ
+
 
 **🎵 最近在听**  
-- 🎵 夜明けを乞う。 (feat. むト) (祈求黎明) — 酔シグレ/むﾄ
-- 🎵 Tyndall — Youzee Music
-- 🎵 Desire for existence — 群雨アンブレイラ
+- 🎵 Sparks — Lights & Motion
+- 🎵 Here And Now — Paxel
+- 🎵 空相(オモテウラ) (网易阴阳师手游 - SP阶式神空相面灵气 角色印象曲) — 花澤香菜/网易阴阳师手游
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
 - 📆 9/6: 588 次播放
-- 📆 8/30: 0 次播放
+- 📆 8/30: 308 次播放
 
 ---
 
@@ -45,16 +45,16 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **オルタンシア** — 11 次播放
-- 🥉 **时局news** — 6 次播放
-- 4️⃣ **萌愈次元** — 5 次播放
-- 5️⃣ **Bad Company UK** — 4 次播放
+- 🥉 **萌愈次元** — 5 次播放
+- 4️⃣ **Bad Company UK** — 4 次播放
+- 5️⃣ **时局news** — 4 次播放
 
 **🎶 热门歌曲**  
-- 🥇 The Nine (Remastered) — Bad Company UK
-- 🥈 LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
-- 🥉 Xterfusion — Redalice, T+pazolite
-- 4️⃣ Nimrod (Remastered) — Royal Philharmonic Orchestra/Carl Davis/Edward Elgar
-- 5️⃣ Tales of Misery — ryhki
+- 🥇 幽ノ楽園 (幽之乐园) — Albemuth
+- 🥈 The Nine (Remastered) — Bad Company UK
+- 🥉 LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
+- 4️⃣ Imaginary Arcadia — nayuta/ARForest
+- 5️⃣ Xterfusion — Redalice, T+pazolite
 
 **💿 热门专辑**  
 - 🥇 **あたまご** — 緑黄色社会
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/26 06:25:46*
+*更新时间: 2026/9/26 11:41:14*
 <!-- LASTFM_END -->
