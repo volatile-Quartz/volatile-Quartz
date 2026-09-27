@@ -21,22 +21,22 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,991 次 |
-| 🎤 歌手总计 | 20,390 位 |
-| 💿 专辑总计 | 21,372 张 |
-| 🎶 歌曲总计 | 64,596 首 |
+| 🎧 播放总次数 | 86,996 次 |
+| 🎤 歌手总计 | 20,391 位 |
+| 💿 专辑总计 | 21,377 张 |
+| 🎶 歌曲总计 | 64,601 首 |
 
-🎧 **正在播放：** Break — Kara
+
 
 **🎵 最近在听**  
-- 🎵 Break — Kara
-- 🎵 There For Me — Synthion
-- 🎵 Starry Farewell — Assertive
+- 🎵 Benediction — Surk
+- 🎵 Lightless(Assertive Hardcore Bootleg) — Assertive
+- 🎵 Spreading My NRG (feat. Lindsey Marie) — DJ Shimamura/Lindsey Marie
 
 **📈 播放趋势**  
-- 📅 本周: 118 次播放
+- 📅 本周: 322 次播放
+- 📆 9/13: 118 次播放
 - 📆 9/6: 588 次播放
-- 📆 8/30: 308 次播放
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/27 06:16:52*
+*更新时间: 2026/9/27 12:18:09*
 <!-- LASTFM_END -->
