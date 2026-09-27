@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,935 次 |
-| 🎤 歌手总计 | 20,356 位 |
-| 💿 专辑总计 | 21,319 张 |
-| 🎶 歌曲总计 | 64,544 首 |
+| 🎧 播放总次数 | 86,991 次 |
+| 🎤 歌手总计 | 20,390 位 |
+| 💿 专辑总计 | 21,372 张 |
+| 🎶 歌曲总计 | 64,596 首 |
 
-
+🎧 **正在播放：** Break — Kara
 
 **🎵 最近在听**  
-- 🎵 Return into the Sakura Phantasmagoria (Return into the Sakura Phantasmagoria) — Rolling Contact
-- 🎵 Frenzy Eyes (Frenzy Eyes) — Rolling Contact
-- 🎵 Winning Hands (Instrumental Extended) (Winning Hands (Instrumental Extended)) — Rolling Contact
+- 🎵 Break — Kara
+- 🎵 There For Me — Synthion
+- 🎵 Starry Farewell — Assertive
 
 **📈 播放趋势**  
 - 📅 本周: 118 次播放
@@ -46,15 +46,15 @@ Here are some ideas to get you started:
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **Rolling Contact** — 11 次播放
 - 🥉 **オルタンシア** — 11 次播放
-- 4️⃣ **时局news** — 5 次播放
-- 5️⃣ **萌愈次元** — 5 次播放
+- 4️⃣ **Sokudo!** — 5 次播放
+- 5️⃣ **时局news** — 5 次播放
 
 **🎶 热门歌曲**  
 - 🥇 幽ノ楽園 (幽之乐园) — Albemuth
-- 🥈 The Nine (Remastered) — Bad Company UK
-- 🥉 LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
-- 4️⃣ Paradigm — Leslie Wai
-- 5️⃣ Imaginary Arcadia — nayuta/ARForest
+- 🥈 星をめざして (Hardcore Edit) — Ange;art
+- 🥉 The Nine (Remastered) — Bad Company UK
+- 4️⃣ LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
+- 5️⃣ Paradigm — Leslie Wai
 
 **💿 热门专辑**  
 - 🥇 **ELECTRO CUTE 4** — Rolling Contact
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/27 00:46:25*
+*更新时间: 2026/9/27 06:16:52*
 <!-- LASTFM_END -->
