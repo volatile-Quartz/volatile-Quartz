@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 86,996 次 |
-| 🎤 歌手总计 | 20,391 位 |
+| 🎧 播放总次数 | 87,003 次 |
+| 🎤 歌手总计 | 20,393 位 |
 | 💿 专辑总计 | 21,377 张 |
-| 🎶 歌曲总计 | 64,601 首 |
+| 🎶 歌曲总计 | 64,604 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 Benediction — Surk
-- 🎵 Lightless(Assertive Hardcore Bootleg) — Assertive
-- 🎵 Spreading My NRG (feat. Lindsey Marie) — DJ Shimamura/Lindsey Marie
+- 🎵 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
+- 🎵 中文ASMR｜Teach you how to speak Chinese｜Number 1-100｜大可教你说中文 — Duckk ASMR
+- 🎵 ASMR Teaching you Basic Chinese 📚💤 — Jiaxin ASMR
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -50,11 +50,11 @@ Here are some ideas to get you started:
 - 5️⃣ **时局news** — 5 次播放
 
 **🎶 热门歌曲**  
-- 🥇 幽ノ楽園 (幽之乐园) — Albemuth
-- 🥈 星をめざして (Hardcore Edit) — Ange;art
-- 🥉 The Nine (Remastered) — Bad Company UK
-- 4️⃣ LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
-- 5️⃣ Paradigm — Leslie Wai
+- 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
+- 🥈 幽ノ楽園 (幽之乐园) — Albemuth
+- 🥉 星をめざして (Hardcore Edit) — Ange;art
+- 4️⃣ The Nine (Remastered) — Bad Company UK
+- 5️⃣ LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
 
 **💿 热门专辑**  
 - 🥇 **ELECTRO CUTE 4** — Rolling Contact
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/27 12:18:09*
+*更新时间: 2026/9/27 17:09:21*
 <!-- LASTFM_END -->
