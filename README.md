@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,005 次 |
-| 🎤 歌手总计 | 20,394 位 |
-| 💿 专辑总计 | 21,377 张 |
-| 🎶 歌曲总计 | 64,606 首 |
+| 🎧 播放总次数 | 87,021 次 |
+| 🎤 歌手总计 | 20,402 位 |
+| 💿 专辑总计 | 21,379 张 |
+| 🎶 歌曲总计 | 64,620 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 9月25日--60年来仅此一次！特朗普夫妇清晨亲迎红色巨人破外交惯例，日欧彻底酸崩道心碎一地！ — 时局news
-- 🎵 请和我交往吧！辉夜大人！【Bonly辉夜姬中秋游园会】 — 久远丶酱
-- 🎵 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
+- 🎵 スタッフロール — 勝又隆一
+- 🎵 Gate of Future — V/R Converters
+- 🎵 晴色アンブレラ — V/R Converters
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **Rolling Contact** — 11 次播放
 - 🥉 **オルタンシア** — 11 次播放
-- 4️⃣ **时局news** — 6 次播放
-- 5️⃣ **Sokudo!** — 5 次播放
+- 4️⃣ **Duckk ASMR** — 6 次播放
+- 5️⃣ **时局news** — 6 次播放
 
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/28 08:16:17*
+*更新时间: 2026/9/28 16:53:34*
 <!-- LASTFM_END -->
