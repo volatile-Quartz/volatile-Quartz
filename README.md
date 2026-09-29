@@ -35,7 +35,7 @@ Here are some ideas to get you started:
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
-- 📆 9/13: 118 次播放
+- 📆 9/13: 0 次播放
 - 📆 9/6: 588 次播放
 
 ---
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/29 15:23:22*
+*更新时间: 2026/9/29 20:07:42*
 <!-- LASTFM_END -->
