@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,024 次 |
+| 🎧 播放总次数 | 87,025 次 |
 | 🎤 歌手总计 | 20,402 位 |
 | 💿 专辑总计 | 21,379 张 |
 | 🎶 歌曲总计 | 64,623 首 |
@@ -46,7 +46,7 @@ Here are some ideas to get you started:
 - 🥇 **緑黄色社会** — 12 次播放
 - 🥈 **Rolling Contact** — 11 次播放
 - 🥉 **オルタンシア** — 11 次播放
-- 4️⃣ **水音世界观** — 7 次播放
+- 4️⃣ **水音世界观** — 8 次播放
 - 5️⃣ **Duckk ASMR** — 6 次播放
 
 **🎶 热门歌曲**  
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/29 02:10:25*
+*更新时间: 2026/9/29 08:52:22*
 <!-- LASTFM_END -->
