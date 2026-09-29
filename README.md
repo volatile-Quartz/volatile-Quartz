@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,025 次 |
+| 🎧 播放总次数 | 87,027 次 |
 | 🎤 歌手总计 | 20,402 位 |
 | 💿 专辑总计 | 21,379 张 |
 | 🎶 歌曲总计 | 64,623 首 |
@@ -29,9 +29,9 @@ Here are some ideas to get you started:
 
 
 **🎵 最近在听**  
+- 🎵 Megamix — Plum
+- 🎵 MEGAMIX 2 — Plum
 - 🎵 水音世界观--9月28日--仁爱礁管控暴推至24海里外！8艘海警主力战舰正面卡位，菲律宾深夜偷运建材遭迎头痛击！ — 水音世界观
-- 🎵 上学第一天来爱就宣誓主权，露露卡是自己的，露露卡只爱自己做冰激凌 — y石川月菜y
-- 🎵 露露卡收到情书，眼睛都睁大了，来爱你老婆要被抢走了！ — y石川月菜y
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -70,7 +70,7 @@ Here are some ideas to get you started:
 - 🥈 **a_hisa** — 1,180 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
-- 5️⃣ **Plum** — 753 次播放
+- 5️⃣ **Plum** — 755 次播放
 
 **🎶 最爱的歌曲**  
 - 🥇 Anhedonia — a_hisa
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/29 08:52:22*
+*更新时间: 2026/9/29 15:23:22*
 <!-- LASTFM_END -->
