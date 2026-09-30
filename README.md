@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,029 次 |
-| 🎤 歌手总计 | 20,402 位 |
-| 💿 专辑总计 | 21,379 张 |
-| 🎶 歌曲总计 | 64,625 首 |
+| 🎧 播放总次数 | 87,063 次 |
+| 🎤 歌手总计 | 20,407 位 |
+| 💿 专辑总计 | 21,385 张 |
+| 🎶 歌曲总计 | 64,646 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 水音世界观--9月29日 — 水音世界观
-- 🎵 5G已经这么拉了，6G真的还有必要吗？【差评君】 — 差评君
-- 🎵 Megamix — Plum
+- 🎵 Sunset Flowers — Rigël Theatre
+- 🎵 光遇·逐光前行（Rx） — 盛云泽
+- 🎵 于是我们依旧向前走 — AniFace
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -43,9 +43,9 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **緑黄色社会** — 12 次播放
-- 🥈 **Rolling Contact** — 11 次播放
-- 🥉 **オルタンシア** — 11 次播放
+- 🥇 **Rolling Contact** — 11 次播放
+- 🥈 **オルタンシア** — 11 次播放
+- 🥉 **緑黄色社会** — 9 次播放
 - 4️⃣ **水音世界观** — 8 次播放
 - 5️⃣ **Duckk ASMR** — 6 次播放
 
@@ -58,8 +58,8 @@ Here are some ideas to get you started:
 
 **💿 热门专辑**  
 - 🥇 **ELECTRO CUTE 4** — Rolling Contact
-- 🥈 **あたまご** — 緑黄色社会
-- 🥉 **The Nine (Remastered)** — Bad Company UK
+- 🥈 **The Nine (Remastered)** — Bad Company UK
+- 🥉 **ELECTRO CUTE 3** — Rolling Contact
 
 ---
 
@@ -67,10 +67,10 @@ Here are some ideas to get you started:
 
 **🎤 最爱的艺术家**  
 - 🥇 **上海アリス幻樂団** — 2,463 次播放
-- 🥈 **a_hisa** — 1,180 次播放
+- 🥈 **a_hisa** — 1,181 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
-- 5️⃣ **Plum** — 755 次播放
+- 5️⃣ **Plum** — 756 次播放
 
 **🎶 最爱的歌曲**  
 - 🥇 Anhedonia — a_hisa
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/30 04:12:40*
+*更新时间: 2026/9/30 10:38:36*
 <!-- LASTFM_END -->
