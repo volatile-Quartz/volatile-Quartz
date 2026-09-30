@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,063 次 |
-| 🎤 歌手总计 | 20,407 位 |
+| 🎧 播放总次数 | 87,069 次 |
+| 🎤 歌手总计 | 20,408 位 |
 | 💿 专辑总计 | 21,385 张 |
-| 🎶 歌曲总计 | 64,646 首 |
+| 🎶 歌曲总计 | 64,650 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 Sunset Flowers — Rigël Theatre
-- 🎵 光遇·逐光前行（Rx） — 盛云泽
-- 🎵 于是我们依旧向前走 — AniFace
+- 🎵 南非闺蜜离开中国，告别时引外网热议：离不开！真的不想走 — 镜哥的世界
+- 🎵 1-3话 — 一池周啾
+- 🎵 9月29日 — 时局news
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -45,9 +45,9 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **Rolling Contact** — 11 次播放
 - 🥈 **オルタンシア** — 11 次播放
-- 🥉 **緑黄色社会** — 9 次播放
-- 4️⃣ **水音世界观** — 8 次播放
-- 5️⃣ **Duckk ASMR** — 6 次播放
+- 🥉 **时局news** — 9 次播放
+- 4️⃣ **緑黄色社会** — 9 次播放
+- 5️⃣ **水音世界观** — 7 次播放
 
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/30 10:38:36*
+*更新时间: 2026/9/30 16:40:11*
 <!-- LASTFM_END -->
