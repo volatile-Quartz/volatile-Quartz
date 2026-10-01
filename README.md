@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,105 次 |
-| 🎤 歌手总计 | 20,424 位 |
-| 💿 专辑总计 | 21,393 张 |
-| 🎶 歌曲总计 | 64,679 首 |
+| 🎧 播放总次数 | 87,117 次 |
+| 🎤 歌手总计 | 20,429 位 |
+| 💿 专辑总计 | 21,398 张 |
+| 🎶 歌曲总计 | 64,688 首 |
 
-🎧 **正在播放：** 露露卡上学只为解锁新场景 — KAPHA
+🎧 **正在播放：** Лети (Original Mix) — Native Guest/Natune
 
 **🎵 最近在听**  
-- 🎵 露露卡上学只为解锁新场景 — KAPHA
-- 🎵 原版生存全集，生存600天存档会变成什么样？超长专享版 — 灰机咕咕
-- 🎵 7 Weeks & 3 Days (Explicit) — yungatita
+- 🎵 Лети (Original Mix) — Native Guest/Natune
+- 🎵 Run It Up — Sam Binga/Machinedrum/Cesco
+- 🎵 Halcyon — The Ambientalist
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/1 14:13:35*
+*更新时间: 2026/10/1 19:41:07*
 <!-- LASTFM_END -->
