@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,078 次 |
+| 🎧 播放总次数 | 87,079 次 |
 | 🎤 歌手总计 | 20,412 位 |
 | 💿 专辑总计 | 21,385 张 |
 | 🎶 歌曲总计 | 64,659 首 |
@@ -29,9 +29,9 @@ Here are some ideas to get you started:
 
 
 **🎵 最近在听**  
+- 🎵 【全球首杀】最浪漫魔法阵Megamix2 准度100% 再次由中国人拿下完美无瑕 — DJGunbuster
 - 🎵 特朗普手撕十点协议，美伊首轮谈判仍照常举行 — 麻薯波比呀
 - 🎵 古网终于有合理解释了！创造者是节肢动物？ — 阿獠娜
-- 🎵 魔兽争霸：标准战役下的特级怪物们，远比你想象的更加恐怖！ — 杨森森与六硬币
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/9/30 21:12:56*
+*更新时间: 2026/10/1 00:41:09*
 <!-- LASTFM_END -->
