@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,089 次 |
-| 🎤 歌手总计 | 20,418 位 |
-| 💿 专辑总计 | 21,389 张 |
-| 🎶 歌曲总计 | 64,668 首 |
+| 🎧 播放总次数 | 87,105 次 |
+| 🎤 歌手总计 | 20,424 位 |
+| 💿 专辑总计 | 21,393 张 |
+| 🎶 歌曲总计 | 64,679 首 |
 
-
+🎧 **正在播放：** 露露卡上学只为解锁新场景 — KAPHA
 
 **🎵 最近在听**  
-- 🎵 9月30日 --055巨舰直接堵死马尼拉大门！大批外资携现金连夜大逃亡，特奥多罗嘴硬撂狠话当场被打脸！ — 时局news
-- 🎵 NEVER BACK DOWN (feat. yosumi) — Yuta Imai/yosumi
-- 🎵 Walk Away — Bass Shaker/Pherox/Dirty Workz
+- 🎵 露露卡上学只为解锁新场景 — KAPHA
+- 🎵 原版生存全集，生存600天存档会变成什么样？超长专享版 — 灰机咕咕
+- 🎵 7 Weeks & 3 Days (Explicit) — yungatita
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -45,16 +45,16 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **Rolling Contact** — 11 次播放
 - 🥈 **时局news** — 11 次播放
-- 🥉 **水音世界观** — 7 次播放
-- 4️⃣ **Duckk ASMR** — 6 次播放
+- 🥉 **Duckk ASMR** — 6 次播放
+- 4️⃣ **一池周啾** — 6 次播放
 - 5️⃣ **Sokudo!** — 5 次播放
 
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
-- 🥈 幽ノ楽園 (幽之乐园) — Albemuth
-- 🥉 星をめざして (Hardcore Edit) — Ange;art
-- 4️⃣ The Nine (Remastered) — Bad Company UK
-- 5️⃣ LoFi ASMR Triggers in a Chinese University 🏫👩‍🏫Library & Classroom — GuluLand ASMR
+- 🥈 1-3话 — 一池周啾
+- 🥉 幽ノ楽園 (幽之乐园) — Albemuth
+- 4️⃣ 星をめざして (Hardcore Edit) — Ange;art
+- 5️⃣ The Nine (Remastered) — Bad Company UK
 
 **💿 热门专辑**  
 - 🥇 **ELECTRO CUTE 4** — Rolling Contact
@@ -70,7 +70,7 @@ Here are some ideas to get you started:
 - 🥈 **a_hisa** — 1,181 次播放
 - 🥉 **Relaxu** — 1,009 次播放
 - 4️⃣ **Various Artists** — 783 次播放
-- 5️⃣ **Plum** — 756 次播放
+- 5️⃣ **Plum** — 757 次播放
 
 **🎶 最爱的歌曲**  
 - 🥇 Anhedonia — a_hisa
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/1 06:52:44*
+*更新时间: 2026/10/1 14:13:35*
 <!-- LASTFM_END -->
