@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,079 次 |
-| 🎤 歌手总计 | 20,412 位 |
-| 💿 专辑总计 | 21,385 张 |
-| 🎶 歌曲总计 | 64,659 首 |
+| 🎧 播放总次数 | 87,089 次 |
+| 🎤 歌手总计 | 20,418 位 |
+| 💿 专辑总计 | 21,389 张 |
+| 🎶 歌曲总计 | 64,668 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 【全球首杀】最浪漫魔法阵Megamix2 准度100% 再次由中国人拿下完美无瑕 — DJGunbuster
-- 🎵 特朗普手撕十点协议，美伊首轮谈判仍照常举行 — 麻薯波比呀
-- 🎵 古网终于有合理解释了！创造者是节肢动物？ — 阿獠娜
+- 🎵 9月30日 --055巨舰直接堵死马尼拉大门！大批外资携现金连夜大逃亡，特奥多罗嘴硬撂狠话当场被打脸！ — 时局news
+- 🎵 NEVER BACK DOWN (feat. yosumi) — Yuta Imai/yosumi
+- 🎵 Walk Away — Bass Shaker/Pherox/Dirty Workz
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -44,10 +44,10 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **Rolling Contact** — 11 次播放
-- 🥈 **オルタンシア** — 11 次播放
-- 🥉 **时局news** — 9 次播放
-- 4️⃣ **緑黄色社会** — 9 次播放
-- 5️⃣ **水音世界观** — 7 次播放
+- 🥈 **时局news** — 11 次播放
+- 🥉 **水音世界观** — 7 次播放
+- 4️⃣ **Duckk ASMR** — 6 次播放
+- 5️⃣ **Sokudo!** — 5 次播放
 
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/1 00:41:09*
+*更新时间: 2026/10/1 06:52:44*
 <!-- LASTFM_END -->
