@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,117 次 |
-| 🎤 歌手总计 | 20,429 位 |
-| 💿 专辑总计 | 21,398 张 |
-| 🎶 歌曲总计 | 64,688 首 |
+| 🎧 播放总次数 | 87,147 次 |
+| 🎤 歌手总计 | 20,450 位 |
+| 💿 专辑总计 | 21,419 张 |
+| 🎶 歌曲总计 | 64,717 首 |
 
-🎧 **正在播放：** Лети (Original Mix) — Native Guest/Natune
+
 
 **🎵 最近在听**  
-- 🎵 Лети (Original Mix) — Native Guest/Natune
-- 🎵 Run It Up — Sam Binga/Machinedrum/Cesco
-- 🎵 Halcyon — The Ambientalist
+- 🎵 【剧情音声】同桌的午休掏耳哄睡ASMR❤纯爱|女声温柔音|超甜治愈 — 胖皮丁
+- 🎵 百合厨一生只哭七次(•̩̩̩̩＿•̩̩̩̩) — 三七二食一
+- 🎵 躲在角落偷偷贴贴的两人 — 仙台_葉月
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/1 19:41:07*
+*更新时间: 2026/10/1 23:41:47*
 <!-- LASTFM_END -->
