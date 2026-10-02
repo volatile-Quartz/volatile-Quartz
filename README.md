@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,147 次 |
+| 🎧 播放总次数 | 87,169 次 |
 | 🎤 歌手总计 | 20,450 位 |
-| 💿 专辑总计 | 21,419 张 |
-| 🎶 歌曲总计 | 64,717 首 |
+| 💿 专辑总计 | 21,421 张 |
+| 🎶 歌曲总计 | 64,736 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 【剧情音声】同桌的午休掏耳哄睡ASMR❤纯爱|女声温柔音|超甜治愈 — 胖皮丁
-- 🎵 百合厨一生只哭七次(•̩̩̩̩＿•̩̩̩̩) — 三七二食一
-- 🎵 躲在角落偷偷贴贴的两人 — 仙台_葉月
+- 🎵 悪いことはしちゃいけないよ — きくお
+- 🎵 天国へ行こう — きくお
+- 🎵 僕をそんな目で見ないで — きくお
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -45,9 +45,9 @@ Here are some ideas to get you started:
 **🎤 热门艺术家**  
 - 🥇 **Rolling Contact** — 11 次播放
 - 🥈 **时局news** — 11 次播放
-- 🥉 **Duckk ASMR** — 6 次播放
-- 4️⃣ **一池周啾** — 6 次播放
-- 5️⃣ **Sokudo!** — 5 次播放
+- 🥉 **Iemitsu.** — 9 次播放
+- 4️⃣ **きくお** — 9 次播放
+- 5️⃣ **Duckk ASMR** — 6 次播放
 
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
@@ -58,8 +58,8 @@ Here are some ideas to get you started:
 
 **💿 热门专辑**  
 - 🥇 **ELECTRO CUTE 4** — Rolling Contact
-- 🥈 **The Nine (Remastered)** — Bad Company UK
-- 🥉 **ELECTRO CUTE 3** — Rolling Contact
+- 🥈 **KIKUOWORLD** — きくお
+- 🥉 **The Nine (Remastered)** — Bad Company UK
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/1 23:41:47*
+*更新时间: 2026/10/2 04:17:14*
 <!-- LASTFM_END -->
