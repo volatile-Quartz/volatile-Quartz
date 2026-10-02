@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,169 次 |
+| 🎧 播放总次数 | 87,170 次 |
 | 🎤 歌手总计 | 20,450 位 |
 | 💿 专辑总计 | 21,421 张 |
-| 🎶 歌曲总计 | 64,736 首 |
+| 🎶 歌曲总计 | 64,737 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 ASMR ~ Friend does your makeup Roleplay — Lyssie ASMR
 - 🎵 悪いことはしちゃいけないよ — きくお
 - 🎵 天国へ行こう — きくお
-- 🎵 僕をそんな目で見ないで — きくお
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -54,12 +54,12 @@ Here are some ideas to get you started:
 - 🥈 1-3话 — 一池周啾
 - 🥉 幽ノ楽園 (幽之乐园) — Albemuth
 - 4️⃣ 星をめざして (Hardcore Edit) — Ange;art
-- 5️⃣ The Nine (Remastered) — Bad Company UK
+- 5️⃣ Paradigm — Leslie Wai
 
 **💿 热门专辑**  
 - 🥇 **ELECTRO CUTE 4** — Rolling Contact
 - 🥈 **KIKUOWORLD** — きくお
-- 🥉 **The Nine (Remastered)** — Bad Company UK
+- 🥉 **ELECTRO CUTE 3** — Rolling Contact
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/2 04:17:14*
+*更新时间: 2026/10/2 10:39:15*
 <!-- LASTFM_END -->
