@@ -52,9 +52,9 @@ Here are some ideas to get you started:
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
 - 🥈 1-3话 — 一池周啾
-- 🥉 幽ノ楽園 (幽之乐园) — Albemuth
-- 4️⃣ 星をめざして (Hardcore Edit) — Ange;art
-- 5️⃣ Paradigm — Leslie Wai
+- 🥉 星をめざして (Hardcore Edit) — Ange;art
+- 4️⃣ Paradigm — Leslie Wai
+- 5️⃣ Electric Kingdom — Marc Hartman
 
 **💿 热门专辑**  
 - 🥇 **きくおミク** — きくお
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/3 05:35:48*
+*更新时间: 2026/10/3 11:10:57*
 <!-- LASTFM_END -->
