@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,192 次 |
-| 🎤 歌手总计 | 20,452 位 |
+| 🎧 播放总次数 | 87,193 次 |
+| 🎤 歌手总计 | 20,453 位 |
 | 💿 专辑总计 | 21,424 张 |
-| 🎶 歌曲总计 | 64,755 首 |
+| 🎶 歌曲总计 | 64,756 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 白月光开局去世？结尾大反转！！一起来看看millsage的剧情吧！ — 赤氵月
 - 🎵 Lost Requiem — Ludicin
 - 🎵 Energy — Elektronomia
-- 🎵 BRAVE：ROAD — uma/モリモリあつし
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -46,15 +46,15 @@ Here are some ideas to get you started:
 - 🥇 **きくお** — 18 次播放
 - 🥈 **Rolling Contact** — 11 次播放
 - 🥉 **Iemitsu.** — 9 次播放
-- 4️⃣ **时局news** — 7 次播放
-- 5️⃣ **Duckk ASMR** — 6 次播放
+- 4️⃣ **Duckk ASMR** — 6 次播放
+- 5️⃣ **一池周啾** — 6 次播放
 
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
 - 🥈 1-3话 — 一池周啾
 - 🥉 星をめざして (Hardcore Edit) — Ange;art
-- 4️⃣ Paradigm — Leslie Wai
-- 5️⃣ Electric Kingdom — Marc Hartman
+- 4️⃣ Electric Kingdom — Marc Hartman
+- 5️⃣ MEGAMIX 2 — Plum
 
 **💿 热门专辑**  
 - 🥇 **きくおミク** — きくお
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/3 11:10:57*
+*更新时间: 2026/10/3 15:11:38*
 <!-- LASTFM_END -->
