@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,170 次 |
-| 🎤 歌手总计 | 20,450 位 |
-| 💿 专辑总计 | 21,421 张 |
-| 🎶 歌曲总计 | 64,737 首 |
+| 🎧 播放总次数 | 87,192 次 |
+| 🎤 歌手总计 | 20,452 位 |
+| 💿 专辑总计 | 21,424 张 |
+| 🎶 歌曲总计 | 64,755 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 ASMR ~ Friend does your makeup Roleplay — Lyssie ASMR
-- 🎵 悪いことはしちゃいけないよ — きくお
-- 🎵 天国へ行こう — きくお
+- 🎵 Lost Requiem — Ludicin
+- 🎵 Energy — Elektronomia
+- 🎵 BRAVE：ROAD — uma/モリモリあつし
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -43,10 +43,10 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **Rolling Contact** — 11 次播放
-- 🥈 **时局news** — 11 次播放
+- 🥇 **きくお** — 18 次播放
+- 🥈 **Rolling Contact** — 11 次播放
 - 🥉 **Iemitsu.** — 9 次播放
-- 4️⃣ **きくお** — 9 次播放
+- 4️⃣ **时局news** — 7 次播放
 - 5️⃣ **Duckk ASMR** — 6 次播放
 
 **🎶 热门歌曲**  
@@ -57,9 +57,9 @@ Here are some ideas to get you started:
 - 5️⃣ Paradigm — Leslie Wai
 
 **💿 热门专辑**  
-- 🥇 **ELECTRO CUTE 4** — Rolling Contact
-- 🥈 **KIKUOWORLD** — きくお
-- 🥉 **ELECTRO CUTE 3** — Rolling Contact
+- 🥇 **きくおミク** — きくお
+- 🥈 **ELECTRO CUTE 4** — Rolling Contact
+- 🥉 **KIKUOWORLD** — きくお
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/3 00:10:25*
+*更新时间: 2026/10/3 05:35:48*
 <!-- LASTFM_END -->
