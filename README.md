@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,193 次 |
-| 🎤 歌手总计 | 20,453 位 |
+| 🎧 播放总次数 | 87,194 次 |
+| 🎤 歌手总计 | 20,454 位 |
 | 💿 专辑总计 | 21,424 张 |
-| 🎶 歌曲总计 | 64,756 首 |
+| 🎶 歌曲总计 | 64,757 首 |
 
 
 
 **🎵 最近在听**  
+- 🎵 这个abr一串字母怎么这么难啊这是人打的吗 — Kayli凯理
 - 🎵 白月光开局去世？结尾大反转！！一起来看看millsage的剧情吧！ — 赤氵月
 - 🎵 Lost Requiem — Ludicin
-- 🎵 Energy — Elektronomia
 
 **📈 播放趋势**  
 - 📅 本周: 322 次播放
@@ -44,10 +44,10 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **きくお** — 18 次播放
-- 🥈 **Rolling Contact** — 11 次播放
-- 🥉 **Iemitsu.** — 9 次播放
-- 4️⃣ **Duckk ASMR** — 6 次播放
-- 5️⃣ **一池周啾** — 6 次播放
+- 🥈 **Iemitsu.** — 9 次播放
+- 🥉 **Duckk ASMR** — 6 次播放
+- 4️⃣ **一池周啾** — 6 次播放
+- 5️⃣ **时局news** — 6 次播放
 
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
@@ -58,8 +58,8 @@ Here are some ideas to get you started:
 
 **💿 热门专辑**  
 - 🥇 **きくおミク** — きくお
-- 🥈 **ELECTRO CUTE 4** — Rolling Contact
-- 🥉 **KIKUOWORLD** — きくお
+- 🥈 **KIKUOWORLD** — きくお
+- 🥉 **Wyw my sweetie #JerseyClub** — nissi/25Hzz
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/3 15:11:38*
+*更新时间: 2026/10/3 18:46:33*
 <!-- LASTFM_END -->
