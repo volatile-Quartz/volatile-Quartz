@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,427 张 |
 | 🎶 歌曲总计 | 64,777 首 |
 
-🎧 **正在播放：** 第8话 — 一池周啾
+
 
 **🎵 最近在听**  
 - 🎵 第8话 — 一池周啾
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/4 17:18:26*
+*更新时间: 2026/10/4 20:20:40*
 <!-- LASTFM_END -->
