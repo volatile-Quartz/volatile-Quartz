@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,218 次 |
+| 🎧 播放总次数 | 87,220 次 |
 | 🎤 歌手总计 | 20,461 位 |
 | 💿 专辑总计 | 21,427 张 |
 | 🎶 歌曲总计 | 64,777 首 |
 
-
+🎧 **正在播放：** 名無声 — MyGO!!!!!
 
 **🎵 最近在听**  
+- 🎵 名無声 — MyGO!!!!!
+- 🎵 迷星叫 — MyGO!!!!!
 - 🎵 第8话 — 一池周啾
-- 🎵 第7话 — 一池周啾
-- 🎵 我觉得气泡音很美味 — 云绵安
 
 **📈 播放趋势**  
 - 📅 本周: 206 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/4 20:20:40*
+*更新时间: 2026/10/4 23:28:22*
 <!-- LASTFM_END -->
