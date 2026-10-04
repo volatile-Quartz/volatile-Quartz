@@ -8,12 +8,18 @@
     "爱因是蛋", "慢半拍的喵yy", "漆晴弦卷心", "AnonTokyo董事长", "Soleil-JJ",
     "燕三嘤嘤嘤", "モナカの音楽室",
     "睡眠音楽", "DJ Meditation", "HEALING MUSIC", "BGM向上", "DJ Relax BGM",
-    "赛雷三分钟", "星球官方号", "深渊薯片", "TomCat团座", "黑橘奈叶香", "freesia"
+    "赛雷三分钟", "星球官方号", "深渊薯片", "TomCat团座", "黑橘奈叶香", "freesia",
+    "这知识好冷", "动动枪DongDongGun", "中气爱", "L另唐", "离原center",
+    "杨森森与六硬币", "阿獠娜", "DJGunbuster", "镜哥的世界", "子桑纺云",
+    "柒木宗吉", "一池周啾", "灰机咕咕", "老马的暴躁财经", "呜呜长一君",
+    "差评君", "赤氵月", "Kayli凯理", "PontduCarrousel", "闪光马希洛酱",
+    "幸运咪啪之谣", "Aloereed"
   ],
 
   "filter_keywords": [
     "水音世界观", "某二两", "军事", "解说", "配音", "asmr", "歌って", "翻唱",
-    "新闻", "杂谈", "露露卡", "武装兔", "cover", "フリーbgm", "1時間耐久"
+    "新闻", "杂谈", "露露卡", "武装兔", "cover", "フリーbgm", "1時間耐久",
+    "字幕", "剧情", "4399", "millsage"
   ],
 
   "blacklist_tracks": [
@@ -36,7 +42,8 @@
     "Disney、Shakira": "Shakira",
     "Yukiyanagi": "YUKIYANAGI",
     ".｡ﾟ+..Curren｡+..｡ﾟ+ -": "カレンチャン",
-    "Redalice, T+pazolite": "REDALiCE/t+pazolite"
+    "Redalice, T+pazolite": "REDALiCE/t+pazolite",
+    "Kikuo": "きくお"
   },
 
   "feat_map": {
@@ -190,7 +197,8 @@
     "Tatsunoshin & Tsugumi Nagahara|Innocent Prayer (": "Innocent Prayer",
     "健屋花那|Beat Me! (": "Beat Me!",
     "健屋花那 & PSYQUI|Shining Lights (": "Shining Lights",
-    "Shandy kubota & かめりあ|See you (Camellia's Farewell Remix) [": "See you (Camellia's Farewell Remix)"
+    "Shandy kubota & かめりあ|See you (Camellia's Farewell Remix) [": "See you (Camellia's Farewell Remix)",
+    "Nissi|why do #JerseyClub": "Why Do #JerseyClub"
   },
 
   "title_suffix": [
