@@ -52,9 +52,9 @@ Here are some ideas to get you started:
 **🎶 热门歌曲**  
 - 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
 - 🥈 1-3话 — 一池周啾
-- 🥉 星をめざして (Hardcore Edit) — Ange;art
-- 4️⃣ Electric Kingdom — Marc Hartman
-- 5️⃣ MEGAMIX 2 — Plum
+- 🥉 Electric Kingdom — Marc Hartman
+- 4️⃣ MEGAMIX 2 — Plum
+- 5️⃣ Run It Up — Sam Binga/Machinedrum/Cesco
 
 **💿 热门专辑**  
 - 🥇 **きくおミク** — きくお
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/4 00:29:23*
+*更新时间: 2026/10/4 06:14:51*
 <!-- LASTFM_END -->
