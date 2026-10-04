@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,204 次 |
-| 🎤 歌手总计 | 20,460 位 |
+| 🎧 播放总次数 | 87,218 次 |
+| 🎤 歌手总计 | 20,461 位 |
 | 💿 专辑总计 | 21,427 张 |
-| 🎶 歌曲总计 | 64,766 首 |
+| 🎶 歌曲总计 | 64,777 首 |
 
-
+🎧 **正在播放：** 第8话 — 一池周啾
 
 **🎵 最近在听**  
-- 🎵 霍尔木兹海峡被掐半年，谁在为能源海啸买单？| 中国坐标 — 肝帝董佳宁
-- 🎵 挑战全B最复杂AI手书——奏莹的《LOWER》 — 幸运咪啪之谣
-- 🎵 下次不敢随便似了 — 闪光马希洛酱
+- 🎵 第8话 — 一池周啾
+- 🎵 第7话 — 一池周啾
+- 🎵 我觉得气泡音很美味 — 云绵安
 
 **📈 播放趋势**  
 - 📅 本周: 206 次播放
@@ -44,14 +44,14 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **きくお** — 18 次播放
-- 🥈 **Iemitsu.** — 9 次播放
-- 🥉 **Duckk ASMR** — 6 次播放
-- 4️⃣ **一池周啾** — 6 次播放
-- 5️⃣ **时局news** — 6 次播放
+- 🥈 **一池周啾** — 16 次播放
+- 🥉 **Iemitsu.** — 9 次播放
+- 4️⃣ **时局news** — 6 次播放
+- 5️⃣ **水音世界观** — 5 次播放
 
 **🎶 热门歌曲**  
-- 🥇 中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班 — Duckk ASMR
-- 🥈 1-3话 — 一池周啾
+- 🥇 1-3话 — 一池周啾
+- 🥈 第7话 — 一池周啾
 - 🥉 Electric Kingdom — Marc Hartman
 - 4️⃣ MEGAMIX 2 — Plum
 - 5️⃣ Run It Up — Sam Binga/Machinedrum/Cesco
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/4 12:44:36*
+*更新时间: 2026/10/4 17:18:26*
 <!-- LASTFM_END -->
