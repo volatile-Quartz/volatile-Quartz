@@ -1,92 +1,33 @@
-## Hi there 👋
+> 记录自我，留存活过的痕迹。
+>
+> 人总想留下痕迹，证明自己活过。信息时代里，被数字化的东西只会越来越多——数字不会风化，也不会被遗忘。人有两次死亡：第一次是肉体，第二次是被遗忘。我选择把自己的日记与思考搬来这里，只为让第二次死亡来得晚一些。
+>
+> 文章的篇章数量按「周记/月记」逐篇统计：同一合集下的每条周记/月记各计一篇，一篇文章即一个日记单元。
 
-<!--
-**volatile-Quartz/volatile-Quartz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I'm currently working on ...
-- 🌱 I'm currently learning ...
-- 👯 I'm looking to collaborate on ...
-- 🤔 I'm looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-<!-- LASTFM_START -->
-### 🎵 音乐世界
-
-**📊 统计概览**  
-| 项目 | 数据 |
-|------|------|
-| 🎧 播放总次数 | 85,664 次 |
-| 🎤 歌手总计 | 20,054 位 |
-| 💿 专辑总计 | 20,956 张 |
-| 🎶 歌曲总计 | 63,574 首 |
+## 文章列表
+| 序号 | 文章标题 | 更新时间 | 篇章统计 | 字数统计 | 插图统计 |
+|:------:|:------------------:|:------------------:|:------:|:------:|:------:|
+| 1 | [「Diary」2025](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/27) | 2026-10-04 10:44 | 57 | 90999 | 0 |
+| 2 | [「Diary」2026](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/28) | 2026-10-03 17:13 | 41 | 115848 | 3 |
+| 3 | [「Diary」2017-2018](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/20) | 2026-09-09 23:45 | 1 | 12 | 0 |
+| 4 | [「Diary」2006-2007](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/16) | 2026-09-09 23:45 | 3 | 2058 | 0 |
+| 5 | [「Diary」2002-2003](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/14) | 2026-09-09 23:45 | 3 | 2333 | 0 |
+| 6 | [「Diary」2019](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/21) | 2026-09-01 14:08 | 8 | 3928 | 24 |
+| 7 | [「Diary」2024](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/26) | 2026-06-16 17:47 | 1 | 10 | 0 |
+| 8 | [「Diary」2023](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/25) | 2026-06-16 17:46 | 1 | 10 | 0 |
+| 9 | [「Diary」2022](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/24) | 2026-06-16 17:46 | 1 | 10 | 0 |
+| 10 | [「Diary」2021](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/23) | 2026-06-16 17:45 | 1 | 10 | 0 |
+| 11 | [「Diary」2020](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/22) | 2026-06-16 17:38 | 1 | 10 | 0 |
+| 12 | [「Diary」2016](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/19) | 2026-06-16 17:37 | 1 | 10 | 0 |
+| 13 | [「Diary」2015](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/18) | 2026-06-16 17:36 | 1 | 10 | 0 |
+| 14 | [「Diary」2014](https://github.com/volatile-Quartz/Dr_Wunderkammer/issues/17) | 2026-06-16 17:36 | 1 | 10 | 0 |
 
 
-
-**🎵 最近在听**  
-- 🎵 水音世界观--8月28日--美军航母疲于奔命，特朗普自封“史上最伟大”！俄乌全境轰炸突发大变局！ — 水音世界观
-- 🎵 ASMR 🌍Travel with me on iPad✈️ Show & Tell, Chinese Whispering — LaurasPillow ASMR
-- 🎵 すすめ!ウルトラマンゼロ (前进吧！赛罗奥特曼) — ボイジャー
-
-**📈 播放趋势**  
-- 📅 本周: 173 次播放
-- 📆 8/16: 294 次播放
-- 📆 8/9: 651 次播放
-
----
-
-### 🌟 本周排行
-
-**🎤 热门艺术家**  
-- 🥇 **Jam Thieves** — 6 次播放
-- 🥈 **Annix** — 5 次播放
-- 🥉 **LaurasPillow ASMR** — 5 次播放
-- 4️⃣ **Macky Gee** — 4 次播放
-- 5️⃣ **しぐれうい** — 4 次播放
-
-**🎶 热门歌曲**  
-- 🥇 World's End, Girl's Rondo (Asterisk DnB Remix) — Asterisk
-- 🥈 COSMOS(Extended) — BlackY's BEATFLOOR
-- 🥉 レム — DOLLCHESTRA
-- 4️⃣ 虚 — Halv
-- 5️⃣ Zero Gravity — Tatsunoshin&Aira Arere
-
-**💿 热门专辑**  
-- 🥇 **Jazzing EP** — Annix
-- 🥈 **It's A Gee Thing** — Macky Gee
-- 🥉 **fiction** — しぐれうい
-
----
-
-### 🏆 历史最佳
-
-**🎤 最爱的艺术家**  
-- 🥇 **上海アリス幻樂団** — 2,462 次播放
-- 🥈 **a_hisa** — 1,175 次播放
-- 🥉 **Relaxu** — 975 次播放
-- 4️⃣ **Various Artists** — 783 次播放
-- 5️⃣ **Plum** — 744 次播放
-
-**🎶 最爱的歌曲**  
-- 🥇 Anhedonia — a_hisa
-- 🥈 Discordant Mermaid — Merm4id & Massive New Krew
-- 🥉 AXION — Sakuzyo
-- 4️⃣ Kronos — Sakuzyo
-- 5️⃣ Direct Drive! — Happy Around!
-
----
-
-### 👥 Last.fm 好友
-- 👤 [Gishki](https://www.last.fm/user/Gishki)
-- 👤 [Agentj118](https://www.last.fm/user/Agentj118)
-- 👤 [kiitevy](https://www.last.fm/user/kiitevy)
-- 👤 [xquto](https://www.last.fm/user/xquto)
-- 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
-
-*更新时间: 2026/8/31 03:56:18*
-<!-- LASTFM_END -->
+## 博客统计
+- 年份合集：14 个
+- 周记/月记：121 篇
+- 新增篇章：0
+- 更新篇章：1
+- 总字数：215258
+- 总插图数：27
+- 最后更新：2026-10-05 00:48:56
