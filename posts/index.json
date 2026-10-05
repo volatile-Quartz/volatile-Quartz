@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T03:21:01.345991+00:00",
+  "generated_at": "2026-10-05T03:24:08.348785+00:00",
   "entries": [
     {
       "path": "the-lore/About-Calculations/00_index.md",
@@ -62,7 +62,7 @@
       "word_count": 891,
       "image_count": 0,
       "file_size": 5802,
-      "sha256_short": "6d79e1517f500a73"
+      "sha256_short": "05155e50476ac2d1"
     },
     {
       "path": "my-diary/Diary-2026/01_第1周（2025.12.29-2026.01.04）元旦、恩培多克勒四根说.md",
@@ -410,10 +410,10 @@
       "path": "my-diary/Diary-2026/39_第40周（2026.09.28-2026.10.04）布雷顿森林体系与特里芬悖论.md",
       "title": "第40周（2026.09.28-2026.10.04）布雷顿森林体系与特里芬悖论",
       "label": "my-diary/Diary-2026",
-      "word_count": 5440,
+      "word_count": 5462,
       "image_count": 0,
-      "file_size": 24168,
-      "sha256_short": "ab8e74ea8346f4e3"
+      "file_size": 24309,
+      "sha256_short": "341a9109fe2bea99"
     },
     {
       "path": "my-diary/Diary-2026/40_第41周（2026.10.05-2026.10.11）.md",
