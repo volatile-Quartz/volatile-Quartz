@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Generate weekly listening stats (markdown block, ready for GitHub issue) + HTML report.
-Reads /tmp/lastfm_prep.json + /tmp/lastfm_enrich.json + lastfm_rules.json (style whitelist).
+Reads /tmp/lastfm_prep.json + /tmp/lastfm_enrich.json + lastfm_rules.json (style rules).
 Usage: python3 weekly_stats_report.py
-输出口径：有效记录=清洗后播放次数；每日=独立曲目/日；风格=曲风白名单过滤；插值单位=次。
+输出口径：有效记录=清洗后播放次数；每日=独立曲目/日；风格=宽松清洗（去语言/描述标签+合并变体）后生成图片词云；插值单位=次。
+依赖：wordcloud + pillow（可选；缺失时风格分布自动降级为 CSS span 词云）。
 """
 import json, collections, html, os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RULES = json.load(open(os.path.join(BASE_DIR, "lastfm_rules.json")))
-GENRE = set(RULES.get("style_genre_whitelist", []))
+STYLE_DROP = set(RULES.get("style_drop_tags", []))
 MERGES = RULES.get("style_tag_merges", {})
 
 prep = json.load(open("/tmp/lastfm_prep.json"))
@@ -27,7 +28,11 @@ def fmt_dur(sec):
     return "{}:{:02d}".format(m, s)
 
 def canon(t):
-    return MERGES.get(t, t)
+    """风格标签清洗：合并变体；命中黑名单/过长返回 None（不入词云）。"""
+    t2 = MERGES.get(t, t)
+    if t2 in STYLE_DROP or not t2 or len(t2) > 30:
+        return None
+    return t2
 
 # ---- 时长估算：直接查到 + 同歌手均值插值（无则取全周均值），单位：次播放 ----
 full_counts = prep["full_counts"]
@@ -52,12 +57,14 @@ for key, cnt in full_counts.items():
 daily = prep["daily"]
 days = sorted(daily)
 
-# ---- 风格：Top 歌手标签 × 播放次数，曲风白名单过滤 ----
+# ---- 风格：Top 歌手标签 × 播放次数，宽松清洗（去语言/描述标签 + 合并变体）----
 tag_cnt = collections.Counter()
 for artist, cnt in prep["top_artists"]:
     for t in tags_by_artist.get(artist, []):
-        tag_cnt[canon(t.lower())] += cnt
-genres = [t for t, c in tag_cnt.most_common(30) if t in GENRE]
+        c = canon(t.lower())
+        if c:
+            tag_cnt[c] += cnt
+genres = [t for t, c in tag_cnt.most_common(30)]
 style_str = " / ".join(genres[:6])
 
 # ---- 新歌 / 复听 ----
@@ -123,25 +130,73 @@ def svg_hbars(items, w=640):
     out.append("</svg>")
     return "\n".join(out)
 
+def find_cjk_font():
+    """查找系统可用的中日韩字体，供图片词云使用；找不到返回 None（降级 span 词云）。"""
+    import glob
+    cands = [
+        "/usr/share/fonts/truetype/noto/NotoSansCJKsc-Regular.otf",
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+        "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+        "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
+        "/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf",
+        "/System/Library/Fonts/PingFang.ttc",
+        "/System/Library/Fonts/Hiragino Sans GB.ttc",
+        "C:/Windows/Fonts/msyh.ttc",
+        "C:/Windows/Fonts/msyh.ttf",
+        "C:/Windows/Fonts/simhei.ttf",
+    ]
+    for p in cands:
+        if os.path.exists(p):
+            return p
+    for pat in ["/usr/share/fonts/**/*CJK*", "/usr/share/fonts/**/wqy*",
+                "/usr/share/fonts/**/DroidSansFallback*", "/usr/share/fonts/**/NotoSans*"]:
+        for f in glob.glob(pat, recursive=True):
+            if os.path.exists(f):
+                return f
+    return None
+
 def word_cloud(items):
-    """词云：字号与权重正比，随机微旋转，多彩配色。"""
+    """图片词云：wordcloud 库生成 PNG（椭圆 mask、频率字号）base64 内嵌；无依赖/字体时降级 span 词云。"""
     if not items:
         return '<p style="color:#aaa">无</p>'
-    mx = max(c for _, c in items)
-    palette = ["#7c5cbf", "#4a90d9", "#e08a3c", "#3aa675", "#d65a7a", "#8a6fd1", "#2a9d8f", "#e76f51"]
-    rots = [-4, 3, -2, 0, 2, -3, 4, 0]
-    spans = []
-    for i, (t, c) in enumerate(items):
-        fs = 16 + (c / mx) * 26
-        col = palette[i % len(palette)]
-        rot = rots[i % len(rots)]
-        spans.append('<span style="display:inline-block;font-size:{:.0f}px;color:{};font-weight:600;padding:4px 8px;transform:rotate({}deg)">{}</span>'.format(
-            fs, col, rot, html.escape(str(t))))
-    return '<div style="line-height:2.1;text-align:center;padding:8px 0">{}</div>'.format("".join(spans))
+    try:
+        import io, base64
+        from wordcloud import WordCloud
+        import numpy as np
+        from PIL import Image, ImageDraw
+        font = find_cjk_font()
+        if not font:
+            raise RuntimeError("no CJK font available")
+        W, H = 720, 620
+        mask_im = Image.new("L", (W, H), 255)
+        ImageDraw.Draw(mask_im).ellipse([W * 0.02, H * 0.02, W * 0.98, H * 0.98], fill=0)
+        wc = WordCloud(
+            font_path=font, mask=np.array(mask_im), background_color="white",
+            colormap="viridis", min_font_size=10, max_font_size=120,
+            prefer_horizontal=0.92, relative_scaling=0.5,
+            collocations=False, margin=4, random_state=42,
+        ).generate_from_frequencies(dict(items))
+        buf = io.BytesIO()
+        wc.to_image().save(buf, format="PNG")
+        b64 = base64.b64encode(buf.getvalue()).decode()
+        return '<img src="data:image/png;base64,{}" alt="风格词云" style="width:100%;border-radius:8px">'.format(b64)
+    except Exception:
+        # 降级：CSS span 词云（字号与权重正比，多彩配色）
+        mx = max(c for _, c in items)
+        palette = ["#7c5cbf", "#4a90d9", "#e08a3c", "#3aa675", "#d65a7a", "#8a6fd1", "#2a9d8f", "#e76f51"]
+        rots = [-4, 3, -2, 0, 2, -3, 4, 0]
+        spans = []
+        for i, (t, c) in enumerate(items):
+            fs = 16 + (c / mx) * 26
+            col = palette[i % len(palette)]
+            rot = rots[i % len(rots)]
+            spans.append('<span style="display:inline-block;font-size:{:.0f}px;color:{};font-weight:600;padding:4px 8px;transform:rotate({}deg)">{}</span>'.format(
+                fs, col, rot, html.escape(str(t))))
+        return '<div style="line-height:2.1;text-align:center;padding:8px 0">{}</div>'.format("".join(spans))
 
 daily_items = [(d, daily[d]) for d in days]
 art_items = [(a, c) for a, c in prep["top_artists"][:8]]
-tag_items = [(t, c) for t, c in tag_cnt.most_common(30) if t in GENRE][:10]
+tag_items = [(t, c) for t, c in tag_cnt.most_common(40)]
 repeat_html = ("<br>".join("<b>{}</b>《{}》× {}".format(html.escape(a), html.escape(t), c)
                            for x in prep["played_again"][:10] for a, t, c in [x.values()]) or "无")
 
