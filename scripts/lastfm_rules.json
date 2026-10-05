@@ -209,6 +209,28 @@
     "VIP", "漫剧片尾歌曲", "片尾曲"
   ],
 
+  "style_genre_whitelist": [
+    "pop", "folk", "punk", "rock", "hardcore", "dnb", "drum and bass",
+    "electronic", "electronica", "edm", "house", "techno", "trance",
+    "dubstep", "breakcore", "jungle", "drumstep", "gabber", "happy hardcore",
+    "uk hardcore", "hardstyle", "eurobeat", "speedcore", "noise", "noise rock",
+    "metal", "j-metal", "death metal", "symphonic metal", "power metal",
+    "j-rock", "j-pop", "synthpop", "synthwave", "city pop", "vocaloid",
+    "chiptune", "8-bit", "future bass", "electro", "breakbeat", "big beat",
+    "acid", "ambient", "chillout", "lo-fi", "jazz", "classical", "orchestral",
+    "hip hop", "rap", "soul", "r&b", "funk", "disco", "psytrance",
+    "progressive house", "deep house", "liquid drum and bass", "neurofunk",
+    "crossbreed", "idm", "glitch", "witch house", "vaporwave", "future funk",
+    "breakbeat hardcore", "rave", "dancecore", "hard dance", "tribal house",
+    "j-core", "techstep", "darkstep", "indie", "indie rock", "indie pop",
+    "electro house", "drumstep", "dubstep", "glitch hop",
+    "alternative"
+  ],
+
+  "style_tag_merges": {
+    "drum and bass": "dnb"
+  },
+
   "extra_rules": {
     "strip_feat_in_title": true,
     "strip_cjk_annotation_in_title": true,
