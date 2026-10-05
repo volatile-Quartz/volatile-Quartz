@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,253 次 |
-| 🎤 歌手总计 | 20,467 位 |
-| 💿 专辑总计 | 21,440 张 |
-| 🎶 歌曲总计 | 64,789 首 |
+| 🎧 播放总次数 | 87,261 次 |
+| 🎤 歌手总计 | 20,471 位 |
+| 💿 专辑总计 | 21,444 张 |
+| 🎶 歌曲总计 | 64,796 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 Vanilla Flavored Soda (香草味苏打) — Plum - Melodic Artist
-- 🎵 cat reincarnation (猫重生) — nyamura
-- 🎵 Six Forty Seven (6：47) — Instupendo
+- 🎵 一家Dumb Rock!「ピースフル・ピーシーズ！（Peaceful・Pieces!）」【Official Music Video】 — millsage_家団_ofc
+- 🎵 RADIAN LUNACY — Jeko/Syuenn/Krasper2
+- 🎵 Athena's Paragraph — MiMi
 
 **📈 播放趋势**  
 - 📅 本周: 206 次播放
@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **一池周啾** — 19 次播放
 - 🥈 **きくお** — 18 次播放
 - 🥉 **Iemitsu.** — 9 次播放
-- 4️⃣ **时局news** — 5 次播放
-- 5️⃣ **水音世界观** — 5 次播放
+- 4️⃣ **时局news** — 6 次播放
+- 5️⃣ **Plum** — 4 次播放
 
 **🎶 热门歌曲**  
 - 🥇 1-3话 — 一池周啾
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/5 09:28:16*
+*更新时间: 2026/10/5 18:46:25*
 <!-- LASTFM_END -->
