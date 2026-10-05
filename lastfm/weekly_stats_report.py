@@ -15,7 +15,8 @@ prep = json.load(open("/tmp/lastfm_prep.json"))
 enr = json.load(open("/tmp/lastfm_enrich.json"))
 durations, tags_by_artist = enr["durations"], enr["tags_by_artist"]
 meta = prep["meta"]
-label = meta["week_label"].replace(" ", "").lower()
+# 文件名带年份前缀，避免跨年混淆（如 2026week39_report.html）
+label = meta["week_range"].split(" ~ ")[0][:4] + meta["week_label"].replace(" ", "").lower()
 clean = prep["clean"]
 
 def fmt_dur(sec):
