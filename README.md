@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,220 次 |
-| 🎤 歌手总计 | 20,461 位 |
-| 💿 专辑总计 | 21,427 张 |
-| 🎶 歌曲总计 | 64,777 首 |
+| 🎧 播放总次数 | 87,253 次 |
+| 🎤 歌手总计 | 20,467 位 |
+| 💿 专辑总计 | 21,440 张 |
+| 🎶 歌曲总计 | 64,789 首 |
 
-🎧 **正在播放：** 名無声 — MyGO!!!!!
+
 
 **🎵 最近在听**  
-- 🎵 名無声 — MyGO!!!!!
-- 🎵 迷星叫 — MyGO!!!!!
-- 🎵 第8话 — 一池周啾
+- 🎵 Vanilla Flavored Soda (香草味苏打) — Plum - Melodic Artist
+- 🎵 cat reincarnation (猫重生) — nyamura
+- 🎵 Six Forty Seven (6：47) — Instupendo
 
 **📈 播放趋势**  
 - 📅 本周: 206 次播放
@@ -43,18 +43,18 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **きくお** — 18 次播放
-- 🥈 **一池周啾** — 16 次播放
+- 🥇 **一池周啾** — 19 次播放
+- 🥈 **きくお** — 18 次播放
 - 🥉 **Iemitsu.** — 9 次播放
-- 4️⃣ **时局news** — 6 次播放
+- 4️⃣ **时局news** — 5 次播放
 - 5️⃣ **水音世界观** — 5 次播放
 
 **🎶 热门歌曲**  
 - 🥇 1-3话 — 一池周啾
 - 🥈 第7话 — 一池周啾
-- 🥉 Electric Kingdom — Marc Hartman
-- 4️⃣ MEGAMIX 2 — Plum
-- 5️⃣ Run It Up — Sam Binga/Machinedrum/Cesco
+- 🥉 layering2 — Angelize
+- 4️⃣ Electric Kingdom — Marc Hartman
+- 5️⃣ MEGAMIX 2 — Plum
 
 **💿 热门专辑**  
 - 🥇 **きくおミク** — きくお
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/4 23:28:22*
+*更新时间: 2026/10/5 02:19:10*
 <!-- LASTFM_END -->
