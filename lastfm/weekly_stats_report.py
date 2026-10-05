@@ -116,51 +116,74 @@ def svg_hbars(items, w=640):
         y = 34 + i * rh; bw = (v / mx) * (w - 190)
         out.append('<text x="6" y="{:.1f}" font-size="13" fill="#333">{}</text>'.format(y + 16, html.escape(str(lb))))
         out.append('<rect x="190" y="{:.1f}" width="{:.1f}" height="18" rx="4" fill="#4a90d9"/>'.format(y + 5, bw))
-        out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" fill="#555">{}</text>'.format(196 + bw, y + 19, v))
+        if bw > 44:   # 长条时数字写在条内（白字），避免顶格被裁掉
+            out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" text-anchor="end" fill="#fff">{}</text>'.format(190 + bw - 6, y + 19, v))
+        else:
+            out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" fill="#555">{}</text>'.format(196 + bw, y + 19, v))
     out.append("</svg>")
     return "\n".join(out)
 
+def word_cloud(items):
+    """词云：字号与权重正比，随机微旋转，多彩配色。"""
+    if not items:
+        return '<p style="color:#aaa">无</p>'
+    mx = max(c for _, c in items)
+    palette = ["#7c5cbf", "#4a90d9", "#e08a3c", "#3aa675", "#d65a7a", "#8a6fd1", "#2a9d8f", "#e76f51"]
+    rots = [-4, 3, -2, 0, 2, -3, 4, 0]
+    spans = []
+    for i, (t, c) in enumerate(items):
+        fs = 16 + (c / mx) * 26
+        col = palette[i % len(palette)]
+        rot = rots[i % len(rots)]
+        spans.append('<span style="display:inline-block;font-size:{:.0f}px;color:{};font-weight:600;padding:4px 8px;transform:rotate({}deg)">{}</span>'.format(
+            fs, col, rot, html.escape(str(t))))
+    return '<div style="line-height:2.1;text-align:center;padding:8px 0">{}</div>'.format("".join(spans))
+
 daily_items = [(d, daily[d]) for d in days]
 art_items = [(a, c) for a, c in prep["top_artists"][:8]]
-tag_items = [(t, c) for t, c in tag_cnt.most_common(8) if t in GENRE][:8]
+tag_items = [(t, c) for t, c in tag_cnt.most_common(30) if t in GENRE][:10]
 repeat_html = ("<br>".join("<b>{}</b>《{}》× {}".format(html.escape(a), html.escape(t), c)
                            for x in prep["played_again"][:10] for a, t, c in [x.values()]) or "无")
 
+# 标题带年份（如 2026 week 39 听歌周报），last.fm 首字母小写
+title_txt = "{} {} 听歌周报".format(meta["week_range"].split(" ~ ")[0][:4], meta["week_label"].lower())
+
 body = """<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{} · 听歌周报 · {}</title>
+<title>{} · {}</title>
 <style>
  body{{margin:0;background:#f4f2f8;color:#222;font-family:system-ui,-apple-system,sans-serif}}
  .wrap{{max-width:760px;margin:0 auto;padding:24px 20px 60px}}
  h1{{font-size:26px;margin:8px 0 2px}} .sub{{color:#777;margin:0 0 20px}}
- .cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}}
+ .cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}}
  .card{{background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}}
  .card .v{{font-size:26px;font-weight:700;color:#5b3d9e}} .card .l{{font-size:13px;color:#888}}
  .panel{{background:#fff;border-radius:12px;padding:16px 18px;margin-top:16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}}
  .panel h2{{margin:0 0 10px;font-size:17px}}
  .foot{{color:#aaa;font-size:12px;margin-top:20px;text-align:center}}
 </style></head><body><div class="wrap">
-<h1>{} · 听歌周报</h1>
-<p class="sub">{} · Last.fm @volatile-Quartz</p>
+<h1>{}</h1>
+<p class="sub">{} · last.fm @volatile-Quartz</p>
 <div class="cards">
   {cards}
 </div>
 <div class="panel"><h2>每日播放趋势（独立曲目/日）</h2>{bars}</div>
 <div class="panel"><h2>Top 歌手（按播放次数）</h2>{hbars}</div>
-<div class="panel"><h2>风格分布（歌手标签×曲风白名单）</h2>{tags}</div>
+<div class="panel"><h2>风格分布</h2>{tags}</div>
 <div class="panel"><h2>反复播放 Top（本周 ≥2 次）</h2>
 <p style="font-size:14px;line-height:1.8">{repeats}</p></div>
-<p class="foot">数据来源 Last.fm API · 清洗规则 lastfm_rules.json · 时长为曲目时长估算（缺失按同歌手均值插值）</p>
+<p class="foot">数据来源 last.fm API · 清洗规则 lastfm_rules.json · 时长为曲目时长估算（缺失按同歌手均值插值）</p>
 </div></body></html>
 """.format(
-    html.escape(meta["week_label"]), html.escape(meta["week_range"]),
-    html.escape(meta["week_label"]), html.escape(meta["week_range"]),
+    html.escape(title_txt), html.escape(meta["week_range"]),
+    html.escape(title_txt), html.escape(meta["week_range"]),
     cards="".join('<div class="card"><div class="v">{}</div><div class="l">{}</div><div style="font-size:12px;color:#aaa">{}</div></div>'.format(v, l, d)
                   for v, l, d in [
                       ("{} 次".format(plays), "本周播放", "有效记录，日均 {:.0f} 次".format(plays / 7)),
-                      ("{} 首".format(clean["tracks"]), "独立曲目", "{} 组独立歌手".format(clean["artists"])),
+                      ("{} 首".format(clean["tracks"]), "独立曲目", ""),
+                      ("{} 组".format(clean["artists"]), "独立歌手", ""),
                       (fmt_dur(total_sec), "累计时长", "直接 {} + 插值 {}".format(direct, interpolated)),
                       ("{:.0f}%".format(pct_new), "新歌占比", "相比上周新听 {} 首".format(prep["new_tracks"]))]),
     bars=svg_bars(daily_items), hbars=svg_hbars(art_items),
-    tags=svg_hbars(tag_items), repeats=repeat_html)
+    tags=word_cloud(tag_items), repeats=repeat_html)
 open("/workspace/{}_report.html".format(label), "w").write(body)
 print("wrote /workspace/{}.md and /workspace/{}_report.html".format(label, label))
