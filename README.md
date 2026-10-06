@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,261 次 |
-| 🎤 歌手总计 | 20,471 位 |
-| 💿 专辑总计 | 21,444 张 |
-| 🎶 歌曲总计 | 64,796 首 |
+| 🎧 播放总次数 | 87,284 次 |
+| 🎤 歌手总计 | 20,474 位 |
+| 💿 专辑总计 | 21,455 张 |
+| 🎶 歌曲总计 | 64,809 首 |
 
-
+🎧 **正在播放：** ASMR Dry vs Wet Face Massage (Which Is Better?) — baitu asmr
 
 **🎵 最近在听**  
-- 🎵 一家Dumb Rock!「ピースフル・ピーシーズ！（Peaceful・Pieces!）」【Official Music Video】 — millsage_家団_ofc
-- 🎵 RADIAN LUNACY — Jeko/Syuenn/Krasper2
-- 🎵 Athena's Paragraph — MiMi
+- 🎵 ASMR Dry vs Wet Face Massage (Which Is Better?) — baitu asmr
+- 🎵 Lore ASMR🪄👑Your King Welcomes You to the Magical Gululand (Fantasy Worldbuilding Roleplay) — GuluLand ASMR
+- 🎵 A Guiding Star (引航之星) — Elliot Hsu
 
 **📈 播放趋势**  
 - 📅 本周: 206 次播放
@@ -52,9 +52,9 @@ Here are some ideas to get you started:
 **🎶 热门歌曲**  
 - 🥇 1-3话 — 一池周啾
 - 🥈 第7话 — 一池周啾
-- 🥉 layering2 — Angelize
-- 4️⃣ Electric Kingdom — Marc Hartman
-- 5️⃣ MEGAMIX 2 — Plum
+- 🥉 The Cry of The Uncertain — Akiri/HowToPlayLN
+- 4️⃣ layering2 — Angelize
+- 5️⃣ RADIAN LUNACY — Jeko/Syuenn/Krasper2
 
 **💿 热门专辑**  
 - 🥇 **きくおミク** — きくお
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/5 18:46:25*
+*更新时间: 2026/10/6 07:13:05*
 <!-- LASTFM_END -->
