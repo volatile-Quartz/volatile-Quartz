@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,284 次 |
-| 🎤 歌手总计 | 20,474 位 |
-| 💿 专辑总计 | 21,455 张 |
-| 🎶 歌曲总计 | 64,809 首 |
+| 🎧 播放总次数 | 87,312 次 |
+| 🎤 歌手总计 | 20,487 位 |
+| 💿 专辑总计 | 21,464 张 |
+| 🎶 歌曲总计 | 64,828 首 |
 
-🎧 **正在播放：** ASMR Dry vs Wet Face Massage (Which Is Better?) — baitu asmr
+
 
 **🎵 最近在听**  
-- 🎵 ASMR Dry vs Wet Face Massage (Which Is Better?) — baitu asmr
-- 🎵 Lore ASMR🪄👑Your King Welcomes You to the Magical Gululand (Fantasy Worldbuilding Roleplay) — GuluLand ASMR
-- 🎵 A Guiding Star (引航之星) — Elliot Hsu
+- 🎵 TV动画「BanG Dream! YUME∞MITA」 x 《BanG Dream! Our Notes》— STORY LINK — PV公开🛸 — OurNotesOfficial
+- 🎵 巴西要变天：政变、暗杀，但懂小将全盛袭来 — 波士顿圆脸
+- 🎵 【天羽音みらん】小提琴 - JUST COMMUNICATION《新机动战记高达W 》OP — 天羽音みらん
 
 **📈 播放趋势**  
 - 📅 本周: 206 次播放
@@ -43,11 +43,11 @@ Here are some ideas to get you started:
 ### 🌟 本周排行
 
 **🎤 热门艺术家**  
-- 🥇 **一池周啾** — 19 次播放
+- 🥇 **一池周啾** — 20 次播放
 - 🥈 **きくお** — 18 次播放
 - 🥉 **Iemitsu.** — 9 次播放
 - 4️⃣ **时局news** — 6 次播放
-- 5️⃣ **Plum** — 4 次播放
+- 5️⃣ **Lyssie ASMR** — 3 次播放
 
 **🎶 热门歌曲**  
 - 🥇 1-3话 — 一池周啾
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/6 07:13:05*
+*更新时间: 2026/10/6 14:23:16*
 <!-- LASTFM_END -->
