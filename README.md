@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,313 次 |
-| 🎤 歌手总计 | 20,488 位 |
-| 💿 专辑总计 | 21,464 张 |
-| 🎶 歌曲总计 | 64,829 首 |
+| 🎧 播放总次数 | 87,329 次 |
+| 🎤 歌手总计 | 20,490 位 |
+| 💿 专辑总计 | 21,471 张 |
+| 🎶 歌曲总计 | 64,843 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 【杂谈】聊聊东邦最有笑容的我们仨 — 水上見月
-- 🎵 TV动画「BanG Dream! YUME∞MITA」 x 《BanG Dream! Our Notes》— STORY LINK — PV公开🛸 — OurNotesOfficial
-- 🎵 巴西要变天：政变、暗杀，但懂小将全盛袭来 — 波士顿圆脸
+- 🎵 Hollow Eyes (feat. EKE) — Synymata/KLAXX/Eke
+- 🎵 降B大调第四钢琴协奏曲，Op.24：第三乐章，活泼的快板 — 土星皇家交响乐团
+- 🎵 第四十号交响曲，Kv.550：第四乐章，活泼的快板 — 土星皇家交响乐团
 
 **📈 播放趋势**  
 - 📅 本周: 206 次播放
@@ -46,8 +46,8 @@ Here are some ideas to get you started:
 - 🥇 **一池周啾** — 20 次播放
 - 🥈 **きくお** — 18 次播放
 - 🥉 **Iemitsu.** — 9 次播放
-- 4️⃣ **时局news** — 6 次播放
-- 5️⃣ **Lyssie ASMR** — 3 次播放
+- 4️⃣ **土星皇家交响乐团** — 8 次播放
+- 5️⃣ **时局news** — 6 次播放
 
 **🎶 热门歌曲**  
 - 🥇 1-3话 — 一池周啾
@@ -59,7 +59,7 @@ Here are some ideas to get you started:
 **💿 热门专辑**  
 - 🥇 **きくおミク** — きくお
 - 🥈 **KIKUOWORLD** — きくお
-- 🥉 **Wyw my sweetie #JerseyClub** — nissi/25Hzz
+- 🥉 **Kv.550 莫扎特：G小调第四十号交响曲** — 土星皇家交响乐团
 
 ---
 
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/6 23:35:13*
+*更新时间: 2026/10/7 04:33:24*
 <!-- LASTFM_END -->
