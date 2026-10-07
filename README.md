@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,478 张 |
 | 🎶 歌曲总计 | 64,873 首 |
 
-🎧 **正在播放：** 10月6日--中美俄朝四方闭门会谈定型！日本被踢出局破防撒泼，高市叫嚣产30万架无人机逼宫普京！ — 时局news
+
 
 **🎵 最近在听**  
 - 🎵 10月6日--中美俄朝四方闭门会谈定型！日本被踢出局破防撒泼，高市叫嚣产30万架无人机逼宫普京！ — 时局news
@@ -44,17 +44,17 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **きくお** — 27 次播放
-- 🥈 **一池周啾** — 20 次播放
+- 🥈 **一池周啾** — 18 次播放
 - 🥉 **Iemitsu.** — 9 次播放
-- 4️⃣ **时局news** — 9 次播放
-- 5️⃣ **土星皇家交响乐团** — 8 次播放
+- 4️⃣ **土星皇家交响乐团** — 8 次播放
+- 5️⃣ **时局news** — 6 次播放
 
 **🎶 热门歌曲**  
-- 🥇 1-3话 — 一池周啾
-- 🥈 第7话 — 一池周啾
-- 🥉 The Cry of The Uncertain — Akiri/HowToPlayLN
-- 4️⃣ layering2 — Angelize
-- 5️⃣ RADIAN LUNACY — Jeko/Syuenn/Krasper2
+- 🥇 第7话 — 一池周啾
+- 🥈 The Cry of The Uncertain — Akiri/HowToPlayLN
+- 🥉 layering2 — Angelize
+- 4️⃣ RADIAN LUNACY — Jeko/Syuenn/Krasper2
+- 5️⃣ Transparency — Kurubukko
 
 **💿 热门专辑**  
 - 🥇 **KIKUOWORLD** — きくお
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/7 11:32:09*
+*更新时间: 2026/10/7 18:29:20*
 <!-- LASTFM_END -->
