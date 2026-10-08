@@ -130,16 +130,24 @@ GREEN, RED = "#2a9d8f", "#e76f51"
 im = Image.new("RGB", (W, 4000), BG)
 d = ImageDraw.Draw(im)
 TOP_PAD = 30          # 整张图顶部留白
-HBAR_BOTTOM_GAP = 28  # Top歌手/曲风分布 panel 底部额外留白（比其它 panel 多 12px）
 CHG_LINE_H = 20       # 曲风变化每行高度
+INNER_PAD = 10        # panel 标题下 / 数据底 对称 padding
+HBAR_BOTTOM_EXTRA = 8 # Top歌手/曲风分布 panel 底部额外 +8（让条底部不贴边）
 
 y = TOP_PAD
 
-def draw_panel(y, title_txt, inner_h, bottom_pad=18):
+def draw_panel(y0, title_txt, data_h, bottom_extra=0):
+    """画 panel 外框 + 标题，返回 (panel_bottom, content_top, content_bottom, px, pw)。
+    内容区 = 标题底 (y0+34) + INNER_PAD → 标题底 + data_h + INNER_PAD。"""
     x0, x1 = W // 2 - 360, W // 2 + 360
-    d.rounded_rectangle([x0, y + 2, x1, y + 34 + inner_h + bottom_pad], radius=14, fill=CARD)
-    d.text((x0 + 18, y + 12), title_txt, font=F(17, True), fill=DARK)
-    return y + 34 + inner_h + bottom_pad, x0 + 18, x1 - x0 - 36
+    title_h = 34
+    total_h = title_h + INNER_PAD + data_h + INNER_PAD + bottom_extra
+    panel_bottom = y0 + total_h
+    d.rounded_rectangle([x0, y0 + 2, x1, panel_bottom], radius=14, fill=CARD)
+    d.text((x0 + 18, y0 + 12), title_txt, font=F(17, True), fill=DARK)
+    content_top = y0 + title_h + INNER_PAD
+    content_bottom = y0 + title_h + INNER_PAD + data_h
+    return panel_bottom, content_top, content_bottom, x0 + 18, x1 - x0 - 36
 
 # ══════════ 头部 ══════════
 d.text((W // 2, y + 14), TITLE, font=F(28, True), fill=DARK, anchor="ma")
@@ -169,28 +177,31 @@ y += 2 * (ch + gap) + 16
 # ══════════ 每日播放趋势 ══════════
 days = sorted(daily)
 vals = [daily[dd] for dd in days]
-inner_h = 210
-bottom, px, pw = draw_panel(y, "每日播放趋势（播放次数/日）", inner_h)
+chart_h = 180  # bars + 日期标签的精确高度
+bottom, ct, cb, px, pw = draw_panel(y, "每日播放趋势（播放次数/日）", chart_h)
 mx = max(vals) or 1
-plot_h = inner_h - 30
+# bars 区：从 ct 到 cb - 22（底部日期标签留 22px）
+bar_bottom_y = cb - 22
+bar_max_h = (cb - 22) - ct - 6  # 顶部留 6px 间距
 bw = pw / len(days)
 for i, (dd, v) in enumerate(zip(days, vals)):
-    bh = (v / mx) * (plot_h - 26)
+    bh = (v / mx) * bar_max_h
     x0 = px + i * bw + bw * 0.18
-    d.rounded_rectangle([x0, bottom - 24 - bh, x0 + bw * 0.64, bottom - 24], radius=4, fill=P1)
-    d.text((x0 + bw * 0.32, bottom - 34 - bh), str(v), font=F(13), fill=DARK, anchor="mm")
-    d.text((x0 + bw * 0.32, bottom - 10), dd, font=F(12), fill=GRAY, anchor="mm")
-y = bottom + 16
+    bar_top = bar_bottom_y - bh
+    d.rounded_rectangle([x0, bar_top, x0 + bw * 0.64, bar_bottom_y], radius=4, fill=P1)
+    d.text((x0 + bw * 0.32, bar_top - 6), str(v), font=F(13), fill=DARK, anchor="mm")
+    d.text((x0 + bw * 0.32, cb - 6), dd, font=F(12), fill=GRAY, anchor="mm")
+y = bottom + 12
 
 # ══════════ Top 歌手（hbars，与 HTML 同样的垂直居中公式） ══════════
 n_art = min(len(top_artists), 8)
 RH = 26; FC = RH / 2
-inner_h = n_art * RH + 8
-bottom, px, pw = draw_panel(y, "Top 歌手（按播放次数）", inner_h, bottom_pad=HBAR_BOTTOM_GAP)
+rows_h = n_art * RH
+bottom, ct, cb, px, pw = draw_panel(y, "Top 歌手（按播放次数）", rows_h, bottom_extra=HBAR_BOTTOM_EXTRA)
 mx_a = max(c for _, c in top_artists[:8]) or 1
+rows_top = ct  # 从 content_top 起正好贴住 padding
 for i, (a, c) in enumerate(top_artists[:8]):
-    row_top = bottom - inner_h + 10 + i * RH
-    row_center = row_top + FC
+    row_center = rows_top + FC + i * RH
     d.text((px, row_center), str(a), font=F(13), fill=DARK, anchor="lm")
     bww = (c / mx_a) * (pw - 200)
     d.rounded_rectangle([px + 190, row_center - 9, px + 190 + max(bww, 4), row_center + 9],
@@ -200,20 +211,20 @@ for i, (a, c) in enumerate(top_artists[:8]):
         d.text((px + 190 + max(bww, 4) - 6, row_center), txt, font=F(12), fill="#ffffff", anchor="rm")
     else:
         d.text((px + 190 + max(bww, 4) + 8, row_center), txt, font=F(12), fill="#555", anchor="lm")
-y = bottom + 16
+y = bottom + 12
 
 # ══════════ 曲风分布（bar 列表，Top 8） ══════════
 tag_items = tag_cnt.most_common(8)
 n_t = len(tag_items)
-inner_h = max(n_t, 1) * RH + 8
-bottom, px, pw = draw_panel(y, "曲风分布（按播放次数）", inner_h, bottom_pad=HBAR_BOTTOM_GAP)
+rows_h = max(n_t, 1) * RH
+bottom, ct, cb, px, pw = draw_panel(y, "曲风分布（按播放次数）", rows_h, bottom_extra=HBAR_BOTTOM_EXTRA)
 mx_t = max((c for _, c in tag_items), default=1) or 1
 if not tag_items:
-    d.text((px, bottom - 44), "无", font=F(14), fill=GRAY)
+    d.text((px, ct + RH // 2), "无", font=F(14), fill=GRAY)
 else:
+    rows_top = ct
     for i, (t, c) in enumerate(tag_items):
-        row_top = bottom - inner_h + 10 + i * RH
-        row_center = row_top + FC
+        row_center = rows_top + FC + i * RH
         d.text((px, row_center), str(t), font=F(13), fill=DARK, anchor="lm")
         bww = (c / mx_t) * (pw - 200)
         d.rounded_rectangle([px + 190, row_center - 9, px + 190 + max(bww, 4), row_center + 9],
@@ -223,7 +234,7 @@ else:
             d.text((px + 190 + max(bww, 4) - 6, row_center), txt, font=F(12), fill="#ffffff", anchor="rm")
         else:
             d.text((px + 190 + max(bww, 4) + 8, row_center), txt, font=F(12), fill="#555", anchor="lm")
-y = bottom + 16
+y = bottom + 12
 
 # ══════════ 曲风变化（新增/消失，自动换行防溢出） ══════════
 def wrap_genres(prefix, genres, font, avail_w):
@@ -244,7 +255,6 @@ def wrap_genres(prefix, genres, font, avail_w):
     return lines
 
 chg_font = F(13, True)
-chg_avail = pw  # draw_panel 返回的 pw = 可用宽度
 chg_lines = []
 if not prev_genres_set:
     chg_lines.append(("缺少上周对比数据（首次运行？）", GRAY, False))
@@ -253,18 +263,18 @@ elif not genres_new and not genres_gone:
 else:
     if genres_new:
         chg_lines.extend((l, GREEN, True) for l in wrap_genres(
-            "+{} 新增：".format(len(genres_new)), genres_new, chg_font, chg_avail))
+            "+{} 新增：".format(len(genres_new)), genres_new, chg_font, pw))
     if genres_gone:
         chg_lines.extend((l, RED, True) for l in wrap_genres(
-            "-{} 消失：".format(len(genres_gone)), genres_gone, chg_font, chg_avail))
+            "-{} 消失：".format(len(genres_gone)), genres_gone, chg_font, pw))
 
-inner_h = len(chg_lines) * CHG_LINE_H + 10
-bottom, px, pw = draw_panel(y, "曲风变化", inner_h)
-yy = bottom - inner_h + 8
+chg_data_h = len(chg_lines) * CHG_LINE_H
+bottom, ct, cb, px, pw = draw_panel(y, "曲风变化", chg_data_h)
+yy = ct
 for line_text, color, bold in chg_lines:
-    d.text((px, yy), line_text, font=F(13, bold), fill=color)
+    d.text((px, yy + 4), line_text, font=F(13, bold), fill=color)
     yy += CHG_LINE_H
-y = bottom + 30
+y = bottom + 16
 
 # ══════════ 页脚 ══════════
 d.text((W // 2, y), "数据来源 last.fm API · 清洗规则 lastfm_rules.json · 曲风白名单 genre_tree.json · 时长为曲目时长估算",
