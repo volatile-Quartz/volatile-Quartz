@@ -74,13 +74,11 @@
     "杂谈",
     "露露卡",
     "武装兔",
-    "cover",
     "フリーbgm",
     "1時間耐久",
     "字幕",
     "剧情",
-    "4399",
-    "millsage"
+    "4399"
   ],
   "blacklist_tracks": [
     "纯音乐|林中漫步",
@@ -497,7 +495,6 @@
     "j-core",
     "techstep",
     "darkstep",
-    "indie",
     "indie rock",
     "indie pop",
     "electro house",
@@ -507,7 +504,7 @@
     "alternative"
   ],
   "style_drop_tags": [
-    "japanese", "japan", "japanese pop", "british", "uk", "english", "korean",
+    "indie", "japanese", "japan", "japanese pop", "british", "uk", "english", "korean",
     "chinese", "german", "french", "american", "usa", "us", "spanish", "russian",
     "australian", "canadian", "european", "italy", "italian", "norway", "norwegian",
     "swedish", "sweden", "finnish", "belgian", "belgium", "celtic", "irish",
