@@ -93,6 +93,7 @@ def prev_label_from(lb):
     if pw < 1: pw, py = 53, year - 1
     return f"{py}week{pw}"
 prev_genres_set = set()
+prev_tracks = prev_artists = None
 for p in [f"{BASE_DIR}/artifacts/{prev_label_from(label)}/04_report.json",
           f"/workspace/lastfm/artifacts/{prev_label_from(label)}/04_report.json",
           f"/tmp/lastfm_report.json"]:
@@ -100,10 +101,22 @@ for p in [f"{BASE_DIR}/artifacts/{prev_label_from(label)}/04_report.json",
         try:
             prev_report = json.load(open(p))
             prev_genres_set = set(prev_report.get("all_tags", prev_report.get("top_tags", [])))
+            prev_tracks = prev_report.get("tracks")
+            prev_artists = prev_report.get("artists")
             break
         except Exception: pass
 genres_new = sorted(genres_set - prev_genres_set)
 genres_gone = sorted(prev_genres_set - genres_set)
+
+def fmt_diff(cur, prev):
+    """±N / ±N% 格式，prev=None 或 0 时返回空。"""
+    if prev is None or prev == 0:
+        return ""
+    d = cur - prev
+    pct = d / prev * 100
+    return "{}（{}{}%）".format(
+        "{:+d}".format(d) if d else "持平",
+        "+" if pct >= 0 else "", round(pct))
 
 # ── 字体 ──
 def find_cjk_font():
@@ -155,10 +168,12 @@ d.text((W // 2, y + 56), SUB, font=F(14), fill=GRAY, anchor="ma")
 y += 92
 
 # ══════════ 6 张指标卡（反复播放 → 曲风数量） ══════════
+tracks_sub = fmt_diff(unique, prev_tracks)
+artists_sub = fmt_diff(unique_artists, prev_artists)
 stats = [
     ("本周播放", "{} 次".format(plays), "有效记录，日均 {} 次".format(round(plays / 7))),
-    ("独立曲目", "{} 首".format(unique), ""),
-    ("独立歌手", "{} 组".format(unique_artists), ""),
+    ("独立曲目", "{} 首".format(unique), tracks_sub),
+    ("独立歌手", "{} 组".format(unique_artists), artists_sub),
     ("曲风数量", "{} 种".format(len(genres_set)),
      "+{} 新增 -{} 消失".format(len(genres_new), len(genres_gone)) if prev_genres_set else ""),
     ("累计时长", fmt_dur(total_sec), "直查 {} + 插值 {}".format(direct, interpolated)),
