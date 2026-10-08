@@ -204,13 +204,13 @@ for i, x in enumerate(played[:10]):
     d.text((title_x, yy), "《{}》".format(x["title"]), font=F(13), fill=DARK)
     tw = d.textlength("《{}》".format(x["title"]), font=F(13))
     # 次数彩色方块（白色文字）
-    label = "×{}".format(x["count"])
+    badge = "×{}".format(x["count"])
     pad, bh = 6, 17
-    bw = d.textlength(label, font=F(12, True)) + pad * 2
+    bw = d.textlength(badge, font=F(12, True)) + pad * 2
     bx, byy = title_x + tw + 8, yy + 5
     color = REPEAT_COLORS[i % len(REPEAT_COLORS)]
     d.rounded_rectangle([bx, byy, bx + bw, byy + bh], radius=int(bh / 2), fill=color)
-    d.text((bx + bw / 2, byy + bh / 2), label, font=F(12, True), fill="#ffffff", anchor="mm")
+    d.text((bx + bw / 2, byy + bh / 2), badge, font=F(12, True), fill="#ffffff", anchor="mm")
 y = bottom + 30
 
 # 页脚
