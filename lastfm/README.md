@@ -14,6 +14,9 @@ python3 lastfm/weekly_stats_enrich.py          # 缓存默认 /tmp/lastfm_dur_ca
 
 # 3. 生成统计 md 块 + HTML 报告
 python3 lastfm/weekly_stats_report.py
+
+# 4.（可选）直接生成周报图片（PIL 画图，无需浏览器）
+python3 lastfm/weekly_stats_img.py    # 输出 /workspace/<year>week<no>_report.png
 ```
 
 - 中间产物：`/tmp/lastfm_prep.json`、`/tmp/lastfm_enrich.json`、`/tmp/lastfm_report.json`
@@ -86,3 +89,13 @@ cp lastfm/lastfm_rules.json lastfm/artifacts/2026week40/07_rules_snapshot.json
 3. 有清洗问题 → 编辑 `lastfm_rules.json`（或修脚本）
 4. 归档当周产物到 `lastfm/artifacts/YYYYweekNN/`（见上文「产物留存」）
 5. `git add lastfm/ .screenshots/ 2026week*.md 2026week*_report.html && git commit && git push origin lastfm-tools`
+
+## GitHub Actions 自动执行
+
+`.github/workflows/weekly-lastfm-report.yml`：每周一 01:30（北京时间）自动生成上一自然周周报 →
+归档到 `lastfm/artifacts/YYYYweekNN/` → 推 `lastfm-tools-preview` 分支 → 开/更新 PR（base=lastfm-tools），
+人工确认后才合入，保留"先确认再处理"。
+
+- 依赖：`pillow`、`wordcloud`、`numpy` + 中文字体 `fonts-wqy-microhei`（CI 内自动安装）
+- **注意**：GitHub Actions 只扫描默认分支(master)的 workflow，本分支内的 yml 需同步一份到 master 才生效
+- 手动触发：仓库 Actions 页 → lastfm-weekly-report → Run workflow
