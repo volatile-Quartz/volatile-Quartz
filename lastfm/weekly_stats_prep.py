@@ -133,6 +133,17 @@ def dedup(records):
         seen[key] = r   # later overwrites => keep latest
     return list(seen.values())
 
+def collab_parts(a):
+    """合作署名拆分为个人（& / × 分隔；feat. 与 no_split 组合不拆）。"""
+    if " feat. " in a or " feat." in a or a in no_split:
+        return [a]
+    parts = [p.strip() for p in a.split(" & ") if p.strip()]
+    if len(parts) < 2:
+        parts = [p.strip() for p in a.split(" × ") if p.strip()]
+    return parts if len(parts) >= 2 else [a]
+
+# …(clean/dedup 等已在上面)…
+
 def main():
     if RAW_FILE and os.path.exists(RAW_FILE):
         print("reading week raw from", RAW_FILE, flush=True)
@@ -172,7 +183,11 @@ def main():
     daily = {d: len(s) for d, s in sorted(daily_uniq.items())}
     daily_plays = dict(sorted(daily_plays.items()))
 
-    art_cnt = collections.Counter(r["artist"] for r in wk_clean_all)
+    # Top 歌手按个人统计（合作署名拆分；feat./no_split 不拆）
+    art_cnt = collections.Counter()
+    for r in wk_clean_all:
+        for p in collab_parts(r["artist"]):
+            art_cnt[p] += 1
     trk_cnt = collections.Counter((r["artist"], r["title"]) for r in wk_clean_all)
 
     new_tracks = [r for r in wk_clean if (r["artist"].lower(), r["title"].lower()) not in pv_keys]
@@ -180,7 +195,10 @@ def main():
     played_again = [{"artist": a, "title": t, "count": c} for (a, t), c in trk_cnt.items() if c >= 2]
     played_again.sort(key=lambda x: -x["count"])
 
-    pv_art_cnt = collections.Counter(r["artist"] for r in pv_clean)
+    pv_art_cnt = collections.Counter()
+    for r in pv_clean:
+        for p in collab_parts(r["artist"]):
+            pv_art_cnt[p] += 1
     new_artists = [a for a in art_cnt if a not in pv_art_cnt]
 
     stats = {
