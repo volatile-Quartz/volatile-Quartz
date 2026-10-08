@@ -238,15 +238,19 @@ y = bottom + 12
 
 # ══════════ 曲风变化（新增/消失，自动换行防溢出） ══════════
 def wrap_genres(prefix, genres, font, avail_w):
-    """把 genre 列表按 avail_w 自动拆成多行，后续行缩进对齐冒号后。"""
+    """把 genre 列表按 avail_w 自动拆成多行。
+    第一行用 prefix（含冒号），后续行用纯空格缩进对齐冒号后位置；
+    被截断的行末保留顿号表示未完。"""
     lines = []
-    indent = " " * len(prefix.rstrip("：:")) + "："
+    # indent = prefix 去掉最后那个冒号后的纯空格，长度 = len(prefix)
+    # 例如 "+21 新增：" → indent = 8 个空格，对齐到冒号后第一个字符
+    indent = " " * len(prefix)
     cur = prefix
     for g in genres:
         sep = "、" if cur != prefix else ""
         cand = cur + sep + g
         if d.textlength(cand, font) > avail_w and cur != prefix:
-            lines.append(cur)
+            lines.append(cur + "、")  # 截断行末尾加顿号
             cur = indent + g
         else:
             cur = cand
