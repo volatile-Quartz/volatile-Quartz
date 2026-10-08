@@ -1,34 +1,30 @@
 #!/usr/bin/env python3
-"""Generate weekly listening report as a single PNG image (no HTML/browser needed).
-Reads /tmp/lastfm_prep.json + /tmp/lastfm_enrich.json + lastfm_rules.json (style rules).
+"""Generate weekly listening report as a single PNG image.
+Reads /tmp/lastfm_prep.json + /tmp/lastfm_enrich.json + lastfm_rules.json + genre_tree.json.
 Usage: python3 lastfm/weekly_stats_img.py
 Output: /workspace/<year>week<no>_report.png  (e.g. 2026week40_report.png)
-依赖：pillow、wordcloud、numpy、CJK 字体（找不到字体时给出明确报错）。
-"""
-import json, os, glob, collections
+依赖：pillow + CJK 字体（文泉驿微米黑已预装）。"""
+import json, os, glob, collections, re
 from PIL import Image, ImageDraw, ImageFont
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RULES = json.load(open(os.path.join(BASE_DIR, "lastfm_rules.json")))
 STYLE_DROP = set(RULES.get("style_drop_tags", []))
 MERGES = RULES.get("style_tag_merges", {})
-# 白名单来源：genre_tree.json（树状结构，扁平化叶子）；缺文件则回退 rules 白名单
+
+# ── genre_tree.json 作为唯一白名单真源（跳过 _ 开头元数据 key） ──
 GENRE_WL = set()
 _tree_path = os.path.join(BASE_DIR, "genre_tree.json")
+def _flat(o, skip="_"):
+    if isinstance(o, dict):
+        for k, v in o.items():
+            if not k.startswith(skip): _flat(v)
+    elif isinstance(o, list):
+        for x in o: _flat(x)
+    elif isinstance(o, str):
+        GENRE_WL.add(o)
 if os.path.exists(_tree_path):
-    def _flat(o):
-        if isinstance(o, dict):
-            for v in o.values():
-                _flat(v)
-        elif isinstance(o, list):
-            for x in o:
-                if isinstance(x, str):
-                    GENRE_WL.add(x)
-                else:
-                    _flat(x)
     _flat(json.load(open(_tree_path)))
-else:
-    GENRE_WL = set(RULES.get("style_genre_whitelist", []))
 
 prep = json.load(open("/tmp/lastfm_prep.json"))
 enr = json.load(open("/tmp/lastfm_enrich.json"))
@@ -45,9 +41,8 @@ rep_tracks = prep["rep_tracks"]
 pct_new = round(new_tracks / unique * 100) if unique else 0
 daily = prep["daily"]
 top_artists = prep["top_artists"]
-played = prep.get("played_again", [])
 
-# ---------- 时长：直接查到 + 同歌手均值插值（与 weekly_stats_report.py 同口径） ----------
+# ── 时长估算（与 report.py 同口径） ──
 def fmt_dur(sec):
     sec = int(sec)
     h, m, s = sec // 3600, (sec % 3600) // 60, sec % 60
@@ -70,74 +65,92 @@ for key, cnt in full_counts.items():
     if d:
         total_sec += d * cnt
 
+# ── canon 风格清洗 ──
+UNKNOWN_GENRES = collections.Counter()
 def canon(t):
     t2 = MERGES.get(t, t)
-    if t2 in STYLE_DROP or not t2 or len(t2) > 30:
-        return None
+    if t2 in STYLE_DROP or not t2 or len(t2) > 30: return None
     if t2 not in GENRE_WL:
+        UNKNOWN_GENRES[t2] += 1
         return None
     return t2
 
 tag_cnt = collections.Counter()
 for artist, cnt in top_artists:
-    for t in tags_by_artist.get(artist, [])[:6]:
-        c = canon(t)
-        if c:
-            tag_cnt[c] += cnt
+    for t in tags_by_artist.get(artist, []):
+        c = canon(t.lower())
+        if c: tag_cnt[c] += cnt
 
-# ---------- 字体 ----------
+genres_top = [t for t, c in tag_cnt.most_common(30)]
+genres_set = set(genres_top)
+
+# ── 曲风对比（与 report.py 一致逻辑） ──
+def prev_label_from(lb):
+    m = re.match(r"(\d{4})week(\d+)", lb)
+    if not m: return ""
+    year, wk = int(m.group(1)), int(m.group(2))
+    pw, py = wk - 1, year
+    if pw < 1: pw, py = 53, year - 1
+    return f"{py}week{pw}"
+prev_genres_set = set()
+for p in [f"{BASE_DIR}/artifacts/{prev_label_from(label)}/04_report.json",
+          f"/workspace/lastfm/artifacts/{prev_label_from(label)}/04_report.json",
+          f"/tmp/lastfm_report.json"]:
+    if os.path.exists(p):
+        try:
+            prev_report = json.load(open(p))
+            prev_genres_set = set(prev_report.get("all_tags", prev_report.get("top_tags", [])))
+            break
+        except Exception: pass
+genres_new = sorted(genres_set - prev_genres_set)
+genres_gone = sorted(prev_genres_set - genres_set)
+
+# ── 字体 ──
 def find_cjk_font():
-    cands = [
-        "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-        "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
-        "/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf",
-        "/System/Library/Fonts/PingFang.ttc", "C:/Windows/Fonts/msyh.ttc",
-    ]
+    cands = ["/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"]
     for p in cands:
-        if os.path.exists(p):
-            return p
+        if os.path.exists(p): return p
     for pat in ["/usr/share/fonts/**/wqy*", "/usr/share/fonts/**/NotoSans*", "/usr/share/fonts/**/CJK*"]:
         for f in glob.glob(pat, recursive=True):
-            if os.path.exists(f):
-                return f
-    raise RuntimeError("未找到 CJK 字体，请先安装 fonts-wqy-microhei（周报图片生成前置依赖）")
-
+            if os.path.exists(f): return f
+    raise RuntimeError("未找到 CJK 字体")
 FONT = find_cjk_font()
 def F(sz, bold=False):
     return ImageFont.truetype(FONT, sz)
 
-# ---------- 布局 ----------
+# ── 色板 ──
 W, PAD = 760, 40
 TITLE = "{} {} 听歌周报".format(meta["week_range"].split(" ~ ")[0][:4], meta["week_label"].lower())
 SUB = "{} · last.fm @volatile-Quartz".format(meta["week_range"])
-BG, CARD, GRAY, DARK, P1, P2 = "#f4f2f8", "#ffffff", "#8a8a8e", "#222222", "#7c5cbf", "#4a90d9"
+BG, CARD, GRAY, DARK = "#f4f2f8", "#ffffff", "#8a8a8e", "#222222"
+P1, P2 = "#7c5cbf", "#4a90d9"
+GREEN, RED = "#2a9d8f", "#e76f51"
 
+# ── 画布（先铺 4000px 够大，最后裁） ──
 im = Image.new("RGB", (W, 4000), BG)
 d = ImageDraw.Draw(im)
 y = 0
 
 def draw_panel(y, title_txt, inner_h):
-    """白底圆角卡片；返回 (卡片底部y, 左边距px, 内容宽pw)"""
     x0, x1 = W // 2 - 360, W // 2 + 360
     d.rounded_rectangle([x0, y + 2, x1, y + 34 + inner_h + 18], radius=14, fill=CARD)
     d.text((x0 + 18, y + 12), title_txt, font=F(17, True), fill=DARK)
     return y + 34 + inner_h + 18, x0 + 18, x1 - x0 - 36
 
-# 头部
+# ══════════ 头部 ══════════
 d.text((W // 2, y + 6), TITLE, font=F(28, True), fill=DARK, anchor="ma")
 d.text((W // 2, y + 48), SUB, font=F(14), fill=GRAY, anchor="ma")
 y += 92
 
-# 统计卡片 3 列 × 2 行：label 在上、value 在下
-repeated_n = len(played)
+# ══════════ 6 张指标卡（反复播放 → 曲风数量） ══════════
 stats = [
     ("本周播放", "{} 次".format(plays), "有效记录，日均 {} 次".format(round(plays / 7))),
-    ("独立曲目", "{} 首".format(unique), "本周新听 {} 首".format(new_tracks)),
-    ("独立歌手", "{} 组".format(unique_artists), "新面孔歌手 {} 组".format(len(prep.get("new_artists", [])) or 0)),
-    ("累计时长", "约 " + fmt_dur(total_sec), "直查 {} + 插值 {}".format(direct, interpolated)),
+    ("独立曲目", "{} 首".format(unique), ""),
+    ("独立歌手", "{} 组".format(unique_artists), ""),
+    ("曲风数量", "{} 种".format(len(genres_set)),
+     "+{} 新增 -{} 消失".format(len(genres_new), len(genres_gone)) if prev_genres_set else ""),
+    ("累计时长", fmt_dur(total_sec), "直查 {} + 插值 {}".format(direct, interpolated)),
     ("新歌占比", "{}%".format(pct_new), "相比上周新听 {} 首".format(new_tracks)),
-    ("反复播放", "{} 首".format(repeated_n), "本周 ≥2 次的歌曲"),
 ]
 cw, ch, gap = (W - PAD * 2 - 24) // 3, 92, 12
 for i, (l, v, s) in enumerate(stats):
@@ -149,7 +162,7 @@ for i, (l, v, s) in enumerate(stats):
     d.text((cx + 16, cy + 66), s, font=F(11), fill=GRAY)
 y += 2 * (ch + gap) + 16
 
-# 每日播放趋势（独立曲目/日）
+# ══════════ 每日播放趋势 ══════════
 days = sorted(daily)
 vals = [daily[dd] for dd in days]
 inner_h = 210
@@ -165,78 +178,78 @@ for i, (dd, v) in enumerate(zip(days, vals)):
     d.text((x0 + bw * 0.32, bottom - 10), dd, font=F(12), fill=GRAY, anchor="mm")
 y = bottom + 16
 
-# Top 歌手横向条
+# ══════════ Top 歌手（hbars，与 HTML 同样的垂直居中公式） ══════════
 n_art = min(len(top_artists), 8)
-inner_h = n_art * 30 + 8
+RH = 26; FC = RH / 2
+inner_h = n_art * RH + 8
 bottom, px, pw = draw_panel(y, "Top 歌手（按播放次数）", inner_h)
 mx_a = max(c for _, c in top_artists[:8]) or 1
 for i, (a, c) in enumerate(top_artists[:8]):
-    yy = bottom - inner_h + 10 + i * 30
-    d.text((px, yy), str(a), font=F(13), fill=DARK)
+    row_top = bottom - inner_h + 10 + i * RH
+    row_center = row_top + FC
+    # label（视觉中心 ≈ row_center）
+    d.text((px, row_center), str(a), font=F(13), fill=DARK, anchor="lm")
+    # rect：高 18，中心 row_center → y0 = row_center - 9
     bww = (c / mx_a) * (pw - 200)
-    d.rounded_rectangle([px + 190, yy + 4, px + 190 + max(bww, 4), yy + 22], radius=6, fill=P2)
+    d.rounded_rectangle([px + 190, row_center - 9, px + 190 + max(bww, 4), row_center + 9],
+                        radius=6, fill=P2)
+    # 数字（视觉中心 ≈ row_center，长条内白字/条外灰字）
     txt = str(c)
-    d.text((px + 190 + max(bww, 4) + 8, yy), txt, font=F(12), fill="#555")
+    if bww > d.textlength(txt, F(12)) + 12:
+        d.text((px + 190 + max(bww, 4) - 6, row_center), txt, font=F(12), fill="#ffffff", anchor="rm")
+    else:
+        d.text((px + 190 + max(bww, 4) + 8, row_center), txt, font=F(12), fill="#555", anchor="lm")
 y = bottom + 16
 
-# 风格分布词云（wordcloud 生成 PNG 贴入）
-items = [(t, c) for t, c in tag_cnt.most_common(40)]
-if items:
-    try:
-        import numpy as np
-        from wordcloud import WordCloud
-        WCD, HCD = 720, 420
-        mask_im = Image.new("L", (WCD, HCD), 255)
-        ImageDraw.Draw(mask_im).ellipse([8, 8, WCD - 9, HCD - 9], fill=0)
-        wc = WordCloud(font_path=FONT, mask=np.array(mask_im), background_color="white",
-                       colormap="viridis", min_font_size=10, max_font_size=130,
-                       prefer_horizontal=0.92, relative_scaling=0.5,
-                       collocations=False, margin=4, random_state=42
-                       ).generate_from_frequencies(dict(items))
-        wimg = wc.to_image()
-        ratio = min(1.0, (pw - 20) / wimg.width)
-        wimg = wimg.resize((int(wimg.width * ratio), int(wimg.height * ratio)), Image.LANCZOS)
-        inner_h = wimg.height + 14
-        bottom, px, pw = draw_panel(y, "风格分布", inner_h)
-        im.paste(wimg, (px + (pw - wimg.width) // 2, bottom - inner_h + 8))
-    except Exception as e:
-        inner_h = 60
-        bottom, px, pw = draw_panel(y, "风格分布", inner_h)
-        d.text((px, bottom - 44), "词云生成失败: {}".format(e), font=F(13), fill="#cf222e")
-else:
-    inner_h = 60
-    bottom, px, pw = draw_panel(y, "风格分布", inner_h)
+# ══════════ 曲风分布（bar 列表，Top 8） ══════════
+tag_items = tag_cnt.most_common(8)
+n_t = len(tag_items)
+inner_h = max(n_t, 1) * RH + 8
+bottom, px, pw = draw_panel(y, "曲风分布（按播放次数）", inner_h)
+mx_t = max((c for _, c in tag_items), default=1) or 1
+if not tag_items:
     d.text((px, bottom - 44), "无", font=F(14), fill=GRAY)
+else:
+    for i, (t, c) in enumerate(tag_items):
+        row_top = bottom - inner_h + 10 + i * RH
+        row_center = row_top + FC
+        d.text((px, row_center), str(t), font=F(13), fill=DARK, anchor="lm")
+        bww = (c / mx_t) * (pw - 200)
+        d.rounded_rectangle([px + 190, row_center - 9, px + 190 + max(bww, 4), row_center + 9],
+                            radius=6, fill=P2)
+        txt = str(c)
+        if bww > d.textlength(txt, F(12)) + 12:
+            d.text((px + 190 + max(bww, 4) - 6, row_center), txt, font=F(12), fill="#ffffff", anchor="rm")
+        else:
+            d.text((px + 190 + max(bww, 4) + 8, row_center), txt, font=F(12), fill="#555", anchor="lm")
 y = bottom + 16
 
-# 反复播放 Top
-REPEAT_COLORS = ["#7c5cbf", "#4a90d9", "#e08a3c", "#3aa675", "#d65a7a"]
-n_pl = max(len(played), 1)
-inner_h = n_pl * 26 + 10
-bottom, px, pw = draw_panel(y, "反复播放 Top（本周 ≥2 次）", inner_h)
-for i, x in enumerate(played[:10]):
-    yy = bottom - inner_h + 12 + i * 26
-    f_art = F(13, True)
-    d.text((px, yy), x["artist"], font=f_art, fill=DARK)
-    aw = d.textlength(x["artist"], font=f_art)
-    title_x = px + aw + 6
-    d.text((title_x, yy), "《{}》".format(x["title"]), font=F(13), fill=DARK)
-    tw = d.textlength("《{}》".format(x["title"]), font=F(13))
-    # 次数彩色方块（白色文字）
-    badge = "×{}".format(x["count"])
-    pad, bh = 6, 17
-    bw = d.textlength(badge, font=F(12, True)) + pad * 2
-    bx, byy = title_x + tw + 8, yy + 5
-    color = REPEAT_COLORS[i % len(REPEAT_COLORS)]
-    d.rounded_rectangle([bx, byy, bx + bw, byy + bh], radius=int(bh / 2), fill=color)
-    d.text((bx + bw / 2, byy + bh / 2), badge, font=F(12, True), fill="#ffffff", anchor="mm")
+# ══════════ 曲风变化（新增/消失） ══════════
+inner_h = 120
+bottom, px, pw = draw_panel(y, "曲风变化", inner_h)
+yy = bottom - inner_h + 18
+if not prev_genres_set:
+    d.text((px, yy), "缺少上周对比数据（首次运行？）", font=F(13), fill=GRAY)
+elif not genres_new and not genres_gone:
+    d.text((px, yy), "与上周持平，曲风无变化", font=F(13), fill=GRAY)
+else:
+    if genres_new:
+        txt = "+{} 新增：{}".format(len(genres_new), "、".join(genres_new))
+        d.text((px, yy), txt, font=F(13, True), fill=GREEN)
+        yy += 24
+    if genres_gone:
+        txt = "-{} 消失：{}".format(len(genres_gone), "、".join(genres_gone))
+        d.text((px, yy), txt, font=F(13, True), fill=RED)
 y = bottom + 30
 
-# 页脚
-d.text((W // 2, y), "数据来源 last.fm API · 清洗规则 lastfm_rules.json · 时长为曲目时长估算（缺失按同歌手均值插值）", font=F(11), fill="#b0b0b4", anchor="ma")
+# ══════════ 页脚 ══════════
+d.text((W // 2, y), "数据来源 last.fm API · 清洗规则 lastfm_rules.json · 曲风白名单 genre_tree.json · 时长为曲目时长估算",
+       font=F(11), fill="#b0b0b4", anchor="ma")
 y += 42
 
 im = im.crop((0, 0, W, y))
 out = "/workspace/{}_report.png".format(label)
 im.save(out)
 print("saved", out, im.size)
+if UNKNOWN_GENRES:
+    print("⚠️ unknown genres:", dict(UNKNOWN_GENRES))
