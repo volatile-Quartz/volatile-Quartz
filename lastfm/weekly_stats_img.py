@@ -251,6 +251,36 @@ else:
             d.text((px + 190 + max(bww, 4) + 8, row_center), txt, font=F(12), fill="#555", anchor="lm")
 y = bottom + 12
 
+# ══════════ 重复播放（≥2 次的歌曲，hbars） ══════════
+rep_items = [(k, v) for k, v in full_counts.items() if v >= 2]
+rep_items.sort(key=lambda x: -x[1])
+rep_items = rep_items[:8]
+n_r = len(rep_items)
+if n_r > 0:
+    rows_h = n_r * RH
+    bottom, ct, cb, px, pw = draw_panel(y, "重复播放（多次听的歌曲）", rows_h, bottom_extra=HBAR_BOTTOM_EXTRA)
+    mx_r = max(c for _, c in rep_items) or 1
+    rows_top = ct
+    for i, (k, c) in enumerate(rep_items):
+        artist, _, title = k.partition("||")
+        track_label = "《{}》 — {}".format(title, artist)
+        row_center = rows_top + FC + i * RH
+        d.text((px, row_center), track_label, font=F(13), fill=DARK, anchor="lm")
+        bww = (c / mx_r) * (pw - 200)
+        d.rounded_rectangle([px + 190, row_center - 9, px + 190 + max(bww, 4), row_center + 9],
+                            radius=6, fill=GREEN)
+        txt = "{}×".format(c)
+        if bww > d.textlength(txt, F(12)) + 12:
+            d.text((px + 190 + max(bww, 4) - 6, row_center), txt, font=F(12), fill="#ffffff", anchor="rm")
+        else:
+            d.text((px + 190 + max(bww, 4) + 8, row_center), txt, font=F(12), fill=GREEN, anchor="lm")
+    y = bottom + 12
+else:
+    # 仍然画一个轻量 panel 提示（只有一行高度）
+    bottom, ct, cb, px, pw = draw_panel(y, "重复播放（多次听的歌曲）", 24)
+    d.text((px, ct + 4), "本周无重复播放，全是新歌 🔥", font=F(13), fill=GRAY)
+    y = bottom + 12
+
 # ══════════ 曲风变化（新增/消失，自动换行防溢出） ══════════
 def wrap_genres(prefix, genres, font, avail_w):
     """把 genre 列表按 avail_w 自动拆成多行。

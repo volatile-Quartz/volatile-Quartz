@@ -183,6 +183,12 @@ md.append("- 曲风数量：{} 种{}".format(len(genres_set), diff_str))
 md.append("- 新歌占比：{}%（新听 {} 首，上周也听过的 {} 首）；新面孔歌手 {} 组".format(
     round(pct_new), prep["new_tracks"], prep["rep_tracks"], len(prep["new_artists"])))
 md.append("- 风格分布（Top {}）：{}".format(min(8, len(genres)), style_str))
+rep_items = sorted([(k, v) for k, v in prep["full_counts"].items() if v >= 2],
+                   key=lambda x: -x[1])[:8]
+if rep_items:
+    rep_str = "、".join("《{}》—{}（{}×）".format(
+        k.partition("||")[2], k.partition("||")[0], v) for k, v in rep_items)
+    md.append("- 重复播放：{}".format(rep_str))
 if UNKNOWN_GENRES:
     md.append("- ⚠️ 未识别风格（需审阅是否纳入 tree 或 drop）：{}".format(
         "、".join("{}×{}".format(t, c) for t, c in UNKNOWN_GENRES.most_common(10))))
