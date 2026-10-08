@@ -89,8 +89,9 @@ def clean(rec):
     al, tl = ra.lower(), rt.lower()
     if any(b in al for b in bl_artists):
         return None
-    if any(k in al for k in fkw) or any(k in tl for k in fkw):
-        return None
+    if RULES["extra_rules"].get("use_filter_keywords", True):
+        if any(k in al for k in fkw) or any(k in tl for k in fkw):
+            return None
     if any(ba in al and bt in tl for ba, bt in bl_tracks):
         return None
     # artist_by_song（按原始歌手|原始曲名修正归属）
