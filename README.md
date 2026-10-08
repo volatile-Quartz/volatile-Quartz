@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,383 次 |
-| 🎤 歌手总计 | 20,524 位 |
-| 💿 专辑总计 | 21,481 张 |
-| 🎶 歌曲总计 | 64,911 首 |
+| 🎧 播放总次数 | 87,395 次 |
+| 🎤 歌手总计 | 20,530 位 |
+| 💿 专辑总计 | 21,482 张 |
+| 🎶 歌曲总计 | 64,923 首 |
 
-🎧 **正在播放：** Symphony No. 1 in C minor, WAB 101:III.Scherzo. Lebhaft — Anton Bruckner
+🎧 **正在播放：** 上巧嘴说世界--10月8日-上 — 军情播报
 
 **🎵 最近在听**  
-- 🎵 Requiem in D Minor, K. 626: 3. Sequentia: Lacrimosa — Wiener Singverein/Helmut Froschauer/Wiener Philharmoniker/Herbert von Karajan
-- 🎵 Phönix-Marsch, Op. 105 — Daniel Barenboim/Wiener Philharmoniker
-- 🎵 Orchestral Suite No. 2 in B minor, BWV 1067: IV.Polonaise — Herbert von Karajan/Berliner Philharmoniker
+- 🎵 上巧嘴说世界--10月8日-上 — 军情播报
+- 🎵 Concerto for Harp and Orchestra in C:3. Rondo (Allegro agitato) — Iona Brown/Academy of St. Martin in the Fields/Marisa Robles
+- 🎵 Carmen, Act II:No.14 Couplets : Votre toast, je peux vous le rendre...Toréador, en garde! (Escamillo/Carmen/Frasquita/Mercédès/Moralès/Zuniga/Amis d'Escamillo) — Angela Gheorghiu/Roberto Alagna/Thomas Hampson/Michel Plasson
 
 **📈 播放趋势**  
 - 📅 本周: 197 次播放
@@ -44,7 +44,7 @@ Here are some ideas to get you started:
 
 **🎤 热门艺术家**  
 - 🥇 **きくお** — 27 次播放
-- 🥈 **一池周啾** — 13 次播放
+- 🥈 **一池周啾** — 11 次播放
 - 🥉 **Iemitsu.** — 9 次播放
 - 4️⃣ **土星皇家交响乐团** — 8 次播放
 - 5️⃣ **Die Orsons** — 5 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/8 06:53:17*
+*更新时间: 2026/10/8 10:04:39*
 <!-- LASTFM_END -->
