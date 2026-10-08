@@ -110,7 +110,7 @@ def clean(rec):
             title = v
             overridden = True
             break
-    if not overridden:
+    if not overridden and RULES["extra_rules"].get("use_title_suffix", True):
         t = rt
         ttl = t.lower()
         for suf in RULES["title_suffix"]:

@@ -59,11 +59,11 @@
     "PontduCarrousel",
     "闪光马希洛酱",
     "幸运咪啪之谣",
-    "Aloereed"
+    "Aloereed",
+    "水音世界观",
+    "某二两"
   ],
   "filter_keywords": [
-    "水音世界观",
-    "某二两",
     "军事",
     "解说",
     "配音",
@@ -83,8 +83,6 @@
   "blacklist_tracks": [
     "纯音乐|林中漫步",
     "原声带|黑猫警长",
-    "Vince丷 & 见过夏天P & Ciyo|反乌托邦×拼接遗憾×Sinos De Natal",
-    "懒懒Q3Q|君の幸せについて / 关于你的幸福【宵崎奏 × 初音ミク】",
     "CMJ & 好多纯音乐|山海不相逢"
   ],
   "solo_alias": {
@@ -594,7 +592,8 @@
     "merge_same_song_keep_latest": true,
     "vocaloid_no_footnote": true,
     "unverifiable_collab_fallback_amp": true,
-    "album_2plus_to_miucho_list": true
+    "album_2plus_to_miucho_list": true,
+    "use_title_suffix": false
   },
   "output_format": {
     "daily_line_prefix": "2026.9.22 单曲：",
