@@ -1,0 +1,79 @@
+name: lastfm-weekly-phase2
+
+# Phase 2：确认后生成正式周报（文字版 + 图片）。
+# 触发：lastfm-tools 分支有 push（即 Phase 1 预览 PR 合入）→ 复用已归档 01_raw.json 与全局时长缓存
+#       → prep(enrich) → report → img → 归档补全 → 推 lastfm-tools-preview 分支 → 开/更新 PR 待最终确认。
+on:
+  push:
+    branches: [lastfm-tools]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  phase2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: lastfm-tools
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖和中文字体
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-wqy-microhei
+          pip install -q pillow wordcloud numpy
+
+      - name: 找到最新待生成周次并运行流水线
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          # 找出 artifacts 中最新的周次（Phase 1 已归档 01_raw.json）
+          WEEK_NO=$(ls -1d lastfm/artifacts/20* 2>/dev/null | sort | tail -1 | xargs -n1 basename)
+          WEEK_START=$([ -n "$WEEK_NO" ] && python3 -c "from datetime import date; w=$WEEK_NO[4:]; d=date.fromisoformat($WEEK_NO[:4]+'-01-01'); iso=d.isocalendar(); print((d.fromisocalendar(iso[0], int(w), 1)).isoformat())" 2>/dev/null || echo "")
+          echo "WEEK_NO=$WEEK_NO WEEK_START=$WEEK_START"
+          echo "WEEK_NO=$WEEK_NO" >> "$GITHUB_ENV"
+
+          # 复用 Phase 1 的原始记录（不重复拉 API）；时长用全局缓存（不存在则新建）
+          python3 lastfm/weekly_stats_prep.py "$WEEK_START" --raw "lastfm/artifacts/$WEEK_NO/01_raw.json"
+          python3 lastfm/weekly_stats_enrich.py lastfm/dur_cache.json
+          python3 lastfm/weekly_stats_report.py
+          python3 lastfm/weekly_stats_img.py
+
+          # 归档补全
+          cp /tmp/lastfm_prep.json    lastfm/artifacts/$WEEK_NO/02_prep.json
+          cp /tmp/lastfm_clean.json   lastfm/artifacts/$WEEK_NO/03_clean.json
+          cp /tmp/lastfm_enrich.json  lastfm/artifacts/$WEEK_NO/04_enrich.json
+          cp /tmp/lastfm_report.json  lastfm/artifacts/$WEEK_NO/05_report.json
+          cp "$WEEK_NO.md"            lastfm/artifacts/$WEEK_NO/06_${WEEK_NO}.md
+          cp "${WEEK_NO}_report.html" lastfm/artifacts/$WEEK_NO/07_${WEEK_NO}_report.html
+          cp lastfm/lastfm_rules.json lastfm/artifacts/$WEEK_NO/08_rules_snapshot.json
+          cp "${WEEK_NO}_report.png"  lastfm/artifacts/$WEEK_NO/09_${WEEK_NO}_report.png
+          cp "${WEEK_NO}_report.png"  .screenshots/${WEEK_NO}_report.png
+          cp lastfm/dur_cache.json    lastfm/artifacts/$WEEK_NO/10_dur_cache.json
+
+      - name: 推送预览分支并开/更新 PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin lastfm-tools-preview 2>/dev/null || true
+          git checkout -B lastfm-tools-preview origin/lastfm-tools-preview 2>/dev/null || git checkout -B lastfm-tools-preview
+          git add -A
+          git commit -m "Week $WEEK_NO 听歌周报" 2>/dev/null || echo "no changes"
+          git push --force-with-lease origin lastfm-tools-preview 2>/dev/null || git push origin lastfm-tools-preview
+          PR=$(gh pr view lastfm-tools-preview --json number -q .number 2>/dev/null || echo "")
+          if [ -z "$PR" ]; then
+            gh pr create --base lastfm-tools --head lastfm-tools-preview \
+              --title "📊 Week $WEEK_NO 听歌周报" \
+              --body "文字版+图片已生成，见 \`lastfm/artifacts/$WEEK_NO/\`。确认无误后合入。" || true
+          else
+            echo "PR $PR 已存在，仅更新 preview 分支内容"
+          fi
