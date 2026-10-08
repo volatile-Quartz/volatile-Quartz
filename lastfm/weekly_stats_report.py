@@ -11,6 +11,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RULES = json.load(open(os.path.join(BASE_DIR, "lastfm_rules.json")))
 STYLE_DROP = set(RULES.get("style_drop_tags", []))
 MERGES = RULES.get("style_tag_merges", {})
+GENRE_WL = set(RULES.get("style_genre_whitelist", []))
 
 prep = json.load(open("/tmp/lastfm_prep.json"))
 enr = json.load(open("/tmp/lastfm_enrich.json"))
@@ -28,9 +29,11 @@ def fmt_dur(sec):
     return "{}:{:02d}".format(m, s)
 
 def canon(t):
-    """风格标签清洗：合并变体；命中黑名单/过长返回 None（不入词云）。"""
+    """风格标签清洗：合并变体 → 黑名单剔除 → 白名单强校验（不在白名单不入词云）。"""
     t2 = MERGES.get(t, t)
     if t2 in STYLE_DROP or not t2 or len(t2) > 30:
+        return None
+    if t2 not in GENRE_WL:
         return None
     return t2
 
