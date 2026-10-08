@@ -212,57 +212,23 @@ def svg_bars(items, w=640, h=260):
 
 def svg_hbars(items, w=640):
     n = len(items); rh = 26; mx = max(v for _, v in items) or 1
+    fc = rh / 2       # 每行的垂直中心线（从行起点起算）
     out = ['<svg viewBox="0 0 %d %d" xmlns="http://www.w3.org/2000/svg" style="width:100%%;height:auto;font-family:system-ui">' % (w, n * rh + 34)]
     for i, (lb, v) in enumerate(items):
         y = 34 + i * rh; bw = (v / mx) * (w - 190)
-        out.append('<text x="6" y="{:.1f}" font-size="13" fill="#333">{}</text>'.format(y + 16, html.escape(str(lb))))
-        out.append('<rect x="190" y="{:.1f}" width="{:.1f}" height="18" rx="4" fill="#4a90d9"/>'.format(y + 5, bw))
+        # rect 中心对齐 fc → rect y 偏移 = fc - rect_h/2 = 13 - 9 = 4
+        out.append('<text x="6" y="{:.1f}" font-size="13" fill="#333">{}</text>'.format(y + fc + 4, html.escape(str(lb))))
+        out.append('<rect x="190" y="{:.1f}" width="{:.1f}" height="18" rx="4" fill="#4a90d9"/>'.format(y + fc - 9, bw))
         if bw > 44:   # 长条时数字写在条内（白字），避免顶格被裁掉
-            out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" text-anchor="end" fill="#fff">{}</text>'.format(190 + bw - 6, y + 19, v))
+            out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" text-anchor="end" fill="#fff">{}</text>'.format(190 + bw - 6, y + fc + 4, v))
         else:
-            out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" fill="#555">{}</text>'.format(196 + bw, y + 19, v))
+            out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" fill="#555">{}</text>'.format(196 + bw, y + fc + 4, v))
     out.append("</svg>")
     return "\n".join(out)
-    try:
-        import io, base64
-        from wordcloud import WordCloud
-        import numpy as np
-        from PIL import Image, ImageDraw
-        font = find_cjk_font()
-        if not font:
-            raise RuntimeError("no CJK font available")
-        W, H = 720, 620
-        mask_im = Image.new("L", (W, H), 255)
-        ImageDraw.Draw(mask_im).ellipse([W * 0.02, H * 0.02, W * 0.98, H * 0.98], fill=0)
-        wc = WordCloud(
-            font_path=font, mask=np.array(mask_im), background_color="white",
-            colormap="viridis", min_font_size=10, max_font_size=120,
-            prefer_horizontal=0.92, relative_scaling=0.5,
-            collocations=False, margin=4, random_state=42,
-        ).generate_from_frequencies(dict(items))
-        buf = io.BytesIO()
-        wc.to_image().save(buf, format="PNG")
-        b64 = base64.b64encode(buf.getvalue()).decode()
-        return '<img src="data:image/png;base64,{}" alt="风格词云" style="width:100%;border-radius:8px">'.format(b64)
-    except Exception:
-        # 降级：CSS span 词云（字号与权重正比，多彩配色）
-        mx = max(c for _, c in items)
-        palette = ["#7c5cbf", "#4a90d9", "#e08a3c", "#3aa675", "#d65a7a", "#8a6fd1", "#2a9d8f", "#e76f51"]
-        rots = [-4, 3, -2, 0, 2, -3, 4, 0]
-        spans = []
-        for i, (t, c) in enumerate(items):
-            fs = 16 + (c / mx) * 26
-            col = palette[i % len(palette)]
-            rot = rots[i % len(rots)]
-            spans.append('<span style="display:inline-block;font-size:{:.0f}px;color:{};font-weight:600;padding:4px 8px;transform:rotate({}deg)">{}</span>'.format(
-                fs, col, rot, html.escape(str(t))))
-        return '<div style="line-height:2.1;text-align:center;padding:8px 0">{}</div>'.format("".join(spans))
 
 daily_items = [(d, daily[d]) for d in days]
 art_items = [(a, c) for a, c in prep["top_artists"][:8]]
-tag_items = [(t, c) for t, c in tag_cnt.most_common(40)]
-repeat_html = ("<br>".join("<b>{}</b>《{}》× {}".format(html.escape(a), html.escape(t), c)
-                           for x in prep["played_again"][:10] for a, t, c in [x.values()]) or "无")
+tag_items = [(t, c) for t, c in tag_cnt.most_common(8)]
 
 
 # ---- 曲风变化 HTML ----
