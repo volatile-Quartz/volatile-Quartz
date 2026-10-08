@@ -63,7 +63,8 @@
     "水音世界观",
     "某二两",
     "纯音乐",
-    "原声带"
+    "原声带",
+    "かた方"
   ],
   "filter_keywords": [
     "军事",
@@ -592,7 +593,8 @@
     "vocaloid_no_footnote": true,
     "unverifiable_collab_fallback_amp": true,
     "album_2plus_to_miucho_list": true,
-    "use_title_suffix": false
+    "use_title_suffix": false,
+    "use_filter_keywords": false
   },
   "output_format": {
     "daily_line_prefix": "2026.9.22 单曲：",

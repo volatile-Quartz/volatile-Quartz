@@ -58,9 +58,10 @@ def reason(r):
     for b in bl_artists:
         if b in al:
             return ("blacklist_artist", b)
-    for k in fkw:
-        if k in al or k in tl:
-            return ("keyword", k)
+    if RULES.get("extra_rules", {}).get("use_filter_keywords", True):
+        for k in fkw:
+            if k in al or k in tl:
+                return ("keyword", k)
     for ba, bt in bl_tracks:
         if ba in al and bt in tl:
             return ("blacklist_track", "{}|{}".format(ba, bt))
