@@ -110,21 +110,24 @@ d.text((W // 2, y + 6), TITLE, font=F(28, True), fill=DARK, anchor="ma")
 d.text((W // 2, y + 48), SUB, font=F(14), fill=GRAY, anchor="ma")
 y += 92
 
-# 统计卡片 2 列
+# 统计卡片 3 列 × 2 行：label 在上、value 在下
+repeated_n = len(played)
 stats = [
-    ("{} 次".format(plays), "本周播放", "有效记录，日均 {} 次".format(round(plays / 7))),
-    ("{} 首".format(unique), "独立曲目", "{} 组独立歌手".format(unique_artists)),
-    ("约 " + fmt_dur(total_sec), "累计时长", "直查 {} + 插值 {}".format(direct, interpolated)),
-    ("{}%".format(pct_new), "新歌占比", "相比上周新听 {} 首".format(new_tracks)),
+    ("本周播放", "{} 次".format(plays), "有效记录，日均 {} 次".format(round(plays / 7))),
+    ("独立曲目", "{} 首".format(unique), "本周新听 {} 首".format(new_tracks)),
+    ("独立歌手", "{} 组".format(unique_artists), "新面孔歌手 {} 组".format(len(prep.get("new_artists", [])) or 0)),
+    ("累计时长", "约 " + fmt_dur(total_sec), "直查 {} + 插值 {}".format(direct, interpolated)),
+    ("新歌占比", "{}%".format(pct_new), "相比上周新听 {} 首".format(new_tracks)),
+    ("反复播放", "{} 首".format(repeated_n), "本周 ≥2 次的歌曲"),
 ]
-cw, ch, gap = (W - PAD * 2 - 16) // 2, 88, 12
-for i, (v, l, s) in enumerate(stats):
-    cx = PAD + (i % 2) * (cw + gap)
-    cy = y + (i // 2) * (ch + gap)
+cw, ch, gap = (W - PAD * 2 - 24) // 3, 92, 12
+for i, (l, v, s) in enumerate(stats):
+    cx = PAD + (i % 3) * (cw + gap)
+    cy = y + (i // 3) * (ch + gap)
     d.rounded_rectangle([cx, cy, cx + cw, cy + ch], radius=14, fill=CARD)
-    d.text((cx + 18, cy + 12), v, font=F(26, True), fill=P1)
-    d.text((cx + 18, cy + 48), l, font=F(14), fill=DARK)
-    d.text((cx + 18, cy + 66), s, font=F(11), fill=GRAY)
+    d.text((cx + 16, cy + 12), l, font=F(13), fill=GRAY)
+    d.text((cx + 16, cy + 34), v, font=F(24, True), fill=P1)
+    d.text((cx + 16, cy + 66), s, font=F(11), fill=GRAY)
 y += 2 * (ch + gap) + 16
 
 # 每日播放趋势（独立曲目/日）
@@ -188,6 +191,7 @@ else:
 y = bottom + 16
 
 # 反复播放 Top
+REPEAT_COLORS = ["#7c5cbf", "#4a90d9", "#e08a3c", "#3aa675", "#d65a7a"]
 n_pl = max(len(played), 1)
 inner_h = n_pl * 26 + 10
 bottom, px, pw = draw_panel(y, "反复播放 Top（本周 ≥2 次）", inner_h)
@@ -196,7 +200,17 @@ for i, x in enumerate(played[:10]):
     f_art = F(13, True)
     d.text((px, yy), x["artist"], font=f_art, fill=DARK)
     aw = d.textlength(x["artist"], font=f_art)
-    d.text((px + aw + 6, yy), "《{}》 × {}".format(x["title"], x["count"]), font=F(13), fill=DARK)
+    title_x = px + aw + 6
+    d.text((title_x, yy), "《{}》".format(x["title"]), font=F(13), fill=DARK)
+    tw = d.textlength("《{}》".format(x["title"]), font=F(13))
+    # 次数彩色方块（白色文字）
+    label = "×{}".format(x["count"])
+    pad, bh = 6, 17
+    bw = d.textlength(label, font=F(12, True)) + pad * 2
+    bx, byy = title_x + tw + 8, yy + 5
+    color = REPEAT_COLORS[i % len(REPEAT_COLORS)]
+    d.rounded_rectangle([bx, byy, bx + bw, byy + bh], radius=int(bh / 2), fill=color)
+    d.text((bx + bw / 2, byy + bh / 2), label, font=F(12, True), fill="#ffffff", anchor="mm")
 y = bottom + 30
 
 # 页脚
