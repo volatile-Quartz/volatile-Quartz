@@ -164,7 +164,7 @@ diff_pct = (clean["plays"] - clean["plays_prev"]) / max(1, clean["plays_prev"]) 
 # ---- Markdown 块（与 issue 既有格式一致，纯文本行）----
 plays = clean["plays"]
 md = []
-md.append("- 播放量：有效记录 {} 次（日均 {} 次），独立曲目 {} 首，独立歌手 {} 组".format(
+md.append("- 播放量：有效记录 {} 次（日均 {} 次），独立曲目 {} 首，独立歌手 {} 位".format(
     plays, round(plays / 7), clean["tracks"], clean["artists"]))
 dur_note = "（直接查到 {} 次播放的时长，其余 {} 次按同歌手均值插值）".format(direct, interpolated)
 md.append("- 累计时长：约 {}{}".format(fmt_dur(total_sec), dur_note))
@@ -180,7 +180,7 @@ if prev_genres_set:
 else:
     diff_str = ""
 md.append("- 曲风数量：{} 种{}".format(len(genres_set), diff_str))
-md.append("- 新歌占比：{}%（新听 {} 首，上周也听过的 {} 首）；新面孔歌手 {} 组".format(
+md.append("- 新歌占比：{}%（新听 {} 首，上周也听过的 {} 首）；新面孔歌手 {} 位".format(
     round(pct_new), prep["new_tracks"], prep["rep_tracks"], len(prep["new_artists"])))
 md.append("- 风格分布（Top {}）：{}".format(min(8, len(genres)), style_str))
 rep_count = sum(1 for v in prep["full_counts"].values() if v >= 2)
@@ -286,7 +286,7 @@ body = """<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name=
                   for v, l, d in [
                       ("{} 次".format(plays), "本周播放", "有效记录，日均 {:.0f} 次".format(plays / 7)),
                       ("{} 首".format(clean["tracks"]), "独立曲目", ""),
-                      ("{} 组".format(clean["artists"]), "独立歌手", ""),
+                      ("{} 位".format(clean["artists"]), "独立歌手", ""),
                       ("{} 种".format(len(genres_set)), "曲风数量",
                        "+{} 新增 -{} 消失".format(len(genres_new), len(genres_gone)) if prev_genres_set else ""),
                       (fmt_dur(total_sec), "累计时长", "直接 {} + 插值 {}".format(direct, interpolated)),
