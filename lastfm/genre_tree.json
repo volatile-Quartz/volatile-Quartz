@@ -1,0 +1,158 @@
+{
+  "Electronic": {
+    "Breakbeat / Jungle / D'n'B": [
+      "breakbeat",
+      "big beat",
+      "breaks",
+      "drum and bass",
+      "jungle",
+      "breakcore",
+      "breakbeat hardcore"
+    ],
+    "D'n'B Subgenres": [
+      "liquid drum and bass",
+      "techstep",
+      "darkstep",
+      "neurofunk",
+      "crossbreed",
+      "drumstep"
+    ],
+    "Hard Dance / Hardcore": [
+      "hard dance",
+      "gabber",
+      "happy hardcore",
+      "uk hardcore",
+      "j-core",
+      "speedcore",
+      "hardstyle",
+      "freeform",
+      "hardcore",
+      "dancecore"
+    ],
+    "House / Techno": [
+      "house",
+      "progressive house",
+      "deep house",
+      "tribal house",
+      "techno",
+      "chill house"
+    ],
+    "Trance / Psytrance": [
+      "trance",
+      "psytrance"
+    ],
+    "Electro / Italo / Disco": [
+      "electro",
+      "electro house",
+      "eurobeat",
+      "italodisco"
+    ],
+    "Future Bass / Future Funk": [
+      "future bass",
+      "future funk"
+    ],
+    "Retro & Experimental": [
+      "acid",
+      "idm",
+      "glitch",
+      "glitch hop",
+      "chiptune",
+      "8-bit",
+      "vaporwave",
+      "witch house"
+    ],
+    "Dubstep / Garage / Grime": [
+      "dubstep",
+      "uk garage",
+      "future garage",
+      "grime"
+    ],
+    "Ambient / Downtempo": [
+      "ambient",
+      "chillout",
+      "downtempo",
+      "lounge"
+    ],
+    "Electronica": [
+      "electronica"
+    ]
+  },
+  "Rock": {
+    "基础摇滚": [
+      "rock",
+      "alternative rock",
+      "indie rock",
+      "punk"
+    ],
+    "噪音系": [
+      "noise rock",
+      "noise"
+    ],
+    "金属": [
+      "metal",
+      "death metal",
+      "symphonic metal",
+      "power metal",
+      "j-metal",
+      "metalcore",
+      "melodic deathcore"
+    ],
+    "后摇 / 前卫": [
+      "post-rock",
+      "progressive rock"
+    ],
+    "J 系": [
+      "j-rock"
+    ]
+  },
+  "Pop": {
+    "基础流行": [
+      "pop",
+      "alternative pop",
+      "indie pop"
+    ],
+    "合成器系": [
+      "synthpop",
+      "synthwave",
+      "glitch pop"
+    ],
+    "日 / 港 / 台": [
+      "j-pop",
+      "city pop"
+    ]
+  },
+  "Folk": {
+    "Folk": [
+      "folk"
+    ]
+  },
+  "Hip Hop": {
+    "基础": [
+      "hip-hop"
+    ],
+    "子类型": [
+      "cloud rap",
+      "lo-fi hip hop"
+    ]
+  },
+  "Funk / Soul / Disco": {
+    "Funk / Soul / Disco": [
+      "funk",
+      "soul",
+      "r&b",
+      "disco"
+    ]
+  },
+  "Jazz": {
+    "Jazz": [
+      "jazz",
+      "jazz pop"
+    ]
+  },
+  "Classical": {
+    "Classical": [
+      "classical",
+      "orchestral"
+    ]
+  }
+}
