@@ -20,10 +20,17 @@ TZ = timezone(timedelta(hours=8))
 def ts_of(datestr):
     return int(datetime.strptime(datestr, "%Y-%m-%d").replace(tzinfo=TZ).timestamp())
 
+RAW_FILE = None
+if "--raw" in sys.argv:
+    i = sys.argv.index("--raw")
+    RAW_FILE = sys.argv[i + 1]
+    START = sys.argv[i + 2] if len(sys.argv) > i + 2 else sys.argv[1]
+else:
+    START = sys.argv[1]
+
 if len(sys.argv) < 2:
-    print("usage: weekly_stats_prep.py 2026-09-28   (week-start Monday, Beijing)")
+    print("usage: weekly_stats_prep.py 2026-09-28 [--raw /path/to/01_raw.json]  (week-start Monday, Beijing)")
     sys.exit(1)
-START = sys.argv[1]
 T0 = ts_of(START)
 WEEK = (T0, T0 + 7 * 86400)
 PREV = (T0 - 7 * 86400, T0)
@@ -126,10 +133,18 @@ def dedup(records):
     return list(seen.values())
 
 def main():
-    print("fetching week...", flush=True)
-    wk = fetch(*WEEK)
-    print("fetching prev week...", flush=True)
-    pv = fetch(*PREV)
+    if RAW_FILE and os.path.exists(RAW_FILE):
+        print("reading week raw from", RAW_FILE, flush=True)
+        wk = json.load(open(RAW_FILE))
+        # 01_raw.json 可能带 album 字段，清洗只需 ts/artist/track
+        wk = [{"ts": r["ts"], "artist": r["artist"], "track": r["track"]} for r in wk]
+        print("fetching prev week...", flush=True)
+        pv = fetch(*PREV)
+    else:
+        print("fetching week...", flush=True)
+        wk = fetch(*WEEK)
+        print("fetching prev week...", flush=True)
+        pv = fetch(*PREV)
     # 原始当周记录落盘（供归档，避免重复拉取 API）
     json.dump(wk, open("/tmp/lastfm_raw.json", "w"), ensure_ascii=False)
     wk_clean_all = [c for c in (clean(r) for r in wk) if c]

@@ -1,0 +1,71 @@
+name: lastfm-weekly-phase1
+
+# Phase 1：拉取原始数据 + 清洗前统计 + 逐行清单（人工确认用）。
+# 定时每周一 01:30（北京时间）自动跑上一自然周 → 归档数据 → 推 lastfm-tools-preview 分支 → 开/更新 PR。
+# 人工确认清单并（必要时改 lastfm_rules.json）合入后，push 到 lastfm-tools 触发 Phase 2 生成周报。
+on:
+  schedule:
+    - cron: "30 17 * * 0"   # UTC 周日 17:30 = 北京 周一 01:30
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  phase1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: lastfm-tools
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 计算周一起始日并生成预览数据
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          WEEK_START=$(python3 - <<'EOF'
+          from datetime import date, timedelta
+          t = date.today()
+          back = 7 if t.weekday() == 0 else t.weekday()   # 上一个周一
+          print((t - timedelta(days=back)).isoformat())
+          EOF
+          )
+          WEEK_NO=$(python3 -c "from datetime import date; d=date.fromisoformat('$WEEK_START'); print(str(d.year)+'week'+str(d.isocalendar()[1]))")
+          echo "WEEK_START=$WEEK_START WEEK_NO=$WEEK_NO"
+          python3 lastfm/weekly_stats_preview.py "$WEEK_START"
+          echo "WEEK_NO=$WEEK_NO" >> "$GITHUB_ENV"
+          echo "WEEK_START=$WEEK_START" >> "$GITHUB_ENV"
+
+      - name: 归档预览数据
+        run: |
+          mkdir -p "lastfm/artifacts/$WEEK_NO"
+          cp "$WEEK_NO"_raw.json  lastfm/artifacts/$WEEK_NO/01_raw.json
+          cp "$WEEK_NO"_raw_stats.md  lastfm/artifacts/$WEEK_NO/00_raw_stats.md
+          cp "$WEEK_NO"_lineup.txt  lastfm/artifacts/$WEEK_NO/00_lineup.txt
+          cp lastfm/lastfm_rules.json lastfm/artifacts/$WEEK_NO/07_rules_snapshot.json
+
+      - name: 推送预览分支并开/更新 PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin lastfm-tools-preview 2>/dev/null || true
+          git checkout -B lastfm-tools-preview origin/lastfm-tools-preview 2>/dev/null || git checkout -B lastfm-tools-preview
+          git add -A
+          git commit -m "Week $WEEK_NO 数据预览" 2>/dev/null || echo "no changes"
+          git push --force-with-lease origin lastfm-tools-preview 2>/dev/null || git push origin lastfm-tools-preview
+          PR=$(gh pr view lastfm-tools-preview --json number -q .number 2>/dev/null || echo "")
+          if [ -z "$PR" ]; then
+            gh pr create --base lastfm-tools --head lastfm-tools-preview \
+              --title "📊 Week $WEEK_NO 数据预览（请确认清洗名单）" \
+              --body "自动拉取 + 清洗前统计 + 逐行清单，请核对剔除/保留名单，必要时修改 \`lastfm/lastfm_rules.json\` 后合入；合入会自动触发 Phase 2 生成周报。" || true
+          else
+            echo "PR $PR 已存在，仅更新 preview 分支内容"
+          fi
