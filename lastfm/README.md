@@ -19,6 +19,34 @@ python3 lastfm/weekly_stats_report.py
 - 中间产物：`/tmp/lastfm_prep.json`、`/tmp/lastfm_enrich.json`、`/tmp/lastfm_report.json`
 - 成品：统计块打印到 stdout + 写 `/workspace/week{no}.md`；报告 `/workspace/week{no}_report.html`
 
+## 产物留存（防止重复拉取/重复处理）
+
+每周处理完成后，将当周全部产物归档到 `lastfm/artifacts/YYYYweekNN/` 并随分支提交，后续可直接读取，无需重新拉取 API：
+
+| 文件 | 内容 |
+| :--- | :--- |
+| `01_raw.json` | 当周原始听歌记录（API 原样，含 album） |
+| `02_prep.json` | 清洗+聚合结果（clean / full_counts / daily / top_artists 等） |
+| `03_enrich.json` | 时长与歌手标签补充结果 |
+| `04_report.json` | 统计指标摘要（时长/词云标签/新歌占比/对比上周） |
+| `05_*_week*.md` | 最终统计块（发布用） |
+| `06_*_week*_report.html` | 最终 HTML 周报 |
+| `07_rules_snapshot.json` | 当时清洗规则快照（黑名单/白名单等，便于日后对照） |
+| `08_*_week*_report.png` | 报告整页截图（同时复制一份到 `.screenshots/`） |
+
+归档命令示例：
+
+```bash
+mkdir -p lastfm/artifacts/2026week40/
+cp /tmp/lastfm_prep.json   lastfm/artifacts/2026week40/02_prep.json
+cp /tmp/lastfm_enrich.json lastfm/artifacts/2026week40/03_enrich.json
+cp /tmp/lastfm_report.json lastfm/artifacts/2026week40/04_report.json
+cp 2026week40.md           lastfm/artifacts/2026week40/05_2026week40.md
+cp 2026week40_report.html  lastfm/artifacts/2026week40/06_2026week40_report.html
+cp lastfm/lastfm_rules.json lastfm/artifacts/2026week40/07_rules_snapshot.json
+# 截图：整页渲染后存 08_* 与 .screenshots/2026week40_report.png
+```
+
 ## 口径约定
 
 | 项 | 口径 |
@@ -54,6 +82,7 @@ python3 lastfm/weekly_stats_report.py
 ## 每周维护流程
 
 1. `git fetch origin && git checkout lastfm-tools`（沙箱工作区可能被重置，先拉最新）
-2. 跑流水线 → 核对统计/逐日清单
+2. **拉取 → 先确认 → 再处理**：跑 `weekly_stats_prep.py` 得到清洗后逐行清单/统计后，**先把原始条数、过滤项、去重结果展示给用户确认**，确认后再继续 enrich/report，不做未确认的自动处理
 3. 有清洗问题 → 编辑 `lastfm_rules.json`（或修脚本）
-4. `git add lastfm/ && git commit && git push origin lastfm-tools`
+4. 归档当周产物到 `lastfm/artifacts/YYYYweekNN/`（见上文「产物留存」）
+5. `git add lastfm/ .screenshots/ 2026week*.md 2026week*_report.html && git commit && git push origin lastfm-tools`
