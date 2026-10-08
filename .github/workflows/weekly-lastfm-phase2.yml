@@ -34,9 +34,20 @@ jobs:
         env:
           TZ: Asia/Shanghai
         run: |
-          # 找出 artifacts 中最新的周次（Phase 1 已归档 01_raw.json）
-          WEEK_NO=$(ls -1d lastfm/artifacts/20* 2>/dev/null | sort | tail -1 | xargs -n1 basename)
-          WEEK_START=$([ -n "$WEEK_NO" ] && python3 -c "from datetime import date; w=$WEEK_NO[4:]; d=date.fromisoformat($WEEK_NO[:4]+'-01-01'); iso=d.isocalendar(); print((d.fromisocalendar(iso[0], int(w), 1)).isoformat())" 2>/dev/null || echo "")
+          # 找最新「已有 Phase 1 数据(01_raw)但尚无正式产物(*_report.png)」的周次
+          WEEK_NO=""
+          for d in $(ls -1d lastfm/artifacts/20* 2>/dev/null | sort); do
+            n=$(basename "$d")
+            if [ -f "$d/01_raw.json" ] && ! ls "$d"/*_report.png >/dev/null 2>&1; then
+              WEEK_NO="$n"
+            fi
+          done
+          if [ -z "$WEEK_NO" ]; then
+            echo "没有待生成的周次（全部已产出正式周报）"
+            exit 0
+          fi
+          # 2026week40 -> WEEK_START=2026-09-28（ISO 周一起始日，Monday）
+          WEEK_START=$(python3 -c "from datetime import date; no='$WEEK_NO'; w=int(no.split('week')[1]); print(date.fromisocalendar(int(no[:4]), w, 1).isoformat())")
           echo "WEEK_NO=$WEEK_NO WEEK_START=$WEEK_START"
           echo "WEEK_NO=$WEEK_NO" >> "$GITHUB_ENV"
 
@@ -46,17 +57,16 @@ jobs:
           python3 lastfm/weekly_stats_report.py
           python3 lastfm/weekly_stats_img.py
 
-          # 归档补全
+          # 归档补全（编号对齐 README 约定：02_prep / 03_enrich / 04_report / 05_md / 06_html / 07_rules / 08_png）
           cp /tmp/lastfm_prep.json    lastfm/artifacts/$WEEK_NO/02_prep.json
-          cp /tmp/lastfm_clean.json   lastfm/artifacts/$WEEK_NO/03_clean.json
-          cp /tmp/lastfm_enrich.json  lastfm/artifacts/$WEEK_NO/04_enrich.json
-          cp /tmp/lastfm_report.json  lastfm/artifacts/$WEEK_NO/05_report.json
-          cp "$WEEK_NO.md"            lastfm/artifacts/$WEEK_NO/06_${WEEK_NO}.md
-          cp "${WEEK_NO}_report.html" lastfm/artifacts/$WEEK_NO/07_${WEEK_NO}_report.html
-          cp lastfm/lastfm_rules.json lastfm/artifacts/$WEEK_NO/08_rules_snapshot.json
-          cp "${WEEK_NO}_report.png"  lastfm/artifacts/$WEEK_NO/09_${WEEK_NO}_report.png
+          cp /tmp/lastfm_enrich.json  lastfm/artifacts/$WEEK_NO/03_enrich.json
+          cp /tmp/lastfm_report.json  lastfm/artifacts/$WEEK_NO/04_report.json
+          cp "$WEEK_NO.md"            lastfm/artifacts/$WEEK_NO/05_${WEEK_NO}.md
+          cp "${WEEK_NO}_report.html" lastfm/artifacts/$WEEK_NO/06_${WEEK_NO}_report.html
+          cp lastfm/lastfm_rules.json lastfm/artifacts/$WEEK_NO/07_rules_snapshot.json
+          cp "${WEEK_NO}_report.png"  lastfm/artifacts/$WEEK_NO/08_${WEEK_NO}_report.png
           cp "${WEEK_NO}_report.png"  .screenshots/${WEEK_NO}_report.png
-          cp lastfm/dur_cache.json    lastfm/artifacts/$WEEK_NO/10_dur_cache.json
+          cp lastfm/dur_cache.json    lastfm/artifacts/$WEEK_NO/09_dur_cache.json
 
       - name: 推送预览分支并开/更新 PR
         env:
