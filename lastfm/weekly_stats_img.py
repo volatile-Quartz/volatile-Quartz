@@ -129,17 +129,21 @@ GREEN, RED = "#2a9d8f", "#e76f51"
 # ── 画布（先铺 4000px 够大，最后裁） ──
 im = Image.new("RGB", (W, 4000), BG)
 d = ImageDraw.Draw(im)
-y = 0
+TOP_PAD = 30          # 整张图顶部留白
+HBAR_BOTTOM_GAP = 28  # Top歌手/曲风分布 panel 底部额外留白（比其它 panel 多 12px）
+CHG_LINE_H = 20       # 曲风变化每行高度
 
-def draw_panel(y, title_txt, inner_h):
+y = TOP_PAD
+
+def draw_panel(y, title_txt, inner_h, bottom_pad=18):
     x0, x1 = W // 2 - 360, W // 2 + 360
-    d.rounded_rectangle([x0, y + 2, x1, y + 34 + inner_h + 18], radius=14, fill=CARD)
+    d.rounded_rectangle([x0, y + 2, x1, y + 34 + inner_h + bottom_pad], radius=14, fill=CARD)
     d.text((x0 + 18, y + 12), title_txt, font=F(17, True), fill=DARK)
-    return y + 34 + inner_h + 18, x0 + 18, x1 - x0 - 36
+    return y + 34 + inner_h + bottom_pad, x0 + 18, x1 - x0 - 36
 
 # ══════════ 头部 ══════════
-d.text((W // 2, y + 6), TITLE, font=F(28, True), fill=DARK, anchor="ma")
-d.text((W // 2, y + 48), SUB, font=F(14), fill=GRAY, anchor="ma")
+d.text((W // 2, y + 14), TITLE, font=F(28, True), fill=DARK, anchor="ma")
+d.text((W // 2, y + 56), SUB, font=F(14), fill=GRAY, anchor="ma")
 y += 92
 
 # ══════════ 6 张指标卡（反复播放 → 曲风数量） ══════════
@@ -182,18 +186,15 @@ y = bottom + 16
 n_art = min(len(top_artists), 8)
 RH = 26; FC = RH / 2
 inner_h = n_art * RH + 8
-bottom, px, pw = draw_panel(y, "Top 歌手（按播放次数）", inner_h)
+bottom, px, pw = draw_panel(y, "Top 歌手（按播放次数）", inner_h, bottom_pad=HBAR_BOTTOM_GAP)
 mx_a = max(c for _, c in top_artists[:8]) or 1
 for i, (a, c) in enumerate(top_artists[:8]):
     row_top = bottom - inner_h + 10 + i * RH
     row_center = row_top + FC
-    # label（视觉中心 ≈ row_center）
     d.text((px, row_center), str(a), font=F(13), fill=DARK, anchor="lm")
-    # rect：高 18，中心 row_center → y0 = row_center - 9
     bww = (c / mx_a) * (pw - 200)
     d.rounded_rectangle([px + 190, row_center - 9, px + 190 + max(bww, 4), row_center + 9],
                         radius=6, fill=P2)
-    # 数字（视觉中心 ≈ row_center，长条内白字/条外灰字）
     txt = str(c)
     if bww > d.textlength(txt, F(12)) + 12:
         d.text((px + 190 + max(bww, 4) - 6, row_center), txt, font=F(12), fill="#ffffff", anchor="rm")
@@ -205,7 +206,7 @@ y = bottom + 16
 tag_items = tag_cnt.most_common(8)
 n_t = len(tag_items)
 inner_h = max(n_t, 1) * RH + 8
-bottom, px, pw = draw_panel(y, "曲风分布（按播放次数）", inner_h)
+bottom, px, pw = draw_panel(y, "曲风分布（按播放次数）", inner_h, bottom_pad=HBAR_BOTTOM_GAP)
 mx_t = max((c for _, c in tag_items), default=1) or 1
 if not tag_items:
     d.text((px, bottom - 44), "无", font=F(14), fill=GRAY)
@@ -224,22 +225,45 @@ else:
             d.text((px + 190 + max(bww, 4) + 8, row_center), txt, font=F(12), fill="#555", anchor="lm")
 y = bottom + 16
 
-# ══════════ 曲风变化（新增/消失） ══════════
-inner_h = 120
-bottom, px, pw = draw_panel(y, "曲风变化", inner_h)
-yy = bottom - inner_h + 18
+# ══════════ 曲风变化（新增/消失，自动换行防溢出） ══════════
+def wrap_genres(prefix, genres, font, avail_w):
+    """把 genre 列表按 avail_w 自动拆成多行，后续行缩进对齐冒号后。"""
+    lines = []
+    indent = " " * len(prefix.rstrip("：:")) + "："
+    cur = prefix
+    for g in genres:
+        sep = "、" if cur != prefix else ""
+        cand = cur + sep + g
+        if d.textlength(cand, font) > avail_w and cur != prefix:
+            lines.append(cur)
+            cur = indent + g
+        else:
+            cur = cand
+    if cur:
+        lines.append(cur)
+    return lines
+
+chg_font = F(13, True)
+chg_avail = pw  # draw_panel 返回的 pw = 可用宽度
+chg_lines = []
 if not prev_genres_set:
-    d.text((px, yy), "缺少上周对比数据（首次运行？）", font=F(13), fill=GRAY)
+    chg_lines.append(("缺少上周对比数据（首次运行？）", GRAY, False))
 elif not genres_new and not genres_gone:
-    d.text((px, yy), "与上周持平，曲风无变化", font=F(13), fill=GRAY)
+    chg_lines.append(("与上周持平，曲风无变化", GRAY, False))
 else:
     if genres_new:
-        txt = "+{} 新增：{}".format(len(genres_new), "、".join(genres_new))
-        d.text((px, yy), txt, font=F(13, True), fill=GREEN)
-        yy += 24
+        chg_lines.extend((l, GREEN, True) for l in wrap_genres(
+            "+{} 新增：".format(len(genres_new)), genres_new, chg_font, chg_avail))
     if genres_gone:
-        txt = "-{} 消失：{}".format(len(genres_gone), "、".join(genres_gone))
-        d.text((px, yy), txt, font=F(13, True), fill=RED)
+        chg_lines.extend((l, RED, True) for l in wrap_genres(
+            "-{} 消失：".format(len(genres_gone)), genres_gone, chg_font, chg_avail))
+
+inner_h = len(chg_lines) * CHG_LINE_H + 10
+bottom, px, pw = draw_panel(y, "曲风变化", inner_h)
+yy = bottom - inner_h + 8
+for line_text, color, bold in chg_lines:
+    d.text((px, yy), line_text, font=F(13, bold), fill=color)
+    yy += CHG_LINE_H
 y = bottom + 30
 
 # ══════════ 页脚 ══════════
