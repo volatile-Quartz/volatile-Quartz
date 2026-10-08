@@ -130,11 +130,15 @@ def main():
     wk = fetch(*WEEK)
     print("fetching prev week...", flush=True)
     pv = fetch(*PREV)
+    # 原始当周记录落盘（供归档，避免重复拉取 API）
+    json.dump(wk, open("/tmp/lastfm_raw.json", "w"), ensure_ascii=False)
     wk_clean_all = [c for c in (clean(r) for r in wk) if c]
     pv_clean_all = [c for c in (clean(r) for r in pv) if c]
     wk_clean = dedup(wk_clean_all)     # unique tracks
     pv_clean = dedup(pv_clean_all)
     pv_keys = {(r["artist"].lower(), r["title"].lower()) for r in pv_clean}
+    # 清洗后当周记录落盘（供归档，避免重新清洗）
+    json.dump(wk_clean_all, open("/tmp/lastfm_clean.json", "w"), ensure_ascii=False)
 
     tz = 8 * 3600
     # 每日：独立曲目（set）与播放次数（Counter）两种口径
@@ -144,6 +148,11 @@ def main():
         d = datetime.fromtimestamp(r["ts"] + tz).strftime("%m-%d")
         daily_plays[d] += 1
         daily_uniq[d].add((r["artist"].lower(), r["title"].lower()))
+    # 自然周 7 天补全（无记录日记为 0，保证"最冷清"含空日）
+    week_days = [(datetime.fromtimestamp(T0, TZ) + timedelta(days=i)).strftime("%m-%d") for i in range(7)]
+    for d in week_days:
+        daily_uniq.setdefault(d, set())
+        daily_plays.setdefault(d, 0)
     daily = {d: len(s) for d, s in sorted(daily_uniq.items())}
     daily_plays = dict(sorted(daily_plays.items()))
 
@@ -164,7 +173,8 @@ def main():
         "clean": {"plays": len(wk_clean_all), "plays_prev": len(pv_clean_all),
                   "tracks": len(wk_clean), "tracks_prev": len(pv_clean),
                   "artists": len(art_cnt), "artists_prev": len(pv_art_cnt)},
-        "daily": daily,
+        "daily": daily_plays,
+        "daily_uniq": daily,
         "daily_plays": daily_plays,
         "top_artists": art_cnt.most_common(15),
         "top_tracks": trk_cnt.most_common(10),

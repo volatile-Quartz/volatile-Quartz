@@ -221,7 +221,7 @@ body = """<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name=
 <div class="cards">
   {cards}
 </div>
-<div class="panel"><h2>每日播放趋势（独立曲目/日）</h2>{bars}</div>
+<div class="panel"><h2>每日播放趋势（播放次数/日）</h2>{bars}</div>
 <div class="panel"><h2>Top 歌手（按播放次数）</h2>{hbars}</div>
 <div class="panel"><h2>风格分布</h2>{tags}</div>
 <div class="panel"><h2>反复播放 Top（本周 ≥2 次）</h2>
