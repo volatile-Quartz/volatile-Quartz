@@ -192,7 +192,8 @@ md.append("- 对比上周：总播放 {} vs {}（{}{}%）".format(
 json.dump({"total_sec": total_sec, "direct": direct, "interpolated": interpolated,
            "all_tags": genres, "genres_count": len(genres_set),
            "new_genres": genres_new, "gone_genres": genres_gone,
-           "pct_new": pct_new, "diff_pct": diff_pct},
+           "pct_new": pct_new, "diff_pct": diff_pct,
+           "tracks": clean["tracks"], "artists": clean["artists"]},
           open("/tmp/lastfm_report.json", "w"), ensure_ascii=False, indent=1)
 
 print("\n".join(md))
