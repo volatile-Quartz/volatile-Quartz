@@ -10,7 +10,7 @@
  "clean": {
   "plays": 295,
   "plays_prev": 88,
-  "tracks": 277,
+  "tracks": 281,
   "tracks_prev": 61,
   "artists": 222,
   "artists_prev": 57
@@ -28,7 +28,7 @@
   "09-21": 0,
   "09-22": 33,
   "09-23": 32,
-  "09-24": 51,
+  "09-24": 55,
   "09-25": 21,
   "09-26": 78,
   "09-27": 62
@@ -84,7 +84,7 @@
    3
   ],
   [
-   "REDALiCE feat. t+pazolite",
+   "REDALiCE × t+pazolite",
    3
   ],
   [
@@ -107,15 +107,8 @@
  "top_tracks": [
   [
    [
-    "REDALiCE feat. t+pazolite",
+    "REDALiCE × t+pazolite",
     "Xterfusion"
-   ],
-   3
-  ],
-  [
-   [
-    "オルタンシア",
-    "FlowerS ～となりで咲く花のように～"
    ],
    3
   ],
@@ -129,7 +122,7 @@
   [
    [
     "Ange;art",
-    "星をめざして"
+    "星をめざして (Hardcore Edit)"
    ],
    2
   ],
@@ -142,7 +135,7 @@
   ],
   [
    [
-    "Shandy kubota & かめりあ",
+    "かめりあ",
     "See you (Camellia's Farewell Remix)"
    ],
    2
@@ -163,7 +156,7 @@
   ],
   [
    [
-    "nayuta & ARForest",
+    "ARForest × nayuta",
     "Imaginary Arcadia"
    ],
    2
@@ -174,19 +167,21 @@
     "Tales of Misery"
    ],
    2
+  ],
+  [
+   [
+    "残像音阶 & M3mo",
+    "感官过载"
+   ],
+   2
   ]
  ],
- "new_tracks": 277,
+ "new_tracks": 281,
  "rep_tracks": 0,
  "played_again": [
   {
-   "artist": "REDALiCE feat. t+pazolite",
+   "artist": "REDALiCE × t+pazolite",
    "title": "Xterfusion",
-   "count": 3
-  },
-  {
-   "artist": "オルタンシア",
-   "title": "FlowerS ～となりで咲く花のように～",
    "count": 3
   },
   {
@@ -196,7 +191,7 @@
   },
   {
    "artist": "Ange;art",
-   "title": "星をめざして",
+   "title": "星をめざして (Hardcore Edit)",
    "count": 2
   },
   {
@@ -205,7 +200,7 @@
    "count": 2
   },
   {
-   "artist": "Shandy kubota & かめりあ",
+   "artist": "かめりあ",
    "title": "See you (Camellia's Farewell Remix)",
    "count": 2
   },
@@ -220,7 +215,7 @@
    "count": 2
   },
   {
-   "artist": "nayuta & ARForest",
+   "artist": "ARForest × nayuta",
    "title": "Imaginary Arcadia",
    "count": 2
   },
@@ -236,27 +231,17 @@
   },
   {
    "artist": "Bad Company UK",
-   "title": "The Nine",
+   "title": "The Nine (Remastered)",
    "count": 2
   },
   {
    "artist": "Royal Philharmonic Orchestra & Carl Davis & Edward Elgar",
-   "title": "Nimrod",
+   "title": "Nimrod (Remastered)",
    "count": 2
   },
   {
    "artist": "オルタンシア",
-   "title": "Dear マイフレンド",
-   "count": 2
-  },
-  {
-   "artist": "オルタンシア",
-   "title": "Purple Rays",
-   "count": 2
-  },
-  {
-   "artist": "オルタンシア",
-   "title": "Dream a gate",
+   "title": "FlowerS ～となりで咲く花のように～",
    "count": 2
   }
  ],
@@ -311,7 +296,7 @@
   "上水流宇宙 & vα-liv",
   "植田佳奈",
   "Rolling Contact",
-  "Shandy kubota & かめりあ",
+  "かめりあ",
   "カレンチャン",
   "Leslie Wai",
   "kawashiii",
@@ -331,7 +316,7 @@
   "nyamura",
   "Yooh",
   "Candy_Wind",
-  "nayuta & ARForest",
+  "ARForest × nayuta",
   "千坂 & SaMZIng",
   "闫东炜",
   "Silent",
@@ -401,7 +386,7 @@
   "中原龍太郎 feat. Senya",
   "RYOQUCHA & DJ Raisei",
   "t+pazolite",
-  "REDALiCE feat. t+pazolite",
+  "REDALiCE × t+pazolite",
   "WOVOP & 洛天依 & 乐正绫",
   "Double X",
   "Elliot Hsu",
@@ -475,100 +460,100 @@
  ],
  "full_counts": {
   "Surk||Benediction": 1,
-  "Assertive||Lightless": 1,
-  "DJ Shimamura & Lindsey Marie||Spreading My NRG": 1,
+  "Assertive||Lightless(Assertive Hardcore Bootleg)": 1,
+  "DJ Shimamura & Lindsey Marie||Spreading My NRG (feat. Lindsey Marie)": 1,
   "DJ Noriken||#I_WNNA_B_WIZ_U": 1,
-  "DJ Shimamura||BIGBOOBS INSANITY": 1,
+  "DJ Shimamura||BIGBOOBS INSANITY (Hardcore Mix)": 1,
   "Kara||Break": 1,
   "Synthion||There For Me": 2,
   "Assertive||Starry Farewell": 1,
   "Mtell & Riku||Arquebus": 1,
-  "Daniel Seven & YUKI||Light In You": 1,
-  "Daniel Seven||Growth": 1,
+  "Daniel Seven & YUKI||Light In You (Original Mix)": 1,
+  "Daniel Seven||Growth (Original Mix)": 1,
   "LOVELY BOMB||愛": 1,
-  "Daniel Seven & Hotchkiss||Soundwaves": 1,
-  "Extasy Police||みはらしの丘": 1,
-  "Extasy Police||HOLLY WAVE": 1,
+  "Daniel Seven & Hotchkiss||Soundwaves (Original Mix)": 1,
+  "Extasy Police||みはらしの丘 (DJ Shimamura Remix)": 1,
+  "Extasy Police||HOLLY WAVE (DJ Shimamura's Tsukubamix)": 1,
   "DJ Shimamura & Lindsey Marie & Kent Alexander||Forever Together": 1,
   "Iole||Prehnite": 1,
   "YUKIYANAGI||Where Are You Now": 1,
   "YUKIYANAGI & Sokudo!||Wait For You": 1,
   "Aethral||All About The Rush": 1,
-  "M-Project & Mitomoro||Where We Came From": 1,
+  "M-Project & Mitomoro||Where We Came From (Refix)": 1,
   "Rocket Start||Supersoda": 1,
-  "アイロボ||夢Navigation": 1,
-  "Hommarju & AKKUN DAIMAOU||Stardust Midnight": 1,
-  "電音部 & Tatsunoshin & 星川サラ||Be All Right": 1,
+  "アイロボ||夢Navigation (DJ Shimamura Remix)": 1,
+  "Hommarju & AKKUN DAIMAOU||Stardust Midnight (Extended)": 1,
+  "電音部 & Tatsunoshin & 星川サラ||Be All Right (Prod. Tatsunoshin)": 1,
   "MoreanP||Tacet": 1,
   "健屋花那 & PSYQUI||Shining Lights": 1,
   "健屋花那||Beat Me!": 1,
   "Tanuki||Counting Hours": 1,
   "Tatsunoshin & Tsugumi Nagahara||Innocent Prayer": 1,
-  "Scott Brown & M-Project||Crash The Party": 1,
-  "USAO||Interstellar Travel": 1,
+  "Scott Brown & M-Project||Crash The Party (Original Mix)": 1,
+  "USAO||Interstellar Travel (extended mix)": 1,
   "Synthion||Dreamer": 1,
   "Plum||MemoryLocked": 1,
   "Aethral & Hyleo||Irresolution": 1,
-  "HYPERLOCK & Eririn||Azure Sky": 1,
-  "4* & S2i8||Dreamer": 1,
+  "HYPERLOCK & Eririn||Azure Sky (feat. Eririn)": 1,
+  "4* & S2i8||Dreamer (Original Mix)": 1,
   "Relect||Donky Soldier": 1,
-  "Technikore||Open Your Eyes": 1,
-  "DJ Noriken||Sakura Tr!ck": 1,
+  "Technikore||Open Your Eyes (Extended Mix)": 1,
+  "DJ Noriken||Sakura Tr!ck (Redux)": 1,
   "Sokudo!||Without You": 1,
   "Sokudo!||Red Light": 1,
-  "Assertive||Everything Goes On": 1,
-  "KO3 & Getty & TEA||Can't Stop Believing": 1,
-  "DJ Shimamura & Whizzkid||Hold Your Head High": 1,
-  "DJ Shimamura & AZK||NEXTRA": 1,
+  "Assertive||Everything Goes On (Assertive Hardcore Bootleg)": 1,
+  "KO3 & Getty & TEA||Can't Stop Believing (feat. TEA)": 1,
+  "DJ Shimamura & Whizzkid||Hold Your Head High (Extended Mix)": 1,
+  "DJ Shimamura & AZK||NEXTRA (Extended Mix)": 1,
   "Sokudo!||Another Goodbye": 1,
-  "Tatsunoshin feat. DJ勝也||Mirai": 1,
+  "Tatsunoshin feat. DJ勝也||Mirai (feat​.​DJ​勝​也​)": 1,
   "Tatsunoshin & PIKASONIC & SARUKANI||NANYAKORE": 1,
-  "Ange;art||星をめざして": 2,
+  "Ange;art||星をめざして (Hardcore Edit)": 2,
   "Assertive & HYPERLOCK||Promise You": 1,
   "YUKIYANAGI & savogy||In Your Arms": 1,
   "Sokudo!||Slow The World": 1,
   "LaXal & MANDY B.BLUE||Mega-Electric": 1,
   "Sokudo!||Take Flight": 1,
-  "HYPERLOCK & saamson||Panorama": 1,
-  "RAMMに這いよる邪神さん||Wonderナンダ?片思い": 1,
+  "HYPERLOCK & saamson||Panorama (feat. saamson)": 1,
+  "RAMMに這いよる邪神さん||Wonderナンダ?片思い (Wonder什么?单恋)": 1,
   "上水流宇宙 & vα-liv||Nova Chro": 1,
-  "植田佳奈||だけど、容赦なんてしてあげない": 1,
-  "Rolling Contact||Return into the Sakura Phantasmagoria": 1,
+  "植田佳奈||だけど、容赦なんてしてあげない (但是、绝不宽恕)": 1,
+  "Rolling Contact||Return into the Sakura Phantasmagoria (Return into the Sakura Phantasmagoria)": 1,
   "Rolling Contact||Frenzy Eyes": 1,
   "Rolling Contact||Winning Hands (Instrumental Extended)": 1,
   "Rolling Contact||Little Treasure (Instrumental Remix)": 1,
-  "Rolling Contact||Mysterium Vinyl": 1,
+  "Rolling Contact||Mysterium Vinyl (Mysterium Vinyl)": 1,
   "Rolling Contact||Myriad Border (Sharp Key Edit)": 1,
   "Rolling Contact||Ultra Funkular (128 Flat Extended)": 1,
   "Rolling Contact||Loud Chimera": 2,
-  "Rolling Contact||MFH": 1,
-  "Rolling Contact||Soul On Water": 1,
-  "Shandy kubota & かめりあ||See you (Camellia's Farewell Remix)": 2,
+  "Rolling Contact||MFH (原曲：幽霊客船の時空を越えた旅)": 1,
+  "Rolling Contact||Soul On Water (原曲：キャプテン・ムラサ)": 1,
+  "かめりあ||See you (Camellia's Farewell Remix)": 2,
   "カレンチャン||What is your ID": 1,
   "Leslie Wai||Paradigm": 2,
   "kawashiii||vibe²": 1,
   "Kurobara||Cy6er 3yst0p1a": 1,
   "Lights & Motion||Sparks": 1,
   "Paxel||Here And Now": 1,
-  "花澤香菜/网易阴阳师手游||空相(オモテウラ)": 1,
+  "花澤香菜/网易阴阳师手游||空相(オモテウラ) (网易阴阳师手游 - SP阶式神空相面灵气 角色印象曲)": 1,
   "aethoro||Arielle's Wish": 1,
   "PIKASONIC||Princess": 1,
   "Gardens||Twin Bloom": 1,
   "Epic Soul Factory & Cesc Vilà & Fran Soto||Everdream": 1,
-  "Vexento||Valhalla": 1,
+  "Vexento||Valhalla (英灵殿)": 1,
   "NORISTRY & ﾀﾗﾁｵ & もるでお & まらしぃ||地団駄ビート": 1,
   "Yon||Beyond the Clouds（云之彼端）": 1,
-  "Eisblume||Für immer": 1,
+  "Eisblume||Für immer (Instrumental)": 1,
   "Steve Barakatt||Flying": 1,
-  "Peter Roe||Last Reunion: Epicmusicvn Series": 1,
+  "Peter Roe||Last Reunion: Epicmusicvn Series (最后的重逢)": 1,
   "Wisp X||Faeth": 1,
   "Sin Wecokat||DARKSIDE:ELYSIAN": 1,
-  "nyamura||星の便り": 1,
+  "nyamura||星の便り (星星的消息)": 1,
   "MoreanP||Invisible Umbrella": 1,
   "Albemuth||幽ノ楽園": 2,
   "Yooh||Holy Knight": 1,
   "Candy_Wind||青空": 1,
-  "nayuta & ARForest||Imaginary Arcadia": 2,
+  "ARForest × nayuta||Imaginary Arcadia": 2,
   "千坂 & SaMZIng||Fireflies": 1,
   "闫东炜||夏野与暗恋": 1,
   "Silent||Nasty": 1,
@@ -580,29 +565,29 @@
   "Ωμεγα||Der Schneid": 1,
   "Team Grimoire||Sheriruth": 1,
   "Aran||Graces of Heaven": 1,
-  "かめりあ/ナノ||空殻": 1,
+  "かめりあ/ナノ||空殻 (feat. ナノ)": 1,
   "Grand Thaw||Flesvelka": 1,
   "Laur||KILL SWITCH": 1,
   "Sean Ven||Faded Neon Dreams": 1,
   "SHK||Identity Part 4": 1,
   "Kobaryo||Rebooting Wings": 1,
-  "RJ Pasin||Sample this": 1,
+  "RJ Pasin||Sample this (小鱼拖地)": 1,
   "Steerner & Martell||Sun": 1,
   "Ludicin||Eschatology": 1,
   "Kobaryo||SLOWFALL GUILLOTINE PROMPT": 1,
-  "MIMI feat. 初音ミク & 重音テト||劣等哀歌": 1,
-  "ProjectMoon & StudioEIM||Canto IX Boss 10 Battle Theme": 1,
+  "MIMI feat. 初音ミク & 重音テト||劣等哀歌 (feat. 初音ミク & 重音テト)": 1,
+  "ProjectMoon & StudioEIM||Canto IX Boss 10 Battle Theme (Limbus Company OST)": 1,
   "Ju_E||cryout": 1,
   "Void||Harbinger": 1,
-  "凌晨一点的莱茵猫 & 二乘||无尽幸福": 1,
-  "Akito||桜華月": 1,
+  "凌晨一点的莱茵猫 & 二乘||无尽幸福 (boundless bliss)": 1,
+  "Akito||桜華月 (樱华月)": 1,
   "JINGYAN & Rigel Music||花言葉": 1,
-  "Taishi||One Day's Sunlight": 1,
+  "Taishi||One Day's Sunlight (Original Mix)": 1,
   "Shandy Kubota||Drizzle": 1,
-  "Shirfine||Illusionary Daytime": 1,
+  "Shirfine||Illusionary Daytime (幻昼)": 1,
   "打打だいず & Ashrount||DREAD AREA": 1,
   "Soulostar||These Nights": 1,
-  "Empty old City||Chronicle a": 1,
+  "Empty old City||Chronicle a (English Ver.)": 1,
   "灰澈 & yuki_宇恩||yuki enfolded in": 1,
   "DJ Okawari||Represent feat. Kimbara Chieko": 1,
   "天逸 & Liv7 & 小欣 & 不识君||活下去（纯音乐）": 1,
@@ -611,8 +596,8 @@
   "路明熹||不要死在那个夏天": 1,
   "ryhki||Tales of Misery": 2,
   "OTOKAZE||Save the flavor Part3 -Instrumental version-": 1,
-  "HOPERUI & Greyscale||Reaching Light": 1,
-  "水月陵||夢のなごりを探して": 1,
+  "HOPERUI & Greyscale||Reaching Light (寻光而至)": 1,
+  "水月陵||夢のなごりを探して (探寻梦的痕迹)": 1,
   "残像音阶 & M3mo||感官过载": 2,
   "Current Value||Chain Walk": 1,
   "Current Value||Frontier": 1,
@@ -622,21 +607,21 @@
   "Sinister Souls feat. Badlokk||Shimmer": 1,
   "Sinister Souls feat. Kaizen Flow||Charged": 1,
   "SINISTER SOULS feat. MYSELOR||Astral": 1,
-  "Bad Company UK||The Nine": 2,
-  "Bad Company UK||Dogfight": 1,
-  "Bad Company UK||The Bridge": 1,
-  "Counterstrike||Can't Let Go": 1,
+  "Bad Company UK||The Nine (Remastered)": 2,
+  "Bad Company UK||Dogfight (Remastered)": 1,
+  "Bad Company UK||The Bridge (Remastered)": 1,
+  "Counterstrike||Can't Let Go - Original Mix": 1,
   "Kade||092": 1,
   "denshino||Exploration": 1,
-  "Islet&倚水||星になる": 1,
+  "Islet&倚水||星になる (feat. 倚水)": 1,
   "PIKASONIC||Nostalgia": 1,
   "Miyia（米娅）||I want you in my bed": 1,
-  "MIKS||Summer Wave": 1,
+  "MIKS||Summer Wave - Sped": 1,
   "幽閉サテライト&森永真由美||共鳴しない愛のカタチ": 1,
-  "Akie秋绘||天ノ弱": 1,
-  "MIMI&可不||サヨナラは言わないでさ": 1,
+  "Akie秋绘||天ノ弱 (天之弱)": 1,
+  "MIMI&可不||サヨナラは言わないでさ (feat. 可不)": 1,
   "东霓塔姆||第十一名": 1,
-  "Royal Philharmonic Orchestra & Carl Davis & Edward Elgar||Nimrod": 2,
+  "Royal Philharmonic Orchestra & Carl Davis & Edward Elgar||Nimrod (Remastered)": 2,
   "方大同||春风吹": 1,
   "David Parry & London Philharmonic Orchestra||Pavane": 1,
   "灰澈||初夏晨星": 1,
@@ -645,9 +630,9 @@
   "Ashes Remain||On My Own": 1,
   "トゲナシトゲアリ||誰にもなれない私だから": 1,
   "中原龍太郎 feat. Senya||Mermaid girl": 1,
-  "RYOQUCHA & DJ Raisei||時ノ旅ビト": 1,
+  "RYOQUCHA & DJ Raisei||時ノ旅ビト (feat.重音テト)": 1,
   "t+pazolite||Gumbarlzo!": 1,
-  "REDALiCE feat. t+pazolite||Xterfusion": 3,
+  "REDALiCE × t+pazolite||Xterfusion": 3,
   "WOVOP & 洛天依 & 乐正绫||献给风和蝉鸣": 1,
   "Double X||Улеталиптицамигордыми": 1,
   "Elliot Hsu||Chamber of Shackles": 1,
@@ -664,18 +649,22 @@
   "Sin Wecokat||DARKSIDE:DEITY": 1,
   "千坂||Glow": 1,
   "L3V3LS||On A Hill": 1,
-  "Forwe兰斯||SkyCity": 1,
+  "Forwe兰斯||SkyCity(天空之城)": 1,
   "灰澈||灰澈崩坏": 1,
-  "Zeraphym 六翼使徒||Rest": 1,
+  "Zeraphym 六翼使徒||Rest (Original Mix)": 1,
   "UIL & Soaring Records||Final Song": 1,
-  "Keeno||crave": 1,
-  "田中秀和||*Heart Confusion*": 1,
+  "Keeno||crave (Instrumental)": 1,
+  "田中秀和||*Heart Confusion* (Instrumental)": 1,
   "オルタンシア||crave": 1,
   "オルタンシア||*Heart Confusion*": 1,
-  "オルタンシア||Dear マイフレンド": 2,
-  "オルタンシア||Purple Rays": 2,
-  "オルタンシア||Dream a gate": 2,
-  "オルタンシア||FlowerS ～となりで咲く花のように～": 3,
+  "オルタンシア||Dear マイフレンド (Instrumental)": 1,
+  "オルタンシア||Purple Rays (Instrumental)": 1,
+  "オルタンシア||Dear マイフレンド": 1,
+  "オルタンシア||Purple Rays": 1,
+  "オルタンシア||Dream a gate(Instrumental)": 1,
+  "オルタンシア||FlowerS ～となりで咲く花のように～(Instrumental)": 1,
+  "オルタンシア||Dream a gate": 1,
+  "オルタンシア||FlowerS ～となりで咲く花のように～": 2,
   "MoreanP||星夜之下": 1,
   "緑黄色社会||晴々": 1,
   "緑黄色社会||つづく": 1,
@@ -696,7 +685,7 @@
   "Luke Bergs||Dreamcatcher": 1,
   "Kirara Magic feat. Yuuna Nini||Cozy": 1,
   "高橋菜々||DUAL ROZES": 1,
-  "かめりあ feat. Petra Gurin||Cryogenic": 1,
+  "かめりあ feat. Petra Gurin||Cryogenic (feat. Petra Gurin)": 1,
   "Void||When The Rain": 1,
   "SuggestedCopy7 & 亚述||Rainbow Flavor!": 1,
   "無力P||Frey’s Philosophy": 1,
@@ -713,7 +702,7 @@
   "ARForest||The Last Page": 1,
   "HOPERUI||﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌": 1,
   "AniFace||晴天的周末在去学校补课的路上遇见了喜欢的人": 1,
-  "银河小鱼||痛感失焦": 1,
+  "银河小鱼||痛感失焦 (呼吸性碱中毒bgm)": 1,
   "CMJ||星河不可及": 1,
   "ArchiveP feat. 夢ノ結唱 POPY & 重音テト||原点配列": 1,
   "Maple暖枫||小水鲸": 1,
@@ -723,8 +712,8 @@
   "藤川千愛||あの日あの時": 1,
   "Enya||Echoes in Rain": 1,
   "花譜||BLUE SIGNAL": 1,
-  "よみぃ feat. 初音ミク||初音狂奏曲第01番「彗惺」": 1,
-  "MIMI feat. 初音ミク & 重音テト||ぴょん": 1,
+  "よみぃ feat. 初音ミク||初音狂奏曲第01番「彗惺」 (feat. 初音ミク)": 1,
+  "MIMI feat. 初音ミク & 重音テト||ぴょん (feat. 初音ミク & 重音テト)": 1,
   "Shannon Hurley||Matter of Time": 1,
   "zl_lan||Altar": 1,
   "こすもぽりたん||ReAct": 1,
@@ -732,17 +721,17 @@
   "Ele Sheep||Against ALL Odds": 1,
   "Mich||Somero": 1,
   "seatrus||星降る夜と一輪の花": 1,
-  "Aoi||αterlβus": 1,
+  "Aoi||αterlβus (2025 Remaster)": 1,
   "Lunaar||Seena": 1,
   "Hinkik||Explorers": 1,
   "Grrreta||青萼时": 1,
   "悠叶いのり & MarsReverb||星を探せ": 1,
   "Norwind Skies & Faolan||It's Our Time": 1,
-  "Jerome Chauvel||Pachelbel Canon": 1,
+  "Jerome Chauvel||Pachelbel Canon (Pachelbel)": 1,
   "Apo11o program||Echo over You...": 1,
   "J.T.Peterson||Tales of Neverland": 1,
   "闫东炜||Our Story Onwards": 1,
-  "Shaun||Way Back Home": 1,
+  "Shaun||Way Back Home (Instrumental)": 1,
   "BlackDD||Pebble": 1,
   "The Sound Rocket||Mr. Personality": 1,
   "TIC & Paperman||Cupid Saw Us": 1,
@@ -757,21 +746,21 @@
    "artist_raw": "Surk",
    "title_raw": "Benediction"
   },
-  "Assertive||Lightless": {
+  "Assertive||Lightless(Assertive Hardcore Bootleg)": {
    "artist_raw": "Assertive",
-   "title_raw": "Lightless"
+   "title_raw": "Lightless(Assertive Hardcore Bootleg)"
   },
-  "DJ Shimamura & Lindsey Marie||Spreading My NRG": {
+  "DJ Shimamura & Lindsey Marie||Spreading My NRG (feat. Lindsey Marie)": {
    "artist_raw": "DJ Shimamura & Lindsey Marie",
-   "title_raw": "Spreading My NRG"
+   "title_raw": "Spreading My NRG (feat. Lindsey Marie)"
   },
   "DJ Noriken||#I_WNNA_B_WIZ_U": {
    "artist_raw": "DJ Noriken",
    "title_raw": "#I_WNNA_B_WIZ_U"
   },
-  "DJ Shimamura||BIGBOOBS INSANITY": {
+  "DJ Shimamura||BIGBOOBS INSANITY (Hardcore Mix)": {
    "artist_raw": "DJ Shimamura",
-   "title_raw": "BIGBOOBS INSANITY"
+   "title_raw": "BIGBOOBS INSANITY (Hardcore Mix)"
   },
   "Kara||Break": {
    "artist_raw": "Kara",
@@ -789,29 +778,29 @@
    "artist_raw": "Mtell & Riku",
    "title_raw": "Arquebus"
   },
-  "Daniel Seven & YUKI||Light In You": {
+  "Daniel Seven & YUKI||Light In You (Original Mix)": {
    "artist_raw": "Daniel Seven & YUKI",
-   "title_raw": "Light In You"
+   "title_raw": "Light In You (Original Mix)"
   },
-  "Daniel Seven||Growth": {
+  "Daniel Seven||Growth (Original Mix)": {
    "artist_raw": "Daniel Seven",
-   "title_raw": "Growth"
+   "title_raw": "Growth (Original Mix)"
   },
   "LOVELY BOMB||愛": {
    "artist_raw": "LOVELY BOMB",
    "title_raw": "愛"
   },
-  "Daniel Seven & Hotchkiss||Soundwaves": {
+  "Daniel Seven & Hotchkiss||Soundwaves (Original Mix)": {
    "artist_raw": "Daniel Seven & Hotchkiss",
-   "title_raw": "Soundwaves"
+   "title_raw": "Soundwaves (Original Mix)"
   },
-  "Extasy Police||みはらしの丘": {
+  "Extasy Police||みはらしの丘 (DJ Shimamura Remix)": {
    "artist_raw": "Extasy Police",
-   "title_raw": "みはらしの丘"
+   "title_raw": "みはらしの丘 (DJ Shimamura Remix)"
   },
-  "Extasy Police||HOLLY WAVE": {
+  "Extasy Police||HOLLY WAVE (DJ Shimamura's Tsukubamix)": {
    "artist_raw": "Extasy Police",
-   "title_raw": "HOLLY WAVE"
+   "title_raw": "HOLLY WAVE (DJ Shimamura's Tsukubamix)"
   },
   "DJ Shimamura & Lindsey Marie & Kent Alexander||Forever Together": {
    "artist_raw": "DJ Shimamura & Lindsey Marie & Kent Alexander",
@@ -833,25 +822,25 @@
    "artist_raw": "Aethral",
    "title_raw": "All About The Rush"
   },
-  "M-Project & Mitomoro||Where We Came From": {
+  "M-Project & Mitomoro||Where We Came From (Refix)": {
    "artist_raw": "M-Project & Mitomoro",
-   "title_raw": "Where We Came From"
+   "title_raw": "Where We Came From (Refix)"
   },
   "Rocket Start||Supersoda": {
    "artist_raw": "Rocket Start",
    "title_raw": "Supersoda"
   },
-  "アイロボ||夢Navigation": {
+  "アイロボ||夢Navigation (DJ Shimamura Remix)": {
    "artist_raw": "アイロボ",
-   "title_raw": "夢Navigation"
+   "title_raw": "夢Navigation (DJ Shimamura Remix)"
   },
-  "Hommarju & AKKUN DAIMAOU||Stardust Midnight": {
+  "Hommarju & AKKUN DAIMAOU||Stardust Midnight (Extended)": {
    "artist_raw": "Hommarju & AKKUN DAIMAOU",
-   "title_raw": "Stardust Midnight"
+   "title_raw": "Stardust Midnight (Extended)"
   },
-  "電音部 & Tatsunoshin & 星川サラ||Be All Right": {
+  "電音部 & Tatsunoshin & 星川サラ||Be All Right (Prod. Tatsunoshin)": {
    "artist_raw": "電音部 & Tatsunoshin & 星川サラ",
-   "title_raw": "Be All Right"
+   "title_raw": "Be All Right (Prod. Tatsunoshin)"
   },
   "MoreanP||Tacet": {
    "artist_raw": "MoreanP",
@@ -873,13 +862,13 @@
    "artist_raw": "Tatsunoshin & Tsugumi Nagahara",
    "title_raw": "Innocent Prayer"
   },
-  "Scott Brown & M-Project||Crash The Party": {
+  "Scott Brown & M-Project||Crash The Party (Original Mix)": {
    "artist_raw": "Scott Brown & M-Project",
-   "title_raw": "Crash The Party"
+   "title_raw": "Crash The Party (Original Mix)"
   },
-  "USAO||Interstellar Travel": {
+  "USAO||Interstellar Travel (extended mix)": {
    "artist_raw": "USAO",
-   "title_raw": "Interstellar Travel"
+   "title_raw": "Interstellar Travel (extended mix)"
   },
   "Synthion||Dreamer": {
    "artist_raw": "Synthion",
@@ -893,25 +882,25 @@
    "artist_raw": "Aethral & Hyleo",
    "title_raw": "Irresolution"
   },
-  "HYPERLOCK & Eririn||Azure Sky": {
+  "HYPERLOCK & Eririn||Azure Sky (feat. Eririn)": {
    "artist_raw": "HYPERLOCK & Eririn",
-   "title_raw": "Azure Sky"
+   "title_raw": "Azure Sky (feat. Eririn)"
   },
-  "4* & S2i8||Dreamer": {
+  "4* & S2i8||Dreamer (Original Mix)": {
    "artist_raw": "4* & S2i8",
-   "title_raw": "Dreamer"
+   "title_raw": "Dreamer (Original Mix)"
   },
   "Relect||Donky Soldier": {
    "artist_raw": "Relect",
    "title_raw": "Donky Soldier"
   },
-  "Technikore||Open Your Eyes": {
+  "Technikore||Open Your Eyes (Extended Mix)": {
    "artist_raw": "Technikore",
-   "title_raw": "Open Your Eyes"
+   "title_raw": "Open Your Eyes (Extended Mix)"
   },
-  "DJ Noriken||Sakura Tr!ck": {
+  "DJ Noriken||Sakura Tr!ck (Redux)": {
    "artist_raw": "DJ Noriken",
-   "title_raw": "Sakura Tr!ck"
+   "title_raw": "Sakura Tr!ck (Redux)"
   },
   "Sokudo!||Without You": {
    "artist_raw": "Sokudo!",
@@ -921,37 +910,37 @@
    "artist_raw": "Sokudo!",
    "title_raw": "Red Light"
   },
-  "Assertive||Everything Goes On": {
+  "Assertive||Everything Goes On (Assertive Hardcore Bootleg)": {
    "artist_raw": "Assertive",
-   "title_raw": "Everything Goes On"
+   "title_raw": "Everything Goes On (Assertive Hardcore Bootleg)"
   },
-  "KO3 & Getty & TEA||Can't Stop Believing": {
+  "KO3 & Getty & TEA||Can't Stop Believing (feat. TEA)": {
    "artist_raw": "KO3 & Getty & TEA",
-   "title_raw": "Can't Stop Believing"
+   "title_raw": "Can't Stop Believing (feat. TEA)"
   },
-  "DJ Shimamura & Whizzkid||Hold Your Head High": {
+  "DJ Shimamura & Whizzkid||Hold Your Head High (Extended Mix)": {
    "artist_raw": "DJ Shimamura & Whizzkid",
-   "title_raw": "Hold Your Head High"
+   "title_raw": "Hold Your Head High (Extended Mix)"
   },
-  "DJ Shimamura & AZK||NEXTRA": {
+  "DJ Shimamura & AZK||NEXTRA (Extended Mix)": {
    "artist_raw": "DJ Shimamura & AZK",
-   "title_raw": "NEXTRA"
+   "title_raw": "NEXTRA (Extended Mix)"
   },
   "Sokudo!||Another Goodbye": {
    "artist_raw": "Sokudo!",
    "title_raw": "Another Goodbye"
   },
-  "Tatsunoshin feat. DJ勝也||Mirai": {
+  "Tatsunoshin feat. DJ勝也||Mirai (feat​.​DJ​勝​也​)": {
    "artist_raw": "Tatsunoshin feat. DJ勝也",
-   "title_raw": "Mirai"
+   "title_raw": "Mirai (feat​.​DJ​勝​也​)"
   },
   "Tatsunoshin & PIKASONIC & SARUKANI||NANYAKORE": {
    "artist_raw": "Tatsunoshin & PIKASONIC & SARUKANI",
    "title_raw": "NANYAKORE"
   },
-  "Ange;art||星をめざして": {
+  "Ange;art||星をめざして (Hardcore Edit)": {
    "artist_raw": "Ange;art",
-   "title_raw": "星をめざして"
+   "title_raw": "星をめざして (Hardcore Edit)"
   },
   "Assertive & HYPERLOCK||Promise You": {
    "artist_raw": "Assertive & HYPERLOCK",
@@ -973,25 +962,25 @@
    "artist_raw": "Sokudo!",
    "title_raw": "Take Flight"
   },
-  "HYPERLOCK & saamson||Panorama": {
+  "HYPERLOCK & saamson||Panorama (feat. saamson)": {
    "artist_raw": "HYPERLOCK & saamson",
-   "title_raw": "Panorama"
+   "title_raw": "Panorama (feat. saamson)"
   },
-  "RAMMに這いよる邪神さん||Wonderナンダ?片思い": {
+  "RAMMに這いよる邪神さん||Wonderナンダ?片思い (Wonder什么?单恋)": {
    "artist_raw": "RAMMに這いよる邪神さん",
-   "title_raw": "Wonderナンダ?片思い"
+   "title_raw": "Wonderナンダ?片思い (Wonder什么?单恋)"
   },
   "上水流宇宙 & vα-liv||Nova Chro": {
    "artist_raw": "上水流宇宙 & vα-liv",
    "title_raw": "Nova Chro"
   },
-  "植田佳奈||だけど、容赦なんてしてあげない": {
+  "植田佳奈||だけど、容赦なんてしてあげない (但是、绝不宽恕)": {
    "artist_raw": "植田佳奈",
-   "title_raw": "だけど、容赦なんてしてあげない"
+   "title_raw": "だけど、容赦なんてしてあげない (但是、绝不宽恕)"
   },
-  "Rolling Contact||Return into the Sakura Phantasmagoria": {
+  "Rolling Contact||Return into the Sakura Phantasmagoria (Return into the Sakura Phantasmagoria)": {
    "artist_raw": "Rolling Contact",
-   "title_raw": "Return into the Sakura Phantasmagoria"
+   "title_raw": "Return into the Sakura Phantasmagoria (Return into the Sakura Phantasmagoria)"
   },
   "Rolling Contact||Frenzy Eyes": {
    "artist_raw": "Rolling Contact",
@@ -1005,9 +994,9 @@
    "artist_raw": "Rolling Contact",
    "title_raw": "Little Treasure (Instrumental Remix)"
   },
-  "Rolling Contact||Mysterium Vinyl": {
+  "Rolling Contact||Mysterium Vinyl (Mysterium Vinyl)": {
    "artist_raw": "Rolling Contact",
-   "title_raw": "Mysterium Vinyl"
+   "title_raw": "Mysterium Vinyl (Mysterium Vinyl)"
   },
   "Rolling Contact||Myriad Border (Sharp Key Edit)": {
    "artist_raw": "Rolling Contact",
@@ -1021,16 +1010,16 @@
    "artist_raw": "Rolling Contact",
    "title_raw": "Loud Chimera"
   },
-  "Rolling Contact||MFH": {
+  "Rolling Contact||MFH (原曲：幽霊客船の時空を越えた旅)": {
    "artist_raw": "Rolling Contact",
-   "title_raw": "MFH"
+   "title_raw": "MFH (原曲：幽霊客船の時空を越えた旅)"
   },
-  "Rolling Contact||Soul On Water": {
+  "Rolling Contact||Soul On Water (原曲：キャプテン・ムラサ)": {
    "artist_raw": "Rolling Contact",
-   "title_raw": "Soul On Water"
+   "title_raw": "Soul On Water (原曲：キャプテン・ムラサ)"
   },
-  "Shandy kubota & かめりあ||See you (Camellia's Farewell Remix)": {
-   "artist_raw": "Shandy kubota & かめりあ",
+  "かめりあ||See you (Camellia's Farewell Remix)": {
+   "artist_raw": "かめりあ",
    "title_raw": "See you (Camellia's Farewell Remix)"
   },
   "カレンチャン||What is your ID": {
@@ -1057,9 +1046,9 @@
    "artist_raw": "Paxel",
    "title_raw": "Here And Now"
   },
-  "花澤香菜/网易阴阳师手游||空相(オモテウラ)": {
+  "花澤香菜/网易阴阳师手游||空相(オモテウラ) (网易阴阳师手游 - SP阶式神空相面灵气 角色印象曲)": {
    "artist_raw": "花澤香菜/网易阴阳师手游",
-   "title_raw": "空相(オモテウラ)"
+   "title_raw": "空相(オモテウラ) (网易阴阳师手游 - SP阶式神空相面灵气 角色印象曲)"
   },
   "aethoro||Arielle's Wish": {
    "artist_raw": "aethoro",
@@ -1077,9 +1066,9 @@
    "artist_raw": "Epic Soul Factory & Cesc Vilà & Fran Soto",
    "title_raw": "Everdream"
   },
-  "Vexento||Valhalla": {
+  "Vexento||Valhalla (英灵殿)": {
    "artist_raw": "Vexento",
-   "title_raw": "Valhalla"
+   "title_raw": "Valhalla (英灵殿)"
   },
   "NORISTRY & ﾀﾗﾁｵ & もるでお & まらしぃ||地団駄ビート": {
    "artist_raw": "NORISTRY & ﾀﾗﾁｵ & もるでお & まらしぃ",
@@ -1089,17 +1078,17 @@
    "artist_raw": "Yon",
    "title_raw": "Beyond the Clouds（云之彼端）"
   },
-  "Eisblume||Für immer": {
+  "Eisblume||Für immer (Instrumental)": {
    "artist_raw": "Eisblume",
-   "title_raw": "Für immer"
+   "title_raw": "Für immer (Instrumental)"
   },
   "Steve Barakatt||Flying": {
    "artist_raw": "Steve Barakatt",
    "title_raw": "Flying"
   },
-  "Peter Roe||Last Reunion: Epicmusicvn Series": {
+  "Peter Roe||Last Reunion: Epicmusicvn Series (最后的重逢)": {
    "artist_raw": "Peter Roe",
-   "title_raw": "Last Reunion: Epicmusicvn Series"
+   "title_raw": "Last Reunion: Epicmusicvn Series (最后的重逢)"
   },
   "Wisp X||Faeth": {
    "artist_raw": "Wisp X",
@@ -1109,9 +1098,9 @@
    "artist_raw": "Sin Wecokat",
    "title_raw": "DARKSIDE:ELYSIAN"
   },
-  "nyamura||星の便り": {
+  "nyamura||星の便り (星星的消息)": {
    "artist_raw": "nyamura",
-   "title_raw": "星の便り"
+   "title_raw": "星の便り (星星的消息)"
   },
   "MoreanP||Invisible Umbrella": {
    "artist_raw": "MoreanP",
@@ -1129,8 +1118,8 @@
    "artist_raw": "Candy_Wind",
    "title_raw": "青空"
   },
-  "nayuta & ARForest||Imaginary Arcadia": {
-   "artist_raw": "nayuta & ARForest",
+  "ARForest × nayuta||Imaginary Arcadia": {
+   "artist_raw": "ARForest × nayuta",
    "title_raw": "Imaginary Arcadia"
   },
   "千坂 & SaMZIng||Fireflies": {
@@ -1177,9 +1166,9 @@
    "artist_raw": "Aran",
    "title_raw": "Graces of Heaven"
   },
-  "かめりあ/ナノ||空殻": {
+  "かめりあ/ナノ||空殻 (feat. ナノ)": {
    "artist_raw": "かめりあ/ナノ",
-   "title_raw": "空殻"
+   "title_raw": "空殻 (feat. ナノ)"
   },
   "Grand Thaw||Flesvelka": {
    "artist_raw": "Grand Thaw",
@@ -1201,9 +1190,9 @@
    "artist_raw": "Kobaryo",
    "title_raw": "Rebooting Wings"
   },
-  "RJ Pasin||Sample this": {
+  "RJ Pasin||Sample this (小鱼拖地)": {
    "artist_raw": "RJ Pasin",
-   "title_raw": "Sample this"
+   "title_raw": "Sample this (小鱼拖地)"
   },
   "Steerner & Martell||Sun": {
    "artist_raw": "Steerner & Martell",
@@ -1217,13 +1206,13 @@
    "artist_raw": "Kobaryo",
    "title_raw": "SLOWFALL GUILLOTINE PROMPT"
   },
-  "MIMI feat. 初音ミク & 重音テト||劣等哀歌": {
+  "MIMI feat. 初音ミク & 重音テト||劣等哀歌 (feat. 初音ミク & 重音テト)": {
    "artist_raw": "MIMI feat. 初音ミク & 重音テト",
-   "title_raw": "劣等哀歌"
+   "title_raw": "劣等哀歌 (feat. 初音ミク & 重音テト)"
   },
-  "ProjectMoon & StudioEIM||Canto IX Boss 10 Battle Theme": {
+  "ProjectMoon & StudioEIM||Canto IX Boss 10 Battle Theme (Limbus Company OST)": {
    "artist_raw": "ProjectMoon & StudioEIM",
-   "title_raw": "Canto IX Boss 10 Battle Theme"
+   "title_raw": "Canto IX Boss 10 Battle Theme (Limbus Company OST)"
   },
   "Ju_E||cryout": {
    "artist_raw": "Ju_E",
@@ -1233,29 +1222,29 @@
    "artist_raw": "Void",
    "title_raw": "Harbinger"
   },
-  "凌晨一点的莱茵猫 & 二乘||无尽幸福": {
+  "凌晨一点的莱茵猫 & 二乘||无尽幸福 (boundless bliss)": {
    "artist_raw": "凌晨一点的莱茵猫 & 二乘",
-   "title_raw": "无尽幸福"
+   "title_raw": "无尽幸福 (boundless bliss)"
   },
-  "Akito||桜華月": {
+  "Akito||桜華月 (樱华月)": {
    "artist_raw": "Akito",
-   "title_raw": "桜華月"
+   "title_raw": "桜華月 (樱华月)"
   },
   "JINGYAN & Rigel Music||花言葉": {
    "artist_raw": "JINGYAN & Rigel Music",
    "title_raw": "花言葉"
   },
-  "Taishi||One Day's Sunlight": {
+  "Taishi||One Day's Sunlight (Original Mix)": {
    "artist_raw": "Taishi",
-   "title_raw": "One Day's Sunlight"
+   "title_raw": "One Day's Sunlight (Original Mix)"
   },
   "Shandy Kubota||Drizzle": {
    "artist_raw": "Shandy Kubota",
    "title_raw": "Drizzle"
   },
-  "Shirfine||Illusionary Daytime": {
+  "Shirfine||Illusionary Daytime (幻昼)": {
    "artist_raw": "Shirfine",
-   "title_raw": "Illusionary Daytime"
+   "title_raw": "Illusionary Daytime (幻昼)"
   },
   "打打だいず & Ashrount||DREAD AREA": {
    "artist_raw": "打打だいず & Ashrount",
@@ -1265,9 +1254,9 @@
    "artist_raw": "Soulostar",
    "title_raw": "These Nights"
   },
-  "Empty old City||Chronicle a": {
+  "Empty old City||Chronicle a (English Ver.)": {
    "artist_raw": "Empty old City",
-   "title_raw": "Chronicle a"
+   "title_raw": "Chronicle a (English Ver.)"
   },
   "灰澈 & yuki_宇恩||yuki enfolded in": {
    "artist_raw": "灰澈 & yuki_宇恩",
@@ -1301,13 +1290,13 @@
    "artist_raw": "OTOKAZE",
    "title_raw": "Save the flavor Part3 -Instrumental version-"
   },
-  "HOPERUI & Greyscale||Reaching Light": {
+  "HOPERUI & Greyscale||Reaching Light (寻光而至)": {
    "artist_raw": "HOPERUI & Greyscale",
-   "title_raw": "Reaching Light"
+   "title_raw": "Reaching Light (寻光而至)"
   },
-  "水月陵||夢のなごりを探して": {
+  "水月陵||夢のなごりを探して (探寻梦的痕迹)": {
    "artist_raw": "水月陵",
-   "title_raw": "夢のなごりを探して"
+   "title_raw": "夢のなごりを探して (探寻梦的痕迹)"
   },
   "残像音阶 & M3mo||感官过载": {
    "artist_raw": "残像音阶 & M3mo",
@@ -1345,21 +1334,21 @@
    "artist_raw": "SINISTER SOULS feat. MYSELOR",
    "title_raw": "Astral"
   },
-  "Bad Company UK||The Nine": {
+  "Bad Company UK||The Nine (Remastered)": {
    "artist_raw": "Bad Company UK",
-   "title_raw": "The Nine"
+   "title_raw": "The Nine (Remastered)"
   },
-  "Bad Company UK||Dogfight": {
+  "Bad Company UK||Dogfight (Remastered)": {
    "artist_raw": "Bad Company UK",
-   "title_raw": "Dogfight"
+   "title_raw": "Dogfight (Remastered)"
   },
-  "Bad Company UK||The Bridge": {
+  "Bad Company UK||The Bridge (Remastered)": {
    "artist_raw": "Bad Company UK",
-   "title_raw": "The Bridge"
+   "title_raw": "The Bridge (Remastered)"
   },
-  "Counterstrike||Can't Let Go": {
+  "Counterstrike||Can't Let Go - Original Mix": {
    "artist_raw": "Counterstrike",
-   "title_raw": "Can't Let Go"
+   "title_raw": "Can't Let Go - Original Mix"
   },
   "Kade||092": {
    "artist_raw": "Kade",
@@ -1369,9 +1358,9 @@
    "artist_raw": "denshino",
    "title_raw": "Exploration"
   },
-  "Islet&倚水||星になる": {
+  "Islet&倚水||星になる (feat. 倚水)": {
    "artist_raw": "Islet&倚水",
-   "title_raw": "星になる"
+   "title_raw": "星になる (feat. 倚水)"
   },
   "PIKASONIC||Nostalgia": {
    "artist_raw": "PIKASONIC",
@@ -1381,29 +1370,29 @@
    "artist_raw": "Miyia（米娅）",
    "title_raw": "I want you in my bed"
   },
-  "MIKS||Summer Wave": {
+  "MIKS||Summer Wave - Sped": {
    "artist_raw": "MIKS",
-   "title_raw": "Summer Wave"
+   "title_raw": "Summer Wave - Sped"
   },
   "幽閉サテライト&森永真由美||共鳴しない愛のカタチ": {
    "artist_raw": "幽閉サテライト&森永真由美",
    "title_raw": "共鳴しない愛のカタチ"
   },
-  "Akie秋绘||天ノ弱": {
+  "Akie秋绘||天ノ弱 (天之弱)": {
    "artist_raw": "Akie秋绘",
-   "title_raw": "天ノ弱"
+   "title_raw": "天ノ弱 (天之弱)"
   },
-  "MIMI&可不||サヨナラは言わないでさ": {
+  "MIMI&可不||サヨナラは言わないでさ (feat. 可不)": {
    "artist_raw": "MIMI&可不",
-   "title_raw": "サヨナラは言わないでさ"
+   "title_raw": "サヨナラは言わないでさ (feat. 可不)"
   },
   "东霓塔姆||第十一名": {
    "artist_raw": "东霓塔姆",
    "title_raw": "第十一名"
   },
-  "Royal Philharmonic Orchestra & Carl Davis & Edward Elgar||Nimrod": {
+  "Royal Philharmonic Orchestra & Carl Davis & Edward Elgar||Nimrod (Remastered)": {
    "artist_raw": "Royal Philharmonic Orchestra & Carl Davis & Edward Elgar",
-   "title_raw": "Nimrod"
+   "title_raw": "Nimrod (Remastered)"
   },
   "方大同||春风吹": {
    "artist_raw": "方大同",
@@ -1437,16 +1426,16 @@
    "artist_raw": "中原龍太郎 feat. Senya",
    "title_raw": "Mermaid girl"
   },
-  "RYOQUCHA & DJ Raisei||時ノ旅ビト": {
+  "RYOQUCHA & DJ Raisei||時ノ旅ビト (feat.重音テト)": {
    "artist_raw": "RYOQUCHA & DJ Raisei",
-   "title_raw": "時ノ旅ビト"
+   "title_raw": "時ノ旅ビト (feat.重音テト)"
   },
   "t+pazolite||Gumbarlzo!": {
    "artist_raw": "t+pazolite",
    "title_raw": "Gumbarlzo!"
   },
-  "REDALiCE feat. t+pazolite||Xterfusion": {
-   "artist_raw": "REDALiCE feat. t+pazolite",
+  "REDALiCE × t+pazolite||Xterfusion": {
+   "artist_raw": "REDALiCE × t+pazolite",
    "title_raw": "Xterfusion"
   },
   "WOVOP & 洛天依 & 乐正绫||献给风和蝉鸣": {
@@ -1513,29 +1502,29 @@
    "artist_raw": "L3V3LS",
    "title_raw": "On A Hill"
   },
-  "Forwe兰斯||SkyCity": {
+  "Forwe兰斯||SkyCity(天空之城)": {
    "artist_raw": "Forwe兰斯",
-   "title_raw": "SkyCity"
+   "title_raw": "SkyCity(天空之城)"
   },
   "灰澈||灰澈崩坏": {
    "artist_raw": "灰澈",
    "title_raw": "灰澈崩坏"
   },
-  "Zeraphym 六翼使徒||Rest": {
+  "Zeraphym 六翼使徒||Rest (Original Mix)": {
    "artist_raw": "Zeraphym 六翼使徒",
-   "title_raw": "Rest"
+   "title_raw": "Rest (Original Mix)"
   },
   "UIL & Soaring Records||Final Song": {
    "artist_raw": "UIL & Soaring Records",
    "title_raw": "Final Song"
   },
-  "Keeno||crave": {
+  "Keeno||crave (Instrumental)": {
    "artist_raw": "Keeno",
-   "title_raw": "crave"
+   "title_raw": "crave (Instrumental)"
   },
-  "田中秀和||*Heart Confusion*": {
+  "田中秀和||*Heart Confusion* (Instrumental)": {
    "artist_raw": "田中秀和",
-   "title_raw": "*Heart Confusion*"
+   "title_raw": "*Heart Confusion* (Instrumental)"
   },
   "オルタンシア||crave": {
    "artist_raw": "オルタンシア",
@@ -1545,6 +1534,14 @@
    "artist_raw": "オルタンシア",
    "title_raw": "*Heart Confusion*"
   },
+  "オルタンシア||Dear マイフレンド (Instrumental)": {
+   "artist_raw": "オルタンシア",
+   "title_raw": "Dear マイフレンド (Instrumental)"
+  },
+  "オルタンシア||Purple Rays (Instrumental)": {
+   "artist_raw": "オルタンシア",
+   "title_raw": "Purple Rays (Instrumental)"
+  },
   "オルタンシア||Dear マイフレンド": {
    "artist_raw": "オルタンシア",
    "title_raw": "Dear マイフレンド"
@@ -1552,6 +1549,14 @@
   "オルタンシア||Purple Rays": {
    "artist_raw": "オルタンシア",
    "title_raw": "Purple Rays"
+  },
+  "オルタンシア||Dream a gate(Instrumental)": {
+   "artist_raw": "オルタンシア",
+   "title_raw": "Dream a gate(Instrumental)"
+  },
+  "オルタンシア||FlowerS ～となりで咲く花のように～(Instrumental)": {
+   "artist_raw": "オルタンシア",
+   "title_raw": "FlowerS ～となりで咲く花のように～(Instrumental)"
   },
   "オルタンシア||Dream a gate": {
    "artist_raw": "オルタンシア",
@@ -1641,9 +1646,9 @@
    "artist_raw": "高橋菜々",
    "title_raw": "DUAL ROZES"
   },
-  "かめりあ feat. Petra Gurin||Cryogenic": {
+  "かめりあ feat. Petra Gurin||Cryogenic (feat. Petra Gurin)": {
    "artist_raw": "かめりあ feat. Petra Gurin",
-   "title_raw": "Cryogenic"
+   "title_raw": "Cryogenic (feat. Petra Gurin)"
   },
   "Void||When The Rain": {
    "artist_raw": "Void",
@@ -1709,9 +1714,9 @@
    "artist_raw": "AniFace",
    "title_raw": "晴天的周末在去学校补课的路上遇见了喜欢的人"
   },
-  "银河小鱼||痛感失焦": {
+  "银河小鱼||痛感失焦 (呼吸性碱中毒bgm)": {
    "artist_raw": "银河小鱼",
-   "title_raw": "痛感失焦"
+   "title_raw": "痛感失焦 (呼吸性碱中毒bgm)"
   },
   "CMJ||星河不可及": {
    "artist_raw": "CMJ",
@@ -1749,13 +1754,13 @@
    "artist_raw": "花譜",
    "title_raw": "BLUE SIGNAL"
   },
-  "よみぃ feat. 初音ミク||初音狂奏曲第01番「彗惺」": {
+  "よみぃ feat. 初音ミク||初音狂奏曲第01番「彗惺」 (feat. 初音ミク)": {
    "artist_raw": "よみぃ feat. 初音ミク",
-   "title_raw": "初音狂奏曲第01番「彗惺」"
+   "title_raw": "初音狂奏曲第01番「彗惺」 (feat. 初音ミク)"
   },
-  "MIMI feat. 初音ミク & 重音テト||ぴょん": {
+  "MIMI feat. 初音ミク & 重音テト||ぴょん (feat. 初音ミク & 重音テト)": {
    "artist_raw": "MIMI feat. 初音ミク & 重音テト",
-   "title_raw": "ぴょん"
+   "title_raw": "ぴょん (feat. 初音ミク & 重音テト)"
   },
   "Shannon Hurley||Matter of Time": {
    "artist_raw": "Shannon Hurley",
@@ -1785,9 +1790,9 @@
    "artist_raw": "seatrus",
    "title_raw": "星降る夜と一輪の花"
   },
-  "Aoi||αterlβus": {
+  "Aoi||αterlβus (2025 Remaster)": {
    "artist_raw": "Aoi",
-   "title_raw": "αterlβus"
+   "title_raw": "αterlβus (2025 Remaster)"
   },
   "Lunaar||Seena": {
    "artist_raw": "Lunaar",
@@ -1809,9 +1814,9 @@
    "artist_raw": "Norwind Skies & Faolan",
    "title_raw": "It's Our Time"
   },
-  "Jerome Chauvel||Pachelbel Canon": {
+  "Jerome Chauvel||Pachelbel Canon (Pachelbel)": {
    "artist_raw": "Jerome Chauvel",
-   "title_raw": "Pachelbel Canon"
+   "title_raw": "Pachelbel Canon (Pachelbel)"
   },
   "Apo11o program||Echo over You...": {
    "artist_raw": "Apo11o program",
@@ -1825,9 +1830,9 @@
    "artist_raw": "闫东炜",
    "title_raw": "Our Story Onwards"
   },
-  "Shaun||Way Back Home": {
+  "Shaun||Way Back Home (Instrumental)": {
    "artist_raw": "Shaun",
-   "title_raw": "Way Back Home"
+   "title_raw": "Way Back Home (Instrumental)"
   },
   "BlackDD||Pebble": {
    "artist_raw": "BlackDD",
