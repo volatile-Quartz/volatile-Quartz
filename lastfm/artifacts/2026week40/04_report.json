@@ -1,15 +1,15 @@
 {
- "total_sec": 33411.030769230725,
- "direct": 55,
- "interpolated": 88,
+ "total_sec": 34615.58823529405,
+ "direct": 52,
+ "interpolated": 93,
  "top_tags": [
   "electronica",
-  "vocaloid",
-  "touhou",
-  "doujin",
-  "kikuo",
-  "arranger"
+  "rock",
+  "hip-hop",
+  "drum and bass",
+  "dubstep",
+  "pop"
  ],
  "pct_new": 100.0,
- "diff_pct": -51.52542372881356
+ "diff_pct": -52.614379084967325
 }

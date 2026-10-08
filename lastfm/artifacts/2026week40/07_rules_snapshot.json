@@ -59,11 +59,19 @@
     "PontduCarrousel",
     "闪光马希洛酱",
     "幸运咪啪之谣",
-    "Aloereed"
-  ],
-  "filter_keywords": [
+    "Aloereed",
     "水音世界观",
     "某二两",
+    "纯音乐",
+    "原声带",
+    "かた方",
+    "y石川月菜y",
+    "Lyssie ASMR",
+    "Duckk ASMR",
+    "久远丶酱",
+    "GuluLand ASMR"
+  ],
+  "filter_keywords": [
     "军事",
     "解说",
     "配音",
@@ -74,19 +82,13 @@
     "杂谈",
     "露露卡",
     "武装兔",
-    "cover",
     "フリーbgm",
     "1時間耐久",
     "字幕",
     "剧情",
-    "4399",
-    "millsage"
+    "4399"
   ],
   "blacklist_tracks": [
-    "纯音乐|林中漫步",
-    "原声带|黑猫警长",
-    "Vince丷 & 见过夏天P & Ciyo|反乌托邦×拼接遗憾×Sinos De Natal",
-    "懒懒Q3Q|君の幸せについて / 关于你的幸福【宵崎奏 × 初音ミク】",
     "CMJ & 好多纯音乐|山海不相逢"
   ],
   "solo_alias": {
@@ -257,10 +259,6 @@
       "Kirara Magic",
       "Yuuna Nini"
     ],
-    "REDALiCE/t+pazolite": [
-      "REDALiCE",
-      "t+pazolite"
-    ],
     "中原龍太郎/Senya": [
       "中原龍太郎",
       "Senya"
@@ -330,10 +328,15 @@
     "Steerner/Martell": "Steerner & Martell",
     "酔シグレ/むﾄ": "酔シグレ & むﾄ",
     "千坂/SaMZIng": "千坂 & SaMZIng",
-    "nayuta/ARForest": "nayuta & ARForest",
+    "nayuta/ARForest": "ARForest × nayuta",
+    "nissi/25Hzz": "Nissi & 25Hzz",
+    "whyslow/Carpe": "whyslow & Carpe",
+    "Sam Binga/Machinedrum/Cesco": "Sam Binga & Machinedrum & Cesco",
+    "SPECIMEN A/IVORY": "SPECIMEN A & IVORY",
     "NORISTRY/ﾀﾗﾁｵ/もるでお/まらしぃ": "NORISTRY & ﾀﾗﾁｵ & もるでお & まらしぃ",
+    "REDALiCE/t+pazolite": "REDALiCE × t+pazolite",
     "Epic Soul Factory/Cesc Vilà/Fran Soto": "Epic Soul Factory & Cesc Vilà & Fran Soto",
-    "Shandy kubota/かめりあ": "Shandy kubota & かめりあ",
+    "Shandy kubota/かめりあ": "かめりあ",
     "ProjectMoon/StudioEIM": "ProjectMoon & StudioEIM",
     "上水流宇宙/vα-liv": "上水流宇宙 & vα-liv",
     "HYPERLOCK/saamson": "HYPERLOCK & saamson",
@@ -389,7 +392,9 @@
     "Tatsunoshin & Tsugumi Nagahara|Innocent Prayer (": "Innocent Prayer",
     "健屋花那|Beat Me! (": "Beat Me!",
     "健屋花那 & PSYQUI|Shining Lights (": "Shining Lights",
-    "Shandy kubota & かめりあ|See you (Camellia's Farewell Remix) [": "See you (Camellia's Farewell Remix)",
+    "かめりあ|See you (Camellia's Farewell Remix) [": "See you (Camellia's Farewell Remix)",
+    "Rolling Contact|Loud Chimera (原曲：": "Loud Chimera",
+    "Albemuth|幽ノ楽園 (": "幽ノ楽園",
     "Nissi|why do #JerseyClub": "Why Do #JerseyClub"
   },
   "title_suffix": [
@@ -458,7 +463,6 @@
     "synthpop",
     "synthwave",
     "city pop",
-    "vocaloid",
     "chiptune",
     "8-bit",
     "future bass",
@@ -472,7 +476,7 @@
     "jazz",
     "classical",
     "orchestral",
-    "hip hop",
+    "hip-hop",
     "rap",
     "soul",
     "r&b",
@@ -497,17 +501,17 @@
     "j-core",
     "techstep",
     "darkstep",
-    "indie",
     "indie rock",
     "indie pop",
     "electro house",
-    "drumstep",
-    "dubstep",
     "glitch hop",
     "alternative"
   ],
   "style_drop_tags": [
-    "japanese", "japan", "japanese pop", "british", "uk", "english", "korean",
+    "doujin", "touhou", "south korea", "alternative",
+    "vocaloid", "kikuo", "arranger", "hatsune miku", "electronic", "nigeria",
+    "rave", "edm", "lo-fi", "rap",
+    "indie", "japanese", "japan", "japanese pop", "british", "uk", "english", "korean",
     "chinese", "german", "french", "american", "usa", "us", "spanish", "russian",
     "australian", "canadian", "european", "italy", "italian", "norway", "norwegian",
     "swedish", "sweden", "finnish", "belgian", "belgium", "celtic", "irish",
@@ -529,6 +533,9 @@
     "JPop": "j-pop",
     "pop japanese": "j-pop",
     "pop japan": "j-pop",
+    "hip hop": "hip-hop",
+    "hiphop": "hip-hop",
+    "r&b": "R&B",
     "j-pop (jp)": "j-pop",
     "jrock": "j-rock",
     "j-rock (jp)": "j-rock",
@@ -596,7 +603,9 @@
     "merge_same_song_keep_latest": true,
     "vocaloid_no_footnote": true,
     "unverifiable_collab_fallback_amp": true,
-    "album_2plus_to_miucho_list": true
+    "album_2plus_to_miucho_list": true,
+    "use_title_suffix": false,
+    "use_filter_keywords": false
   },
   "output_format": {
     "daily_line_prefix": "2026.9.22 单曲：",

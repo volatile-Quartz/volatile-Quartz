@@ -63,7 +63,13 @@
     "水音世界观",
     "某二两",
     "纯音乐",
-    "原声带"
+    "原声带",
+    "かた方",
+    "y石川月菜y",
+    "Lyssie ASMR",
+    "Duckk ASMR",
+    "久远丶酱",
+    "GuluLand ASMR"
   ],
   "filter_keywords": [
     "军事",
@@ -323,6 +329,10 @@
     "酔シグレ/むﾄ": "酔シグレ & むﾄ",
     "千坂/SaMZIng": "千坂 & SaMZIng",
     "nayuta/ARForest": "ARForest × nayuta",
+    "nissi/25Hzz": "Nissi & 25Hzz",
+    "whyslow/Carpe": "whyslow & Carpe",
+    "Sam Binga/Machinedrum/Cesco": "Sam Binga & Machinedrum & Cesco",
+    "SPECIMEN A/IVORY": "SPECIMEN A & IVORY",
     "NORISTRY/ﾀﾗﾁｵ/もるでお/まらしぃ": "NORISTRY & ﾀﾗﾁｵ & もるでお & まらしぃ",
     "REDALiCE/t+pazolite": "REDALiCE × t+pazolite",
     "Epic Soul Factory/Cesc Vilà/Fran Soto": "Epic Soul Factory & Cesc Vilà & Fran Soto",
@@ -453,7 +463,6 @@
     "synthpop",
     "synthwave",
     "city pop",
-    "vocaloid",
     "chiptune",
     "8-bit",
     "future bass",
@@ -467,7 +476,7 @@
     "jazz",
     "classical",
     "orchestral",
-    "hip hop",
+    "hip-hop",
     "rap",
     "soul",
     "r&b",
@@ -495,13 +504,13 @@
     "indie rock",
     "indie pop",
     "electro house",
-    "drumstep",
-    "dubstep",
     "glitch hop",
     "alternative"
   ],
   "style_drop_tags": [
     "doujin", "touhou", "south korea", "alternative",
+    "vocaloid", "kikuo", "arranger", "hatsune miku", "electronic", "nigeria",
+    "rave", "edm", "lo-fi", "rap",
     "indie", "japanese", "japan", "japanese pop", "british", "uk", "english", "korean",
     "chinese", "german", "french", "american", "usa", "us", "spanish", "russian",
     "australian", "canadian", "european", "italy", "italian", "norway", "norwegian",
@@ -524,6 +533,9 @@
     "JPop": "j-pop",
     "pop japanese": "j-pop",
     "pop japan": "j-pop",
+    "hip hop": "hip-hop",
+    "hiphop": "hip-hop",
+    "r&b": "R&B",
     "j-pop (jp)": "j-pop",
     "jrock": "j-rock",
     "j-rock (jp)": "j-rock",
@@ -592,7 +604,8 @@
     "vocaloid_no_footnote": true,
     "unverifiable_collab_fallback_amp": true,
     "album_2plus_to_miucho_list": true,
-    "use_title_suffix": false
+    "use_title_suffix": false,
+    "use_filter_keywords": false
   },
   "output_format": {
     "daily_line_prefix": "2026.9.22 单曲：",

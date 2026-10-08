@@ -12,6 +12,23 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RULES = json.load(open(os.path.join(BASE_DIR, "lastfm_rules.json")))
 STYLE_DROP = set(RULES.get("style_drop_tags", []))
 MERGES = RULES.get("style_tag_merges", {})
+# 白名单来源：genre_tree.json（树状结构，扁平化叶子）；缺文件则回退 rules 白名单
+GENRE_WL = set()
+_tree_path = os.path.join(BASE_DIR, "genre_tree.json")
+if os.path.exists(_tree_path):
+    def _flat(o):
+        if isinstance(o, dict):
+            for v in o.values():
+                _flat(v)
+        elif isinstance(o, list):
+            for x in o:
+                if isinstance(x, str):
+                    GENRE_WL.add(x)
+                else:
+                    _flat(x)
+    _flat(json.load(open(_tree_path)))
+else:
+    GENRE_WL = set(RULES.get("style_genre_whitelist", []))
 
 prep = json.load(open("/tmp/lastfm_prep.json"))
 enr = json.load(open("/tmp/lastfm_enrich.json"))
@@ -56,6 +73,8 @@ for key, cnt in full_counts.items():
 def canon(t):
     t2 = MERGES.get(t, t)
     if t2 in STYLE_DROP or not t2 or len(t2) > 30:
+        return None
+    if t2 not in GENRE_WL:
         return None
     return t2
 
