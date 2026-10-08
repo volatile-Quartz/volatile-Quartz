@@ -15,9 +15,11 @@ MERGES = RULES.get("style_tag_merges", {})
 GENRE_WL = set()
 _tree_path = os.path.join(BASE_DIR, "genre_tree.json")
 if os.path.exists(_tree_path):
-    def _flat(o):
+    def _flat(o, skip_prefix="_"):
         if isinstance(o, dict):
-            for v in o.values():
+            for k, v in o.items():
+                if k.startswith(skip_prefix):
+                    continue
                 _flat(v)
         elif isinstance(o, list):
             for x in o:
@@ -27,7 +29,36 @@ if os.path.exists(_tree_path):
                     _flat(x)
     _flat(json.load(open(_tree_path)))
 else:
-    GENRE_WL = set(RULES.get("style_genre_whitelist", []))
+    GENRE_WL = set()   # genre_tree.json 为唯一真源，缺失时用空集（不放行任何 tag）
+
+def _validate_genre_tree():
+    """启动时做一致性校验，发现问题只 warning 不 crash（不影响运行）。"""
+    from collections import Counter
+    tree_raw = json.load(open(_tree_path)) if os.path.exists(_tree_path) else {}
+    def _raw_flat(o):
+        r = []
+        if isinstance(o, dict):
+            for v in o.values(): r.extend(_raw_flat(v))
+        elif isinstance(o, list):
+            for x in o: r.extend(_raw_flat(x))
+        elif isinstance(o, str):
+            r.append(o)
+        return r
+    all_strings = _raw_flat(tree_raw)
+    dup = [t for t, c in Counter(all_strings).items() if c > 1]
+    if dup:
+        print(f"⚠️ genre_tree 有重复叶子: {dup}", flush=True)
+    bad = GENRE_WL & STYLE_DROP
+    if bad:
+        print(f"⚠️ tree 叶子被 drop 误删: {bad}", flush=True)
+    bad_merges = [(k, v) for k, v in MERGES.items()
+                  if v not in GENRE_WL and v not in STYLE_DROP]
+    if bad_merges:
+        print(f"⚠️ merge 产物既不在 tree 也不在 drop: {bad_merges}", flush=True)
+    print(f"✅ genre_tree 加载完成：{len(GENRE_WL)} 个叶子")
+    if not dup and not bad and not bad_merges:
+        print("✅ 校验通过 — 无重复叶子 / 无 drop 冲突 / 无孤儿 merge")
+_validate_genre_tree()
 
 prep = json.load(open("/tmp/lastfm_prep.json"))
 enr = json.load(open("/tmp/lastfm_enrich.json"))
@@ -44,12 +75,17 @@ def fmt_dur(sec):
         return "{}:{:02d}:{:02d}".format(h, m, s)
     return "{}:{:02d}".format(m, s)
 
+UNKNOWN_GENRES = collections.Counter()   # 不在白名单也不在 drop 的 tag，用于每周告警
+
 def canon(t):
-    """风格标签清洗：合并变体 → 黑名单剔除 → 白名单强校验（不在白名单不入词云）。"""
+    """风格标签清洗：合并变体 → 黑名单剔除 → 白名单强校验。
+    不在白名单也不在 drop 的 tag 会累积到 UNKNOWN_GENRES，供每周告警用户审阅是否纳入 tree。
+    """
     t2 = MERGES.get(t, t)
     if t2 in STYLE_DROP or not t2 or len(t2) > 30:
         return None
     if t2 not in GENRE_WL:
+        UNKNOWN_GENRES[t2] += 1
         return None
     return t2
 
@@ -86,6 +122,13 @@ for artist, cnt in prep["top_artists"]:
 genres = [t for t, c in tag_cnt.most_common(30)]
 style_str = " / ".join(genres[:6])
 
+# ---- unknown genres 告警：不在白名单也不在 drop 的 tag，提示用户审阅 ----
+unknown_note = ""
+if UNKNOWN_GENRES:
+    unk_lines = ["  {}（×{}）".format(t, c) for t, c in UNKNOWN_GENRES.most_common()]
+    unknown_note = "\n⚠️ 未识别风格（不在 genre_tree 也不在 drop_tags）：\n" + "\n".join(unk_lines)
+    print(unknown_note, flush=True)
+
 # ---- 新歌 / 复听 ----
 pct_new = prep["new_tracks"] / max(1, clean["tracks"]) * 100
 
@@ -113,6 +156,9 @@ else:
 md.append("- 新歌占比：{}%（新听 {} 首，上周也听过的 {} 首）；新面孔歌手 {} 组".format(
     round(pct_new), prep["new_tracks"], prep["rep_tracks"], len(prep["new_artists"])))
 md.append("- 风格分布：{}".format(style_str))
+if UNKNOWN_GENRES:
+    md.append("- ⚠️ 未识别风格（需审阅是否纳入 tree 或 drop）：{}".format(
+        "、".join("{}×{}".format(t, c) for t, c in UNKNOWN_GENRES.most_common(10))))
 md.append("- 对比上周：总播放 {} vs {}（{}{}%）".format(
     plays, clean["plays_prev"], "+" if diff_pct >= 0 else "-", abs(round(diff_pct))))
 
