@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 | 💿 专辑总计 | 21,482 张 |
 | 🎶 歌曲总计 | 64,926 首 |
 
-🎧 **正在播放：** 印度还是搞不清状况，以为只要自己舍得掏钱，中国就一定会卖技术 — 孤烟暮蝉
+
 
 **🎵 最近在听**  
 - 🎵 印度还是搞不清状况，以为只要自己舍得掏钱，中国就一定会卖技术 — 孤烟暮蝉
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/8 11:38:59*
+*更新时间: 2026/10/8 11:45:03*
 <!-- LASTFM_END -->
