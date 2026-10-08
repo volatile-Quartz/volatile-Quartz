@@ -1,0 +1,102 @@
+{
+  "Electronic": {
+    "Breakbeat": [
+      "breakbeat",
+      "big beat",
+      "drum and bass",
+      "jungle",
+      "breakcore",
+      "breakbeat hardcore"
+    ],
+    "Drum and Bass Subgenres": [
+      "liquid drum and bass",
+      "techstep",
+      "darkstep",
+      "neurofunk",
+      "crossbreed"
+    ],
+    "Hard Dance": [
+      "hard dance",
+      "gabber",
+      "happy hardcore",
+      "uk hardcore",
+      "j-core",
+      "speedcore",
+      "hardstyle",
+      "freeform"
+    ],
+    "4/4 Dance": [
+      "house",
+      "progressive house",
+      "deep house",
+      "tribal house",
+      "techno",
+      "trance",
+      "psytrance",
+      "electro house",
+      "future bass",
+      "eurobeat",
+      "dancecore"
+    ],
+    "Retro & Experimental Electronic": [
+      "electro",
+      "acid",
+      "idm",
+      "glitch",
+      "glitch hop",
+      "chiptune",
+      "8-bit",
+      "vaporwave",
+      "future funk",
+      "witch house"
+    ],
+    "Dubstep Family": [
+      "dubstep",
+      "drumstep"
+    ],
+    "Ambient": [
+      "ambient",
+      "chillout"
+    ]
+  },
+  "Rock": [
+    "rock",
+    "punk",
+    "noise rock",
+    "noise",
+    "metal",
+    "death metal",
+    "symphonic metal",
+    "power metal",
+    "j-metal",
+    "indie rock",
+    "j-rock"
+  ],
+  "Pop": [
+    "pop",
+    "synthpop",
+    "synthwave",
+    "city pop",
+    "indie pop",
+    "j-pop"
+  ],
+  "Folk": [
+    "folk"
+  ],
+  "Hip Hop": [
+    "hip-hop"
+  ],
+  "Funk / Soul / Disco": [
+    "funk",
+    "soul",
+    "R&B",
+    "disco"
+  ],
+  "Jazz": [
+    "jazz"
+  ],
+  "Classical": [
+    "classical",
+    "orchestral"
+  ]
+}
