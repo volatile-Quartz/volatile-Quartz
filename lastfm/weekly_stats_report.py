@@ -3,9 +3,9 @@
 Reads /tmp/lastfm_prep.json + /tmp/lastfm_enrich.json + lastfm_rules.json (style rules).
 Usage: python3 weekly_stats_report.py
 输出口径：有效记录=清洗后播放次数；每日=独立曲目/日；风格=宽松清洗（去语言/描述标签+合并变体）后生成图片词云；插值单位=次。
-依赖：wordcloud + pillow（可选；缺失时风格分布自动降级为 CSS span 词云）。
+
 """
-import json, collections, html, os
+import json, collections, html, os, re
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RULES = json.load(open(os.path.join(BASE_DIR, "lastfm_rules.json")))
@@ -120,7 +120,33 @@ for artist, cnt in prep["top_artists"]:
         if c:
             tag_cnt[c] += cnt
 genres = [t for t, c in tag_cnt.most_common(30)]
+genres_set = set(genres)
 style_str = " / ".join(genres[:6])
+
+# ---- 曲风对比：自动找上周 artifacts 里的 genres ----
+# prev_label_from label: "2026week40" -> "2026week39"
+def prev_label_from(lb):
+    m = re.match(r"(\d{4})week(\d+)", lb)
+    if not m: return ""
+    year, wk = int(m.group(1)), int(m.group(2))
+    pw, py = wk - 1, year
+    if pw < 1: pw, py = 53, year - 1
+    return f"{py}week{pw}"
+prev_genres_set = set()
+prev_path_candidates = [
+    os.path.join(BASE_DIR, "artifacts", prev_label_from(label), "04_report.json"),
+    os.path.join("/workspace/lastfm/artifacts", prev_label_from(label), "04_report.json"),
+]
+for p in prev_path_candidates:
+    if os.path.exists(p):
+        try:
+            prev_report = json.load(open(p))
+            prev_genres_set = set(prev_report.get("all_tags", prev_report.get("top_tags", [])))
+            break
+        except Exception:
+            pass
+genres_new = sorted(genres_set - prev_genres_set)   # 本周新增
+genres_gone = sorted(prev_genres_set - genres_set)   # 本周消失
 
 # ---- unknown genres 告警：不在白名单也不在 drop 的 tag，提示用户审阅 ----
 unknown_note = ""
@@ -146,16 +172,17 @@ md.append("- 最猛一天：{}（{} 首）· 最冷清：{}（{} 首）".format(
     max(daily, key=daily.get), daily[max(daily, key=daily.get)],
     min(daily, key=daily.get), daily[min(daily, key=daily.get)]))
 md.append("- Top 歌手：{}".format("、".join("{}（{}）".format(a, c) for a, c in prep["top_artists"][:5])))
-if prep["played_again"]:
-    x = prep["played_again"][0]
-    suffix = " 等" if len(prep["played_again"]) > 1 else ""
-    md.append("- 反复播放：{} 首歌本周 ≥2 次（{}《{}》×{}{}）".format(
-        len(prep["played_again"]), x["artist"], x["title"], x["count"], suffix))
+if prev_genres_set:
+    diff_parts = []
+    if genres_new: diff_parts.append("+{} 新增（{}）".format(len(genres_new), "、".join(genres_new[:5])))
+    if genres_gone: diff_parts.append("-{} 消失（{}）".format(len(genres_gone), "、".join(genres_gone[:5])))
+    diff_str = "；" + "；".join(diff_parts) if diff_parts else "；与上周持平"
 else:
-    md.append("- 反复播放：无")
+    diff_str = ""
+md.append("- 曲风数量：{} 种{}".format(len(genres_set), diff_str))
 md.append("- 新歌占比：{}%（新听 {} 首，上周也听过的 {} 首）；新面孔歌手 {} 组".format(
     round(pct_new), prep["new_tracks"], prep["rep_tracks"], len(prep["new_artists"])))
-md.append("- 风格分布：{}".format(style_str))
+md.append("- 风格分布（Top {}）：{}".format(min(8, len(genres)), style_str))
 if UNKNOWN_GENRES:
     md.append("- ⚠️ 未识别风格（需审阅是否纳入 tree 或 drop）：{}".format(
         "、".join("{}×{}".format(t, c) for t, c in UNKNOWN_GENRES.most_common(10))))
@@ -163,7 +190,9 @@ md.append("- 对比上周：总播放 {} vs {}（{}{}%）".format(
     plays, clean["plays_prev"], "+" if diff_pct >= 0 else "-", abs(round(diff_pct))))
 
 json.dump({"total_sec": total_sec, "direct": direct, "interpolated": interpolated,
-           "top_tags": genres[:6], "pct_new": pct_new, "diff_pct": diff_pct},
+           "all_tags": genres, "genres_count": len(genres_set),
+           "new_genres": genres_new, "gone_genres": genres_gone,
+           "pct_new": pct_new, "diff_pct": diff_pct},
           open("/tmp/lastfm_report.json", "w"), ensure_ascii=False, indent=1)
 
 print("\n".join(md))
@@ -194,36 +223,6 @@ def svg_hbars(items, w=640):
             out.append('<text x="{:.1f}" y="{:.1f}" font-size="12" fill="#555">{}</text>'.format(196 + bw, y + 19, v))
     out.append("</svg>")
     return "\n".join(out)
-
-def find_cjk_font():
-    """查找系统可用的中日韩字体，供图片词云使用；找不到返回 None（降级 span 词云）。"""
-    import glob
-    cands = [
-        "/usr/share/fonts/truetype/noto/NotoSansCJKsc-Regular.otf",
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-        "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
-        "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
-        "/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf",
-        "/System/Library/Fonts/PingFang.ttc",
-        "/System/Library/Fonts/Hiragino Sans GB.ttc",
-        "C:/Windows/Fonts/msyh.ttc",
-        "C:/Windows/Fonts/msyh.ttf",
-        "C:/Windows/Fonts/simhei.ttf",
-    ]
-    for p in cands:
-        if os.path.exists(p):
-            return p
-    for pat in ["/usr/share/fonts/**/*CJK*", "/usr/share/fonts/**/wqy*",
-                "/usr/share/fonts/**/DroidSansFallback*", "/usr/share/fonts/**/NotoSans*"]:
-        for f in glob.glob(pat, recursive=True):
-            if os.path.exists(f):
-                return f
-    return None
-
-def word_cloud(items):
-    """图片词云：wordcloud 库生成 PNG（椭圆 mask、频率字号）base64 内嵌；无依赖/字体时降级 span 词云。"""
-    if not items:
-        return '<p style="color:#aaa">无</p>'
     try:
         import io, base64
         from wordcloud import WordCloud
@@ -265,6 +264,22 @@ tag_items = [(t, c) for t, c in tag_cnt.most_common(40)]
 repeat_html = ("<br>".join("<b>{}</b>《{}》× {}".format(html.escape(a), html.escape(t), c)
                            for x in prep["played_again"][:10] for a, t, c in [x.values()]) or "无")
 
+
+# ---- 曲风变化 HTML ----
+if prev_genres_set:
+    parts = []
+    if genres_new:
+        parts.append('<span style="color:#2a9d8f;font-weight:600">+{} 新增：{}</span>'.format(
+            len(genres_new), "、".join(html.escape(g) for g in genres_new)))
+    if genres_gone:
+        parts.append('<span style="color:#e76f51;font-weight:600">-{} 消失：{}</span>'.format(
+            len(genres_gone), "、".join(html.escape(g) for g in genres_gone)))
+    if not parts:
+        parts.append('<span style="color:#888">与上周持平，曲风无变化</span>')
+    genre_change_html = "<br>".join(parts)
+else:
+    genre_change_html = '<span style="color:#aaa">缺少上周对比数据（首次运行？）</span>'
+
 # 标题带年份（如 2026 week 39 听歌周报），last.fm 首字母小写
 title_txt = "{} {} 听歌周报".format(meta["week_range"].split(" ~ ")[0][:4], meta["week_label"].lower())
 
@@ -288,9 +303,9 @@ body = """<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name=
 </div>
 <div class="panel"><h2>每日播放趋势（播放次数/日）</h2>{bars}</div>
 <div class="panel"><h2>Top 歌手（按播放次数）</h2>{hbars}</div>
-<div class="panel"><h2>风格分布</h2>{tags}</div>
-<div class="panel"><h2>反复播放 Top（本周 ≥2 次）</h2>
-<p style="font-size:14px;line-height:1.8">{repeats}</p></div>
+<div class="panel"><h2>曲风分布（按播放次数）</h2>{tags}</div>
+<div class="panel"><h2>曲风变化</h2>
+<p style="font-size:14px;line-height:1.8">{genre_change}</p></div>
 <p class="foot">数据来源 last.fm API · 清洗规则 lastfm_rules.json · 时长为曲目时长估算（缺失按同歌手均值插值）</p>
 </div></body></html>
 """.format(
@@ -301,9 +316,11 @@ body = """<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name=
                       ("{} 次".format(plays), "本周播放", "有效记录，日均 {:.0f} 次".format(plays / 7)),
                       ("{} 首".format(clean["tracks"]), "独立曲目", ""),
                       ("{} 组".format(clean["artists"]), "独立歌手", ""),
+                      ("{} 种".format(len(genres_set)), "曲风数量",
+                       "+{} 新增 -{} 消失".format(len(genres_new), len(genres_gone)) if prev_genres_set else ""),
                       (fmt_dur(total_sec), "累计时长", "直接 {} + 插值 {}".format(direct, interpolated)),
                       ("{:.0f}%".format(pct_new), "新歌占比", "相比上周新听 {} 首".format(prep["new_tracks"]))]),
     bars=svg_bars(daily_items), hbars=svg_hbars(art_items),
-    tags=word_cloud(tag_items), repeats=repeat_html)
+    tags=svg_hbars(tag_items), genre_change=genre_change_html)
 open("/workspace/{}_report.html".format(label), "w").write(body)
 print("wrote /workspace/{}.md and /workspace/{}_report.html".format(label, label))
