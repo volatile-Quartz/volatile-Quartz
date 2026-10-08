@@ -301,7 +301,7 @@ d.text((W // 2, y), "数据来源 last.fm API · 清洗规则 lastfm_rules.json 
 y += 42
 
 im = im.crop((0, 0, W, y))
-out = "/workspace/{}_report.png".format(label)
+out = os.path.join(BASE_DIR, "artifacts", label, "08_{}_report.png".format(label))
 im.save(out)
 print("saved", out, im.size)
 if UNKNOWN_GENRES:

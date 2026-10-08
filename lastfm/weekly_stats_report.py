@@ -197,7 +197,8 @@ json.dump({"total_sec": total_sec, "direct": direct, "interpolated": interpolate
           open("/tmp/lastfm_report.json", "w"), ensure_ascii=False, indent=1)
 
 print("\n".join(md))
-open("/workspace/{}.md".format(label), "w").write("\n".join(md) + "\n")
+out_dir = os.path.join(BASE_DIR, "artifacts", label)
+open(os.path.join(out_dir, "05_{}.md".format(label)), "w").write("\n".join(md) + "\n")
 
 # ---- HTML 报告 ----
 def svg_bars(items, w=640, h=260):
@@ -289,5 +290,5 @@ body = """<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name=
                       ("{:.0f}%".format(pct_new), "新歌占比", "相比上周新听 {} 首".format(prep["new_tracks"]))]),
     bars=svg_bars(daily_items), hbars=svg_hbars(art_items),
     tags=svg_hbars(tag_items), genre_change=genre_change_html)
-open("/workspace/{}_report.html".format(label), "w").write(body)
-print("wrote /workspace/{}.md and /workspace/{}_report.html".format(label, label))
+open(os.path.join(out_dir, "06_{}_report.html".format(label)), "w").write(body)
+print("wrote artifacts/{}/05_.md + 06_ report.html".format(label))
