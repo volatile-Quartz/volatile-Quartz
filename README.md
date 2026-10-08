@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,403 次 |
-| 🎤 歌手总计 | 20,532 位 |
-| 💿 专辑总计 | 21,482 张 |
-| 🎶 歌曲总计 | 64,930 首 |
+| 🎧 播放总次数 | 87,409 次 |
+| 🎤 歌手总计 | 20,534 位 |
+| 💿 专辑总计 | 21,485 张 |
+| 🎶 歌曲总计 | 64,934 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 🎵《BanG Dream! Our Notes》乐曲试玩——《Odd Dice》 — OurNotesOfficial
-- 🎵 🎉「拜托了，倾心一掷」活动预告 — OurNotesOfficial
-- 🎵 ASMR That Feels Way Too Real 💗 — Baby Whisper ASMR
+- 🎵 The Wooden Prince: Dance No. 3, Dance of the Waves — EDWARD GARDNER/LONDON PHILHARMONIC ORCHESTRA
+- 🎵 Re:Summer — Juggernaut.&アイロボ
+- 🎵 Summer — Re
 
 **📈 播放趋势**  
 - 📅 本周: 197 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/8 16:36:46*
+*更新时间: 2026/10/8 17:30:17*
 <!-- LASTFM_END -->
