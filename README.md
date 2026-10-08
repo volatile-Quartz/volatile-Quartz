@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,409 次 |
+| 🎧 播放总次数 | 87,410 次 |
 | 🎤 歌手总计 | 20,534 位 |
 | 💿 专辑总计 | 21,485 张 |
 | 🎶 歌曲总计 | 64,934 首 |
@@ -29,9 +29,9 @@ Here are some ideas to get you started:
 
 
 **🎵 最近在听**  
+- 🎵 空耳 — ナナツカゼ
 - 🎵 The Wooden Prince: Dance No. 3, Dance of the Waves — EDWARD GARDNER/LONDON PHILHARMONIC ORCHESTRA
 - 🎵 Re:Summer — Juggernaut.&アイロボ
-- 🎵 Summer — Re
 
 **📈 播放趋势**  
 - 📅 本周: 197 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/8 17:30:17*
+*更新时间: 2026/10/8 22:22:30*
 <!-- LASTFM_END -->
