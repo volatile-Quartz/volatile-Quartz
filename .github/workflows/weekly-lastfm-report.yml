@@ -1,0 +1,105 @@
+name: lastfm-weekly-report
+
+# 每周一 01:30（北京时间）自动生成上一自然周听歌周报：
+# 生成 → 归档产物 → 推 lastfm-tools-preview 分支 → 开/更新 PR 待人工确认。
+# 注意：GitHub Actions 只扫描默认分支(master)下的 workflow，
+# lastfm-tools 分支内的本文件被手动拷贝一份到 master 后才生效。
+on:
+  schedule:
+    - cron: "30 17 * * 0"   # UTC 周日 17:30 = 北京 周一 01:30
+  workflow_dispatch: {}     # 支持手动触发
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: lastfm-tools
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖和中文字体
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-wqy-microhei
+          pip install -q pillow wordcloud numpy
+
+      - name: 计算周一起始日并运行流水线
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          WEEK_START=$(python3 - <<'EOF'
+          from datetime import date, timedelta
+          t = date.today()
+          back = 7 if t.weekday() == 0 else t.weekday()   # 自然周刚结束的"上一个周一"
+          print((t - timedelta(days=back)).isoformat())
+          EOF
+          )
+          WEEK_NO=$(python3 -c "from datetime import date; d=date.fromisoformat('$WEEK_START'); print(str(d.year)+'week'+str(d.isocalendar()[1]))")
+          echo "WEEK_START=$WEEK_START WEEK_NO=$WEEK_NO"
+
+          python3 lastfm/weekly_stats_prep.py "$WEEK_START"
+          python3 lastfm/weekly_stats_enrich.py
+          python3 lastfm/weekly_stats_report.py
+          python3 lastfm/weekly_stats_img.py
+
+          # 归档产物（含原始记录快照）
+          mkdir -p "lastfm/artifacts/$WEEK_NO"
+          python3 - <<'EOF'
+          import json, time, urllib.request, urllib.parse
+          from datetime import datetime, timedelta, timezone
+          API_KEY = "66b1c1ad34af302bb1672147f78e9e90"; USER = "volatile-Quartz"
+          TZ = timezone(timedelta(hours=8))
+          t0 = int(datetime.strptime("$WEEK_START", "%Y-%m-%d").replace(tzinfo=TZ).timestamp())
+          out, page = [], 1
+          while True:
+              q = urllib.parse.urlencode({"method": "user.getrecenttracks", "user": USER,
+                  "api_key": API_KEY, "from": t0, "to": t0 + 7 * 86400, "format": "json", "page": page})
+              data = json.load(urllib.request.urlopen("http://ws.audioscrobbler.com/2.0/?" + q, timeout=30))
+              tracks = data["recenttracks"]["track"]
+              if not tracks: break
+              out += [{"ts": t["date"]["uts"], "artist": t["artist"]["#text"], "track": t["name"],
+                       "album": t["album"]["#text"]} for t in tracks if "@attr" not in t]
+              if page >= int(data["recenttracks"]["@attr"]["totalPages"]): break
+              page += 1
+          json.dump(out, open("lastfm/artifacts/$WEEK_NO/01_raw.json", "w"), ensure_ascii=False, indent=1)
+          EOF
+          cp /tmp/lastfm_prep.json   lastfm/artifacts/$WEEK_NO/02_prep.json
+          cp /tmp/lastfm_enrich.json lastfm/artifacts/$WEEK_NO/03_enrich.json
+          cp /tmp/lastfm_report.json lastfm/artifacts/$WEEK_NO/04_report.json
+          cp "$WEEK_NO.md"           lastfm/artifacts/$WEEK_NO/05_$WEEK_NO.md
+          cp "${WEEK_NO}_report.html" lastfm/artifacts/$WEEK_NO/06_${WEEK_NO}_report.html
+          cp lastfm/lastfm_rules.json lastfm/artifacts/$WEEK_NO/07_rules_snapshot.json
+          cp "${WEEK_NO}_report.png" lastfm/artifacts/$WEEK_NO/08_${WEEK_NO}_report.png
+          cp "${WEEK_NO}_report.png" .screenshots/${WEEK_NO}_report.png
+          # 留存周次供后续步骤使用
+          echo "WEEK_NO=$WEEK_NO" >> "$GITHUB_ENV"
+
+      - name: 推送预览分支并开/更新 PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin lastfm-tools-preview 2>/dev/null || true
+          git checkout -B lastfm-tools-preview origin/lastfm-tools-preview 2>/dev/null || git checkout -B lastfm-tools-preview
+          git add -A
+          git commit -m "Week $WEEK_NO 听歌周报预览" 2>/dev/null || echo "no changes"
+          git push --force-with-lease origin lastfm-tools-preview 2>/dev/null || git push origin lastfm-tools-preview
+          PR=$(gh pr view lastfm-tools-preview --json number -q .number 2>/dev/null || echo "")
+          if [ -z "$PR" ]; then
+            gh pr create --base lastfm-tools --head lastfm-tools-preview \
+              --title "📊 Week $WEEK_NO 听歌周报预览" \
+              --body "自动生成的听歌周报预览，确认无误后合入 lastfm-tools。\
+                     \n产物见 \`lastfm/artifacts/$WEEK_NO/\`（原始记录/清洗结果/时长标签/报告 md+html+png/规则快照）。" || true
+          else
+            echo "PR $PR 已存在，仅更新 preview 分支内容"
+          fi
