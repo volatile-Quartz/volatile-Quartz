@@ -31,3 +31,12 @@ BACKUP/
 # ==================== Tooling ====================
 # 会话/分享产生的本地临时包，禁止入仓库
 .trae-html-share-packages/
+
+# ==================== Last.fm 周报（根目录临时产物，正式归档在 lastfm/artifacts/） ====================
+2026week*.md
+2026week*_report.*
+2026week*_raw*
+2026week*_lineup*
+.screenshots/
+.uploads/
+
