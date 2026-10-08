@@ -510,6 +510,7 @@
   "style_drop_tags": [
     "doujin", "touhou", "south korea", "alternative",
     "vocaloid", "kikuo", "arranger", "hatsune miku", "electronic", "nigeria",
+    "rave", "edm", "lo-fi", "rap",
     "indie", "japanese", "japan", "japanese pop", "british", "uk", "english", "korean",
     "chinese", "german", "french", "american", "usa", "us", "spanish", "russian",
     "australian", "canadian", "european", "italy", "italian", "norway", "norwegian",
@@ -533,6 +534,8 @@
     "pop japanese": "j-pop",
     "pop japan": "j-pop",
     "hip hop": "hip-hop",
+    "hiphop": "hip-hop",
+    "r&b": "R&B",
     "j-pop (jp)": "j-pop",
     "jrock": "j-rock",
     "j-rock (jp)": "j-rock",
