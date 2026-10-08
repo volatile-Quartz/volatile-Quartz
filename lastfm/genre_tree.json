@@ -15,7 +15,10 @@
       "darkstep",
       "neurofunk",
       "crossbreed",
-      "drumstep"
+      "drumstep",
+      "jump up",
+      "skullstep",
+      "technoid"
     ],
     "Hard Dance / Hardcore": [
       "hard dance",
@@ -27,7 +30,10 @@
       "hardstyle",
       "freeform",
       "hardcore",
-      "dancecore"
+      "dancecore",
+      "techcore",
+      "jumpstyle",
+      "frenchcore"
     ],
     "House / Techno": [
       "house",
@@ -82,7 +88,10 @@
       "rock",
       "alternative rock",
       "indie rock",
-      "punk"
+      "punk",
+      "experimental rock",
+      "post hardcore",
+      "melodic hardcore"
     ],
     "噪音系": [
       "noise rock",
