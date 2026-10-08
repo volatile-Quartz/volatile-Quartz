@@ -34,7 +34,8 @@
       "progressive house",
       "deep house",
       "tribal house",
-      "techno"
+      "techno",
+      "chill house"
     ],
     "Trance / Psytrance": [
       "trance",
@@ -112,7 +113,8 @@
     ],
     "合成器系": [
       "synthpop",
-      "synthwave"
+      "synthwave",
+      "glitch pop"
     ],
     "日 / 港 / 台": [
       "j-pop",
@@ -120,10 +122,18 @@
     ]
   },
   "Folk": {
-    "Folk": ["folk"]
+    "Folk": [
+      "folk"
+    ]
   },
   "Hip Hop": {
-    "Hip Hop": ["hip-hop"]
+    "基础": [
+      "hip-hop"
+    ],
+    "子类型": [
+      "cloud rap",
+      "lo-fi hip hop"
+    ]
   },
   "Funk / Soul / Disco": {
     "Funk / Soul / Disco": [
@@ -134,9 +144,15 @@
     ]
   },
   "Jazz": {
-    "Jazz": ["jazz", "jazz pop"]
+    "Jazz": [
+      "jazz",
+      "jazz pop"
+    ]
   },
   "Classical": {
-    "Classical": ["classical", "orchestral"]
+    "Classical": [
+      "classical",
+      "orchestral"
+    ]
   }
 }
