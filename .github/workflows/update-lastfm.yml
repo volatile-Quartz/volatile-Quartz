@@ -1,8 +1,6 @@
 name: Update Last.fm Data
 
 on:
-  push:
-    branches: [ main ]
   schedule:
     - cron: '*/30 * * * *'   # 每30分钟自动运行
   workflow_dispatch:          # 允许手动触发
@@ -34,25 +32,19 @@ jobs:
         git config user.email github-actions@github.com
         git add README.md
 
-        # 如果 README 没变化，跳过（避免空 commit）
         if git diff --staged --quiet; then
           echo "No changes to README.md, skipping commit."
           exit 0
         fi
 
-        # 检测 HEAD 是否为上一个 bot commit
-        # bot commit 只改 README.md —— 安全 amend 同一个 commit
         HEAD_AUTHOR=$(git log -1 --format="%an")
         HEAD_EMAIL=$(git log -1 --format="%ae")
 
         if [ "$HEAD_AUTHOR" = "github-actions" ] && [ "$HEAD_EMAIL" = "github-actions@github.com" ]; then
-          # HEAD 是 bot 自己 → amend + --force-with-lease
-          # lease 保护：如果人类在 bot amend 期间 push 了新 commit，自动 abort
           echo "HEAD is previous bot commit → amending"
           git commit --amend --no-edit
           git push --force-with-lease
         else
-          # HEAD 是人类 commit → 新建 bot commit + 正常 push
           echo "HEAD is human commit → creating new bot commit"
           git commit -m "chore: update last.fm listening data"
           git push
