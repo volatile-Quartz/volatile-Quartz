@@ -1,0 +1,59 @@
+name: Update Homepage README
+
+# 统一驱动周记、草稿纸、WhatPulse 三块动态数据的 fetch 脚本。
+# 音乐（Last.fm）保持手动更新，不纳入此 workflow。
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'    # 每 6 小时，周记不会更频繁
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        fetch-depth: 2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v5
+      with:
+        node-version: '22'
+
+    - name: Run fetch scripts
+      run: |
+        node fetch_diary.js
+        node fetch_releases.js
+        node fetch_whatpulse.js
+
+    - name: Commit and push changes
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add README.md
+
+        if git diff --staged --quiet; then
+          echo "No changes to README.md, skipping commit."
+          exit 0
+        fi
+
+        HEAD_AUTHOR=$(git log -1 --format="%an")
+        HEAD_EMAIL=$(git log -1 --format="%ae")
+        PARENT_COUNT=$(git log -1 --format="%P" | wc -w)
+        echo "HEAD author=$HEAD_AUTHOR email=$HEAD_EMAIL parent_count=$PARENT_COUNT"
+
+        if [ "$HEAD_AUTHOR" = "github-actions" ] && [ "$HEAD_EMAIL" = "github-actions@github.com" ] && [ "$PARENT_COUNT" -ge 1 ]; then
+          echo "HEAD is previous bot commit with parent → amending"
+          git commit --amend --no-edit
+          git push --force-with-lease
+        else
+          echo "HEAD is human commit or no parent → creating new bot commit"
+          git commit -m "chore: update homepage data (diary / releases / whatpulse)"
+          git push
+        fi

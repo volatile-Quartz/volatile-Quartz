@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-我是 volatile-Quartz，一个百合厨，喜欢[听音乐](https://www.last.fm/user/volatile-Quartz)、[写日记](https://github.com/volatile-Quartz/Dr_Wunderkammer)（现已调整为周记）、看[动漫/电影](#)、[打游戏](#)（主要是音游）、[做数学题](https://github.com/volatile-Quartz/Dr_Wunderkammer/releases)，以及一些[有趣的东西](#)。目前正在把生活的痕迹搬进数字空间中。
+我是 volatile-Quartz，一个百合厨，喜欢[听音乐](https://www.last.fm/user/volatile-Quartz)、[写日记](https://github.com/volatile-Quartz/Dr_Wunderkammer)（现已调整为周记）、看[动漫/电影](#)、[打游戏](#)（主要是音游）、[做数学题](#)，以及一些[有趣的东西](https://whatpulse.org/u/volatileQuartz)。目前正在把生活的痕迹搬进数字空间中。
 
 ---
 
@@ -10,7 +10,7 @@
 📚 **5** 个年份合集 · 📝 **103** 篇 · ✍️ **181,268** 字 — [进入仓库 →](https://github.com/volatile-Quartz/Dr_Wunderkammer)
 <!-- DIARY_END -->
 
-### 📐 草稿纸存档
+### 📐 草稿纸
 
 <!-- RELEASES_START -->
 📦 **1** 次存档 · 🗂️ **12** 个文件 — [查看 Releases →](https://github.com/volatile-Quartz/Dr_Wunderkammer/releases)
@@ -20,6 +20,12 @@
 
 <!-- STATS_START -->
 <!-- STATS_END -->
+
+### ⌨️ 生产力数据（WhatPulse）
+
+<!-- WHATPUSE_START -->
+⌨️ **11.5M** 键 · 🖱️ **16.4M** 点击 · 🔄 **10.9M** 滚动 · 💓 **9.2K** 周期 — [详情 →](https://whatpulse.org/u/volatileQuartz)
+<!-- WHATPUSE_END -->
 
 ### 🎵 音乐世界（Last.fm）
 

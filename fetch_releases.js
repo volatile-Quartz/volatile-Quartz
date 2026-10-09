@@ -7,12 +7,15 @@ const REPO = 'volatile-Quartz/Dr_Wunderkammer';
 const API_URL = `https://api.github.com/repos/${REPO}/releases?per_page=20`;
 
 async function fetchReleases() {
-  const res = await fetch(API_URL, {
-    headers: {
-      'Accept': 'application/vnd.github+json',
-      'User-Agent': 'homepage-readme-builder'
-    }
-  });
+  const headers = {
+    'Accept': 'application/vnd.github+json',
+    'User-Agent': 'homepage-readme-builder'
+  };
+  // 可选：CI 中 GitHub 自动注入 GITHUB_TOKEN，本地可手动 export
+  const token = process.env.GITHUB_TOKEN;
+  if (token) headers['Authorization'] = `Bearer ${token}`;
+
+  const res = await fetch(API_URL, { headers });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
 }
