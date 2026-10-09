@@ -12,7 +12,6 @@
 | 仓库 | 内容 | 说明 |
 |------|------|------|
 | 📓 [Dr_Wunderkammer](https://github.com/volatile-Quartz/Dr_Wunderkammer) | 周记 / 日记 | GitHub Pages viewer 阅读，issues 编辑 |
-| 📖 [novel-settings](https://github.com/volatile-Quartz/novel-settings) | 百合轻小说设定 | 澪音 × 由奈，世界观 / 角色 / 剧情 |
 | 🎧 音乐（Last.fm） | 听歌记录 | 见下方「音乐世界」模块 |
 
 ---
