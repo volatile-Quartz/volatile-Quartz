@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-我是 volatile-Quartz，一个百合厨，喜欢[听音乐](https://www.last.fm/user/volatile-Quartz)、[唱歌](https://github.com/volatile-Quartz/volatile-Quartz/issues/5)、[写日记](https://github.com/volatile-Quartz/Dr_Wunderkammer)（现已调整为周记）、看[动漫/电影](https://bangumi.tv/user/324751)、[打游戏](#)（主要是音游）、[做数学题](https://volatile-quartz.github.io/calculations/)，以及一些[有趣的东西](https://whatpulse.org/u/volatileQuartz)。目前正在把生活的痕迹搬进数字空间中。
+我是 volatile-Quartz，一个百合厨，喜欢[听音乐](https://www.last.fm/user/volatile-Quartz)、[唱歌](https://github.com/volatile-Quartz/volatile-Quartz/issues/5)、[写日记](https://github.com/volatile-Quartz/Dr_Wunderkammer)（现已调整为周记）、看[动漫/电影](https://bangumi.tv/user/324751)、[打游戏](#)（主要是音游）、[做数学题](https://volatile-quartz.github.io/scratch-paper-archive/)，以及一些[有趣的东西](https://whatpulse.org/u/volatileQuartz)。目前正在把生活的痕迹搬进数字空间中。
 
 ---
 
@@ -13,7 +13,7 @@
 ### 📐 草稿纸
 
 <!-- RELEASES_START -->
-🗂️ 整理中 — [草稿纸查看器 →](https://volatile-quartz.github.io/calculations/)
+🗂️ 整理中 — [草稿纸查看器 →](https://volatile-quartz.github.io/scratch-paper-archive/)
 <!-- RELEASES_END -->
 
 ### 🎬 动漫 / 影视 / 唱歌

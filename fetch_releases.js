@@ -1,11 +1,12 @@
 // fetch_releases.js
-// 从 calculations 仓库的 GitHub Releases 读取草稿存档统计，输出主页一行数字。
+// 从 scratch-paper-archive 仓库的 GitHub Releases 读取草稿存档统计，输出主页一行数字。
 
 const fs = require('fs');
 
-const REPO = 'volatile-Quartz/calculations';
+const REPO = 'volatile-Quartz/scratch-paper-archive';
 const API_URL = `https://api.github.com/repos/${REPO}/releases?per_page=20`;
-const INDEX_URL = 'https://raw.githubusercontent.com/volatile-Quartz/calculations/main/index.json';
+const INDEX_URL = 'https://raw.githubusercontent.com/volatile-Quartz/scratch-paper-archive/main/index.json';
+const VIEWER_URL = 'https://volatile-quartz.github.io/scratch-paper-archive/';
 
 async function fetchReleases() {
   const headers = {
@@ -41,7 +42,7 @@ async function fetchIndexSummary() {
 async function generateContent() {
   const releases = await fetchReleases();
   if (!releases || releases.length === 0) {
-    return `🗂️ 整理中 — [草稿纸查看器 →](https://volatile-quartz.github.io/calculations/)`;
+    return `🗂️ 整理中 — [草稿纸查看器 →](${VIEWER_URL})`;
   }
 
   let totalAssets = 0;
@@ -52,7 +53,7 @@ async function generateContent() {
     ? ` · 🖼️ 覆盖 No.${summary.min}–${summary.max}${summary.count ? `（${summary.count} 张）` : ''}`
     : '';
 
-  return `📦 **${releases.length}** 次存档 · 🗂️ **${totalAssets}** 个压缩包${detail} — [在线查看 →](https://volatile-quartz.github.io/calculations/)`;
+  return `📦 **${releases.length}** 次存档 · 🗂️ **${totalAssets}** 个压缩包${detail} — [在线查看 →](${VIEWER_URL})`;
 }
 
 const startMarker = '<!-- RELEASES_START -->';
