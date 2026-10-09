@@ -15,6 +15,8 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
     - uses: actions/checkout@v5
+      with:
+        fetch-depth: 2    # 关键：amend 需要 parent 对象在本地
     - name: Setup Node.js
       uses: actions/setup-node@v5
       with:
@@ -39,13 +41,15 @@ jobs:
 
         HEAD_AUTHOR=$(git log -1 --format="%an")
         HEAD_EMAIL=$(git log -1 --format="%ae")
+        PARENT_COUNT=$(git log -1 --format="%P" | wc -w)
+        echo "HEAD author=$HEAD_AUTHOR email=$HEAD_EMAIL parent_count=$PARENT_COUNT"
 
-        if [ "$HEAD_AUTHOR" = "github-actions" ] && [ "$HEAD_EMAIL" = "github-actions@github.com" ]; then
-          echo "HEAD is previous bot commit → amending"
+        if [ "$HEAD_AUTHOR" = "github-actions" ] && [ "$HEAD_EMAIL" = "github-actions@github.com" ] && [ "$PARENT_COUNT" -ge 1 ]; then
+          echo "HEAD is previous bot commit with parent → amending"
           git commit --amend --no-edit
           git push --force-with-lease
         else
-          echo "HEAD is human commit → creating new bot commit"
+          echo "HEAD is human commit or no parent → creating new bot commit"
           git commit -m "chore: update last.fm listening data"
           git push
         fi
