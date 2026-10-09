@@ -21,17 +21,17 @@ Here are some ideas to get you started:
 **📊 统计概览**  
 | 项目 | 数据 |
 |------|------|
-| 🎧 播放总次数 | 87,410 次 |
+| 🎧 播放总次数 | 87,414 次 |
 | 🎤 歌手总计 | 20,534 位 |
 | 💿 专辑总计 | 21,485 张 |
-| 🎶 歌曲总计 | 64,934 首 |
+| 🎶 歌曲总计 | 64,936 首 |
 
 
 
 **🎵 最近在听**  
-- 🎵 空耳 — ナナツカゼ
-- 🎵 The Wooden Prince: Dance No. 3, Dance of the Waves — EDWARD GARDNER/LONDON PHILHARMONIC ORCHESTRA
-- 🎵 Re:Summer — Juggernaut.&アイロボ
+- 🎵 水音世界观--10月8日--美官方实锤81架战机报废！5个月烧光380亿，美军中央司令部被曝选前重启对伊全面空袭！ — 水音世界观
+- 🎵 🎉「光之所至，伊始之时招募」开启预告！ — OurNotesOfficial
+- 🎵 Maelstrom — Plum - Melodic Artist
 
 **📈 播放趋势**  
 - 📅 本周: 197 次播放
@@ -88,5 +88,5 @@ Here are some ideas to get you started:
 - 👤 [xquto](https://www.last.fm/user/xquto)
 - 👤 [KarkatVantaz](https://www.last.fm/user/KarkatVantaz)
 
-*更新时间: 2026/10/8 22:22:30*
+*更新时间: 2026/10/9 00:52:53*
 <!-- LASTFM_END -->
