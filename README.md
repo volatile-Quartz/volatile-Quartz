@@ -13,12 +13,13 @@
 ### 📐 草稿纸
 
 <!-- RELEASES_START -->
-📦 **1** 次存档 · 🗂️ **12** 个压缩包 — [查看 Releases →](https://github.com/volatile-Quartz/Dr_Wunderkammer/releases)
+🗂️ 整理中 — [草稿纸查看器 →](https://volatile-quartz.github.io/calculations/)
 <!-- RELEASES_END -->
 
 ### 🎬 动漫 / 影视 / 唱歌
 
 <!-- STATS_START -->
+🎬 [动漫](https://github.com/volatile-Quartz/volatile-Quartz/issues/4)（50） · 🎥 [电影](https://github.com/volatile-Quartz/volatile-Quartz/issues/3) · 🎤 [唱歌](https://github.com/volatile-Quartz/volatile-Quartz/issues/5)
 <!-- STATS_END -->
 
 ### ⌨️ 生产力数据（WhatPulse）

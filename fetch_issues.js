@@ -2,11 +2,13 @@
 // 读取本仓库（profile 仓库）里的「记录类」issue，生成主页入口行。
 //
 // 这些 issue 用来持续记录看过的动漫/电影、唱过的歌等；
-// 正文或评论里按列表填写后，这里会自动统计条数。
+// 记录通常写在评论里，格式为 Markdown 表格（类型/原名/译名/…）或列表，
+// 一条评论可含多张表（如按年份分段），这里自动统计条目数。
 
 const fs = require('fs');
 
 const REPO = 'volatile-Quartz/volatile-Quartz';
+const API = `https://api.github.com/repos/${REPO}`;
 
 // 想在主页展示的记录条目（issue 编号）
 const ENTRIES = [
@@ -15,37 +17,65 @@ const ENTRIES = [
   { no: 5, icon: '🎤', name: '唱歌' },
 ];
 
-async function fetchIssue(no) {
-  const headers = {
-    'Accept': 'application/vnd.github+json',
-    'User-Agent': 'homepage-readme-builder',
-  };
+function headers() {
+  const h = { 'Accept': 'application/vnd.github+json', 'User-Agent': 'homepage-readme-builder' };
   const token = process.env.GITHUB_TOKEN;
-  if (token) headers['Authorization'] = `Bearer ${token}`;
+  if (token) h['Authorization'] = `Bearer ${token}`;
+  return h;
+}
 
-  const res = await fetch(`https://api.github.com/repos/${REPO}/issues/${no}`, { headers });
-  if (!res.ok) throw new Error(`issue #${no} HTTP ${res.status}`);
+async function gh(url) {
+  const res = await fetch(url, { headers: headers() });
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
   return res.json();
 }
 
-// 统计正文里的列表条目（- xxx / * xxx / 1. xxx）
-function countItems(body) {
-  if (!body) return 0;
-  return body
-    .split('\n')
-    .filter(line => /^\s*(?:[-*+]\s+|\d+[.、)]\s+)/.test(line))
-    .length;
+// issue 的全部评论（分页取全）
+async function fetchComments(no) {
+  const out = [];
+  for (let page = 1; ; page++) {
+    const data = await gh(`${API}/issues/${no}/comments?per_page=100&page=${page}`);
+    out.push(...data);
+    if (data.length < 100) break;
+  }
+  return out;
+}
+
+// 统计记录条目：Markdown 表格数据行 + 列表项（- / * / 1. / 1、）
+function countItems(text) {
+  if (!text) return 0;
+  let count = 0;
+  let inTable = false;
+
+  for (const raw of text.split('\n')) {
+    const t = raw.trim();
+    if (!t) { inTable = false; continue; }
+
+    // 表格分隔行（|--|--| 或 -- | -- | --）→ 进入表格模式，表头行不计
+    const isSep = t.includes('|') && t.includes('-') && /^[\s:|-]+$/.test(t);
+    if (isSep) { inTable = true; continue; }
+
+    if (inTable) {
+      if (t.includes('|')) { count++; continue; }  // 表格数据行
+      inTable = false;                             // 表格结束
+    }
+
+    if (/^[-*+]\s+/.test(t) || /^\d+[.、)]\s*/.test(t)) count++;
+  }
+  return count;
 }
 
 async function generateContent() {
-  const issues = await Promise.all(ENTRIES.map(e => fetchIssue(e.no)));
-
-  const parts = ENTRIES.map((entry, i) => {
-    const issue = issues[i];
-    const count = countItems(issue.body);
+  const parts = await Promise.all(ENTRIES.map(async (entry) => {
+    const [issue, comments] = await Promise.all([
+      gh(`${API}/issues/${entry.no}`),
+      fetchComments(entry.no),
+    ]);
+    let count = countItems(issue.body);
+    for (const c of comments) count += countItems(c.body);
     const suffix = count > 0 ? `（${count}）` : '';
     return `${entry.icon} [${entry.name}](${issue.html_url})${suffix}`;
-  });
+  }));
 
   return parts.join(' · ');
 }
@@ -68,6 +98,7 @@ async function main() {
     );
     fs.writeFileSync(readmePath, readme);
     console.log('✅ 记录条目模块更新成功');
+    console.log('   ' + content);
   } catch (err) {
     console.error('❌ fetch_issues.js 失败:', err.message);
   }
