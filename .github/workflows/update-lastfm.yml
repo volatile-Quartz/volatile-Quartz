@@ -1,11 +1,11 @@
 name: Update Last.fm Data
 
-# ⏸️ 2026-10-09 暂停定时触发：主页 README 改为静态模板 + 周记/Releases 独立 workflow 更新。
-#   Last.fm 数据仍可手动触发（workflow_dispatch），恢复自动更新只需去掉 schedule 块注释。
+# 每周更新主页「音乐世界」区块的四项总统计（播放/歌手/专辑/歌曲）。
+# 只刷新这四个数字 + 更新时间，详细周报由 weekly-lastfm-* workflow 单独产出。
 on:
-  # schedule:
-  #   - cron: '0 0 * * *'   # 已暂停
-  workflow_dispatch:          # 允许手动触发
+  schedule:
+    - cron: '0 4 * * 1'   # 每周一 04:00 UTC
+  workflow_dispatch:       # 允许手动触发
 
 permissions:
   contents: write

@@ -40,3 +40,8 @@ BACKUP/
 .screenshots/
 .uploads/
 
+# ==================== 本地克隆的兄弟仓库（由各自的仓库单独管理） ====================
+# 在 profile 仓库里直接 clone calculations 会被 Git 当成 gitlink 提交，
+# 导致主页仓库出现指向嵌套仓库的空目录条目，这里显式忽略。
+calculations/
+

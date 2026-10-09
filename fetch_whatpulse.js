@@ -1,9 +1,14 @@
 // fetch_whatpulse.js
-// 抓取 WhatPulse 用户页 HTML 中的统计数字，生成主页一行展示。
+// 抓取 WhatPulse 用户页 HTML 中的统计数字，生成主页展示区块。
+//
+// 官网展示的字段（2026-10 实测）：
+//   Keys / Clicks / Scrolls / Distance / Download / Upload / Uptime / Pulses
+// 注意：Distance、Download、Upload、Uptime 带单位（1414.448km / 19.25TB / 5 years,...），
+// 不能用「只匹配整数」的正则，否则会整条漏掉。
 
 const fs = require('fs');
 
-const USERNAME = process.env.WHATPUSE_USER || 'volatileQuartz';
+const USERNAME = process.env.WHATPULSE_USER || process.env.WHATPUSE_USER || 'volatileQuartz';
 const URL = `https://whatpulse.org/u/${USERNAME}`;
 
 async function fetchPage() {
@@ -16,46 +21,85 @@ async function fetchPage() {
 
 // 把 1,234,567 格式化成 1.2M / 34.5K 这样更紧凑的展示
 function compact(num) {
+  if (num >= 1_000_000_000) return (num / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'B';
   if (num >= 1_000_000) return (num / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
   if (num >= 1_000) return (num / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
   return num.toString();
 }
 
+// 抓取所有 title="%Xxx%" 后面的文本（含单位，不限于数字）
 function extract(html) {
   const fields = {};
-  // 匹配 title="%FieldName%" 后面跟着的数字（带千分逗号）
-  const regex = /title="%([A-Za-z]+)%">\s*([\d,]+)\s*<\/span>/g;
+  const regex = /title="%([A-Za-z]+)%">([^<]*)<\/span>/g;
   let m;
   while ((m = regex.exec(html)) !== null) {
-    fields[m[1]] = parseInt(m[2].replace(/,/g, ''), 10);
+    fields[m[1]] = m[2].trim();
   }
   return fields;
+}
+
+const toInt = (v) => parseInt(String(v || '').replace(/,/g, ''), 10) || 0;
+
+// "1414.448km" → "1,414km"（不换单位，只补千分位）
+function formatDistance(raw) {
+  if (!raw) return '';
+  const m = String(raw).match(/^([\d.]+)\s*(.*)$/);
+  if (!m) return raw;
+  const num = Math.round(parseFloat(m[1]));
+  return `${num.toLocaleString()}${m[2]}`;
+}
+
+// "5 years, 2 weeks, 5 hours, ..." → "5年2周"
+function compactUptime(raw) {
+  if (!raw) return '';
+  const zh = {
+    year: '年', years: '年', week: '周', weeks: '周', day: '天', days: '天',
+    hour: '小时', hours: '小时', minute: '分', minutes: '分', second: '秒', seconds: '秒',
+  };
+  const parts = [...String(raw).matchAll(/(\d+)\s+([a-zA-Z]+)/g)]
+    .map(m => `${m[1]}${zh[m[2].toLowerCase()] || m[2]}`);
+  return parts.slice(0, 2).join('') || raw;
 }
 
 async function generateContent() {
   const html = await fetchPage();
   const f = extract(html);
 
-  const keys = f.TotalKeyCount || 0;
-  const clicks = f.TotalMouseClicks || 0;
-  const scrolls = f.TotalScrolls || 0;
-  const pulses = f.Pulses || 0;
+  const keys = toInt(f.TotalKeyCount) || toInt(f.TotalKeys);
+  const clicks = toInt(f.TotalMouseClicks) || toInt(f.TotalClicks);
+  const scrolls = toInt(f.TotalScrolls);
+  const pulses = toInt(f.Pulses);
+  const distance = formatDistance(f.TotalMouseDistance);
+  const download = f.TotalDownloaded || '';
+  const upload = f.TotalUploaded || '';
+  const uptime = compactUptime(f.TotalUptimeLong);
 
   if (!keys && !clicks) {
     throw new Error('WhatPulse 页面没有匹配到统计字段（页面结构可能已更新）');
   }
 
-  const parts = [];
-  if (keys) parts.push(`⌨️ **${compact(keys)}** 键`);
-  if (clicks) parts.push(`🖱️ **${compact(clicks)}** 点击`);
-  if (scrolls) parts.push(`🔄 **${compact(scrolls)}** 滚动`);
-  if (pulses) parts.push(`💓 **${compact(pulses)}** 周期`);
+  // 与官网字段一一对应：键 / 点击 / 滚动 / 移动距离 / 上传下载 / 设备用时
+  const row1 = [];
+  if (keys) row1.push(`⌨️ **${compact(keys)}** 键`);
+  if (clicks) row1.push(`🖱️ **${compact(clicks)}** 点击`);
+  if (scrolls) row1.push(`🔄 **${compact(scrolls)}** 滚动`);
+  if (distance) row1.push(`🖲️ **${distance}** 移动距离`);
 
-  return `${parts.join(' · ')} — [详情 →](${URL})`;
+  const row2 = [];
+  if (download || upload) row2.push(`🌐 **${download}** 下载 / **${upload}** 上传`);
+  if (uptime) row2.push(`⏱️ **${uptime}** 使用时长`);
+  if (pulses) row2.push(`💓 **${compact(pulses)}** 脉冲`);
+
+  const stamp = new Date().toLocaleString('zh-CN', {
+    timeZone: 'Asia/Shanghai', hour12: false,
+  });
+
+  const lines = [row1.join(' · '), row2.join(' · ')].filter(Boolean);
+  return `${lines.join('  \n')}  \n*更新于 ${stamp}* — [详情 →](${URL})`;
 }
 
-const startMarker = '<!-- WHATPUSE_START -->';
-const endMarker = '<!-- WHATPUSE_END -->';
+const startMarker = '<!-- WHATPULSE_START -->';
+const endMarker = '<!-- WHATPULSE_END -->';
 
 async function main() {
   const readmePath = process.env.README_PATH || './README.md';
@@ -63,6 +107,9 @@ async function main() {
 
   try {
     const content = await generateContent();
+    if (!readme.includes(startMarker) || !readme.includes(endMarker)) {
+      throw new Error(`README 中找不到 ${startMarker} / ${endMarker} 标记`);
+    }
     readme = readme.replace(
       new RegExp(`${startMarker}[\\s\\S]*?${endMarker}`),
       `${startMarker}\n${content}\n${endMarker}`
