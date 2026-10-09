@@ -1,8 +1,10 @@
 // fetch_whatpulse.js
-// 抓取 WhatPulse 用户页 HTML 中的统计数字，生成主页展示区块。
+// 抓取 WhatPulse 用户页 HTML 中的统计数字，生成主页展示区块（与 Last.fm 同风格的表格）。
 //
 // 官网展示的字段（2026-10 实测）：
 //   Keys / Clicks / Scrolls / Distance / Download / Upload / Uptime / Pulses
+// 输出为「表头=字段、数据行=数值」的表格（字段在前，数据在后）。
+// Pulses 指客户端把统计「上报」到官网的次数，中文记作「上报次数」（不译作「脉冲」）。
 // 注意：Distance、Download、Upload、Uptime 带单位（1414.448km / 19.25TB / 5 years,...），
 // 不能用「只匹配整数」的正则，否则会整条漏掉。
 
@@ -78,24 +80,19 @@ async function generateContent() {
     throw new Error('WhatPulse 页面没有匹配到统计字段（页面结构可能已更新）');
   }
 
-  // 与官网字段一一对应：键 / 点击 / 滚动 / 移动距离 / 上传下载 / 设备用时
-  const row1 = [];
-  if (keys) row1.push(`⌨️ **${compact(keys)}** 键`);
-  if (clicks) row1.push(`🖱️ **${compact(clicks)}** 点击`);
-  if (scrolls) row1.push(`🔄 **${compact(scrolls)}** 滚动`);
-  if (distance) row1.push(`🖲️ **${distance}** 移动距离`);
-
-  const row2 = [];
-  if (download || upload) row2.push(`🌐 **${download}** 下载 / **${upload}** 上传`);
-  if (uptime) row2.push(`⏱️ **${uptime}** 使用时长`);
-  if (pulses) row2.push(`💓 **${compact(pulses)}** 脉冲`);
+  // 与官网字段一一对应：表头=字段，数据行=数值（字段在前、数据在后）
+  // Pulses = 客户端把统计上报到官网的次数 → 「上报次数」
+  const v = (n) => (n > 0 ? compact(n) : '—');
 
   const stamp = new Date().toLocaleString('zh-CN', {
     timeZone: 'Asia/Shanghai', hour12: false,
   });
 
-  const lines = [row1.join(' · '), row2.join(' · ')].filter(Boolean);
-  return `${lines.join('  \n')}  \n*更新于 ${stamp}* — [详情 →](${URL})`;
+  return `| ⌨️ 键盘 | 🖱️ 鼠标 | 🔄 滚动 | 🖲️ 移动距离 | ⬇️ 下载 | ⬆️ 上传 | ⏱️ 使用时长 | 📡 上报次数 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| ${v(keys)} | ${v(clicks)} | ${v(scrolls)} | ${distance || '—'} | ${download || '—'} | ${upload || '—'} | ${uptime || '—'} | ${v(pulses)} |
+
+*更新于 ${stamp} · [进入 WhatPulse →](${URL})*`;
 }
 
 const startMarker = '<!-- WHATPULSE_START -->';
