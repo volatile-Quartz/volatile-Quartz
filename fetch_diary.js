@@ -38,7 +38,11 @@ async function generateDiaryContent() {
   // 计算每个合集的统计
   const collections = Object.entries(groups).map(([label, items]) => {
     const dir = label.replace('my-diary/', '');
-    const weeklyItems = items.filter(i => i.path.endsWith('.md') && !i.path.endsWith('00_index.md'));
+    const weeklyItems = items.filter(i =>
+      i.path.endsWith('.md')
+      && !i.path.endsWith('00_index.md')
+      && !i.title.startsWith('附录')  // 附录单独归为 releases，不在周次列表里
+    );
     const indexItem = items.find(i => i.path.endsWith('00_index.md'));
     const totalWords = weeklyItems.reduce((s, i) => s + (i.word_count || 0), 0);
     const yearMatch = dir.match(/(\d{4})/);

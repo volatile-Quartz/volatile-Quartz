@@ -1,7 +1,6 @@
 ## Hi there 👋
 
-我是 volatile-Quartz，喜欢听歌、写日记、做数学题，还在写一本百合轻小说。
-把生活的痕迹搬进数字空间，对抗第二次死亡。
+我是 volatile-Quartz，喜欢听音乐、写日记（现已调整为周记）、看动漫/电影、打游戏（主要是音游）、做数学题。目前正在把生活的痕迹搬进数字空间中。
 
 - 🎵 [Last.fm](https://www.last.fm/user/volatile-Quartz) · 🎬 [Bangumi](https://bgm.tv/user/volatile-Quartz)
 
@@ -19,7 +18,7 @@
 ### 📓 我的周记
 
 <!-- DIARY_START -->
-> 📊 共 14 个年份合集 · 107 篇 · 213,690 字
+> 📊 共 14 个年份合集 · 103 篇 · 181,268 字
 
 **「Diary」2026** · 共 40 篇 · 115,702 字
 
@@ -39,19 +38,19 @@
 
 ---
 
-**「Diary」2025** · 共 56 篇 · 90,015 字
+**「Diary」2025** · 共 52 篇 · 57,593 字
 
-- [附录4：草稿纸·No.7135 - No.8…](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F56_%E9%99%84%E5%BD%954%EF%BC%9A%E8%8D%89%E7%A8%BF%E7%BA%B8%C2%B7No.7135%20-%20No.8542.md) · 315字
-- [附录3：魔法卡片已集齐卡片一览（131 + …](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F55_%E9%99%84%E5%BD%953%EF%BC%9A%E9%AD%94%E6%B3%95%E5%8D%A1%E7%89%87%E5%B7%B2%E9%9B%86%E9%BD%90%E5%8D%A1%E7%89%87%E4%B8%80%E8%A7%88%EF%BC%88131%20%2B%20217%20%E5%A5%97%EF%BC%89.md) · 25358字
-- [附录2：影视作品汇总](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F54_%E9%99%84%E5%BD%952%EF%BC%9A%E5%BD%B1%E8%A7%86%E4%BD%9C%E5%93%81%E6%B1%87%E6%80%BB.md) · 2062字
-- [附录1：音乐作品汇总](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F53_%E9%99%84%E5%BD%951%EF%BC%9A%E9%9F%B3%E4%B9%90%E4%BD%9C%E5%93%81%E6%B1%87%E6%80%BB.md) · 4687字
 - [第52周（2025.12.22-2025.12.28）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F52_%E7%AC%AC52%E5%91%A8%EF%BC%882025.12.22-2025.12.28%EF%BC%89%E4%BD%8D%E7%A7%BB%E6%9E%81%E5%8C%96%E4%B8%8E%E5%8F%96%E5%90%91%E6%9E%81%E5%8C%96.md) · 3390字
 - [第51周（2025.12.15-2025.12.21）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F51_%E7%AC%AC51%E5%91%A8%EF%BC%882025.12.15-2025.12.21%EF%BC%89%E7%9A%AE%E4%BA%9A%E8%AF%BA%E4%BD%99%E9%A1%B9%E4%B8%8E%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%BD%99%E9%A1%B9%E3%80%81%E5%86%AC%E8%87%B3%E4%B8%8E%E9%A5%BA%E5%AD%90.md) · 1207字
 - [第50周（2025.12.08-2025.12.14）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F50_%E7%AC%AC50%E5%91%A8%EF%BC%882025.12.08-2025.12.14%EF%BC%89.md) · 983字
 - [第49周（2025.12.01-2025.12.07）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F49_%E7%AC%AC49%E5%91%A8%EF%BC%882025.12.01-2025.12.07%EF%BC%89%E7%96%BC%E7%97%9B%E5%BC%8F%E6%8B%8D%E7%85%A7%E6%B3%95.md) · 2580字
 - [第48周（2025.11.24-2025.11.30）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F48_%E7%AC%AC48%E5%91%A8%EF%BC%882025.11.24-2025.11.30%EF%BC%89%E9%98%BF%E6%8B%89%E5%85%8B%E6%B6%85.md) · 920字
 - [第47周（2025.11.17-2025.11.23）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F47_%E7%AC%AC47%E5%91%A8%EF%BC%882025.11.17-2025.11.23%EF%BC%89%E5%AF%92%E8%A1%A3%E8%8A%82%E3%80%81%E5%A4%AA%E5%A6%83%E7%B3%96.md) · 1556字
-- …（另有 46 篇，[查看合集全部 →](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F00_index.md)）
+- [第46周（2025.11.10-2025.11.16）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F46_%E7%AC%AC46%E5%91%A8%EF%BC%882025.11.10-2025.11.16%EF%BC%89.md) · 800字
+- [第45周（2025.11.03-2025.11.09）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F45_%E7%AC%AC45%E5%91%A8%EF%BC%882025.11.03-2025.11.09%EF%BC%89%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C%E6%B3%95%E5%88%99.md) · 3137字
+- [第44周（2025.10.27-2025.11.02）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F44_%E7%AC%AC44%E5%91%A8%EF%BC%882025.10.27-2025.11.02%EF%BC%89.md) · 2135字
+- [第43周（2025.10.20-2025.10.26）](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F43_%E7%AC%AC43%E5%91%A8%EF%BC%882025.10.20-2025.10.26%EF%BC%89%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91%E4%B8%8E%E8%8A%AC%E5%A8%81%E5%85%8B%E6%A0%91%E3%80%81%E8%90%BD%E5%8F%B6%E4%B9%94%E6%9C%A8.md) · 3524字
+- …（另有 42 篇，[查看合集全部 →](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F00_index.md)）
 
 [📖 合集目录](https://volatile-quartz.github.io/Dr_Wunderkammer/viewer.html?src=my-diary%2FDiary-2025%2F00_index.md)
 
@@ -63,7 +62,7 @@
 </details>
 
 
-*最后更新: 2026/10/9 06:35:35 · 数据源: [posts/index.json](https://raw.githubusercontent.com/volatile-Quartz/Dr_Wunderkammer/master/posts/index.json)*
+*最后更新: 2026/10/9 06:53:53 · 数据源: [posts/index.json](https://raw.githubusercontent.com/volatile-Quartz/Dr_Wunderkammer/master/posts/index.json)*
 <!-- DIARY_END -->
 
 ---
