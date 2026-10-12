@@ -4,10 +4,28 @@
 
 ---
 
+### ✨ 最近活跃
+
+<!-- ACTIVITY_START -->
+- [volatile-Quartz] 提交 PR #7（10/12）
+- [volatile-Quartz] 创建 branch lastfm-tools（10/12）
+- [Dr_Wunderkammer] 创建 branch archive/old-history（10/09）
+
+→ [活动流 →](https://github.com/volatile-Quartz)
+<!-- ACTIVITY_END -->
+
 ### 📓 周记
 
 <!-- DIARY_START -->
-📚 **5** 个年份合集 · 📝 **103** 篇 · ✍️ **181,268** 字 — [进入仓库 →](https://github.com/volatile-Quartz/Dr_Wunderkammer)
+📚 **5** 个年份合集 · 📝 **104** 篇 · ✍️ **181,632** 字
+
+📅 最近更新：
+
+- [第41周（2026.10.05-2026.10.11）](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/40_第41周（2026.10.05-2026.10.11）.md)
+- [第40周（2026.09.28-2026.10.04）布雷顿森林体系与特里芬悖论](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/39_第40周（2026.09.28-2026.10.04）布雷顿森林体系与特里芬悖论.md)
+- [第39周（2026.09.21-2026.09.27）托尔德西里亚斯条约与萨拉戈萨条约](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/38_第39周（2026.09.21-2026.09.27）托尔德西里亚斯条约与萨拉戈萨条约.md)
+
+→ [进入 Dr_Wunderkammer →](https://github.com/volatile-Quartz/Dr_Wunderkammer)
 <!-- DIARY_END -->
 
 ### 📐 草稿纸

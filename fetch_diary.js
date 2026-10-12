@@ -1,5 +1,5 @@
 // fetch_diary.js
-// 从 Dr_Wunderkammer 的 posts/index.json 读取周记统计，输出主页一行数字。
+// 从 Dr_Wunderkammer 的 posts/index.json 读取周记统计，输出主页统计行 + 最新 3 篇。
 
 const fs = require('fs');
 
@@ -28,7 +28,31 @@ async function generateContent() {
   const labels = new Set(weeklies.map(e => e.label).filter(l => l.includes('Diary-')));
   const totalWords = weeklies.reduce((s, i) => s + (i.word_count || 0), 0);
 
-  return `📚 **${labels.size}** 个年份合集 · 📝 **${weeklies.length}** 篇 · ✍️ **${totalWords.toLocaleString()}** 字 — [进入仓库 →](${REPO_URL})`;
+  // 最新 3 篇：按（合集末位年份, 文件序号）排序。
+  // index.json 按目录字母序排列（Diary-2019 在尾部），不能直接取数组尾部。
+  // word_count < 50 视为占位文件（如刚建的空周记），不展示。
+  const dated = weeklies
+    .filter(e => e.word_count >= 50)
+    .map(e => {
+      const y = e.path.match(/Diary-(\d{4})(?:-(\d{4}))?\//);
+      const n = e.path.match(/\/(\d+)_/);
+      if (!y || !n) return null;
+      return { ...e, sortKey: [parseInt(y[2] || y[1], 10), parseInt(n[1], 10)] };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.sortKey[0] - a.sortKey[0] || b.sortKey[1] - a.sortKey[1]);
+
+  const recent = dated.slice(0, 3)
+    .map(e => `- [${e.title}](${REPO_URL}/blob/master/${e.path})`)
+    .join('\n');
+
+  return `📚 **${labels.size}** 个年份合集 · 📝 **${weeklies.length}** 篇 · ✍️ **${totalWords.toLocaleString()}** 字
+
+📅 最近更新：
+
+${recent}
+
+→ [进入 Dr_Wunderkammer →](${REPO_URL})`;
 }
 
 const startMarker = '<!-- DIARY_START -->';
