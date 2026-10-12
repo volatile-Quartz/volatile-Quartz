@@ -108,17 +108,21 @@
     ],
     "后摇 / 前卫": [
       "post-rock",
-      "progressive rock"
+      "progressive rock",
+      "math rock",
+      "symphonic rock"
     ],
     "J 系": [
-      "j-rock"
+      "j-rock",
+      "visual kei"
     ]
   },
   "Pop": {
     "基础流行": [
       "pop",
       "alternative pop",
-      "indie pop"
+      "indie pop",
+      "math pop"
     ],
     "合成器系": [
       "synthpop",
@@ -141,7 +145,9 @@
     ],
     "子类型": [
       "cloud rap",
-      "lo-fi hip hop"
+      "lo-fi hip hop",
+      "trap",
+      "deutschrap"
     ]
   },
   "Funk / Soul / Disco": {
@@ -161,7 +167,9 @@
   "Classical": {
     "Classical": [
       "classical",
-      "orchestral"
+      "orchestral",
+      "opera",
+      "baroque"
     ]
   }
 }

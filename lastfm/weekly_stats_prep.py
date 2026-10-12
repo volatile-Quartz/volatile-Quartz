@@ -84,8 +84,8 @@ def display_artist(a):
 
 def clean(rec):
     """Apply lastfm_rules: blacklist, alias/署名映射, 曲名清洗。"""
-    ra = rec["artist"].strip()
-    rt = rec["track"].strip()
+    ra = rec["artist"].replace("\xa0", " ").strip()
+    rt = rec["track"].replace("\xa0", " ").strip()
     al, tl = ra.lower(), rt.lower()
     if any(b in al for b in bl_artists):
         return None
