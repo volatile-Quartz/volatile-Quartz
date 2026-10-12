@@ -7,6 +7,7 @@ on:
   push:
     branches: [main]
     paths: [lastfm/**]
+  workflow_dispatch: {}   # 手动重跑当周周报用
 
 permissions:
   contents: write

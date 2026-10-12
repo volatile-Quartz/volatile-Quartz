@@ -2,7 +2,8 @@ name: Update Homepage README
 
 # 统一驱动主页各区块的动态数据：
 #   周记(fetch_diary) / 草稿纸(fetch_releases) / 记录条目(fetch_issues) / WhatPulse(fetch_whatpulse)
-# 音乐（Last.fm）由 update-lastfm.yml 单独每周更新。
+#   / Last.fm 概览(fetch_lastfm)
+# 详细周报由 lastfm-weekly-phase1/2 workflow 手动触发产出。
 #
 # 频率：每周一次（周一 03:00 UTC）。这些都是慢变量，且改动不频繁；
 # 需要立刻刷新时用 workflow_dispatch 手动触发。
@@ -33,11 +34,14 @@ jobs:
     - name: Run fetch scripts
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # 读 issue / releases，避免匿名限流
+        LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+        LASTFM_USERNAME: ${{ secrets.LASTFM_USERNAME }}
       run: |
         node fetch_diary.js
         node fetch_releases.js
         node fetch_issues.js
         node fetch_whatpulse.js
+        node fetch_lastfm.js
 
     - name: Commit and push changes
       run: |
@@ -61,6 +65,6 @@ jobs:
           git push --force-with-lease
         else
           echo "HEAD is human commit or no parent → creating new bot commit"
-          git commit -m "chore: update homepage data (diary / releases / issues / whatpulse)"
+          git commit -m "chore: update homepage data (diary / releases / issues / whatpulse / lastfm)"
           git push
         fi

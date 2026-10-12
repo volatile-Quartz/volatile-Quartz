@@ -1,12 +1,10 @@
 name: lastfm-weekly-phase1
 
 # Phase 1：拉取原始数据 + 清洗前统计 + 逐行清单（人工确认用）。
-# 定时每周一 01:30（北京时间）自动跑上一自然周 → 归档数据 → 推 lastfm-tools-preview 分支 → 开/更新 PR。
+# 手动触发：跑上一自然周 → 归档数据 → 推 lastfm-tools-preview 分支 → 开/更新 PR。
 # 人工确认清单并（必要时改 lastfm_rules.json）合入 main 后，push 触发 Phase 2 生成周报。
 on:
-  schedule:
-    - cron: "30 17 * * 0"   # UTC 周日 17:30 = 北京 周一 01:30
-  workflow_dispatch: {}
+  workflow_dispatch: {}   # 手动触发（不做定时，想拉新一周数据时点一下）
 
 permissions:
   contents: write
