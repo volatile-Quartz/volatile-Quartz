@@ -38,7 +38,6 @@ jobs:
         node fetch_releases.js
         node fetch_issues.js
         node fetch_whatpulse.js
-        node fetch_activity.js
 
     - name: Commit and push changes
       run: |

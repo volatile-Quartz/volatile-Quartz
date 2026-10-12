@@ -4,16 +4,6 @@
 
 ---
 
-### ✨ 最近活跃
-
-<!-- ACTIVITY_START -->
-- [volatile-Quartz] 提交 PR #7（10/12）
-- [volatile-Quartz] 创建 branch lastfm-tools（10/12）
-- [Dr_Wunderkammer] 创建 branch archive/old-history（10/09）
-
-→ [活动流 →](https://github.com/volatile-Quartz)
-<!-- ACTIVITY_END -->
-
 ### 📓 周记
 
 <!-- DIARY_START -->
