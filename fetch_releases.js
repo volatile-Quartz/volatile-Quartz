@@ -1,12 +1,12 @@
 // fetch_releases.js
-// 从 scratch-paper-archive 仓库的 GitHub Releases 读取草稿存档统计，输出主页一行数字。
+// 从 kladd-archive 仓库的 GitHub Releases 读取草稿存档统计，输出主页一行数字。
 
 const fs = require('fs');
 
-const REPO = 'volatile-Quartz/scratch-paper-archive';
+const REPO = 'volatile-Quartz/kladd-archive';
 const API_URL = `https://api.github.com/repos/${REPO}/releases?per_page=20`;
-const INDEX_URL = 'https://raw.githubusercontent.com/volatile-Quartz/scratch-paper-archive/main/index.json';
-const VIEWER_URL = 'https://volatile-quartz.github.io/scratch-paper-archive/';
+const INDEX_URL = 'https://raw.githubusercontent.com/volatile-Quartz/kladd-archive/main/index.json';
+const VIEWER_URL = 'https://volatile-quartz.github.io/kladd-archive/';
 
 async function fetchReleases() {
   const headers = {
