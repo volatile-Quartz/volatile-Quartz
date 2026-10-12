@@ -1,5 +1,5 @@
 {
-  "_说明": "Last.fm 听歌记录整理规则配置文件。风格白名单的唯一真源是 genre_tree.json（扁平化后的叶子字符串），style_genre_whitelist 字段已废弃。style_tag_merges 用于别名合并，style_drop_tags 用于剔除非 genre 标签。",
+  "_说明": "Last.fm 听歌记录整理规则配置文件。风格白名单的唯一真源是 genre_tree.json（扁平化后的叶子字符串），style_genre_whitelist 字段已废弃。style_tag_merges 用于别名合并，style_drop_tags 用于剔除非 genre 标签。Remix 归属口径：曲名带 `(X Remix)` / `(X Mashup)` 时主艺人一律为原作者，remixer / mashup 制作者仅保留在曲名标注中（如 Jump (Enei Remix) 归 Current Value）；`(X Cover)` 为完全翻唱，主艺人写翻唱者 X；仅合辑/整张由 remixer 主导且宣传封面置前者才可归 remixer，极少见。",
   "blacklist_artists": [
     "小陈在农村",
     "柏年说",
@@ -500,7 +500,7 @@
     "千野依&秋野桜": "千野依 & 秋野桜",
     "水樹奈々/Raychell": "水樹奈々 & Raychell",
     "成龙&李宗盛&周华健": "成龙 & 李宗盛 & 周华健",
-    "Current Value/Enei": "Enei"
+    "Current Value/Enei": "Current Value"
   },
   "no_split": [
     "22/7",
@@ -513,8 +513,7 @@
     "光宗信吉|I SAY YES": "ICHIKO",
     "Alan Walker & Steve Aoki & Lonely Club|Fly": "Lonely Club",
     "uzakin & 纯白P|咸咸的": "纯白P feat. uzakin",
-    "猎豹游戏-Cheetah Mobile Games|行歌未竟（滚动的天空11周年）": "闫东炜",
-    "Current Value|Pneumatics (Anode Remix)": "Anode"
+    "猎豹游戏-Cheetah Mobile Games|行歌未竟（滚动的天空11周年）": "闫东炜"
   },
   "title_by_song": {
     "The Kiehl|DOK": "D.O.K",
