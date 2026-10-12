@@ -7,13 +7,13 @@
 ### 📓 周记
 
 <!-- DIARY_START -->
-📚 **5** 个年份合集 · 📝 **104** 篇 · ✍️ **181,632** 字
+📚 **5** 个年份合集 · 📝 **106** 篇 · ✍️ **185,835** 字
 
 📅 最近更新：
 
-- [第41周（2026.10.05-2026.10.11）](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/40_第41周（2026.10.05-2026.10.11）.md)
-- [第40周（2026.09.28-2026.10.04）布雷顿森林体系与特里芬悖论](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/39_第40周（2026.09.28-2026.10.04）布雷顿森林体系与特里芬悖论.md)
-- [第39周（2026.09.21-2026.09.27）托尔德西里亚斯条约与萨拉戈萨条约](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/38_第39周（2026.09.21-2026.09.27）托尔德西里亚斯条约与萨拉戈萨条约.md)
+- [第44周（2026.10.26-2026.11.01）](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/43_第44周（2026.10.26-2026.11.01）.md)
+- [第43周（2026.10.19-2026.10.25）](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/42_第43周（2026.10.19-2026.10.25）.md)
+- [第42周（2026.10.12-2026.10.18）臨兵鬥者皆陣列在前](https://github.com/volatile-Quartz/Dr_Wunderkammer/blob/master/my-diary/Diary-2026/41_第42周（2026.10.12-2026.10.18）臨兵鬥者皆陣列在前.md)
 
 → [进入 Dr_Wunderkammer →](https://github.com/volatile-Quartz/Dr_Wunderkammer)
 <!-- DIARY_END -->
@@ -21,7 +21,7 @@
 ### 📐 草稿纸
 
 <!-- RELEASES_START -->
-🗂️ 整理中 — [草稿纸查看器 →](https://volatile-quartz.github.io/kladd-archive/)
+📦 **1** 次存档 · 🗂️ **10** 个压缩包 — [在线查看 →](https://volatile-quartz.github.io/kladd-archive/)
 <!-- RELEASES_END -->
 
 ### 🎬 动漫 / 影视 / 唱歌
@@ -35,9 +35,9 @@
 <!-- WHATPULSE_START -->
 | ⌨️ 键盘 | 🖱️ 鼠标 | 🔄 滚动 | 🖲️ 移动距离 | ⬇️ 下载 | ⬆️ 上传 | ⏱️ 使用时长 | 📡 上报次数 |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| 11.5M | 16.4M | 10.9M | 1,414km | 19.25TB | 29.35TB | 5年2周 | 9.2K |
+| 11.8M | 16.6M | 11.1M | 908mi | 19.50TB | 29.53TB | 5年7周 | 9.5K |
 
-*更新于 2026/10/10 00:25:04 · [进入 WhatPulse →](https://whatpulse.org/u/volatileQuartz)*
+*更新于 2026/11/2 18:18:20 · [进入 WhatPulse →](https://whatpulse.org/u/volatileQuartz)*
 <!-- WHATPULSE_END -->
 
 ### 🎵 音乐世界（Last.fm）
@@ -45,7 +45,7 @@
 <!-- LASTFM_START -->
 | 🎧 播放 | 🎤 歌手 | 💿 专辑 | 🎶 歌曲 |
 |:-------:|:-------:|:-------:|:-------:|
-| 87,414 | 20,534 | 21,485 | 64,936 |
+| 89,240 | 21,016 | 21,897 | 66,658 |
 
-*更新于 2026/10/9 22:49:52 · [进入 Last.fm →](https://www.last.fm/user/volatile-Quartz)*
+*更新于 2026/11/2 18:18:20 · [进入 Last.fm →](https://www.last.fm/user/volatile-Quartz)*
 <!-- LASTFM_END -->
