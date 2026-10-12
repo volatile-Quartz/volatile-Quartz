@@ -1,0 +1,61 @@
+## 2026week41 清洗前统计（全部原始记录，未过滤）
+
+- 本周范围：2026-10-05 ~ 2026-10-11
+- 原始记录：**372 条**（含重复播放），去重后独立曲目 **341 首**，独立歌手 **232 组**
+- 按天（原始条数）：10-05=36、10-06=33、10-07=52、10-08=72、10-09=40、10-10=13、10-11=107、10-12=19
+
+### Top 歌手（按原始名播放次数，含可能需过滤的非音乐频道）
+- Wiener Philharmoniker/Herbert von Karajan（21）
+- Happy Around!（14）
+- 一家Dumb Rock!（11）
+- きくお（10）
+- 土星皇家交响乐团（8）
+- Milet（7）
+- Aoi（6）
+- 时局news（5）
+- Die Orsons（5）
+- 水音世界观（5）
+- 一池周啾（4）
+- Plum - Melodic Artist（4）
+- OurNotesOfficial（4）
+- いきづらい部！（4）
+- 毛老猫（3）
+- Riccardo Muti/Wiener Philharmoniker（3）
+- millsage（3）
+- 全球动态局势（3）
+- 天才美少女ykn（3）
+- 朱明瑛（3）
+- Catalpa Vs. SharK（3）
+- MyGO!!!!!（2）
+- Angelize（2）
+- 燕三嘤嘤嘤（2）
+- Jeko/Syuenn/Krasper2（2）
+
+### 重复播放 ≥2 次（原始名，去重后）
+- 一家Dumb Rock!《ホーミー・タイッ！！》×4
+- 朱明瑛《回娘家》×3
+- Catalpa Vs. SharK《無人区-Vacuum Track#ADD8E6（翻自:咲夜）》×3
+- Angelize《layering2》×2
+- Jeko/Syuenn/Krasper2《RADIAN LUNACY》×2
+- Akiri/HowToPlayLN《The Cry of The Uncertain》×2
+- Pax Japonica Groove《PianoReturns-Superior Mix》×2
+- Nurko/Chandler Leighton《Disappearing Now》×2
+- いきづらい部！《Tale of Primavera》×2
+- Kurubukko《Transparency》×2
+- Baby Whisper ASMR《ASMR That Feels Way Too Real 💗》×2
+- Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:March》×2
+- 水音世界观《水音世界观--10月5日--美军惊慌撤离！12架B1轰炸机连夜逃回本土，布什号航母溜去普吉岛度假？中东大战局势大反转》×2
+- 全球动态局势《美美国际观察10月10日直播2。你想看哪就看哪吗。世界局势今日热点。》×2
+- 花女星家帮《伊泽枣枣情在天语录一览》×2
+- 千野依&秋野桜《無人区-Vacuum Track》×2
+- 816ThreeNumbers《無人区-Vacuum Track#ADD8E6》×2
+- 拿弓子的波塞东《無人区-Vacuum Track#ADD8E6（翻自:咲夜） (翻奏: Catalpa Vs. SharK)》×2
+- 米缐p.《无人区-Vacuum Track#ADD8E6-》×2
+- Picco&nyamura《your princess (nyamura ver.)》×2
+- 花鋏キョウ&藍月なくる《Purity (feat. 藍月なくる)》×2
+- ナツノセ《本当だよ》×2
+- 96猫/置鮎龍太郎/千葉翔也《気分上々↑↑ (心情嗨翻天↑↑)》×2
+- Happy Around!《HONEST-happy a word- (ver. 2024)》×2
+- polly polly asmr《ASMR MIC TRIGGERS》×2
+- Duckk ASMR《中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班》×2
+- 夢限大みゅーたいぷ《エンプティパペット》×2

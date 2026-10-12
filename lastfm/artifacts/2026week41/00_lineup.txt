@@ -1,0 +1,372 @@
+[10-05 08:58] [保留] 云绵安《我觉得气泡音很美味》
+[10-05 09:12] [剔除-blacklist_artist] 一池周啾《第8话》 (blacklist_artist: 一池周啾)
+[10-05 15:23] [保留] MyGO!!!!!《迷星叫》
+[10-05 15:27] [保留] MyGO!!!!!《名無声》
+[10-05 15:31] [保留] Dirk Reichardt《Weekend》
+[10-05 15:34] [保留] John Dreamer《Rise - Epic Music》
+[10-05 15:36] [保留] Epic Score《Liberators (解放者)》
+[10-05 15:39] [保留] Blazo《Righteous Path》
+[10-05 15:40] [保留] WyvernP《Clock Paradox (时钟悖论)》
+[10-05 15:42] [保留] 削除/xi《STORIA》
+[10-05 15:46] [保留] tn-shi《Synthesis.》
+[10-05 15:50] [保留] Hyun《Grin》
+[10-05 15:57] [剔除-blacklist_artist] 一池周啾《第9话》 (blacklist_artist: 一池周啾)
+[10-05 16:15] [剔除-blacklist_artist] 一池周啾《第10话》 (blacklist_artist: 一池周啾)
+[10-05 17:10] [保留] ミツキヨ《Constant Moderato Piano Arrange》
+[10-05 17:13] [保留] Le Castle Vania《Wetwork》
+[10-05 17:16] [保留] takehirotei《SEISHUN://NO_HACKING》
+[10-05 17:23] [保留] Plum - Melodic Artist《별이 보이지 않는 밤 (2021 Remake) (看不见星星的夜晚)》
+[10-05 17:26] [保留] Bellyjay/KPHK《MONTAGEM YUME》
+[10-05 17:27] [保留] Laur《Calamity of the Mystic Garden : Doom》
+[10-05 17:31] [保留] XI《Anima》
+[10-05 17:33] [保留] 久石譲《海の見える街 (能看见海的城市)》
+[10-05 17:36] [保留] AGERA《Lost Soul》
+[10-05 17:38] [保留] CrossingSound《Engine x Start!! (melody mix)》
+[10-05 17:40] [保留] Imıss《Will you still love me like this？》
+[10-05 17:43] [保留] Bandari《Annie's Wonderland (安妮的仙境)》
+[10-05 17:47] [保留] Angelize《layering2》
+[10-05 17:55] [保留] Halv《虚》
+[10-05 17:58] [保留] Angelize《layering2》
+[10-05 17:59] [保留] 饭碗的彼岸《画框中的梅阿丽》
+[10-05 18:01] [保留] Snakywine《Classy Kitty (优雅小猫)》
+[10-05 18:04] [保留] Kaeru Underground《Suspenseful Third Day》
+[10-05 18:06] [保留] Loveit Core/z²/BigDog Oof《惑わせらいやー feat. z²,BigDogOof (魅惑骗子 feat. z²,BigDogOof)》
+[10-05 18:09] [保留] Instupendo《Six Forty Seven (6：47)》
+[10-05 18:11] [保留] nyamura《cat reincarnation (猫重生)》
+[10-05 18:14] [保留] Plum - Melodic Artist《Vanilla Flavored Soda (香草味苏打)》
+[10-06 02:19] [剔除-blacklist_artist] 时局news《10月1日--冷战后首次书面战书！俄正式发函警告北约：敢隔离加里宁格勒，战术核武直接精准斩首！》 (blacklist_artist: 时局news)
+[10-06 03:28] [保留] Krescent/neur6sia/LABYRINTH/DJ Aomori《Celestial Winter Wake (天穹冬醒)》
+[10-06 03:35] [保留] NormalM/f2《All in on Your Shadow》
+[10-06 03:40] [保留] Gardens《Twin Bloom》
+[10-06 03:52] [剔除-blacklist_artist] 燕三嘤嘤嘤《印度军事这次支棱起来了》 (blacklist_artist: 燕三嘤嘤嘤)
+[10-06 04:49] [保留] MiMi《Athena's Paragraph》
+[10-06 04:51] [保留] Jeko/Syuenn/Krasper2《RADIAN LUNACY》
+[10-06 05:38] [保留] millsage_家団_ofc《一家Dumb Rock!「ピースフル・ピーシーズ！（Peaceful・Pieces!）」【Official Music Video】》
+[10-06 15:40] [保留] Aoi《TYPE-Rebellion》
+[10-06 15:43] [保留] Ruvver《UCHOUTEN Highway》
+[10-06 19:59] [保留] Jeko/Syuenn/Krasper2《RADIAN LUNACY》
+[10-06 20:03] [保留] Raphiiel《AscensiO》
+[10-06 20:12] [保留] ぺのれり《Vacant Rhapsody (空煦狂想)》
+[10-06 20:17] [保留] Kuro《Mare Aeterna》
+[10-06 20:27] [保留] Akiri/HowToPlayLN《The Cry of The Uncertain》
+[10-06 20:30] [保留] Akiri/HowToPlayLN《The Cry of The Uncertain》
+[10-06 20:32] [保留] Queen of Wand《ハートのA (红心A)》
+[10-06 20:37] [保留] littlealone100/Saiakoup《Light (Piano Mix)》
+[10-06 20:49] [保留] M2U《Wicked Fate》
+[10-06 20:53] [保留] かめりあ《Exoplanetary Mirage》
+[10-06 20:56] [保留] 牛牛piano《息 序》
+[10-06 20:57] [保留] 夜暮青《零号患者 (PVZ恐怖版序章BOSS战二阶段主题曲)》
+[10-06 21:00] [保留] 단비《비 내리던 가로수길 (Raining Garosu-gil Road) (Piano)》
+[10-06 21:05] [保留] Plum - Melodic Artist《Kaleidoscope (万花筒)》
+[10-06 21:10] [保留] Junk《Life is PIANO (Club Extend) (琴键人生)》
+[10-06 21:13] [保留] Qutabire《In the Garden (繁花之间)》
+[10-06 21:17] [保留] Pax Japonica Groove《PianoReturns-Superior Mix》
+[10-06 21:18] [保留] Pax Japonica Groove《PianoReturns-Superior Mix》
+[10-06 21:21] [保留] Elliot Hsu《A Guiding Star (引航之星)》
+[10-06 22:31] [剔除-blacklist_artist] GuluLand ASMR《Lore ASMR🪄👑Your King Welcomes You to the Magical Gululand (Fantasy Worldbuilding Roleplay)》 (blacklist_artist: gululand asmr)
+[10-06 22:44] [保留] baitu asmr《ASMR Dry vs Wet Face Massage (Which Is Better?)》
+[10-06 23:29] [保留] MakiOfLonest《Chinese ASMR with Chinese items (subs✔️)》
+[10-06 23:49] [保留] nana7 ASMR《ASMR IN CHINESE 中文ASMR (With Subtitles)》
+[10-07 02:07] [保留] Jason Ross/Trivecta/RBBTS《From Ashes To Love》
+[10-07 02:11] [保留] Seven Lions/Dia Frampton《Before You (feat. Dia Frampton)》
+[10-07 02:15] [保留] Seven Lions《Someday》
+[10-07 02:19] [保留] Jason Ross/Grant/your friend polly《All I Need (feat. your friend polly)》
+[10-07 02:22] [保留] Seven Lions/So Below《Every Time (feat. So Below)》
+[10-07 02:28] [保留] Far Out/DVRKCLOUD/RBBTS《Diamond Heart (feat. RBBTS)》
+[10-07 02:32] [保留] ARMNHMR/Synymata/Medyk《Lonely Nights》
+[10-07 02:37] [保留] Trivecta/Jay Mason《Sail Away (feat. Jay Mason)》
+[10-07 02:41] [保留] Nurko/Crystal Skies/KnownAsNat《Lost Without You》
+[10-07 02:45] [保留] Seven Lions/Jason Ross/Fiora《See You Again》
+[10-07 02:49] [保留] Nurko/Devon Baldwin《Hallelujah》
+[10-07 02:53] [保留] Abandoned/Nytrix/DVRKCLOUD《Tides》
+[10-07 02:58] [保留] Yetep/Luma《Wouldn't Know You》
+[10-07 03:02] [保留] Nurko/Chandler Leighton《Disappearing Now》
+[10-07 03:08] [保留] 央视网《每周质量报告 | “跑偏”的明厨亮灶》
+[10-07 03:11] [保留] 毛老猫《从mujica到梦限大，邦多利你到底咋了？》
+[10-07 03:24] [保留] 毛老猫《梦限大终于（快）播完了可以开骂了》
+[10-07 03:33] [保留] 毛老猫《mygo后最好的少女乐队剧情！深度解析millsage！！》
+[10-07 04:06] [剔除-blacklist_artist] 一池周啾《【梦限大】12集薇藤对话详细解析逐帧拉片纯享版——贯彻创作就是贯彻与你共鸣，方向不同信念与共。12集reaction【bilibilionly同人扶持计划】》 (blacklist_artist: 一池周啾)
+[10-07 04:27] [保留] Nurko/Chandler Leighton《Disappearing Now》
+[10-07 04:31] [保留] 土星皇家交响乐团《鸢尾花圆舞曲》
+[10-07 04:37] [保留] 土星皇家交响乐团《降B大调第四钢琴协奏曲，Op.24：第一乐章，小快板》
+[10-07 04:51] [保留] 土星皇家交响乐团《降B大调第四钢琴协奏曲，Op.24：第二乐章，慢板》
+[10-07 05:00] [保留] 天羽音みらん《【天羽音みらん】小提琴 - JUST COMMUNICATION《新机动战记高达W 》OP》
+[10-07 05:04] [保留] 波士顿圆脸《巴西要变天：政变、暗杀，但懂小将全盛袭来》
+[10-07 05:59] [保留] OurNotesOfficial《TV动画「BanG Dream! YUME∞MITA」 x 《BanG Dream! Our Notes》— STORY LINK — PV公开🛸》
+[10-07 07:34] [保留] 水上見月《【杂谈】聊聊东邦最有笑容的我们仨》
+[10-07 15:43] [保留] HEMRecords《听这种音乐比较能装屄（17）· Future Bass》
+[10-07 17:00] [剔除-blacklist_artist] 镜哥的世界《外国网友：这几天中国人是不是承包了整个地球》 (blacklist_artist: 镜哥的世界)
+[10-07 17:15] [剔除-blacklist_artist] 黑橘奈叶香《此二女有谈的风险吗？》 (blacklist_artist: 黑橘奈叶香)
+[10-07 17:24] [保留] MyGO_AveMujica《剧场版「BanG Dream! Ave Mujica prima aurora」30秒CM》
+[10-07 17:41] [保留] 土星皇家交响乐团《第四十号交响曲，Kv.550：第一乐章，较快的快板》
+[10-07 17:49] [保留] Die Orsons《Dear Mozart》
+[10-07 17:53] [保留] Die Orsons《Schwung in die Kiste》
+[10-07 17:57] [保留] Die Orsons《Ventilator》
+[10-07 18:01] [保留] Die Orsons《Leb schnell》
+[10-07 18:04] [保留] Die Orsons《Schneeweiß》
+[10-07 18:07] [保留] 土星皇家交响乐团《第四十号交响曲，Kv.550：第二乐章，行板》
+[10-07 18:18] [保留] 土星皇家交响乐团《第四十号交响曲，Kv.550：第三乐章，小步舞曲》
+[10-07 18:20] [保留] はるまきごはん《ディナーベル（Dinner Bell） (晚餐铃)》
+[10-07 18:23] [保留] 土星皇家交响乐团《第四十号交响曲，Kv.550：第四乐章，活泼的快板》
+[10-07 18:32] [保留] 土星皇家交响乐团《降B大调第四钢琴协奏曲，Op.24：第三乐章，活泼的快板》
+[10-07 18:43] [保留] Synymata/KLAXX/Eke《Hollow Eyes (feat. EKE)》
+[10-07 23:40] [保留] きくお《水の神殿》
+[10-07 23:42] [保留] きくお《人肉林からの楽しい逃走》
+[10-07 23:45] [保留] きくお《迷子の廃園》
+[10-07 23:46] [保留] きくお《暗叫》
+[10-07 23:50] [保留] きくお《夢の海》
+[10-07 23:52] [保留] きくお《青いピラミッド》
+[10-07 23:55] [保留] きくお《終末の花》
+[10-07 23:57] [保留] きくお《夢の始まり》
+[10-07 23:59] [保留] きくお《楽しい楽しい悪夢へおいで》
+[10-08 00:00] [保留] Nanahira, コツメカワウソ’S《乙女のタクティクス》
+[10-08 00:02] [保留] Nanahira, コツメカワウソ’S《乙女のタクティクス - Instrument》
+[10-08 00:05] [保留] いきづらい部！《Tale of Primavera - Off Vocal》
+[10-08 00:09] [保留] いきづらい部！《Tale of Primavera》
+[10-08 00:11] [保留] Kurubukko《Transparency》
+[10-08 00:20] [保留] いきづらい部！《Tale of Primavera》
+[10-08 00:24] [保留] Kurubukko《Transparency》
+[10-08 00:27] [保留] Camellia, Nanahira《comet-chaser (lemmon*remake)》
+[10-08 00:31] [保留] Silent Siren《Nicoichi》
+[10-08 00:34] [保留] いきづらい部！《What is my LIFE?》
+[10-08 00:49] [保留] 凉默Coolsilence_《【描改动画】蕾叶的蛋包饭心动魔法☆♪》
+[10-08 00:50] [保留] AdeIiae《【一家Dumb Rock×家有儿女】01 神探千樱梨》
+[10-08 00:57] [保留] 惊饕骇浪《爱情公寓但是一家Dumb Rock!》
+[10-08 01:00] [保留] 好饿好饿我想吃饭《寿来！️️寿来！️️寿来！️️》
+[10-08 01:00] [保留] 好饿好饿我想吃饭《[AI奏多]花に亡霊（花上亡灵）“我不想化为一道诅咒”》
+[10-08 01:07] [保留] 吉他战士六花《对的对的，我们家团就是这样的发米粒！》
+[10-08 01:08] [保留] 碱性猫毛《以防你们不知道新邦剧情有制作动画》
+[10-08 01:15] [保留] 花园多惠Official《【BanG Dream!】六兆年と一夜物語 EX ALL PERFECT 但是Our Notes》
+[10-08 01:17] [保留] 用户_23570001《以防你不知道新邦的新角色能有多重女》
+[10-08 01:24] [保留] 只为百合而活《这是纯洁萝莉可以看的吗？😰》
+[10-08 01:28] [保留] 镜哥是本人《印度人在美国机场零元购太阳镜，想吃时间差带回印度》
+[10-08 01:49] [剔除-blacklist_artist] 时局news《10月5日 --普京怒发全球最强通缉令！俄军狂轰斩断基辅所有大桥，数百万人被困大断电全城陷入石器时代！》 (blacklist_artist: 时局news)
+[10-08 02:53] [剔除-blacklist_artist] 时局news《10月6日--中美俄朝四方闭门会谈定型！日本被踢出局破防撒泼，高市叫嚣产30万架无人机逼宫普京！》 (blacklist_artist: 时局news)
+[10-08 15:02] [剔除-blacklist_artist] 时局news《10月7日--胡塞诱敌深入大翻盘！反包围60万联军急撒二维码传单劝降，沙特本土沦为禁飞区浓烟遮天！》 (blacklist_artist: 时局news)
+[10-08 17:17] [保留] Zubin Mehta/Wiener Philharmoniker/Johann Strauss, Sr.《Freiheits-Marsch, Op. 226》
+[10-08 17:20] [保留] Zubin Mehta/Wiener Philharmoniker/Josef Strauss《Dorfschwalben aus Österreich, Walzer, Op. 164》
+[10-08 17:37] [保留] Wiener Philharmoniker/Willi Boskovsky《Demolirer-Polka - polka française Op.269 (1863)》
+[10-08 17:40] [保留] Andy Beer/David Groves/Graham Kirkby/John Olive/Mike Clements/Riccardo Muti/Wiener Philharmoniker《Lagunen-Walzer, Op. 411》
+[10-08 17:49] [保留] Wiener Johann Strauss Orchester《Luftig und duftig, Op. 206》
+[10-08 17:51] [保留] Christian Thielemann/Wiener Philharmoniker《Der Zigeunerbaron:Ouvertüre》
+[10-08 19:10] [保留] Riccardo Muti/Wiener Philharmoniker/Johann Strauss, Jr.《Accelerationen, Walzer, Op. 234》
+[10-08 19:18] [保留] Pardubice Czech Chamber Philharmonic Orchestra/John Georgiadis《Das Veilchenmadel: Fidele Bruder-Marsch》
+[10-08 19:21] [保留] Mariss Jansons/Wiener Philharmoniker《Entweder - oder!, Polka schnell, Op. 403》
+[10-08 19:24] [保留] Wiener Philharmoniker/Riccardo Muti《Transaktionen, Op. 184》
+[10-08 19:35] [保留] Zubin Mehta/Wiener Philharmoniker/Johann Strauss, Jr.《Annen-Polka, Op. 117》
+[10-08 19:39] [保留] Andris Nelsons/Wiener Philharmoniker《Tritsch-Tratsch Polka, Op. 214》
+[10-08 19:42] [保留] Andy Beer/David Groves/Graham Kirkby/John Olive/Mike Clements/Riccardo Muti/Wiener Philharmoniker《Wein, Weib und Gesang, Op. 333 (Live)》
+[10-08 19:53] [保留] David Groves/Riccardo Muti/Wiener Philharmoniker《Die Bajadere, Op. 351》
+[10-08 19:55] [保留] Riccardo Muti/Wiener Philharmoniker《An der schönen blauen Donau, Walzer, Op. 314》
+[10-08 21:17] [保留] Riccardo Muti/Wiener Philharmoniker《Radetzky-Marsch, Op. 228》
+[10-08 21:20] [保留] Wiener Philharmoniker/Fritz Reiner/Johannes Brahms《Hungarian Dance No. 19 in B Minor》
+[10-08 21:24] [保留] Georges Prêtre《Carmen (1997 Digital Remaster), Act 1:L'amour est un oiseau rebelle (Habanera)》
+[10-08 21:29] [保留] Eugen Doga《Gramophone》
+[10-08 21:31] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:3. Waltz Of The Flowers》
+[10-08 21:37] [保留] Wiener Philharmoniker/Claudio Abbado《Hungarian Dance No.1 in G minor》
+[10-08 21:40] [保留] Erich Kunzel《Whiplash Polka, Op. 60》
+[10-08 21:43] [保留] The City of Prague Philharmonic Orchestra《Double Trouble (From "Harry Potter and the Prisoner of Azkaban")》
+[10-08 21:46] [保留] Herbert von Karajan/Wiener Philharmoniker《The Moldau (from Má Vlast)》
+[10-08 21:59] [保留] André Previn/Wiener Philharmoniker《Die Fledermaus / Act 3:Nr.12 Entr'acte》
+[10-08 22:16] [保留] Wiener Philharmoniker/Claudio Abbado《Hungarian Dance No.4 In F Sharp Minor》
+[10-08 22:20] [保留] Wiener Philharmoniker《Aram Khachaturian: Gayaneh - Suite No. 1: Sabre Dance》
+[10-08 22:22] [保留] Wiener Philharmoniker/Herbert von Karajan《Unter Donner und Blitz, Polka, Op.324》
+[10-08 22:26] [保留] José Carreras/Luciano Pavarotti/Plácido Domingo/Zubin Mehta/Orchestra of the Rome Opera House/Orchestra del Maggio Musicale Fiorentino《'O sole mio》
+[10-08 22:29] [保留] Stefan Milenkovich & Marko Hatlak《La Cumparsita》
+[10-08 22:32] [保留] Wiener Philharmoniker/Herbert von Karajan《Pizzicato Polka (1870)》
+[10-08 22:35] [保留] 马友友/Kathryn Stott《Salut d'Amour, Op. 12》
+[10-08 22:38] [保留] Mariss Jansons/Wiener Philharmoniker《UNO - Marsch》
+[10-08 22:41] [保留] Berliner Philharmoniker/Karl Böhm《Symphony No. 10 in G Major, K. 74:3. Allegro》
+[10-08 22:43] [保留] Herbert von Karajan/Berliner Philharmoniker《Orchestral Suite No. 2 in B minor, BWV 1067: IV.Polonaise》
+[10-08 22:47] [保留] Daniel Barenboim/Wiener Philharmoniker《Phönix-Marsch, Op. 105》
+[10-08 22:49] [保留] Wiener Singverein/Helmut Froschauer/Wiener Philharmoniker/Herbert von Karajan《Requiem in D Minor, K. 626: 3. Sequentia: Lacrimosa》
+[10-08 22:52] [保留] Anton Bruckner《Symphony No. 1 in C minor, WAB 101:III.Scherzo. Lebhaft》
+[10-08 23:02] [保留] Johann Sebastian Bach《Suite No.3 in D, BWV 1068:2. Air》
+[10-08 23:08] [保留] 290 André Rieu《Alte Kameraden》
+[10-08 23:12] [保留] Dmitri Shostakovich《VI. Waltz 2 from Jazz Suite No. 2 (Eyes Wide Shut)》
+[10-08 23:16] [保留] Angela Gheorghiu/Roberto Alagna/Thomas Hampson/Michel Plasson《Carmen:No.1 Prélude》
+[10-08 23:20] [保留] Riccardo Minasi《Concerto RV 510 in C Minor: I.Allegro》
+[10-08 23:22] [保留] Academy of St. Martin in the Fields/Neville Marriner《L'Estro Armonico No. 3 in G major:I. Allegro》
+[10-08 23:25] [保留] Iona Brown/Academy of St. Martin in the Fields/Marisa Robles《Harp Concerto in B flat, Op.4, No.6, HWV 294:3. Allegro moderato》
+[10-08 23:27] [保留] Leonard Bernstein/New York Philharmonic《Under The Double Eagle》
+[10-08 23:30] [保留] Angela Gheorghiu/Roberto Alagna/Thomas Hampson/Michel Plasson《Carmen, Act II:No.14 Couplets : Votre toast, je peux vous le rendre...Toréador, en garde! (Escamillo/Carmen/Frasquita/Mercédès/Moralès/Zuniga/Amis d'Escamillo)》
+[10-08 23:53] [保留] Iona Brown/Academy of St. Martin in the Fields/Marisa Robles《Concerto for Harp and Orchestra in C:3. Rondo (Allegro agitato)》
+[10-09 01:55] [保留] 军情播报《上巧嘴说世界--10月8日-上》
+[10-09 02:27] [剔除-blacklist_artist] 水音世界观《水音世界观--9月30日--万米高空爆发肉搏！俄机长与乌副驾驶驾驶舱大打出手，客机极端俯冲4500米触动劫机警报！》 (blacklist_artist: 水音世界观)
+[10-09 03:30] [保留] AIChannel中国绊爱《根本没有这种合唱！三倍甜度《恋人未满》💗再靠近一点点，我就跟你走~【爱的小心思】》
+[10-09 03:35] [保留] 孤烟暮蝉《印度还是搞不清状况，以为只要自己舍得掏钱，中国就一定会卖技术》
+[10-09 03:47] [保留] baitu asmr《ASMR Rambling In Chinese (Soft Spoken, No English)》
+[10-09 04:29] [保留] Baby Whisper ASMR《ASMR That Feels Way Too Real 💗》
+[10-09 05:32] [保留] Baby Whisper ASMR《ASMR That Feels Way Too Real 💗》
+[10-09 05:59] [保留] OurNotesOfficial《🎉「拜托了，倾心一掷」活动预告》
+[10-09 06:02] [保留] OurNotesOfficial《🎵《BanG Dream! Our Notes》乐曲试玩——《Odd Dice》》
+[10-09 08:42] [保留] Carameii《The Amazing Digital Circus (Epic Orchestral)》
+[10-09 08:45] [保留] UnicornPhantom《FallenAngel》
+[10-09 08:48] [保留] AnRain安林《星河不及你》
+[10-09 08:51] [保留] Re《Summer》
+[10-09 08:57] [保留] Juggernaut.&アイロボ《Re:Summer》
+[10-09 09:01] [保留] EDWARD GARDNER/LONDON PHILHARMONIC ORCHESTRA《The Wooden Prince: Dance No. 3, Dance of the Waves》
+[10-09 09:11] [保留] ナナツカゼ《空耳》
+[10-09 09:59] [保留] Plum - Melodic Artist《Maelstrom》
+[10-09 15:17] [保留] OurNotesOfficial《🎉「光之所至，伊始之时招募」开启预告！》
+[10-09 15:44] [剔除-blacklist_artist] 水音世界观《水音世界观--10月8日--美官方实锤81架战机报废！5个月烧光380亿，美军中央司令部被曝选前重启对伊全面空袭！》 (blacklist_artist: 水音世界观)
+[10-09 20:49] [剔除-blacklist_artist] 燕三嘤嘤嘤《法国最近太烧心了》 (blacklist_artist: 燕三嘤嘤嘤)
+[10-09 21:23] [保留] Aoi《c.s.q.n.》
+[10-09 21:25] [保留] Aoi《βlαnoir》
+[10-09 21:27] [保留] Aoi《Mirzam》
+[10-09 21:30] [保留] Aoi《γuarδina》
+[10-09 21:44] [保留] Milet《Parachute》
+[10-09 21:46] [保留] Milet《Somebody》
+[10-09 21:48] [保留] Milet《inside you》
+[10-09 21:52] [保留] Milet《Drown》
+[10-09 21:55] [保留] Milet《You & I》
+[10-09 21:59] [保留] Milet《Grab the air》
+[10-09 22:04] [保留] Milet《STAY》
+[10-09 22:27] [保留] Riccardo Muti/Wiener Philharmoniker《Brautschau, Polka française, Op. 417》
+[10-09 22:51] [保留] Wiener Philharmoniker/Herbert von Karajan《Swan Lake, Op.20 Suite:1. Scene - Swan Theme》
+[10-09 22:54] [保留] Wiener Philharmoniker/Herbert von Karajan《Swan Lake, Op.20 Suite:2. Valse in A》
+[10-09 23:01] [保留] Wiener Philharmoniker/Herbert von Karajan《Swan Lake, Op.20 Suite:3. Danse des petits cygnes》
+[10-09 23:02] [保留] Wiener Philharmoniker/Josef Sivo/Emanuel Brabec/Herbert von Karajan《Swan Lake, Op.20 Suite:4. Scene》
+[10-09 23:09] [保留] Wiener Philharmoniker/Herbert von Karajan《Swan Lake, Op.20 Suite:5a. Danse Hongroise》
+[10-09 23:13] [保留] Wiener Philharmoniker/Herbert von Karajan《Swan Lake, Op.20 Suite:6b. Final Scene》
+[10-09 23:17] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:1. Miniature Overture》
+[10-09 23:21] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:March》
+[10-10 02:01] [剔除-blacklist_artist] 时局news《10月8日--也门版淮海战役彻底合围！胡塞40万大军封死口袋阵，沙特伪军成建制倒戈投降！》 (blacklist_artist: 时局news)
+[10-10 08:57] [保留] 一家Dumb Rock!《ホーミー・タイッ！！ (Homie's Tie!!)》
+[10-10 09:01] [保留] 一家Dumb Rock!《ジャイアント・キラー・チューン》
+[10-10 09:05] [保留] 一家Dumb Rock!《ピースフル・ピーシーズ！》
+[10-10 09:09] [保留] 一家Dumb Rock!《革命道中 (Cover)》
+[10-10 09:12] [保留] 一家Dumb Rock!《Mela! (Cover)》
+[10-10 09:16] [保留] 一家Dumb Rock!《Keep on Riddim》
+[10-10 09:19] [保留] 一家Dumb Rock!《微笑みの爆弾 (Cover)》
+[10-10 09:24] [保留] millsage《ロウワー (Cover) (Lower one's eyes)》
+[10-10 09:27] [保留] millsage《青のすみか (Cover)》
+[10-10 09:31] [保留] millsage《unravel (Cover)》
+[10-10 15:40] [剔除-blacklist_artist] 水音世界观《水音世界观--10月5日--美军惊慌撤离！12架B1轰炸机连夜逃回本土，布什号航母溜去普吉岛度假？中东大战局势大反转》 (blacklist_artist: 水音世界观)
+[10-10 16:24] [剔除-blacklist_artist] 水音世界观《水音世界观--10月5日--美军惊慌撤离！12架B1轰炸机连夜逃回本土，布什号航母溜去普吉岛度假？中东大战局势大反转》 (blacklist_artist: 水音世界观)
+[10-11 01:01] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:March》
+[10-11 01:03] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:Dance Of The Sugar-Plum Fairy》
+[10-11 01:05] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:Russian Dance (Trepak)》
+[10-11 01:06] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:Arabian Dance (Coffee)》
+[10-11 01:09] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:Chinese Dance (Tea)》
+[10-11 01:10] [保留] Wiener Philharmoniker/Herbert von Karajan《Nutcracker Suite, Op.71a:Dance Of The Reed-Pipes》
+[10-11 01:13] [保留] Wiener Philharmoniker/Herbert von Karajan《The Sleeping Beauty, Op.66 - Suite:Introduction And Lilac Fairy (Prologue)》
+[10-11 01:19] [保留] Wiener Philharmoniker/Herbert von Karajan《The Sleeping Beauty, Op.66 - Suite:Pas d'action (Adagio) (Act 1)》
+[10-11 01:25] [保留] Wiener Philharmoniker/Herbert von Karajan《The Sleeping Beauty, Op.66 - Suite:Pas de Caractère (Puss in Boots) (Act 3)》
+[10-11 01:27] [保留] Wiener Philharmoniker/Herbert von Karajan《The Sleeping Beauty, Op.66 - Suite:Panorama (Act 2)》
+[10-11 01:31] [保留] Wiener Philharmoniker/Herbert von Karajan《The Sleeping Beauty, Op.66 - Suite:Waltz (Act 1)》
+[10-11 01:42] [剔除-blacklist_artist] 全球动态局势《美美国际观察10月10日直播1。中东干急眼了。世界局势今日热点。》 (blacklist_artist: 全球动态局势)
+[10-11 02:14] [剔除-blacklist_artist] 全球动态局势《美美国际观察10月10日直播2。你想看哪就看哪吗。世界局势今日热点。》 (blacklist_artist: 全球动态局势)
+[10-11 02:36] [剔除-blacklist_artist] 全球动态局势《美美国际观察10月10日直播2。你想看哪就看哪吗。世界局势今日热点。》 (blacklist_artist: 全球动态局势)
+[10-11 02:56] [保留] 快嘴摩卡酱《🐺吉他对决🎸》
+[10-11 03:02] [保留] 天才美少女ykn《17.代价》
+[10-11 03:06] [保留] 天才美少女ykn《18.即使一无所有》
+[10-11 03:11] [保留] 天才美少女ykn《19.在幸福之中》
+[10-11 03:58] [保留] Plum《Fallenera》
+[10-11 04:03] [保留] Kotoha《透明夜》
+[10-11 04:06] [保留] 成龙&李宗盛&周华健《真心英雄》
+[10-11 04:10] [保留] 朱明瑛《回娘家》
+[10-11 04:11] [保留] 朱明瑛《回娘家》
+[10-11 04:13] [保留] 御莉姫&廉《Masquerade Kill feat. 廉》
+[10-11 04:15] [保留] Zaeiba_Official《枣：有学妹加我好友吗》
+[10-11 04:16] [保留] 花女星家帮《伊泽枣枣情在天语录一览》
+[10-11 04:17] [保留] 花女星家帮《伊泽枣枣情在天语录一览》
+[10-11 04:25] [剔除-blacklist_artist] 肝帝董佳宁《支持率冲到第一，选择党杀疯了，难道德国人要重新奋斗了？》 (blacklist_artist: 肝帝董佳宁)
+[10-11 04:27] [保留] 千野依&秋野桜《無人区-Vacuum Track》
+[10-11 04:28] [保留] 千野依&秋野桜《無人区-Vacuum Track》
+[10-11 04:29] [保留] 816ThreeNumbers《無人区-Vacuum Track#ADD8E6》
+[10-11 04:30] [保留] 816ThreeNumbers《無人区-Vacuum Track#ADD8E6》
+[10-11 04:32] [保留] 拿弓子的波塞东《無人区-Vacuum Track#ADD8E6（翻自:咲夜） (翻奏: Catalpa Vs. SharK)》
+[10-11 04:34] [保留] 拿弓子的波塞东《無人区-Vacuum Track#ADD8E6（翻自:咲夜） (翻奏: Catalpa Vs. SharK)》
+[10-11 04:34] [保留] Catalpa Vs. SharK《無人区-Vacuum Track#ADD8E6（翻自:咲夜）》
+[10-11 04:35] [保留] Catalpa Vs. SharK《無人区-Vacuum Track#ADD8E6（翻自:咲夜）》
+[10-11 04:36] [保留] Catalpa Vs. SharK《無人区-Vacuum Track#ADD8E6（翻自:咲夜）》
+[10-11 04:37] [保留] 米缐p.《无人区-Vacuum Track#ADD8E6-》
+[10-11 04:38] [保留] 米缐p.《无人区-Vacuum Track#ADD8E6-》
+[10-11 04:39] [保留] Picco&nyamura《your princess (nyamura ver.)》
+[10-11 04:40] [保留] Picco&nyamura《your princess (nyamura ver.)》
+[10-11 04:41] [保留] 花鋏キョウ&藍月なくる《Purity (feat. 藍月なくる)》
+[10-11 04:43] [保留] 花鋏キョウ&藍月なくる《Purity (feat. 藍月なくる)》
+[10-11 04:44] [保留] 琥珀琴师Louis《樱花海岸》
+[10-11 04:47] [保留] ナツノセ《本当だよ》
+[10-11 04:49] [保留] ナツノセ《本当だよ》
+[10-11 04:52] [保留] 枫糖七茶《【剧情杂谈】久违了！如此美味的少女乐队！》
+[10-11 16:51] [保留] millsage_家団_ofc《millsage「鳴らす（奏鸣）」【Official Music Video】》
+[10-11 17:01] [保留] Leaf《MARENOIA》
+[10-11 17:03] [保留] Void《Petrichor》
+[10-11 17:06] [保留] 黒皇帝《Scattered Faith (分散的信仰)》
+[10-11 17:14] [保留] DJ Noriken《La'qryma of the Wasteland》
+[10-11 17:17] [保留] 削除《L'aventale》
+[10-11 17:20] [保留] Synthion/Kotori《Twin Skies》
+[10-11 17:24] [保留] *Luna/ゆある/ねんね《タイムカプセル》
+[10-11 17:33] [保留] DJ Genki/yukacco《Planet (feat. Yukacco)》
+[10-11 17:39] [保留] ity《跨越次元的梦》
+[10-11 17:41] [保留] ginkiha《Fading Star (褪色之星)》
+[10-11 17:46] [保留] Team Grimoire《Vafþrúðnir》
+[10-11 17:51] [保留] Kobaryo《Prism Journey》
+[10-11 17:54] [保留] 削除《D-Birth (Artcore)》
+[10-11 17:57] [保留] Kobaryo/かめりあ《Villain Virus》
+[10-11 18:01] [保留] DJ Noriken/aran《Comet Coaster》
+[10-11 18:04] [保留] Raychell《WOW WAR TONIGHT～時には起こせよムーヴメント～ (SHANO Cover Ver.)》
+[10-11 18:09] [保留] 水樹奈々《WOW WAR TONIGHT～時には起こせよムーヴメント～ (AIRI Cover Ver.)》
+[10-11 18:15] [保留] 水樹奈々/Raychell《WOW WAR TONIGHT～時には起こせよムーヴメント～ (Cover) (TV动画《D4DJ First Mix》片尾曲)》
+[10-11 18:17] [保留] 96猫/置鮎龍太郎/千葉翔也《気分上々↑↑ (心情嗨翻天↑↑)》
+[10-11 18:18] [保留] 96猫/置鮎龍太郎/千葉翔也《気分上々↑↑ (心情嗨翻天↑↑)》
+[10-11 18:21] [保留] mihimaru GT《気分上々↑↑》
+[10-11 18:25] [保留] Happy Around!《HONEST-happy a word- (ver. 2024)》
+[10-11 21:11] [保留] Tingting ASMR《[ASMR] Relaxing Chinese Calligraphy》
+[10-11 21:35] [保留] polly polly asmr《ASMR MIC TRIGGERS》
+[10-11 21:38] [保留] polly polly asmr《ASMR MIC TRIGGERS》
+[10-11 21:51] [保留] skutalu asmr《АСМР Осмотр у семейного врача | Осмотрю тебя | Тихий голос》
+[10-11 22:30] [保留] Steve Barakatt《Flying》
+[10-11 22:31] [保留] Missionary《罪曲》
+[10-11 22:33] [保留] 黒猫《Chrysoberyl》
+[10-11 22:35] [保留] Nhato《Offshore》
+[10-11 22:35] [保留] ICBM《GOEMON》
+[10-11 22:37] [保留] MMRY《Go Escape》
+[10-11 22:39] [保留] sky_delta《Cryonix》
+[10-11 22:41] [保留] litmus*《Crank Up》
+[10-11 22:43] [保留] モリモリあつし《紅》
+[10-11 22:45] [保留] Ebico《Persephone》
+[10-11 22:47] [保留] Street《Sakura Fubuki》
+[10-11 22:49] [保留] Jun Kuroda + はがね《AKI-ZAKURA》
+[10-11 22:52] [保留] Stereoberry《Vanilla_Sky》
+[10-11 22:55] [保留] udouddo《Hiccup Drunk》
+[10-11 22:57] [保留] Pan《Flarebirds of Scarlet Prism》
+[10-11 22:59] [保留] Pan《Starbirds Of Zenith Blue》
+[10-11 23:01] [保留] Praw《Cervelle Connexion》
+[10-11 23:03] [保留] Sound Souler《Soul Army》
+[10-11 23:06] [保留] 3R2《Theme of Rabi-Ribi》
+[10-11 23:08] [保留] Aoi《αterlβus》
+[10-11 23:10] [保留] Arch vs n3pu《Evoltex (poppi'n mix)》
+[10-11 23:11] [保留] 移动端音游搬运小队《【DYNAMIX】Evoltex(poppi'n mix)[GIGA] All PERFECT! OMEGA Rank (BY: nanoflower)》
+[10-11 23:13] [保留] StarTK_Official《彻底疯狂》
+[10-11 23:16] [保留] 非洲のGUMI酱《周刊虚拟歌手中文曲排行榜♪740》
+[10-11 23:25] [保留] 朱明瑛《回娘家》
+[10-11 23:28] [保留] Happy Around!《気分上々↑↑ (Cover) (心情HIGH翻天↑↑)》
+[10-11 23:31] [保留] Happy Around!《Look at me♡》
+[10-11 23:35] [保留] Happy Around!《Dig Delight! (ver. 2024)》
+[10-11 23:39] [保留] Happy Around!《Direct Drive! (ver. 2024)》
+[10-11 23:44] [保留] Happy Around!《Happy Music♪ (ver. 2024)》
+[10-11 23:48] [保留] Happy Around!《ぐるぐるDJ TURN!! (ver. 2024)》
+[10-11 23:52] [保留] Happy Around!《Happy Around Days (ver. 2024)》
+[10-11 23:57] [保留] Happy Around!《HONEST-happy a word- (ver. 2024)》
+[10-12 00:01] [保留] Happy Around!《Summer Wonder (ver. 2024)》
+[10-12 00:04] [保留] Happy Around!《パノラマリウム (ver. 2024)》
+[10-12 00:08] [保留] Happy Around!《HAPPIEST☆DREAM (ver. 2024)》
+[10-12 00:13] [保留] Happy Around!《仲良しのシリウス (好友天狼星)》
+[10-12 00:17] [保留] Happy Around!《カレーライスが大好き♡ (超喜欢咖喱饭♡)》
+[10-12 02:24] [保留] 一家Dumb Rock!《ホーミー・タイッ！！》
+[10-12 02:45] [剔除-blacklist_artist] 水音世界观《水音世界观--10月6日--三航母近万兵力合围中东！特朗普扬言中期选举后大打，甚至放话“可以让伊朗摧毁洛杉矶”！》 (blacklist_artist: 水音世界观)
+[10-12 03:41] [保留] 一家Dumb Rock!《ホーミー・タイッ！！》
+[10-12 03:45] [保留] 一家Dumb Rock!《ホーミー・タイッ！！》
+[10-12 03:46] [保留] 一家Dumb Rock!《ホーミー・タイッ！！》
+[10-12 03:47] [保留] 磯村知美《Butterfly Sky》
+[10-12 04:00] [保留] 今井麻美/近藤佳奈子《Don’t Look Back》
+[10-12 04:05] [保留] きくお《pinky promise》
+[10-12 04:07] [保留] 石渡太輔/佐藤ノリチカ《Alexandrite》
+[10-12 07:03] [剔除-blacklist_artist] Duckk ASMR《中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班》 (blacklist_artist: duckk asmr)
+[10-12 07:03] [保留] 夢限大みゅーたいぷ《エンプティパペット》
+[10-12 07:06] [保留] 夢限大みゅーたいぷ《エンプティパペット》
+[10-12 07:29] [剔除-blacklist_artist] Duckk ASMR《中文ASMR｜Quantum Speed Reading Training Course｜Liar series｜量子速读培训班》 (blacklist_artist: duckk asmr)
+[10-12 07:48] [保留] さやの助《【ASMR】初質問コーナー/囁き》
