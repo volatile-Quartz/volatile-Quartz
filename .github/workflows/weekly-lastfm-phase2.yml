@@ -1,11 +1,12 @@
 name: lastfm-weekly-phase2
 
 # Phase 2：确认后生成正式周报（文字版 + 图片）。
-# 触发：lastfm-tools 分支有 push（即 Phase 1 预览 PR 合入）→ 复用已归档 01_raw.json 与全局时长缓存
+# 触发：main 分支 lastfm/** 有 push（即 Phase 1 预览 PR 合入）→ 复用已归档 01_raw.json 与全局时长缓存
 #       → prep(enrich) → report → img → 归档补全 → 推 lastfm-tools-preview 分支 → 开/更新 PR 待最终确认。
 on:
   push:
-    branches: [lastfm-tools]
+    branches: [main]
+    paths: [lastfm/**]
 
 permissions:
   contents: write
@@ -18,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: lastfm-tools
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -81,7 +82,7 @@ jobs:
           git push --force-with-lease origin lastfm-tools-preview 2>/dev/null || git push origin lastfm-tools-preview
           PR=$(gh pr view lastfm-tools-preview --json number -q .number 2>/dev/null || echo "")
           if [ -z "$PR" ]; then
-            gh pr create --base lastfm-tools --head lastfm-tools-preview \
+            gh pr create --base main --head lastfm-tools-preview \
               --title "📊 Week $WEEK_NO 听歌周报" \
               --body "文字版+图片已生成，见 \`lastfm/artifacts/$WEEK_NO/\`。确认无误后合入。" || true
           else

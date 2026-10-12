@@ -2,7 +2,7 @@ name: lastfm-weekly-phase1
 
 # Phase 1：拉取原始数据 + 清洗前统计 + 逐行清单（人工确认用）。
 # 定时每周一 01:30（北京时间）自动跑上一自然周 → 归档数据 → 推 lastfm-tools-preview 分支 → 开/更新 PR。
-# 人工确认清单并（必要时改 lastfm_rules.json）合入后，push 到 lastfm-tools 触发 Phase 2 生成周报。
+# 人工确认清单并（必要时改 lastfm_rules.json）合入 main 后，push 触发 Phase 2 生成周报。
 on:
   schedule:
     - cron: "30 17 * * 0"   # UTC 周日 17:30 = 北京 周一 01:30
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: lastfm-tools
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -63,7 +63,7 @@ jobs:
           git push --force-with-lease origin lastfm-tools-preview 2>/dev/null || git push origin lastfm-tools-preview
           PR=$(gh pr view lastfm-tools-preview --json number -q .number 2>/dev/null || echo "")
           if [ -z "$PR" ]; then
-            gh pr create --base lastfm-tools --head lastfm-tools-preview \
+            gh pr create --base main --head lastfm-tools-preview \
               --title "📊 Week $WEEK_NO 数据预览（请确认清洗名单）" \
               --body "自动拉取 + 清洗前统计 + 逐行清单，请核对剔除/保留名单，必要时修改 \`lastfm/lastfm_rules.json\` 后合入；合入会自动触发 Phase 2 生成周报。" || true
           else
