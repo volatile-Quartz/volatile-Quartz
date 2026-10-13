@@ -1,0 +1,861 @@
+{
+ "meta": {
+  "start": "2026-10-02",
+  "end": "2026-10-08",
+  "username": "volatile-Quartz",
+  "range_text": "2 Oct 2026 - 8 Oct 2026",
+  "generated_at": "2026-10-13 21:41:09 +0800"
+ },
+ "totals": {
+  "scrobbles": 307,
+  "scrobbles_vs_prev": "3% vs. last week",
+  "listening_time": "1 day, 9 hours",
+  "listening_time_vs_prev": "vs. 2 days, 3 hours",
+  "per_day": 44,
+  "per_day_vs_prev": "vs. 43",
+  "most_active": {
+   "count": 61,
+   "date": "2 Oct 2026"
+  }
+ },
+ "clock": {
+  "busiest_hour": "11",
+  "scrobbles": 35
+ },
+ "tags": [
+  "drum and bass",
+  "j-pop",
+  "japanese",
+  "chinese",
+  "neurofunk",
+  "j-rock",
+  "folk",
+  "electronic",
+  "instrumental",
+  "female vocalists",
+  "japan",
+  "j-core",
+  "vocaloid",
+  "classical",
+  "touhou"
+ ],
+ "discovery": {
+  "new_artists_pct": 51,
+  "new_albums_pct": 67,
+  "new_tracks_pct": 83
+ },
+ "music_ratio": {
+  "tracks": 297,
+  "albums": 133,
+  "artists": 211,
+  "consistency_pct": 100,
+  "discovery_pct": 51,
+  "variance_pct": 53,
+  "concentration_pct": 25,
+  "replay_pct": 3
+ },
+ "page_top_artists": [
+  {
+   "rank": 1,
+   "name": "きくお",
+   "scrobbles": 27
+  },
+  {
+   "rank": 2,
+   "name": "一池周啾",
+   "scrobbles": 11
+  },
+  {
+   "rank": 3,
+   "name": "Iemitsu.",
+   "scrobbles": 9
+  },
+  {
+   "rank": 4,
+   "name": "土星皇家交响乐团",
+   "scrobbles": 8
+  },
+  {
+   "rank": 5,
+   "name": "Die Orsons",
+   "scrobbles": 5
+  }
+ ],
+ "page_top_tracks": [
+  {
+   "rank": 1,
+   "name": "The Cry of The Uncertain",
+   "artist": "Akiri/HowToPlayLN",
+   "scrobbles": 2
+  },
+  {
+   "rank": 2,
+   "name": "layering2",
+   "artist": "Angelize",
+   "scrobbles": 2
+  },
+  {
+   "rank": 3,
+   "name": "ASMR That Feels Way Too Real 💗",
+   "artist": "Baby Whisper ASMR",
+   "scrobbles": 2
+  },
+  {
+   "rank": 4,
+   "name": "RADIAN LUNACY",
+   "artist": "Jeko/Syuenn/Krasper2",
+   "scrobbles": 2
+  },
+  {
+   "rank": 5,
+   "name": "Transparency",
+   "artist": "Kurubukko",
+   "scrobbles": 2
+  }
+ ],
+ "page_top_albums": [
+  {
+   "rank": 1,
+   "name": "KIKUOWORLD",
+   "artist": "きくお",
+   "scrobbles": 14
+  },
+  {
+   "rank": 2,
+   "name": "きくおミク",
+   "artist": "きくお",
+   "scrobbles": 12
+  },
+  {
+   "rank": 3,
+   "name": "Kv.550 莫扎特：G小调第四十号交响曲",
+   "artist": "土星皇家交响乐团",
+   "scrobbles": 4
+  },
+  {
+   "rank": 4,
+   "name": "Wyw my sweetie #JerseyClub",
+   "artist": "nissi/25Hzz",
+   "scrobbles": 3
+  },
+  {
+   "rank": 5,
+   "name": "Slide 4 me #JerseyClub",
+   "artist": "whyslow/Carpe",
+   "scrobbles": 3
+  }
+ ],
+ "api": {
+  "total_scrobbles": 307,
+  "window": {
+   "from_ts": 1790870400,
+   "to_ts": 1791475200
+  },
+  "top_artists": [
+   {
+    "name": "きくお",
+    "scrobbles": 27
+   },
+   {
+    "name": "一池周啾",
+    "scrobbles": 11
+   },
+   {
+    "name": "Iemitsu.",
+    "scrobbles": 9
+   },
+   {
+    "name": "土星皇家交响乐团",
+    "scrobbles": 8
+   },
+   {
+    "name": "Die Orsons",
+    "scrobbles": 5
+   },
+   {
+    "name": "时局news",
+    "scrobbles": 4
+   },
+   {
+    "name": "いきづらい部！",
+    "scrobbles": 4
+   },
+   {
+    "name": "OurNotesOfficial",
+    "scrobbles": 3
+   },
+   {
+    "name": "Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 3
+   },
+   {
+    "name": "毛老猫",
+    "scrobbles": 3
+   },
+   {
+    "name": "Plum",
+    "scrobbles": 3
+   },
+   {
+    "name": "whyslow/Carpe",
+    "scrobbles": 3
+   },
+   {
+    "name": "nissi/25Hzz",
+    "scrobbles": 3
+   },
+   {
+    "name": "Baby Whisper ASMR",
+    "scrobbles": 2
+   },
+   {
+    "name": "baitu asmr",
+    "scrobbles": 2
+   },
+   {
+    "name": "Iona Brown/Academy of St. Martin in the Fields/Marisa Robles",
+    "scrobbles": 2
+   },
+   {
+    "name": "Angela Gheorghiu/Roberto Alagna/Thomas Hampson/Michel Plasson",
+    "scrobbles": 2
+   },
+   {
+    "name": "Mariss Jansons/Wiener Philharmoniker",
+    "scrobbles": 2
+   },
+   {
+    "name": "Wiener Philharmoniker/Claudio Abbado",
+    "scrobbles": 2
+   },
+   {
+    "name": "Riccardo Muti/Wiener Philharmoniker",
+    "scrobbles": 2
+   },
+   {
+    "name": "Andy Beer/David Groves/Graham Kirkby/John Olive/Mike Clements/Riccardo Muti/Wiener Philharmoniker",
+    "scrobbles": 2
+   },
+   {
+    "name": "好饿好饿我想吃饭",
+    "scrobbles": 2
+   },
+   {
+    "name": "Kurubukko",
+    "scrobbles": 2
+   },
+   {
+    "name": "Nanahira, コツメカワウソ’S",
+    "scrobbles": 2
+   },
+   {
+    "name": "Nurko/Chandler Leighton",
+    "scrobbles": 2
+   },
+   {
+    "name": "Elliot Hsu",
+    "scrobbles": 2
+   },
+   {
+    "name": "Pax Japonica Groove",
+    "scrobbles": 2
+   },
+   {
+    "name": "Akiri/HowToPlayLN",
+    "scrobbles": 2
+   },
+   {
+    "name": "Jeko/Syuenn/Krasper2",
+    "scrobbles": 2
+   },
+   {
+    "name": "Angelize",
+    "scrobbles": 2
+   },
+   {
+    "name": "MyGO!!!!!",
+    "scrobbles": 2
+   },
+   {
+    "name": "Ikyy Pahlevii",
+    "scrobbles": 2
+   },
+   {
+    "name": "SPECIMEN A/IVORY",
+    "scrobbles": 2
+   },
+   {
+    "name": "Marc Hartman",
+    "scrobbles": 2
+   },
+   {
+    "name": "Nissi",
+    "scrobbles": 2
+   },
+   {
+    "name": "Sam Binga/Machinedrum/Cesco",
+    "scrobbles": 2
+   },
+   {
+    "name": "孤烟暮蝉",
+    "scrobbles": 1
+   },
+   {
+    "name": "AIChannel中国绊爱",
+    "scrobbles": 1
+   },
+   {
+    "name": "水音世界观",
+    "scrobbles": 1
+   },
+   {
+    "name": "军情播报",
+    "scrobbles": 1
+   },
+   {
+    "name": "Leonard Bernstein/New York Philharmonic",
+    "scrobbles": 1
+   },
+   {
+    "name": "Academy of St. Martin in the Fields/Neville Marriner",
+    "scrobbles": 1
+   },
+   {
+    "name": "Riccardo Minasi",
+    "scrobbles": 1
+   },
+   {
+    "name": "Dmitri Shostakovich",
+    "scrobbles": 1
+   },
+   {
+    "name": "André Rieu",
+    "scrobbles": 1
+   },
+   {
+    "name": "Johann Sebastian Bach",
+    "scrobbles": 1
+   },
+   {
+    "name": "Anton Bruckner",
+    "scrobbles": 1
+   },
+   {
+    "name": "Wiener Singverein/Helmut Froschauer/Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 1
+   },
+   {
+    "name": "Daniel Barenboim/Wiener Philharmoniker",
+    "scrobbles": 1
+   },
+   {
+    "name": "Herbert von Karajan/Berliner Philharmoniker",
+    "scrobbles": 1
+   }
+  ],
+  "top_tracks": [
+   {
+    "name": "ASMR That Feels Way Too Real 💗",
+    "artist": "Baby Whisper ASMR",
+    "scrobbles": 2
+   },
+   {
+    "name": "Transparency",
+    "artist": "Kurubukko",
+    "scrobbles": 2
+   },
+   {
+    "name": "Tale of Primavera",
+    "artist": "いきづらい部！",
+    "scrobbles": 2
+   },
+   {
+    "name": "Disappearing Now",
+    "artist": "Nurko/Chandler Leighton",
+    "scrobbles": 2
+   },
+   {
+    "name": "PianoReturns-Superior Mix",
+    "artist": "Pax Japonica Groove",
+    "scrobbles": 2
+   },
+   {
+    "name": "The Cry of The Uncertain",
+    "artist": "Akiri/HowToPlayLN",
+    "scrobbles": 2
+   },
+   {
+    "name": "RADIAN LUNACY",
+    "artist": "Jeko/Syuenn/Krasper2",
+    "scrobbles": 2
+   },
+   {
+    "name": "layering2",
+    "artist": "Angelize",
+    "scrobbles": 2
+   },
+   {
+    "name": "Electric Kingdom",
+    "artist": "Marc Hartman",
+    "scrobbles": 2
+   },
+   {
+    "name": "Run It Up",
+    "artist": "Sam Binga/Machinedrum/Cesco",
+    "scrobbles": 2
+   },
+   {
+    "name": "🎵《BanG Dream! Our Notes》乐曲试玩——《Odd Dice》",
+    "artist": "OurNotesOfficial",
+    "scrobbles": 1
+   },
+   {
+    "name": "🎉「拜托了，倾心一掷」活动预告",
+    "artist": "OurNotesOfficial",
+    "scrobbles": 1
+   },
+   {
+    "name": "ASMR Rambling In Chinese (Soft Spoken, No English)",
+    "artist": "baitu asmr",
+    "scrobbles": 1
+   },
+   {
+    "name": "印度还是搞不清状况，以为只要自己舍得掏钱，中国就一定会卖技术",
+    "artist": "孤烟暮蝉",
+    "scrobbles": 1
+   },
+   {
+    "name": "根本没有这种合唱！三倍甜度《恋人未满》💗再靠近一点点，我就跟你走~【爱的小心思】",
+    "artist": "AIChannel中国绊爱",
+    "scrobbles": 1
+   },
+   {
+    "name": "水音世界观--9月30日--万米高空爆发肉搏！俄机长与乌副驾驶驾驶舱大打出手，客机极端俯冲4500米触动劫机警报！",
+    "artist": "水音世界观",
+    "scrobbles": 1
+   },
+   {
+    "name": "上巧嘴说世界--10月8日-上",
+    "artist": "军情播报",
+    "scrobbles": 1
+   },
+   {
+    "name": "Concerto for Harp and Orchestra in C:3. Rondo (Allegro agitato)",
+    "artist": "Iona Brown/Academy of St. Martin in the Fields/Marisa Robles",
+    "scrobbles": 1
+   },
+   {
+    "name": "Carmen, Act II:No.14 Couplets : Votre toast, je peux vous le rendre...Toréador, en garde! (Escamillo/Carmen/Frasquita/Mercédès/Moralès/Zuniga/Amis d'Escamillo)",
+    "artist": "Angela Gheorghiu/Roberto Alagna/Thomas Hampson/Michel Plasson",
+    "scrobbles": 1
+   },
+   {
+    "name": "Under The Double Eagle",
+    "artist": "Leonard Bernstein/New York Philharmonic",
+    "scrobbles": 1
+   },
+   {
+    "name": "Harp Concerto in B flat, Op.4, No.6, HWV 294:3. Allegro moderato",
+    "artist": "Iona Brown/Academy of St. Martin in the Fields/Marisa Robles",
+    "scrobbles": 1
+   },
+   {
+    "name": "L'Estro Armonico No. 3 in G major:I. Allegro",
+    "artist": "Academy of St. Martin in the Fields/Neville Marriner",
+    "scrobbles": 1
+   },
+   {
+    "name": "Concerto RV 510 in C Minor: I.Allegro",
+    "artist": "Riccardo Minasi",
+    "scrobbles": 1
+   },
+   {
+    "name": "Carmen:No.1 Prélude",
+    "artist": "Angela Gheorghiu/Roberto Alagna/Thomas Hampson/Michel Plasson",
+    "scrobbles": 1
+   },
+   {
+    "name": "VI. Waltz 2 from Jazz Suite No. 2 (Eyes Wide Shut)",
+    "artist": "Dmitri Shostakovich",
+    "scrobbles": 1
+   },
+   {
+    "name": "Alte Kameraden",
+    "artist": "290 André Rieu",
+    "scrobbles": 1
+   },
+   {
+    "name": "Suite No.3 in D, BWV 1068:2. Air",
+    "artist": "Johann Sebastian Bach",
+    "scrobbles": 1
+   },
+   {
+    "name": "Symphony No. 1 in C minor, WAB 101:III.Scherzo. Lebhaft",
+    "artist": "Anton Bruckner",
+    "scrobbles": 1
+   },
+   {
+    "name": "Requiem in D Minor, K. 626: 3. Sequentia: Lacrimosa",
+    "artist": "Wiener Singverein/Helmut Froschauer/Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 1
+   },
+   {
+    "name": "Phönix-Marsch, Op. 105",
+    "artist": "Daniel Barenboim/Wiener Philharmoniker",
+    "scrobbles": 1
+   },
+   {
+    "name": "Orchestral Suite No. 2 in B minor, BWV 1067: IV.Polonaise",
+    "artist": "Herbert von Karajan/Berliner Philharmoniker",
+    "scrobbles": 1
+   },
+   {
+    "name": "Symphony No. 10 in G Major, K. 74:3. Allegro",
+    "artist": "Berliner Philharmoniker/Karl Böhm",
+    "scrobbles": 1
+   },
+   {
+    "name": "UNO - Marsch",
+    "artist": "Mariss Jansons/Wiener Philharmoniker",
+    "scrobbles": 1
+   },
+   {
+    "name": "Salut d'Amour, Op. 12",
+    "artist": "马友友/Kathryn Stott",
+    "scrobbles": 1
+   },
+   {
+    "name": "Pizzicato Polka (1870)",
+    "artist": "Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 1
+   },
+   {
+    "name": "La Cumparsita",
+    "artist": "Stefan Milenkovich & Marko Hatlak",
+    "scrobbles": 1
+   },
+   {
+    "name": "'O sole mio",
+    "artist": "José Carreras/Luciano Pavarotti/Plácido Domingo/Zubin Mehta/Orchestra of the Rome Opera House/Orchestra del Maggio Musicale Fiorentino",
+    "scrobbles": 1
+   },
+   {
+    "name": "Unter Donner und Blitz, Polka, Op.324",
+    "artist": "Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 1
+   },
+   {
+    "name": "Aram Khachaturian: Gayaneh - Suite No. 1: Sabre Dance",
+    "artist": "Wiener Philharmoniker",
+    "scrobbles": 1
+   },
+   {
+    "name": "Hungarian Dance No.4 In F Sharp Minor",
+    "artist": "Wiener Philharmoniker/Claudio Abbado",
+    "scrobbles": 1
+   },
+   {
+    "name": "Die Fledermaus / Act 3:Nr.12 Entr'acte",
+    "artist": "André Previn/Wiener Philharmoniker",
+    "scrobbles": 1
+   },
+   {
+    "name": "The Moldau (from Má Vlast)",
+    "artist": "Herbert von Karajan/Wiener Philharmoniker",
+    "scrobbles": 1
+   },
+   {
+    "name": "Double Trouble (From \"Harry Potter and the Prisoner of Azkaban\")",
+    "artist": "The City of Prague Philharmonic Orchestra",
+    "scrobbles": 1
+   },
+   {
+    "name": "Whiplash Polka, Op. 60",
+    "artist": "Erich Kunzel",
+    "scrobbles": 1
+   },
+   {
+    "name": "Hungarian Dance No.1 in G minor",
+    "artist": "Wiener Philharmoniker/Claudio Abbado",
+    "scrobbles": 1
+   },
+   {
+    "name": "Nutcracker Suite, Op.71a:3. Waltz Of The Flowers",
+    "artist": "Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 1
+   },
+   {
+    "name": "Gramophone",
+    "artist": "Eugen Doga",
+    "scrobbles": 1
+   },
+   {
+    "name": "Carmen (1997 Digital Remaster), Act 1:L'amour est un oiseau rebelle (Habanera)",
+    "artist": "Georges Prêtre",
+    "scrobbles": 1
+   },
+   {
+    "name": "Hungarian Dance No. 19 in B Minor",
+    "artist": "Wiener Philharmoniker/Fritz Reiner/Johannes Brahms",
+    "scrobbles": 1
+   },
+   {
+    "name": "Radetzky-Marsch, Op. 228",
+    "artist": "Riccardo Muti/Wiener Philharmoniker",
+    "scrobbles": 1
+   }
+  ],
+  "top_albums": [
+   {
+    "name": "KIKUOWORLD",
+    "artist": "きくお",
+    "scrobbles": 13
+   },
+   {
+    "name": "きくおミク",
+    "artist": "きくお",
+    "scrobbles": 12
+   },
+   {
+    "name": "Kv.550 莫扎特：G小调第四十号交响曲",
+    "artist": "土星皇家交响乐团",
+    "scrobbles": 4
+   },
+   {
+    "name": "Tale of Primavera",
+    "artist": "いきづらい部！",
+    "scrobbles": 3
+   },
+   {
+    "name": "降B大调第四钢琴协奏曲",
+    "artist": "土星皇家交响乐团",
+    "scrobbles": 3
+   },
+   {
+    "name": "Slide 4 me #JerseyClub",
+    "artist": "whyslow/Carpe",
+    "scrobbles": 3
+   },
+   {
+    "name": "Wyw my sweetie #JerseyClub",
+    "artist": "nissi/25Hzz",
+    "scrobbles": 3
+   },
+   {
+    "name": "Transparency",
+    "artist": "Kurubukko",
+    "scrobbles": 2
+   },
+   {
+    "name": "乙女のタクティクス",
+    "artist": "Nanahira, コツメカワウソ’S",
+    "scrobbles": 2
+   },
+   {
+    "name": "Disappearing Now",
+    "artist": "Nurko/Chandler Leighton",
+    "scrobbles": 2
+   },
+   {
+    "name": "KNOCK!BACK!ROCK!",
+    "artist": "Pax Japonica Groove",
+    "scrobbles": 2
+   },
+   {
+    "name": "The Cry of The Uncertain",
+    "artist": "Akiri/HowToPlayLN",
+    "scrobbles": 2
+   },
+   {
+    "name": "RADIAN LUNACY (4WC 2026 Finals Tiebreaker)",
+    "artist": "Jeko/Syuenn/Krasper2",
+    "scrobbles": 2
+   },
+   {
+    "name": "TEARS of an Angel",
+    "artist": "Angelize",
+    "scrobbles": 2
+   },
+   {
+    "name": "迷星叫",
+    "artist": "MyGO!!!!!",
+    "scrobbles": 2
+   },
+   {
+    "name": "Cala Collective, Vol.13",
+    "artist": "Marc Hartman",
+    "scrobbles": 2
+   },
+   {
+    "name": "Why Do #JerseyClub",
+    "artist": "Nissi",
+    "scrobbles": 2
+   },
+   {
+    "name": "Niche Flex EP",
+    "artist": "Sam Binga/Machinedrum/Cesco",
+    "scrobbles": 2
+   },
+   {
+    "name": "Leonard Bernstein Conducts Great Marches",
+    "artist": "Leonard Bernstein/New York Philharmonic",
+    "scrobbles": 1
+   },
+   {
+    "name": "The Complete Harry Potter Film Music Collection",
+    "artist": "The City of Prague Philharmonic Orchestra",
+    "scrobbles": 1
+   },
+   {
+    "name": "Cascade of Dreams",
+    "artist": "Eugen Doga",
+    "scrobbles": 1
+   },
+   {
+    "name": "Illustrationen - Historical Recording",
+    "artist": "Wiener Johann Strauss Orchester",
+    "scrobbles": 1
+   },
+   {
+    "name": "What is my LIFE?",
+    "artist": "いきづらい部！",
+    "scrobbles": 1
+   },
+   {
+    "name": "Nicoichi",
+    "artist": "Silent Siren",
+    "scrobbles": 1
+   },
+   {
+    "name": "Moving!",
+    "artist": "Camellia, Nanahira",
+    "scrobbles": 1
+   },
+   {
+    "name": "きくおミク2",
+    "artist": "きくお",
+    "scrobbles": 1
+   },
+   {
+    "name": "Hollow Eyes (feat. EKE)",
+    "artist": "Synymata/KLAXX/Eke",
+    "scrobbles": 1
+   },
+   {
+    "name": "ディナーベル（Dinner Bell）Self Cover",
+    "artist": "はるまきごはん",
+    "scrobbles": 1
+   },
+   {
+    "name": "Schneeweiß",
+    "artist": "Die Orsons",
+    "scrobbles": 1
+   },
+   {
+    "name": "Leb schnell",
+    "artist": "Die Orsons",
+    "scrobbles": 1
+   },
+   {
+    "name": "What's Goes?",
+    "artist": "Die Orsons",
+    "scrobbles": 1
+   },
+   {
+    "name": "Bravo Hits 89",
+    "artist": "Die Orsons",
+    "scrobbles": 1
+   },
+   {
+    "name": "Dear Mozart",
+    "artist": "Die Orsons",
+    "scrobbles": 1
+   },
+   {
+    "name": "《复兴》组曲",
+    "artist": "土星皇家交响乐团",
+    "scrobbles": 1
+   },
+   {
+    "name": "Wouldn't Know You",
+    "artist": "Yetep/Luma",
+    "scrobbles": 1
+   },
+   {
+    "name": "Tides",
+    "artist": "Abandoned/Nytrix/DVRKCLOUD",
+    "scrobbles": 1
+   },
+   {
+    "name": "Hallelujah",
+    "artist": "Nurko/Devon Baldwin",
+    "scrobbles": 1
+   },
+   {
+    "name": "See You Again EP",
+    "artist": "Seven Lions/Jason Ross/Fiora",
+    "scrobbles": 1
+   },
+   {
+    "name": "Lost Without You",
+    "artist": "Nurko/Crystal Skies/KnownAsNat",
+    "scrobbles": 1
+   },
+   {
+    "name": "Sail Away (feat. Jay Mason)",
+    "artist": "Trivecta/Jay Mason",
+    "scrobbles": 1
+   },
+   {
+    "name": "Waiting For Love",
+    "artist": "ARMNHMR/Synymata/Medyk",
+    "scrobbles": 1
+   },
+   {
+    "name": "Diamond Heart (feat. RBBTS)",
+    "artist": "Far Out/DVRKCLOUD/RBBTS",
+    "scrobbles": 1
+   },
+   {
+    "name": "Every Time (feat. So Below)",
+    "artist": "Seven Lions/So Below",
+    "scrobbles": 1
+   },
+   {
+    "name": "Atlas",
+    "artist": "Jason Ross/Grant/your friend polly",
+    "scrobbles": 1
+   },
+   {
+    "name": "Beyond the Veil",
+    "artist": "Seven Lions",
+    "scrobbles": 1
+   },
+   {
+    "name": "Beyond The Veil",
+    "artist": "Seven Lions/Dia Frampton",
+    "scrobbles": 1
+   },
+   {
+    "name": "From Ashes To Love",
+    "artist": "Jason Ross/Trivecta/RBBTS",
+    "scrobbles": 1
+   },
+   {
+    "name": "Resonant Whispers",
+    "artist": "Elliot Hsu",
+    "scrobbles": 1
+   },
+   {
+    "name": "Code：Aster",
+    "artist": "Qutabire",
+    "scrobbles": 1
+   },
+   {
+    "name": "Groundbreaking -G2R2018 COMPILATION ALBUM- X",
+    "artist": "Junk",
+    "scrobbles": 1
+   }
+  ]
+ }
+}

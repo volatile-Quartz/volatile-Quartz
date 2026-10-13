@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Generate weekly listening report as a single PNG image.
+"""【已废弃 · legacy】新管线用 listening_report_pull.py + listening_report_img.py，本脚本仅作历史参考，勿再使用。
+Generate weekly listening report as a single PNG image.
 Reads /tmp/lastfm_prep.json + /tmp/lastfm_enrich.json + lastfm_rules.json + genre_tree.json.
 Usage: python3 lastfm/weekly_stats_img.py
 Output: /workspace/<year>week<no>_report.png  (e.g. 2026week40_report.png)

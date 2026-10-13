@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Phase 1: 拉取原始数据 + 清洗前统计 + 逐行清单（用户确认用）。
+"""【已废弃 · legacy】新管线用 listening_report_pull.py + listening_report_img.py，本脚本仅作历史参考，勿再使用。
+Phase 1: 拉取原始数据 + 清洗前统计 + 逐行清单（用户确认用）。
 Usage: python3 lastfm/weekly_stats_preview.py 2026-09-21   (week-start Monday, Beijing)
 
 产出（均带周次前缀，置于当前工作区根目录，供归档）：

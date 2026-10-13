@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Generate weekly listening stats (markdown block, ready for GitHub issue) + HTML report.
+"""【已废弃 · legacy】新管线用 listening_report_pull.py + listening_report_img.py，本脚本仅作历史参考，勿再使用。
+Generate weekly listening stats (markdown block, ready for GitHub issue) + HTML report.
 Reads /tmp/lastfm_prep.json + /tmp/lastfm_enrich.json + lastfm_rules.json (style rules).
 Usage: python3 weekly_stats_report.py
 输出口径：有效记录=清洗后播放次数；每日=独立曲目/日；风格=宽松清洗（去语言/描述标签+合并变体）后生成图片词云；插值单位=次。

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Week stats: fetch, clean, aggregate.
+"""【已废弃 · legacy】新管线用 listening_report_pull.py + listening_report_img.py，本脚本仅作历史参考，勿再使用。
+Week stats: fetch, clean, aggregate.
 Usage: python3 weekly_stats_prep.py 2026-09-28   (week-start Monday, Beijing)
 
 Reads lastfm_rules.json (same dir). Writes /tmp/lastfm_prep.json.

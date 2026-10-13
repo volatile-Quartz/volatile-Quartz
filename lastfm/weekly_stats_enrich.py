@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Enrich weekly stats: per-track duration (seconds, with cache) + top-artist tags.
+"""【已废弃 · legacy】新管线用 listening_report_pull.py + listening_report_img.py，本脚本仅作历史参考，勿再使用。
+Enrich weekly stats: per-track duration (seconds, with cache) + top-artist tags.
 Usage: python3 weekly_stats_enrich.py   (reads /tmp/lastfm_prep.json)
 时长口径：Last.fm duration 为毫秒（如 196000）；此处归一为秒：
   d >= 60000 视为毫秒 → d//1000；30 <= d <= 3600 视为秒；其余视为坏值 → 0（走插值）。
