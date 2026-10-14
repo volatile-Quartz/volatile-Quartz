@@ -119,6 +119,8 @@ def F(sz, bold=False):
 W = 760
 BG, CARD, GRAY, DARK = "#f4f2f8", "#ffffff", "#8a8a8e", "#222222"
 P1, P2 = "#7c5cbf", "#4a90d9"
+GREEN, RED = "#2a9d8f", "#e76f51"
+ORANGE, ROSE = "#e98a2b", "#d96383"
 INNER_PAD, HBAR_BOTTOM_EXTRA = 10, 8
 im = Image.new("RGB", (W, 5000), BG)
 d = ImageDraw.Draw(im)
@@ -274,8 +276,8 @@ BADGE_H, PIC_LINE_H = 20, 28
 def seg_t(txt, color=DARK):
     return ("t", txt, color)
 
-def seg_b(txt):
-    return ("b", str(txt), P1)
+def seg_b(txt, color):
+    return ("b", str(txt), color)
 
 def seg_w(s):
     kind, txt, _ = s
@@ -313,39 +315,30 @@ def draw_flow(yy, segs, maxw, indent=0):
 
 blocks = []
 if clock.get("busiest_hour") is not None:
-    blocks.append(([seg_t("最繁忙时段："), seg_b(clock["busiest_hour"]), seg_t(" · ", GRAY),
-                    seg_b(clock.get("scrobbles")), seg_t(" scrobbles", DARK)], 0))
+    blocks.append(([seg_t("最繁忙时段："), seg_b(clock["busiest_hour"], P1), seg_t(" · ", GRAY),
+                    seg_t("{} scrobbles".format(clock.get("scrobbles")), DARK)], 0))
 if discovery:
-    blocks.append(([seg_t("新发现：新艺人 "), seg_b("{}%".format(discovery.get("new_artists_pct"))),
-                    seg_t(" · 新专辑 "), seg_b("{}%".format(discovery.get("new_albums_pct"))),
-                    seg_t(" · 新曲目 "), seg_b("{}%".format(discovery.get("new_tracks_pct")))], 0))
+    blocks.append(([seg_t("新发现：新艺人 "), seg_b("{}%".format(discovery.get("new_artists_pct")), P2),
+                    seg_t(" · 新专辑 "), seg_b("{}%".format(discovery.get("new_albums_pct")), P2),
+                    seg_t(" · 新曲目 "), seg_b("{}%".format(discovery.get("new_tracks_pct")), P2)], 0))
 if music_ratio:
-    blocks.append(([seg_t("独立计数：曲目 "), seg_b(music_ratio.get("tracks")),
-                    seg_t(" · 专辑 "), seg_b(music_ratio.get("albums")),
-                    seg_t(" · 歌手 "), seg_b(music_ratio.get("artists"))], 0))
+    blocks.append(([seg_t("独立计数：曲目 "), seg_b(music_ratio.get("tracks"), GREEN),
+                    seg_t(" · 专辑 "), seg_b(music_ratio.get("albums"), GREEN),
+                    seg_t(" · 歌手 "), seg_b(music_ratio.get("artists"), GREEN)], 0))
 nz = sorted((d_ for d_ in decades if d_.get("count")), key=lambda x: -x["count"])[:4]
 if nz:
     segs = [seg_t("年代：")]
     for i, d_ in enumerate(nz):
         if i:
             segs.append(seg_t(" · ", GRAY))
-        segs += [seg_t(d_["name"] + " "), seg_b(d_["count"])]
-    blocks.append((segs, 0))
-if community and (community.get("scrobble_rank") or community.get("discovery_rank")):
-    segs = [seg_t("社区：")]
-    if community.get("scrobble_rank"):
-        segs += [seg_t("Scrobbles 排行 "), seg_b(community["scrobble_rank"])]
-    if community.get("discovery_rank"):
-        if community.get("scrobble_rank"):
-            segs.append(seg_t(" · ", GRAY))
-        segs += [seg_t("探索排行 "), seg_b(community["discovery_rank"])]
+        segs += [seg_t(d_["name"] + " "), seg_b(d_["count"], ORANGE)]
     blocks.append((segs, 0))
 if genre_items:
     segs = [seg_t("曲风：")]
     for i, (g, c) in enumerate(genre_items):
         if i:
-            segs.append(seg_t("、", GRAY))
-        segs += [seg_t(g), seg_b("×{}".format(c))]
+            segs.append(seg_t("、 ", GRAY))
+        segs += [seg_t(g + " "), seg_b("×{}".format(c), ROSE)]
     blocks.append((segs, int(d.textlength("曲风：", f13))))
 else:
     blocks.append(([seg_t("曲风：—", GRAY)], 0))
