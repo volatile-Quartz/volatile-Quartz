@@ -267,36 +267,94 @@ if hours:
         d.text((px + h * bw + bw * 0.35, ct + chart_h - 5), str(h), font=F(11), fill=GRAY, anchor="mm")
     y = bottom + 12
 
-# ══════════ 听歌画像 ══════════
-lines = []
+# ══════════ 听歌画像（数据值用彩色胶囊高亮） ══════════
+f13, f11b = F(13), F(11, True)
+BADGE_H, PIC_LINE_H = 20, 28
+
+def seg_t(txt, color=DARK):
+    return ("t", txt, color)
+
+def seg_b(txt):
+    return ("b", str(txt), P1)
+
+def seg_w(s):
+    kind, txt, _ = s
+    return d.textlength(txt, f13) if kind == "t" else d.textlength(txt, f11b) + 12
+
+def flow_rows(segs, maxw, indent=0):
+    rows, x, have = 1, 0, False
+    for s in segs:
+        w = seg_w(s)
+        if have and x + w > maxw:
+            rows += 1
+            x = indent
+        x += w
+        have = True
+    return rows
+
+def draw_flow(yy, segs, maxw, indent=0):
+    x, have = 0, False
+    for s in segs:
+        kind, txt, color = s
+        w = seg_w(s)
+        if have and x + w > maxw:
+            yy += PIC_LINE_H
+            x = indent
+        if kind == "t":
+            d.text((px + x, yy), txt, font=f13, fill=color, anchor="lm")
+            x += w
+        else:
+            d.rounded_rectangle([px + x, yy - BADGE_H / 2, px + x + w, yy + BADGE_H / 2],
+                                radius=6, fill=color)
+            d.text((px + x + w / 2, yy), txt, font=f11b, fill="#ffffff", anchor="mm")
+            x += w + 6
+        have = True
+    return yy + PIC_LINE_H
+
+blocks = []
 if clock.get("busiest_hour") is not None:
-    lines.append(("最繁忙时段：{} · {} scrobbles".format(clock["busiest_hour"], clock.get("scrobbles")), DARK))
+    blocks.append(([seg_t("最繁忙时段："), seg_b(clock["busiest_hour"]), seg_t(" · ", GRAY),
+                    seg_b(clock.get("scrobbles")), seg_t(" scrobbles", DARK)], 0))
 if discovery:
-    lines.append(("新发现：新艺人 {}% · 新专辑 {}% · 新曲目 {}%".format(
-        discovery.get("new_artists_pct"), discovery.get("new_albums_pct"), discovery.get("new_tracks_pct")), DARK))
+    blocks.append(([seg_t("新发现：新艺人 "), seg_b("{}%".format(discovery.get("new_artists_pct"))),
+                    seg_t(" · 新专辑 "), seg_b("{}%".format(discovery.get("new_albums_pct"))),
+                    seg_t(" · 新曲目 "), seg_b("{}%".format(discovery.get("new_tracks_pct")))], 0))
 if music_ratio:
-    lines.append(("独立计数：曲目 {} · 专辑 {} · 歌手 {}".format(
-        music_ratio.get("tracks"), music_ratio.get("albums"), music_ratio.get("artists")), DARK))
+    blocks.append(([seg_t("独立计数：曲目 "), seg_b(music_ratio.get("tracks")),
+                    seg_t(" · 专辑 "), seg_b(music_ratio.get("albums")),
+                    seg_t(" · 歌手 "), seg_b(music_ratio.get("artists"))], 0))
 nz = sorted((d_ for d_ in decades if d_.get("count")), key=lambda x: -x["count"])[:4]
 if nz:
-    lines.append(("年代：" + " · ".join("{} {}".format(d_["name"], d_["count"]) for d_ in nz), DARK))
+    segs = [seg_t("年代：")]
+    for i, d_ in enumerate(nz):
+        if i:
+            segs.append(seg_t(" · ", GRAY))
+        segs += [seg_t(d_["name"] + " "), seg_b(d_["count"])]
+    blocks.append((segs, 0))
 if community and (community.get("scrobble_rank") or community.get("discovery_rank")):
-    parts = []
-    if community.get("scrobble_rank"): parts.append("Scrobbles 排行 {}".format(community["scrobble_rank"]))
-    if community.get("discovery_rank"): parts.append("探索排行 {}".format(community["discovery_rank"]))
-    lines.append(("社区：" + " · ".join(parts), DARK))
+    segs = [seg_t("社区：")]
+    if community.get("scrobble_rank"):
+        segs += [seg_t("Scrobbles 排行 "), seg_b(community["scrobble_rank"])]
+    if community.get("discovery_rank"):
+        if community.get("scrobble_rank"):
+            segs.append(seg_t(" · ", GRAY))
+        segs += [seg_t("探索排行 "), seg_b(community["discovery_rank"])]
+    blocks.append((segs, 0))
 if genre_items:
-    g_lines = wrap_list(["{}×{}".format(g, c) for g, c in genre_items], F(13), 660)
-    lines.append(("曲风：" + g_lines[0], DARK))
-    lines.extend((("　" + l), DARK) for l in g_lines[1:])
+    segs = [seg_t("曲风：")]
+    for i, (g, c) in enumerate(genre_items):
+        if i:
+            segs.append(seg_t("、", GRAY))
+        segs += [seg_t(g), seg_b("×{}".format(c))]
+    blocks.append((segs, int(d.textlength("曲风：", f13))))
 else:
-    lines.append(("曲风：—", GRAY))
-data_h = len(lines) * 22
-bottom, ct, px, pw = draw_panel(y, "听歌画像", data_h)
-yy = ct + 2
-for txt, color in lines:
-    d.text((px, yy), txt, font=F(13), fill=color)
-    yy += 22
+    blocks.append(([seg_t("曲风：—", GRAY)], 0))
+
+total_rows = sum(flow_rows(segs, 684, ind) for segs, ind in blocks)
+bottom, ct, px, pw = draw_panel(y, "听歌画像", total_rows * PIC_LINE_H)
+yy = ct + PIC_LINE_H / 2
+for segs, ind in blocks:
+    yy = draw_flow(yy, segs, pw, ind)
 y = bottom + 16
 
 # ══════════ 页脚 ══════════
