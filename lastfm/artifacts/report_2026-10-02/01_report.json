@@ -3,56 +3,189 @@
   "start": "2026-10-02",
   "end": "2026-10-08",
   "username": "volatile-Quartz",
-  "range_text": "2 Oct 2026 - 8 Oct 2026",
-  "generated_at": "2026-10-13 21:41:09 +0800"
+  "range_text": "2 OCT 2026 - 8 OCT 2026",
+  "generated_at": "2026-10-14 16:55:09 +0800",
+  "candidate_merges": []
  },
  "totals": {
   "scrobbles": 307,
   "scrobbles_vs_prev": "3% vs. last week",
   "listening_time": "1 day, 9 hours",
-  "listening_time_vs_prev": "vs. 2 days, 3 hours",
   "per_day": 44,
-  "per_day_vs_prev": "vs. 43",
   "most_active": {
    "count": 61,
-   "date": "2 Oct 2026"
-  }
+   "date": "2 OCT"
+  },
+  "listening_time_vs_prev": "vs. 2 days, 3 hours (last week)",
+  "per_day_vs_prev": "vs. 43 (last week)",
+  "most_active_vs_prev": "vs. 92 (last week)"
+ },
+ "daily": {
+  "Fri": 61,
+  "Sat": 24,
+  "Sun": 20,
+  "Mon": 44,
+  "Tue": 52,
+  "Wed": 48,
+  "Thu": 58
+ },
+ "daily_prev": {
+  "Fri": 31,
+  "Sat": 92,
+  "Sun": 70,
+  "Mon": 19,
+  "Tue": 6,
+  "Wed": 42,
+  "Thu": 40
  },
  "clock": {
-  "busiest_hour": "11",
+  "hours": {
+   "0": 1,
+   "1": 5,
+   "2": 0,
+   "3": 10,
+   "4": 20,
+   "5": 3,
+   "6": 1,
+   "7": 15,
+   "8": 1,
+   "9": 29,
+   "10": 20,
+   "11": 35,
+   "12": 24,
+   "13": 17,
+   "14": 15,
+   "15": 21,
+   "16": 13,
+   "17": 11,
+   "18": 21,
+   "19": 15,
+   "20": 11,
+   "21": 8,
+   "22": 7,
+   "23": 4
+  },
+  "busiest_hour": "11:00AM",
   "scrobbles": 35
  },
- "tags": [
-  "drum and bass",
-  "j-pop",
-  "japanese",
-  "chinese",
-  "neurofunk",
-  "j-rock",
-  "folk",
-  "electronic",
-  "instrumental",
-  "female vocalists",
-  "japan",
-  "j-core",
-  "vocaloid",
-  "classical",
-  "touhou"
+ "tags_current": [
+  {
+   "name": "drum and bass",
+   "count": 0
+  },
+  {
+   "name": "j-pop",
+   "count": 0
+  },
+  {
+   "name": "japanese",
+   "count": 23
+  },
+  {
+   "name": "chinese",
+   "count": 0
+  },
+  {
+   "name": "neurofunk",
+   "count": 0
+  },
+  {
+   "name": "j-rock",
+   "count": 0
+  },
+  {
+   "name": "folk",
+   "count": 0
+  },
+  {
+   "name": "electronic",
+   "count": 34
+  },
+  {
+   "name": "instrumental",
+   "count": 0
+  },
+  {
+   "name": "female vocalists",
+   "count": 0
+  },
+  {
+   "name": "japan",
+   "count": 0
+  },
+  {
+   "name": "j-core",
+   "count": 0
+  },
+  {
+   "name": "vocaloid",
+   "count": 26
+  },
+  {
+   "name": "classical",
+   "count": 7
+  },
+  {
+   "name": "touhou",
+   "count": 7
+  }
  ],
- "discovery": {
-  "new_artists_pct": 51,
-  "new_albums_pct": 67,
-  "new_tracks_pct": 83
+ "decades": [
+  {
+   "name": "1960s",
+   "count": 0
+  },
+  {
+   "name": "1970s",
+   "count": 0
+  },
+  {
+   "name": "1980s",
+   "count": 1
+  },
+  {
+   "name": "1990s",
+   "count": 1
+  },
+  {
+   "name": "2000s",
+   "count": 1
+  },
+  {
+   "name": "2010s",
+   "count": 49
+  },
+  {
+   "name": "2020s",
+   "count": 43
+  }
+ ],
+ "community": {
+  "scrobble_rank": "2/11",
+  "discovery_rank": "1/11"
  },
  "music_ratio": {
   "tracks": 297,
+  "tracks_prev": 275,
   "albums": 133,
+  "albums_prev": 174,
   "artists": 211,
+  "artists_prev": 221,
   "consistency_pct": 100,
   "discovery_pct": 51,
   "variance_pct": 53,
   "concentration_pct": 25,
   "replay_pct": 3
+ },
+ "discovery": {
+  "new_artists_pct": 51,
+  "new_albums_pct": 67,
+  "new_tracks_pct": 83
+ },
+ "top_new": {
+  "artists": "Iemitsu.",
+  "albums": "きくおミク",
+  "tracks": "ASMR That Feels Way Too Real 💗"
  },
  "page_top_artists": [
   {
@@ -91,26 +224,26 @@
   {
    "rank": 2,
    "name": "layering2",
-   "artist": "Angelize",
-   "scrobbles": 2
+   "scrobbles": 2,
+   "artist": "Angelize"
   },
   {
    "rank": 3,
    "name": "ASMR That Feels Way Too Real 💗",
-   "artist": "Baby Whisper ASMR",
-   "scrobbles": 2
+   "scrobbles": 2,
+   "artist": "Baby Whisper ASMR"
   },
   {
    "rank": 4,
    "name": "RADIAN LUNACY",
-   "artist": "Jeko/Syuenn/Krasper2",
-   "scrobbles": 2
+   "scrobbles": 2,
+   "artist": "Jeko/Syuenn/Krasper2"
   },
   {
    "rank": 5,
    "name": "Transparency",
-   "artist": "Kurubukko",
-   "scrobbles": 2
+   "scrobbles": 2,
+   "artist": "Kurubukko"
   }
  ],
  "page_top_albums": [
@@ -123,26 +256,26 @@
   {
    "rank": 2,
    "name": "きくおミク",
-   "artist": "きくお",
-   "scrobbles": 12
+   "scrobbles": 12,
+   "artist": "きくお"
   },
   {
    "rank": 3,
    "name": "Kv.550 莫扎特：G小调第四十号交响曲",
-   "artist": "土星皇家交响乐团",
-   "scrobbles": 4
+   "scrobbles": 4,
+   "artist": "土星皇家交响乐团"
   },
   {
    "rank": 4,
    "name": "Wyw my sweetie #JerseyClub",
-   "artist": "nissi/25Hzz",
-   "scrobbles": 3
+   "scrobbles": 3,
+   "artist": "nissi/25Hzz"
   },
   {
    "rank": 5,
    "name": "Slide 4 me #JerseyClub",
-   "artist": "whyslow/Carpe",
-   "scrobbles": 3
+   "scrobbles": 3,
+   "artist": "whyslow/Carpe"
   }
  ],
  "api": {

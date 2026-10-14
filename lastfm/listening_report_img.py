@@ -5,9 +5,9 @@
 底层数据（01_report.json / 00_raw.json）原样保留，总量数字保持 last.fm 原值不重算。
 Usage: python3 lastfm/listening_report_img.py 2026-10-02
 输出: lastfm/artifacts/report_<start>/02_report.png
-依赖：pillow + CJK 字体（文泉驿微米黑已预装）。
+依赖：pillow + CJK 字体（scripts/setup_sandbox.sh 一键安装）。
 """
-import json, os, glob, sys
+import json, os, glob, sys, re
 from datetime import datetime, timedelta
 from PIL import Image, ImageDraw, ImageFont
 
@@ -46,7 +46,9 @@ REP = json.load(open(os.path.join(BASE_DIR, "artifacts", "report_" + START, "01_
 meta = REP["meta"]
 totals = REP.get("totals") or {}
 clock = REP.get("clock") or {}
-tags = REP.get("tags") or []
+tags_current = REP.get("tags_current") or []
+decades = REP.get("decades") or []
+community = REP.get("community") or {}
 discovery = REP.get("discovery") or {}
 music_ratio = REP.get("music_ratio") or {}
 api = REP.get("api") or {}
@@ -92,7 +94,14 @@ albums = visible(merge_list(REP.get("page_top_albums", []), api.get("top_albums"
 for _lst in (artists, tracks, albums):
     _lst.sort(key=lambda e: -e["scrobbles"])  # 稳定排序：页面条目同分居前，消除 API 补位倒挂
 artists, tracks, albums = artists[:TOP_N], tracks[:TOP_N], albums[:TOP_N]
-genres = [g for g in (canon_genre(t.lower()) for t in tags) if g]
+
+# 曲风（带当前周计数，白名单过滤）
+genre_items = []
+for e in tags_current:
+    g = canon_genre(e["name"].lower())
+    if g and e.get("count"):
+        genre_items.append((g, e["count"]))
+genre_items = sorted(genre_items, key=lambda x: -x[1])[:8]
 
 # ── 字体 ──
 def find_cjk_font():
@@ -101,7 +110,7 @@ def find_cjk_font():
     for pat in ["/usr/share/fonts/**/wqy*", "/usr/share/fonts/**/NotoSans*", "/usr/share/fonts/**/CJK*"]:
         for f in glob.glob(pat, recursive=True):
             if os.path.exists(f): return f
-    raise RuntimeError("未找到 CJK 字体")
+    raise RuntimeError("未找到 CJK 字体，请先跑 scripts/setup_sandbox.sh")
 FONT = find_cjk_font()
 def F(sz, bold=False):
     return ImageFont.truetype(FONT, sz)
@@ -111,7 +120,7 @@ W = 760
 BG, CARD, GRAY, DARK = "#f4f2f8", "#ffffff", "#8a8a8e", "#222222"
 P1, P2 = "#7c5cbf", "#4a90d9"
 INNER_PAD, HBAR_BOTTOM_EXTRA = 10, 8
-im = Image.new("RGB", (W, 4000), BG)
+im = Image.new("RGB", (W, 5000), BG)
 d = ImageDraw.Draw(im)
 y = 30
 
@@ -161,7 +170,7 @@ cards = [
     ("收听时长", totals.get("listening_time") or "—", totals.get("listening_time_vs_prev") or ""),
     ("日均", "{} /day".format(totals.get("per_day")) if totals.get("per_day") is not None else "—", totals.get("per_day_vs_prev") or ""),
     ("最活跃日", "{} 次".format(totals["most_active"]["count"]) if totals.get("most_active") else "—",
-     totals["most_active"]["date"] if totals.get("most_active") else ""),
+     totals["most_active"].get("date", "") if totals.get("most_active") else ""),
 ]
 cw, ch, gap = (W - 80 - 12) // 2, 88, 12
 for i, (l, v, s) in enumerate(cards):
@@ -172,6 +181,28 @@ for i, (l, v, s) in enumerate(cards):
     d.text((cx + 16, cy + 32), str(v), font=F(24, True), fill=P1)
     d.text((cx + 16, cy + 64), ellipsize(str(s), F(11), cw - 32), font=F(11), fill=GRAY)
 y += 2 * (ch + gap) + 16
+
+# ══════════ 每日播放趋势（Fri→Thu） ══════════
+daily = REP.get("daily") or {}
+if daily:
+    start_dt = datetime.strptime(meta["start"], "%Y-%m-%d")
+    days = list(daily.keys())            # Fri..Thu，与报告周顺序一致
+    vals = [daily[k] for k in days]
+    labels = [(start_dt + timedelta(days=i)).strftime("%m.%d") for i in range(len(days))]
+    chart_h = 168
+    bottom, ct, px, pw = draw_panel(y, "每日播放趋势（scrobbles/日）", chart_h)
+    mx = max(vals) or 1
+    bar_bottom_y = ct + chart_h - 22
+    bar_max_h = (ct + chart_h - 22) - ct - 6
+    bw = pw / len(days)
+    for i, (v, lb) in enumerate(zip(vals, labels)):
+        bh = (v / mx) * bar_max_h
+        x0 = px + i * bw + bw * 0.18
+        bar_top = bar_bottom_y - bh
+        d.rounded_rectangle([x0, bar_top, x0 + bw * 0.64, bar_bottom_y], radius=4, fill=P1)
+        d.text((x0 + bw * 0.32, bar_top - 6), str(v), font=F(13), fill=DARK, anchor="mm")
+        d.text((x0 + bw * 0.32, ct + chart_h - 6), lb, font=F(12), fill=GRAY, anchor="mm")
+    y = bottom + 12
 
 # ══════════ Top 歌手（hbars） ══════════
 RH = 26; FC = RH / 2
@@ -211,18 +242,51 @@ def rows_panel(y0, title, entries):
 y = rows_panel(y, "Top 曲目", tracks) + 12
 y = rows_panel(y, "Top 专辑", albums) + 12
 
-# ══════════ 花活板块 ══════════
+# ══════════ 听歌时钟（24 小时柱状） ══════════
+hours = clock.get("hours") or {}
+if hours:
+    vals = [hours.get(str(h), 0) for h in range(24)]
+    busiest_h = None
+    m = re.match(r"(\d{1,2})", str(clock.get("busiest_hour") or ""))
+    if m:
+        busiest_h = int(m.group(1))
+    chart_h = 150
+    bottom, ct, px, pw = draw_panel(y, "听歌时钟（scrobbles/小时）", chart_h)
+    mx = max(vals) or 1
+    bar_bottom_y = ct + chart_h - 20
+    bar_max_h = (ct + chart_h - 20) - ct - 6
+    bw = pw / 24
+    for h, v in enumerate(vals):
+        bh = (v / mx) * bar_max_h if v else 2
+        x0 = px + h * bw + bw * 0.15
+        color = P1 if h == busiest_h else P2
+        d.rounded_rectangle([x0, bar_bottom_y - bh, x0 + bw * 0.7, bar_bottom_y], radius=2, fill=color)
+        if h == busiest_h:
+            d.text((x0 + bw * 0.35, bar_bottom_y - bh - 7), str(v), font=F(11, True), fill=DARK, anchor="mm")
+    for h in (0, 6, 12, 18, 23):
+        d.text((px + h * bw + bw * 0.35, ct + chart_h - 5), str(h), font=F(11), fill=GRAY, anchor="mm")
+    y = bottom + 12
+
+# ══════════ 听歌画像 ══════════
 lines = []
 if clock.get("busiest_hour") is not None:
-    lines.append(("最繁忙时段：{}:00 · {} scrobbles".format(clock["busiest_hour"], clock.get("scrobbles")), DARK))
+    lines.append(("最繁忙时段：{} · {} scrobbles".format(clock["busiest_hour"], clock.get("scrobbles")), DARK))
 if discovery:
     lines.append(("新发现：新艺人 {}% · 新专辑 {}% · 新曲目 {}%".format(
         discovery.get("new_artists_pct"), discovery.get("new_albums_pct"), discovery.get("new_tracks_pct")), DARK))
 if music_ratio:
     lines.append(("独立计数：曲目 {} · 专辑 {} · 歌手 {}".format(
         music_ratio.get("tracks"), music_ratio.get("albums"), music_ratio.get("artists")), DARK))
-if genres:
-    g_lines = wrap_list(genres[:8], F(13), 660)
+nz = sorted((d_ for d_ in decades if d_.get("count")), key=lambda x: -x["count"])[:4]
+if nz:
+    lines.append(("年代：" + " · ".join("{} {}".format(d_["name"], d_["count"]) for d_ in nz), DARK))
+if community and (community.get("scrobble_rank") or community.get("discovery_rank")):
+    parts = []
+    if community.get("scrobble_rank"): parts.append("Scrobbles 排行 {}".format(community["scrobble_rank"]))
+    if community.get("discovery_rank"): parts.append("探索排行 {}".format(community["discovery_rank"]))
+    lines.append(("社区：" + " · ".join(parts), DARK))
+if genre_items:
+    g_lines = wrap_list(["{}×{}".format(g, c) for g, c in genre_items], F(13), 660)
     lines.append(("曲风：" + g_lines[0], DARK))
     lines.extend((("　" + l), DARK) for l in g_lines[1:])
 else:
@@ -244,5 +308,5 @@ im = im.crop((0, 0, W, y))
 out = os.path.join(BASE_DIR, "artifacts", "report_" + START, "02_report.png")
 im.save(out)
 print("saved", out, im.size)
-print("shown: artists={} tracks={} albums={} (黑名单隐藏后前推补满至 {} 条上限)".format(
-    len(artists), len(tracks), len(albums), TOP_N))
+print("shown: artists={} tracks={} albums={} | genres={} | candidate_merges={}".format(
+    len(artists), len(tracks), len(albums), len(genre_items), meta.get("candidate_merges")))
