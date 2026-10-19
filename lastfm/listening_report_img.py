@@ -70,9 +70,9 @@ def merge_list(page_list, api_list, simple):
             if k not in keys:
                 out.append(dict(e, src="api")); keys.add(k)
     else:
-        keys = {(e.get("artist", "").casefold(), e["name"].casefold()) for e in page_list}
+        keys = {(e.get("artist") or "", e["name"].casefold()) for e in page_list}
         for e in api_list:
-            k = (e.get("artist", "").casefold(), e["name"].casefold())
+            k = ((e.get("artist") or "").casefold(), e["name"].casefold())
             if k not in keys:
                 out.append(dict(e, src="api")); keys.add(k)
     return out

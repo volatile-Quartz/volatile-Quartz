@@ -68,12 +68,13 @@ def parse_report_text(text):
     out = {"meta": {}, "totals": {}, "clock": {}, "discovery": {},
            "music_ratio": {}, "community": {}, "top_new": {}}
 
-    # ── 日期范围 + 顶部总量 ──
+    # ── 日期范围 + 顶部总量（两种版式：N scrobbles / Scrobbles\nN） ──
     m = re.search(r"(\d{1,2} [A-Z]{3} \d{4})\s*-\s*(\d{1,2} [A-Z]{3} \d{4})", joined)
     if m:
         out["meta"]["range_text"] = "{} - {}".format(m.group(1), m.group(2))
         tail = joined[m.end():m.end() + 300]
-        m2 = re.search(r"(\d[\d,]*)\s*scrobbles", tail)
+        m2 = (re.search(r"(\d[\d,]*)\s*scrobbles", tail) or
+              re.search(r"Scrobbles\s*\n\s*(\d[\d,]*)", tail))
         if m2:
             out["totals"]["scrobbles"] = _int(m2.group(1))
         m3 = re.search(r"(\d+)%\s*vs\.?\s*last week", tail)
@@ -102,9 +103,9 @@ def parse_report_text(text):
         if m:
             out["top_new"][key.split("_")[1]] = m.group(1).strip()
 
-    # ── MUSIC RATIO（独立计数 + 上周对比） ──
+    # ── MUSIC RATIO（独立计数 + 上周对比；(last week) 可能换行） ──
     for name, key in [("Tracks", "tracks"), ("Albums", "albums"), ("Artists", "artists")]:
-        m = re.search(r"\n" + name + r"\n(\d+)\nvs\. (\d+) \(last week\)", joined)
+        m = re.search(r"\n" + name + r"\n(\d+)\nvs\. (\d+)\s*\(last week\)", joined)
         if m:
             out["music_ratio"][key] = _int(m.group(1))
             out["music_ratio"][key + "_prev"] = _int(m.group(2))
@@ -169,11 +170,11 @@ def parse_report_text(text):
     if m:
         out["totals"]["most_active"] = {"count": _int(m.group(1)), "date": m.group(2).strip()}
     qf = joined[joined.find("QUICK FACTS"):joined.find("COMMUNITY")]
-    vs = re.findall(r"vs\. ([^\n]+\(last week\))", qf)
+    vs = re.findall(r"vs\. ([^\n]+)\s*\(last week\)", qf)
     if len(vs) >= 3:
-        out["totals"]["listening_time_vs_prev"] = "vs. " + vs[0]
-        out["totals"]["per_day_vs_prev"] = "vs. " + vs[1]
-        out["totals"]["most_active_vs_prev"] = "vs. " + vs[2]
+        out["totals"]["listening_time_vs_prev"] = "vs. " + vs[0].strip()
+        out["totals"]["per_day_vs_prev"] = "vs. " + vs[1].strip()
+        out["totals"]["most_active_vs_prev"] = "vs. " + vs[2].strip()
 
     # ── COMMUNITY（先 scrobble 榜，后 discovery 榜） ──
     ranks = re.findall(r"volatile-Quartz's rank\n(\d+/\d+)", joined)

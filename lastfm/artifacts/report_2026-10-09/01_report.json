@@ -1,0 +1,1002 @@
+{
+ "meta": {
+  "start": "2026-10-09",
+  "end": "2026-10-15",
+  "username": "volatile-Quartz",
+  "range_text": "9 OCT 2026 - 15 OCT 2026",
+  "generated_at": "2026-10-19 10:22:28 +0800",
+  "candidate_merges": []
+ },
+ "totals": {
+  "scrobbles": 469,
+  "scrobbles_vs_prev": "53% vs. last week",
+  "listening_time": "1 day, 18 hours",
+  "per_day": 67,
+  "most_active": {
+   "count": 106,
+   "date": "14 OCT"
+  },
+  "listening_time_vs_prev": "vs. 1 day, 9 hours",
+  "per_day_vs_prev": "vs. 44",
+  "most_active_vs_prev": "vs. 61"
+ },
+ "daily": {
+  "Fri": 32,
+  "Sat": 56,
+  "Sun": 76,
+  "Mon": 39,
+  "Tue": 95,
+  "Wed": 106,
+  "Thu": 65
+ },
+ "daily_prev": {
+  "Fri": 61,
+  "Sat": 24,
+  "Sun": 20,
+  "Mon": 44,
+  "Tue": 52,
+  "Wed": 48,
+  "Thu": 58
+ },
+ "clock": {
+  "hours": {
+   "0": 7,
+   "1": 13,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 8,
+   "8": 5,
+   "9": 31,
+   "10": 9,
+   "11": 4,
+   "12": 4,
+   "13": 27,
+   "14": 56,
+   "15": 26,
+   "16": 16,
+   "17": 23,
+   "18": 8,
+   "19": 43,
+   "20": 89,
+   "21": 17,
+   "22": 15,
+   "23": 68
+  },
+  "busiest_hour": "8:00PM",
+  "scrobbles": 89
+ },
+ "tags_current": [
+  {
+   "name": "japanese",
+   "count": 38
+  },
+  {
+   "name": "j-rock",
+   "count": 0
+  },
+  {
+   "name": "folk",
+   "count": 0
+  },
+  {
+   "name": "electronic",
+   "count": 34
+  },
+  {
+   "name": "chinese",
+   "count": 0
+  },
+  {
+   "name": "j-pop",
+   "count": 0
+  },
+  {
+   "name": "instrumental",
+   "count": 0
+  },
+  {
+   "name": "female vocalists",
+   "count": 0
+  },
+  {
+   "name": "japan",
+   "count": 0
+  },
+  {
+   "name": "j-core",
+   "count": 0
+  },
+  {
+   "name": "drum and bass",
+   "count": 0
+  },
+  {
+   "name": "vocaloid",
+   "count": 0
+  },
+  {
+   "name": "classical",
+   "count": 0
+  },
+  {
+   "name": "touhou",
+   "count": 0
+  },
+  {
+   "name": "soundtrack",
+   "count": 39
+  },
+  {
+   "name": "bandori",
+   "count": 18
+  },
+  {
+   "name": "experimental",
+   "count": 18
+  }
+ ],
+ "decades": [
+  {
+   "name": "1960s",
+   "count": 1
+  },
+  {
+   "name": "1970s",
+   "count": 1
+  },
+  {
+   "name": "1980s",
+   "count": 7
+  },
+  {
+   "name": "1990s",
+   "count": 26
+  },
+  {
+   "name": "2000s",
+   "count": 44
+  },
+  {
+   "name": "2010s",
+   "count": 85
+  },
+  {
+   "name": "2020s",
+   "count": 103
+  }
+ ],
+ "community": {
+  "scrobble_rank": "1/11",
+  "discovery_rank": "1/11"
+ },
+ "music_ratio": {
+  "tracks": 418,
+  "tracks_prev": 297,
+  "albums": 254,
+  "albums_prev": 133,
+  "artists": 238,
+  "artists_prev": 211,
+  "consistency_pct": 100,
+  "discovery_pct": 43,
+  "variance_pct": 63,
+  "concentration_pct": 25,
+  "replay_pct": 11
+ },
+ "discovery": {
+  "new_artists_pct": 43,
+  "new_albums_pct": 66,
+  "new_tracks_pct": 90
+ },
+ "top_new": {
+  "artists": "一家Dumb Rock!",
+  "albums": "Are you Happy? I’m Happy!",
+  "tracks": "ホーミー・タイッ！！"
+ },
+ "page_top_artists": [
+  {
+   "rank": 1,
+   "name": "Wiener Philharmoniker/Herbert von Karajan",
+   "scrobbles": 18
+  },
+  {
+   "rank": 2,
+   "name": "Current Value",
+   "scrobbles": 14
+  },
+  {
+   "rank": 3,
+   "name": "Happy Around!",
+   "scrobbles": 14
+  },
+  {
+   "rank": 4,
+   "name": "一家Dumb Rock!",
+   "scrobbles": 14
+  },
+  {
+   "rank": 5,
+   "name": "夢限大みゅーたいぷ",
+   "scrobbles": 14
+  }
+ ],
+ "page_top_tracks": [
+  {
+   "rank": 1,
+   "name": "ホーミー・タイッ！！",
+   "artist": "一家Dumb Rock!",
+   "scrobbles": 6
+  },
+  {
+   "rank": 2,
+   "name": "Introduction",
+   "scrobbles": 4,
+   "artist": "Otis Redding, Al “Brisco” Clark"
+  },
+  {
+   "rank": 3,
+   "name": "無人区-Vacuum Track#ADD8E6（翻自:咲夜）",
+   "scrobbles": 3,
+   "artist": "Catalpa Vs. SharK"
+  },
+  {
+   "rank": 4,
+   "name": "TearJerker",
+   "scrobbles": 3,
+   "artist": "夢限大みゅーたいぷ"
+  },
+  {
+   "rank": 5,
+   "name": "エンプティパペット",
+   "scrobbles": 3,
+   "artist": "夢限大みゅーたいぷ"
+  }
+ ],
+ "page_top_albums": [
+  {
+   "rank": 1,
+   "name": "Are you Happy? I’m Happy!",
+   "artist": "Happy Around!",
+   "scrobbles": 12
+  },
+  {
+   "rank": 2,
+   "name": "BIOCELLULOSE",
+   "scrobbles": 7,
+   "artist": "Current Value"
+  },
+  {
+   "rank": 3,
+   "name": "ホーミー・タイッ！！",
+   "scrobbles": 7,
+   "artist": "一家Dumb Rock!"
+  },
+  {
+   "rank": 4,
+   "name": "Mank (Original Musical Score)",
+   "scrobbles": 5,
+   "artist": "Trent Reznor and Atticus Ross"
+  },
+  {
+   "rank": 5,
+   "name": "スタートライン",
+   "scrobbles": 5,
+   "artist": "夢限大みゅーたいぷ"
+  }
+ ],
+ "api": {
+  "total_scrobbles": 469,
+  "window": {
+   "from_ts": 1791475200,
+   "to_ts": 1792080000
+  },
+  "top_artists": [
+   {
+    "name": "Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 18
+   },
+   {
+    "name": "Current Value",
+    "scrobbles": 14
+   },
+   {
+    "name": "夢限大みゅーたいぷ",
+    "scrobbles": 14
+   },
+   {
+    "name": "一家Dumb Rock!",
+    "scrobbles": 14
+   },
+   {
+    "name": "Happy Around!",
+    "scrobbles": 14
+   },
+   {
+    "name": "Bernard Herrmann",
+    "scrobbles": 13
+   },
+   {
+    "name": "水音世界观",
+    "scrobbles": 10
+   },
+   {
+    "name": "Parry Gripp",
+    "scrobbles": 8
+   },
+   {
+    "name": "佐藤勝",
+    "scrobbles": 7
+   },
+   {
+    "name": "Michael Giacchino",
+    "scrobbles": 7
+   },
+   {
+    "name": "Milet",
+    "scrobbles": 7
+   },
+   {
+    "name": "Toby Fox",
+    "scrobbles": 6
+   },
+   {
+    "name": "Trent Reznor and Atticus Ross",
+    "scrobbles": 5
+   },
+   {
+    "name": "Adventure Time",
+    "scrobbles": 5
+   },
+   {
+    "name": "Disasterpeace",
+    "scrobbles": 5
+   },
+   {
+    "name": "Aoi",
+    "scrobbles": 5
+   },
+   {
+    "name": "Napalm Death",
+    "scrobbles": 4
+   },
+   {
+    "name": "Cattle Decapitation",
+    "scrobbles": 4
+   },
+   {
+    "name": "Otis Redding, Al “Brisco” Clark",
+    "scrobbles": 4
+   },
+   {
+    "name": "睡前涨脑子",
+    "scrobbles": 4
+   },
+   {
+    "name": "Sun City Girls",
+    "scrobbles": 4
+   },
+   {
+    "name": "鷺巣詩郎",
+    "scrobbles": 4
+   },
+   {
+    "name": "The Simpsons",
+    "scrobbles": 4
+   },
+   {
+    "name": "全球动态局势",
+    "scrobbles": 4
+   },
+   {
+    "name": "YUE_19wASMR",
+    "scrobbles": 4
+   },
+   {
+    "name": "millsage",
+    "scrobbles": 4
+   },
+   {
+    "name": "Peter Vermeersch, Flat Earth Society",
+    "scrobbles": 3
+   },
+   {
+    "name": "MC Solaar",
+    "scrobbles": 3
+   },
+   {
+    "name": "Neil Hamburger",
+    "scrobbles": 3
+   },
+   {
+    "name": "Bo Burnham",
+    "scrobbles": 3
+   },
+   {
+    "name": "Sabaton",
+    "scrobbles": 3
+   },
+   {
+    "name": "Agoraphobic Nosebleed",
+    "scrobbles": 3
+   },
+   {
+    "name": "Miles Davis, Gil Evans",
+    "scrobbles": 3
+   },
+   {
+    "name": "Squarepusher",
+    "scrobbles": 3
+   },
+   {
+    "name": "时局news",
+    "scrobbles": 3
+   },
+   {
+    "name": "Threebrain",
+    "scrobbles": 3
+   },
+   {
+    "name": "Renpul",
+    "scrobbles": 3
+   },
+   {
+    "name": "Minutemen",
+    "scrobbles": 3
+   },
+   {
+    "name": "朱明瑛",
+    "scrobbles": 3
+   },
+   {
+    "name": "Catalpa Vs. SharK",
+    "scrobbles": 3
+   },
+   {
+    "name": "天才美少女ykn",
+    "scrobbles": 3
+   },
+   {
+    "name": "Sufjan Stevens, Lowell Brams",
+    "scrobbles": 2
+   },
+   {
+    "name": "Spongebob Squarepants",
+    "scrobbles": 2
+   },
+   {
+    "name": "They Might Be Giants",
+    "scrobbles": 2
+   },
+   {
+    "name": "Harm A. Drost",
+    "scrobbles": 2
+   },
+   {
+    "name": "The Residents",
+    "scrobbles": 2
+   },
+   {
+    "name": "Duke Ellington",
+    "scrobbles": 2
+   },
+   {
+    "name": "The Mothers of Invention",
+    "scrobbles": 2
+   },
+   {
+    "name": "Ornette Coleman, 倫敦交響樂團",
+    "scrobbles": 2
+   },
+   {
+    "name": "Tim Maia",
+    "scrobbles": 2
+   }
+  ],
+  "top_tracks": [
+   {
+    "name": "ホーミー・タイッ！！",
+    "artist": "一家Dumb Rock!",
+    "scrobbles": 6
+   },
+   {
+    "name": "Introduction",
+    "artist": "Otis Redding, Al “Brisco” Clark",
+    "scrobbles": 4
+   },
+   {
+    "name": "TearJerker",
+    "artist": "夢限大みゅーたいぷ",
+    "scrobbles": 3
+   },
+   {
+    "name": "エンプティパペット",
+    "artist": "夢限大みゅーたいぷ",
+    "scrobbles": 3
+   },
+   {
+    "name": "回娘家",
+    "artist": "朱明瑛",
+    "scrobbles": 3
+   },
+   {
+    "name": "無人区-Vacuum Track#ADD8E6（翻自:咲夜）",
+    "artist": "Catalpa Vs. SharK",
+    "scrobbles": 3
+   },
+   {
+    "name": "Studio Discussion - Two",
+    "artist": "Miles Davis, Gil Evans",
+    "scrobbles": 2
+   },
+   {
+    "name": "Bow Tie Daddy",
+    "artist": "The Mothers of Invention",
+    "scrobbles": 2
+   },
+   {
+    "name": "The Military",
+    "artist": "Ornette Coleman, 倫敦交響樂團",
+    "scrobbles": 2
+   },
+   {
+    "name": "You Don't Know What I Know",
+    "artist": "Tim Maia",
+    "scrobbles": 2
+   },
+   {
+    "name": "Intro",
+    "artist": "MC Solaar",
+    "scrobbles": 2
+   },
+   {
+    "name": "Desperation of a Dying Vision",
+    "artist": "Vylet Pony, Briakitten",
+    "scrobbles": 2
+   },
+   {
+    "name": "Vino De Lo Sanguifero",
+    "artist": "Cattle Decapitation",
+    "scrobbles": 2
+   },
+   {
+    "name": "Cranium Oxide",
+    "artist": "Squarepusher",
+    "scrobbles": 2
+   },
+   {
+    "name": "Alone",
+    "artist": "Bernard Herrmann",
+    "scrobbles": 2
+   },
+   {
+    "name": "Menace Returns",
+    "artist": "Trent Reznor and Atticus Ross",
+    "scrobbles": 2
+   },
+   {
+    "name": "I'm Eve",
+    "artist": "Trent Reznor and Atticus Ross",
+    "scrobbles": 2
+   },
+   {
+    "name": "wall of fame - interlude",
+    "artist": "mgk",
+    "scrobbles": 2
+   },
+   {
+    "name": "End Title - From \"Lost\"",
+    "artist": "Michael Giacchino",
+    "scrobbles": 2
+   },
+   {
+    "name": "Run Away! Run Away!",
+    "artist": "Michael Giacchino",
+    "scrobbles": 2
+   },
+   {
+    "name": "Retour sur Terre",
+    "artist": "Air",
+    "scrobbles": 2
+   },
+   {
+    "name": "7 Shakespeare Songs: No. 4, Anthony and Cleopatra",
+    "artist": "Michael Wolters, Kathryn Bennetts, Peter Bowman, Suzie Purkiss",
+    "scrobbles": 2
+   },
+   {
+    "name": "Camera",
+    "artist": "Bo Burnham",
+    "scrobbles": 2
+   },
+   {
+    "name": "Kai Interlude (Album CD Version)",
+    "artist": "Soda Inc.",
+    "scrobbles": 2
+   },
+   {
+    "name": "Bathing in a Grease Disposal Unit",
+    "artist": "Cattle Decapitation",
+    "scrobbles": 2
+   },
+   {
+    "name": "Stick to the Status Quo (Instrumental)",
+    "artist": "David Lawrence, Faye Greenberg, Disney",
+    "scrobbles": 2
+   },
+   {
+    "name": "Pneumatics (Anode Remix)",
+    "artist": "Current Value",
+    "scrobbles": 2
+   },
+   {
+    "name": "Day Dream",
+    "artist": "Current Value",
+    "scrobbles": 2
+   },
+   {
+    "name": "Song for El Salvador",
+    "artist": "Minutemen",
+    "scrobbles": 2
+   },
+   {
+    "name": "これはぼくたちの生存のあらすじ",
+    "artist": "夢限大みゅーたいぷ",
+    "scrobbles": 2
+   },
+   {
+    "name": "Keep on Riddim",
+    "artist": "一家Dumb Rock!",
+    "scrobbles": 2
+   },
+   {
+    "name": "HONEST-happy a word- (ver. 2024)",
+    "artist": "Happy Around!",
+    "scrobbles": 2
+   },
+   {
+    "name": "気分上々↑↑ (心情嗨翻天↑↑)",
+    "artist": "96猫/置鮎龍太郎/千葉翔也",
+    "scrobbles": 2
+   },
+   {
+    "name": "本当だよ",
+    "artist": "ナツノセ",
+    "scrobbles": 2
+   },
+   {
+    "name": "Purity (feat. 藍月なくる)",
+    "artist": "花鋏キョウ&藍月なくる",
+    "scrobbles": 2
+   },
+   {
+    "name": "your princess (nyamura ver.)",
+    "artist": "Picco&nyamura",
+    "scrobbles": 2
+   },
+   {
+    "name": "无人区-Vacuum Track#ADD8E6-",
+    "artist": "米缐p.",
+    "scrobbles": 2
+   },
+   {
+    "name": "無人区-Vacuum Track#ADD8E6（翻自:咲夜） (翻奏: Catalpa Vs. SharK)",
+    "artist": "拿弓子的波塞东",
+    "scrobbles": 2
+   },
+   {
+    "name": "無人区-Vacuum Track#ADD8E6",
+    "artist": "816ThreeNumbers",
+    "scrobbles": 2
+   },
+   {
+    "name": "無人区-Vacuum Track",
+    "artist": "千野依&秋野桜",
+    "scrobbles": 2
+   },
+   {
+    "name": "Nutcracker Suite, Op.71a:March",
+    "artist": "Wiener Philharmoniker/Herbert von Karajan",
+    "scrobbles": 2
+   },
+   {
+    "name": "Impressions",
+    "artist": "Napalm Death",
+    "scrobbles": 1
+   },
+   {
+    "name": "HETERONOMY",
+    "artist": "Backxwash",
+    "scrobbles": 1
+   },
+   {
+    "name": "Azul Postlude",
+    "artist": "SeaWorld Attraction",
+    "scrobbles": 1
+   },
+   {
+    "name": "For Raymond Scott",
+    "artist": "Sufjan Stevens, Lowell Brams",
+    "scrobbles": 1
+   },
+   {
+    "name": "The Annoying Orange Remix",
+    "artist": "Toby Turner, Tobuscus",
+    "scrobbles": 1
+   },
+   {
+    "name": "Nick's B. Danube",
+    "artist": "Spongebob Squarepants",
+    "scrobbles": 1
+   },
+   {
+    "name": "Lester Stop Calling My Fucking Phone",
+    "artist": "Splooge God, Arnit",
+    "scrobbles": 1
+   },
+   {
+    "name": "Spine",
+    "artist": "They Might Be Giants",
+    "scrobbles": 1
+   },
+   {
+    "name": "Esophageal Voice an Octave Lower",
+    "artist": "Harm A. Drost",
+    "scrobbles": 1
+   }
+  ],
+  "top_albums": [
+   {
+    "name": "Are you Happy? I’m Happy!",
+    "artist": "Happy Around!",
+    "scrobbles": 12
+   },
+   {
+    "name": "BIOCELLULOSE",
+    "artist": "Current Value",
+    "scrobbles": 7
+   },
+   {
+    "name": "ホーミー・タイッ！！",
+    "artist": "一家Dumb Rock!",
+    "scrobbles": 7
+   },
+   {
+    "name": "Mank (Original Musical Score)",
+    "artist": "Trent Reznor and Atticus Ross",
+    "scrobbles": 5
+   },
+   {
+    "name": "スタートライン",
+    "artist": "夢限大みゅーたいぷ",
+    "scrobbles": 5
+   },
+   {
+    "name": "Son of Godzilla Original Soundtrack",
+    "artist": "佐藤勝",
+    "scrobbles": 4
+   },
+   {
+    "name": "For Kids About to Rock",
+    "artist": "Parry Gripp",
+    "scrobbles": 4
+   },
+   {
+    "name": "Marnie (Complete Original Motion Picture Score)",
+    "artist": "Bernard Herrmann",
+    "scrobbles": 4
+   },
+   {
+    "name": "UNDERTALE Soundtrack",
+    "artist": "Toby Fox",
+    "scrobbles": 4
+   },
+   {
+    "name": "Minoes",
+    "artist": "Peter Vermeersch, Flat Earth Society",
+    "scrobbles": 3
+   },
+   {
+    "name": "Heroes (Track Commentary Version)",
+    "artist": "Sabaton",
+    "scrobbles": 3
+   },
+   {
+    "name": "The Complete Columbia Studio Recordings",
+    "artist": "Miles Davis, Gil Evans",
+    "scrobbles": 3
+   },
+   {
+    "name": "Go Simpsonic With The Simpsons (More Original Music From the Television Series)",
+    "artist": "The Simpsons",
+    "scrobbles": 3
+   },
+   {
+    "name": "TearJerker",
+    "artist": "夢限大みゅーたいぷ",
+    "scrobbles": 3
+   },
+   {
+    "name": "Beneath the Sonics",
+    "artist": "Current Value",
+    "scrobbles": 3
+   },
+   {
+    "name": "Vacuum Track#ADD8E6",
+    "artist": "Catalpa Vs. SharK",
+    "scrobbles": 3
+   },
+   {
+    "name": "Aporia",
+    "artist": "Sufjan Stevens, Lowell Brams",
+    "scrobbles": 2
+   },
+   {
+    "name": "SpongeBob SquarePants - The Yellow Album",
+    "artist": "Spongebob Squarepants",
+    "scrobbles": 2
+   },
+   {
+    "name": "Speech after the Removal of the Larynx",
+    "artist": "Harm A. Drost",
+    "scrobbles": 2
+   },
+   {
+    "name": "Laugh Out Lord",
+    "artist": "Neil Hamburger",
+    "scrobbles": 2
+   },
+   {
+    "name": "Frozen Corpse Stuffed With Dope",
+    "artist": "Agoraphobic Nosebleed",
+    "scrobbles": 2
+   },
+   {
+    "name": "We're Only in It for the Money",
+    "artist": "The Mothers of Invention",
+    "scrobbles": 2
+   },
+   {
+    "name": "Skies Of America",
+    "artist": "Ornette Coleman, 倫敦交響樂團",
+    "scrobbles": 2
+   },
+   {
+    "name": "Racional (Vol 1)",
+    "artist": "Tim Maia",
+    "scrobbles": 2
+   },
+   {
+    "name": "Paradisiaque / Mc Solaar",
+    "artist": "MC Solaar",
+    "scrobbles": 2
+   },
+   {
+    "name": "Medley of Visions (From Super Pony World: Fairytails)",
+    "artist": "Vylet Pony, Briakitten",
+    "scrobbles": 2
+   },
+   {
+    "name": "Medium Rarities",
+    "artist": "Cattle Decapitation",
+    "scrobbles": 2
+   },
+   {
+    "name": "Maximum Priest",
+    "artist": "Squarepusher",
+    "scrobbles": 2
+   },
+   {
+    "name": "mainstream sellout",
+    "artist": "mgk",
+    "scrobbles": 2
+   },
+   {
+    "name": "Lost: Season 2 (Original Television Soundtrack)",
+    "artist": "Michael Giacchino",
+    "scrobbles": 2
+   },
+   {
+    "name": "Lost: Season 1 (Original Television Soundtrack)",
+    "artist": "Michael Giacchino",
+    "scrobbles": 2
+   },
+   {
+    "name": "Live At The Whisky A Go Go: The Complete Recordings",
+    "artist": "Otis Redding, Al “Brisco” Clark",
+    "scrobbles": 2
+   },
+   {
+    "name": "Live At The Whisky A Go Go",
+    "artist": "Otis Redding, Al “Brisco” Clark",
+    "scrobbles": 2
+   },
+   {
+    "name": "Le Voyage dans la Lune",
+    "artist": "Air",
+    "scrobbles": 2
+   },
+   {
+    "name": "Kathryn & Peter Play the Recorder",
+    "artist": "Michael Wolters, Kathryn Bennetts, Peter Bowman, Suzie Purkiss",
+    "scrobbles": 2
+   },
+   {
+    "name": "Inside (Deluxe)",
+    "artist": "Bo Burnham",
+    "scrobbles": 2
+   },
+   {
+    "name": "Inner Vision",
+    "artist": "Soda Inc.",
+    "scrobbles": 2
+   },
+   {
+    "name": "Homovore",
+    "artist": "Cattle Decapitation",
+    "scrobbles": 2
+   },
+   {
+    "name": "High School Musical: The Musical: The Series (Original Soundtrack)",
+    "artist": "David Lawrence, Faye Greenberg, Disney",
+    "scrobbles": 2
+   },
+   {
+    "name": "Citizen Kane (Music From The Motion Picture)",
+    "artist": "Bernard Herrmann",
+    "scrobbles": 2
+   },
+   {
+    "name": "Chopin: Préludes",
+    "artist": "Frédéric Chopin, Alexandre Tharaud",
+    "scrobbles": 2
+   },
+   {
+    "name": "Carnival Folklore Resurrection Vol 13: 98.6 IS DEATH",
+    "artist": "Sun City Girls",
+    "scrobbles": 2
+   },
+   {
+    "name": "Adventure Time, Vol. 5 (Original Soundtrack)",
+    "artist": "Adventure Time",
+    "scrobbles": 2
+   },
+   {
+    "name": "ヱヴァンゲリヲン新劇場版:Q オリジナルサウンドトラック",
+    "artist": "鷺巣詩郎",
+    "scrobbles": 2
+   },
+   {
+    "name": "Weeeeee!",
+    "artist": "Threebrain",
+    "scrobbles": 2
+   },
+   {
+    "name": "Unsilent Death",
+    "artist": "Nails",
+    "scrobbles": 2
+   },
+   {
+    "name": "Short Songs",
+    "artist": "Nelward",
+    "scrobbles": 2
+   },
+   {
+    "name": "SDI & QUARTET SEGA SYSTEM 16 COLLECTION",
+    "artist": "SEGA Sound Team",
+    "scrobbles": 2
+   },
+   {
+    "name": "Monsters Ate My Birthday Cake",
+    "artist": "Disasterpeace",
+    "scrobbles": 2
+   },
+   {
+    "name": "Parry Gripp Mega-Party (2008 - 2012)",
+    "artist": "Parry Gripp",
+    "scrobbles": 2
+   }
+  ]
+ }
+}

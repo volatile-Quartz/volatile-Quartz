@@ -67,8 +67,11 @@ def fetch(lo, hi):
         for t in tr:
             if "@attr" in t:
                 continue
-            out.append({"ts": int(t["date"]["uts"]), "artist": t["artist"]["#text"],
-                        "track": t["name"], "album": t.get("album", {}).get("#text", "")})
+            # \xa0 归一（与页面显示一致，否则按名补 artist 会失配）
+            out.append({"ts": int(t["date"]["uts"]),
+                        "artist": t["artist"]["#text"].replace("\xa0", " ").strip(),
+                        "track": t["name"].replace("\xa0", " ").strip(),
+                        "album": t.get("album", {}).get("#text", "").replace("\xa0", " ").strip()})
         total = int(d.get("recenttracks", {}).get("@attr", {}).get("totalPages", page))
         if page >= total:
             break
@@ -144,7 +147,9 @@ api_album_artist = {e["name"].casefold(): e["artist"] for e in api_albums}
 for key, lookup in [("top_tracks", api_track_artist), ("top_albums", api_album_artist)]:
     for e in (pg or {}).get(key, []):
         if not e.get("artist"):
-            e["artist"] = lookup.get(e["name"].casefold())
+            a = lookup.get(e["name"].casefold())
+            if a:
+                e["artist"] = a
 
 end_date = (datetime.fromtimestamp(T0, TZ) + timedelta(days=6)).strftime("%Y-%m-%d")
 report = {
