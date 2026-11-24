@@ -7,7 +7,8 @@ Usage: python3 weekly_stats_enrich.py   (reads /tmp/lastfm_prep.json)
 """
 import json, time, urllib.request, urllib.parse, os, sys
 
-API_KEY = "66b1c1ad34af302bb1672147f78e9e90"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _env import API_KEY
 CACHE = sys.argv[1] if len(sys.argv) > 1 else "/tmp/lastfm_dur_cache.json"
 prep = json.load(open("/tmp/lastfm_prep.json"))
 

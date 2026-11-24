@@ -11,8 +11,8 @@ Reads lastfm_rules.json (same dir). Writes /tmp/lastfm_prep.json.
 import json, time, urllib.request, urllib.parse, collections, sys, os
 from datetime import datetime, timedelta, timezone
 
-API_KEY = "66b1c1ad34af302bb1672147f78e9e90"
-USER = "volatile-Quartz"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _env import API_KEY, USER
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RULES = json.load(open(os.path.join(BASE_DIR, "lastfm_rules.json")))
 TZ = timezone(timedelta(hours=8))
